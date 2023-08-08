@@ -3427,65 +3427,65 @@ import form_bg from "../../public/form-bg.svg";
 	// setInterval(nextSlide, 3000);
 
 	// scroll next
-	// document
-	// 	.getElementById("nextScrollButton")
-	// 	.addEventListener("click", () => {
-	// 		// Get the container element by its ID
-	// 		const containerElement = document.getElementById("scrollContainer");
+	document
+		.getElementById("nextScrollButton")
+		.addEventListener("click", () => {
+			// Get the container element by its ID
+			const containerElement = document.getElementById("scrollContainer");
 
-	// 		// Calculate the scroll amount
-	// 		const scrollAmount = containerElement.offsetWidth;
+			// Calculate the scroll amount
+			const scrollAmount = containerElement.offsetWidth;
 
-	// 		// Perform horizontal scroll using the scrollBy method
-	// 		containerElement.scrollBy({
-	// 			top: 0,
-	// 			left: scrollAmount,
-	// 			behavior: "smooth",
-	// 		});
-	// 	});
+			// Perform horizontal scroll using the scrollBy method
+			containerElement.scrollBy({
+				top: 0,
+				left: scrollAmount,
+				behavior: "smooth",
+			});
+		});
 
 	// scroll pre.
-	// document.getElementById("preScrollButton").addEventListener("click", () => {
-	// 	// Get the container element by its ID
-	// 	const containerElement = document.getElementById("scrollContainer");
+	document.getElementById("preScrollButton").addEventListener("click", () => {
+		// Get the container element by its ID
+		const containerElement = document.getElementById("scrollContainer");
 
-	// 	// Calculate the scroll amount
-	// 	const scrollAmount = -containerElement.offsetWidth;
+		// Calculate the scroll amount
+		const scrollAmount = -containerElement.offsetWidth;
 
-	// 	// Perform horizontal scroll using the scrollBy method
-	// 	containerElement.scrollBy({
-	// 		top: 0,
-	// 		left: scrollAmount,
-	// 		behavior: "smooth",
-	// 	});
-	// });
+		// Perform horizontal scroll using the scrollBy method
+		containerElement.scrollBy({
+			top: 0,
+			left: scrollAmount,
+			behavior: "smooth",
+		});
+	});
 
 	//scroll autometic when slide is active construction or manufacturing
 	document.addEventListener("DOMContentLoaded", function () {
 		setInterval(logElementsWithAriaCurrent, 1000);
 });
 
-function logElementsWithAriaCurrent() {
-  const elementsWithAriaCurrent = document.querySelectorAll('[aria-current="true"]');
+	function logElementsWithAriaCurrent() {
+	const elementsWithAriaCurrent = document.querySelectorAll('[aria-current="true"]');
 
-  let previousElement = null;
+	let previousElement = null;
 
-  elementsWithAriaCurrent.forEach((element) => {
-    console.log("previous element", previousElement);
-    console.log("current element", element);
+	elementsWithAriaCurrent.forEach((element) => {
+		console.log("previous element", previousElement);
+		console.log("current element", element);
 
-    if (previousElement && previousElement.innerHTML === element.innerHTML) {
-      console.log("elements match");
-      console.log("previous element innerHTML", previousElement.innerHTML);
-      console.log("current element innerHTML", element.innerHTML);
-    } else {
-      console.log("elements do not match");
-      // Perform any action you want for non-matching elements here.
-    }
+		if (previousElement && previousElement.innerHTML === element.innerHTML) {
+		console.log("elements match");
+		console.log("previous element innerHTML", previousElement.innerHTML);
+		console.log("current element innerHTML", element.innerHTML);
+		} else {
+		console.log("elements do not match");
+		// Perform any action you want for non-matching elements here.
+		}
 
-    previousElement = element;
-  });
-}
+		previousElement = element;
+	});
+	}
 
 
 	// Get the slider elements

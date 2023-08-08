@@ -339,150 +339,7 @@ import close from "../../public/popup_close_btn.svg"
           >Open Popup</button
         > -->
 
-        <div
-          id="popup"
-          class="hidden absolute text-[#31393C] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[10px] p-6 shadow-md"
-        >
-            <div class="absolute top-4 right-4" id="closePopup"><Image src={close} alt="close" /> </div>
-
-            <p class="text-lg md:text-xl lg:text-2xl !leading-[36px] md:!leading-[40px] lg:!leading-[44px] font-semibold">ERPNext Developer</p>
-            <div class="flex flex-wrap">
-                <p class="text-base md:text-lg lg:text-xl !leading-7 md:!leading-8 lg:!leading-9">Experience: <strong>3+ Years (Preferred)</strong> |</p>
-                <p class="text-base md:text-lg lg:text-xl !leading-7 md:!leading-8 lg:!leading-9">Location: <strong>Ahmedabad,  Junagadh</strong></p>
-            </div>
-            <div class="mt-5 font-semibold text-xs md:text-sm lg:text-base">Skills Required:</div>
-            
-            <div class="flex gap-2">
-                <Image src={correct} alt="correct" />
-                <p class="text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8">Operating System: Linux.</p>
-            </div>
-            <div class="flex gap-2">
-                <Image src={correct} alt="correct" />
-                <p class="text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8">Version Control: Git.</p>
-            </div>
-            <div class="flex gap-2">
-                <Image src={correct} alt="correct" />
-                <p class="text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8">Languages and Tools: Python, Javascript, HTML, CSS, Bootstrap, jQuery, Jinja.</p>
-            </div>
-            <div class="flex gap-2">
-                <Image src={correct} alt="correct" />
-                <p class="text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8">Technologies & Framework: Frappe/ ERPNext, Mysql/ Mariadb, AWS/ Azure deployment, CI/ CD, Node.js, Redis.</p>
-            </div>
-            <div class="flex gap-2">
-                <Image src={correct} alt="correct" />
-                <p class="text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8">Minimum 3 years of Experience in ERPNext Development.</p>
-            </div>
-            <div class="flex gap-2">
-                <Image src={correct} alt="correct" />
-                <p class="text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8">Strong Foundational Knowledge of Frappe framework.</p>
-            </div>
-            <div class="flex gap-2">
-                <Image src={correct} alt="correct" />
-                <p class="text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8">Team Player, Curiosity to learn new things.</p>
-            </div>
-            <div class="flex gap-2">
-                <Image src={correct} alt="correct" />
-                <p class="text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8">Strong analytical problem solving, excellent programming and software design skill.</p>
-            </div>
-
-            <div class="mt-5 font-semibold text-xs md:text-sm lg:text-base">Responsibilities and Duties:</div>
-            
-            <div class="flex gap-2">
-                <Image src={correct} alt="correct" />
-                <p class="text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8">Writing functional and development specifications.</p>
-            </div>
-            <div class="flex gap-2">
-                <Image src={correct} alt="correct" />
-                <p class="text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8">Produce clean and efficient code with proper comments based on the specifications.</p>
-            </div>
-            <div class="flex gap-2">
-                <Image src={correct} alt="correct" />
-                <p class="text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8">Do automated unit and functional testing.</p>
-            </div>
-            <div class="flex gap-2">
-                <Image src={correct} alt="correct" />
-                <p class="text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8">Actively participate and contribute to open-source communities.</p>
-            </div>
-            <div class="flex gap-2">
-                <Image src={correct} alt="correct" />
-                <p class="text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8">Understand ERPNext and Frappe framework thoroughly.</p>
-            </div>
-
-
-            <div class="w-full border border-[#D9D9D9] my-5"></div>
-
-            <p class="text-lg md:text-xl lg:text-2xl !leading-[36px] md:!leading-[40px] lg:!leading-[44px] font-semibold">Apply for this job</p>
-            
-            <form id="job_application_form" class="grid gap-3 md:gap-3 lg:gap-5 mt-5">
-                <div class="text-[#333333] grid gap-3 md:gap-3 lg:gap-5">
-                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-3 lg:gap-5">
-                        <input
-                        class="rounded-[3px]"
-                        type="text"
-                        placeholder="First Name*"
-                        name="full_name"
-                        />
-                        <input
-                        class="rounded-[3px]"
-                        type="email"
-                        placeholder="Email*"
-                        name="email"
-                        />
-
-                        <input
-                            class="rounded-[3px]"
-                            type="text"
-                            placeholder="Phone*"
-                            name="phone"
-                        />
-
-                        <input
-                        class="rounded-[3px]"
-                        type="text"
-                        placeholder="City*"
-                        name="city"
-                        />
-                        <!-- <div> -->
-                            <input
-                                class="rounded-[3px] flex flex-wrap"
-                                type="file"
-                                name="file"
-                                id="fileInput"
-                            />
-                            <!-- <p class="text-xs mt-2">Allow Formats (.jpg |.pdf |.png |.docx |.txt)</p> -->
-                        <!-- </div> -->
-                        <!-- <div class="mt-[0.60rem]"> -->
-                            <!-- <label for="files" class="btn bg-[#F0F0F0] p-3 rounded-[4px] w-40">Upload Resume*</label> -->
-                            <!-- <input id="files" name="file" class=" " type="file"> -->
-                        <!-- </div> -->
-                        
-                        <!-- <label for="fileInput" class="px-4 py-2 bg-blue-500 text-white rounded-[3px] cursor-pointer">
-                            Choose File
-                            <input
-                                class="hidden"
-                                type="file"
-                                name="file"
-                                id="fileInput"
-                            />
-                        </label> -->
-
-                    </div>
-                  
-                        
-                      </div>
-                      <button
-                        class="w-44 bg-[#3E96F4] rounded text-white md:text-sm text-xs lg:text-base font-semibold p-2 "
-                      >
-                      Submit Application
-                      </button>
-                    <!-- </div>      -->
-
-              </form>
-            
-            <!-- <button id="closePopup" class="mt-4 px-4 py-2 bg-red-500 text-white"
-                >Close Popup</button
-            > -->
-        </div>
+        
 
 
 
@@ -1168,7 +1025,7 @@ import close from "../../public/popup_close_btn.svg"
       }
 
       apiData.forEach((jobOpening) => {
-        console.log("jobopenigng", jobOpening);
+        // console.log("jobopenigng", jobOpening);
 
         // var cardContainer = document.createElement('div');
         // cardContainer.classList.add('border', 'border-[#B5CBE3]', 'text-sm', 'md:text-sm', 'lg:text-base', 'rounded', 'bg-white', 'p-5', 'mx-auto', 'md:mx-20', 'lg:mx-40', 'mb-5');
@@ -1305,7 +1162,7 @@ import close from "../../public/popup_close_btn.svg"
         );
         userSection.appendChild(
           createImage(
-            "c_user.svg?f=svg&w=14&h=14&href=%2F%40astroimage%2Fhome%2Fnilesh-pithiya%2FAstro%2FAstro%2Fsanskar%2Fpublic%2Fc_user.svg",
+            "https://sanskar.frappe.cloud/files/c_user.svg",
             "user"
           )
         );
@@ -1326,7 +1183,7 @@ import close from "../../public/popup_close_btn.svg"
         );
         jobSection.appendChild(
           createImage(
-            "c_job.svg?f=svg&w=15&h=14&href=%2F%40astroimage%2Fhome%2Fnilesh-pithiya%2FAstro%2FAstro%2Fsanskar%2Fpublic%2Fc_job.svg",
+            "https://sanskar.frappe.cloud/files/c_job.svg",
             "job"
           )
         );
@@ -1347,7 +1204,7 @@ import close from "../../public/popup_close_btn.svg"
         );
         locationSection.appendChild(
           createImage(
-            "c_map.svg?f=svg&w=14&h=14&href=%2F%40astroimage%2Fhome%2Fnilesh-pithiya%2FAstro%2FAstro%2Fsanskar%2Fpublic%2Fc_map.svg",
+            "https://sanskar.frappe.cloud/files/c_map.svg",
             "map"
           )
         );
@@ -1393,6 +1250,222 @@ import close from "../../public/popup_close_btn.svg"
 
         // Add a click event listener to the "Apply Now" button
         applyButton.addEventListener("click", () => {
+
+          var popup = document.getElementById("popup");
+          if(popup){
+            popup.remove();
+          }
+
+          fetch(`https://sanskar.frappe.cloud/api/method/get_job_detail?name=${jobOpening.name}`)
+          .then((response) => response.json())
+          .then((data) => {
+            // Process the JSON data here
+            const jobDetail = data.data
+
+            console.log("asdf", jobDetail)
+
+            // Create a div element
+
+          const popupDiv = document.createElement('div');
+          popupDiv.id = 'popup';
+          popupDiv.className = 'absolute text-[#31393C] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[10px] p-6 shadow-md';
+
+          // Create the close button div
+          const closeButtonDiv = document.createElement('div');
+          closeButtonDiv.className = 'absolute top-4 right-4';
+          closeButtonDiv.id = 'closePopup';
+
+          // Create the close image element
+          const closeImage = document.createElement('img');
+          closeImage.src = 'https://sanskar.frappe.cloud/files/popup_close_btn.svg';
+          closeImage.alt = 'close';
+
+          // Append the close image element to the close button div
+          closeButtonDiv.appendChild(closeImage);
+
+          // Create the job title paragraph
+          const jobTitleParagraph = document.createElement('p');
+          jobTitleParagraph.className = 'text-lg md:text-xl lg:text-2xl !leading-[36px] md:!leading-[40px] lg:!leading-[44px] font-semibold';
+          // jobTitleParagraph.textContent = 'ERPNext Developer';
+          jobTitleParagraph.textContent = jobDetail.name
+
+          // jobTitleParagraph.textContent = jobDetail.name
+
+          // Create the experience and location details div
+          const experienceLocationDiv = document.createElement('div');
+          experienceLocationDiv.className = 'flex flex-wrap';
+
+          // Create the experience paragraph
+          const experienceParagraph = document.createElement('p');
+          experienceParagraph.className = 'text-base md:text-lg lg:text-xl !leading-7 md:!leading-8 lg:!leading-9';
+          experienceParagraph.innerHTML = `Experience: <strong>${jobDetail.requiered_experience || "0"}</strong> |`;
+
+          // Create the location paragraph
+          const locationParagraph = document.createElement('p');
+          locationParagraph.className = 'text-base md:text-lg lg:text-xl !leading-7 md:!leading-8 lg:!leading-9';
+          locationParagraph.innerHTML = `Location: <strong>${jobDetail.location || "unknown"}</strong>`;
+
+          // Append the experience and location paragraphs to the experienceLocationDiv
+          experienceLocationDiv.appendChild(experienceParagraph);
+          experienceLocationDiv.appendChild(locationParagraph);
+
+          // Create the Skills Required div
+          const skillsRequiredDiv = document.createElement('div');
+          skillsRequiredDiv.className = 'mt-5 font-semibold text-xs md:text-sm lg:text-base';
+          skillsRequiredDiv.textContent = 'Skills Required:';
+
+          // Create an array of skill items
+          // const skills = [
+          //   'Operating System: Linux.',
+          //   'Version Control: Git.',
+          //   'Languages and Tools: Python, Javascript, HTML, CSS, Bootstrap, jQuery, Jinja.',
+          //   'Technologies & Framework: Frappe/ ERPNext, Mysql/ Mariadb, AWS/ Azure deployment, CI/ CD, Node.js, Redis.',
+          //   'Minimum 3 years of Experience in ERPNext Development.',
+          //   'Strong Foundational Knowledge of Frappe framework.',
+          //   'Team Player, Curiosity to learn new things.',
+          //   'Strong analytical problem-solving, excellent programming and software design skill.'
+          // ];
+
+          // Create the skills list div
+          const skillsListDiv = document.createElement('div');
+          // skillsListDiv.className = 'flex gap-2';
+
+          // Create skill items and append them to the skillsListDiv
+          jobDetail.skill.forEach(skill => {
+            const skillItemDiv = document.createElement('div');
+            skillItemDiv.className = 'flex gap-2';
+
+            const skillImage = document.createElement('img');
+            skillImage.src = 'https://sanskar.frappe.cloud/files/correct.svg';
+            skillImage.alt = 'correct';
+
+            const skillParagraph = document.createElement('p');
+            skillParagraph.className = 'text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8';
+            skillParagraph.textContent = skill.skill;
+
+            skillItemDiv.appendChild(skillImage);
+            skillItemDiv.appendChild(skillParagraph);
+            skillsListDiv.appendChild(skillItemDiv);
+          });
+
+          // Create the Responsibilities and Duties div
+          const responsibilitiesDiv = document.createElement('div');
+          responsibilitiesDiv.className = 'mt-5 font-semibold text-xs md:text-sm lg:text-base';
+          responsibilitiesDiv.textContent = 'Responsibilities and Duties:';
+
+          // Create an array of responsibilities items
+          // const responsibilities = [
+          //   'Writing functional and development specifications.',
+          //   'Produce clean and efficient code with proper comments based on the specifications.',
+          //   'Do automated unit and functional testing.',
+          //   'Actively participate and contribute to open-source communities.',
+          //   'Understand ERPNext and Frappe framework thoroughly.'
+          // ];
+
+          // Create the responsibilities list div
+          const responsibilitiesListDiv = document.createElement('div');
+          // responsibilitiesListDiv.className = 'flex gap-2';
+
+          // Create responsibility items and append them to the responsibilitiesListDiv
+          jobDetail.responsibilities_and_duties.forEach(responsibility => {
+            const responsibilityItemDiv = document.createElement('div');
+            responsibilityItemDiv.className = 'flex gap-2';
+
+            const responsibilityImage = document.createElement('img');
+            responsibilityImage.src = 'https://sanskar.frappe.cloud/files/correct.svg';
+            responsibilityImage.alt = 'correct';
+
+            const responsibilityParagraph = document.createElement('p');
+            responsibilityParagraph.className = 'text-xs md:text-sm lg:text-base !leading-6 md:!leading-7 lg:!leading-8';
+            responsibilityParagraph.textContent = responsibility.responsibilities_and_dutie;
+
+            responsibilityItemDiv.appendChild(responsibilityImage);
+            responsibilityItemDiv.appendChild(responsibilityParagraph);
+            responsibilitiesListDiv.appendChild(responsibilityItemDiv);
+          });
+
+          // Create the border div
+          const borderDiv = document.createElement('div');
+          borderDiv.className = 'w-full border border-[#D9D9D9] my-5';
+
+          // Create the "Apply for this job" paragraph
+          const applyParagraph = document.createElement('p');
+          applyParagraph.className = 'text-lg md:text-xl lg:text-2xl !leading-[36px] md:!leading-[40px] lg:!leading-[44px] font-semibold';
+          applyParagraph.textContent = 'Apply for this job';
+
+          // Create the job application form
+          const jobApplicationForm = document.createElement('form');
+          jobApplicationForm.id = 'job_application_form';
+          jobApplicationForm.className = 'mt-5';
+
+          const div = document.createElement('div');
+          div.className = 'grid grid-cols-3 gap-3 md:gap-3 lg:gap-5';
+
+          // Create the input fields for job application form
+          const inputFieldNames = ['First Name*', 'Email*', 'Phone*', 'City*'];
+          inputFieldNames.forEach(fieldName => {
+            const inputField = document.createElement('input');
+            inputField.className = 'rounded-[3px]';
+            inputField.type = 'text';
+            inputField.placeholder = fieldName;
+            inputField.name = fieldName.toLowerCase().replace(/\s+/g, '_');
+            div.appendChild(inputField);
+          });
+
+          // Create the file input field for job application form
+          const fileInputField = document.createElement('input');
+          fileInputField.className = 'rounded-[3px] flex flex-wrap';
+          fileInputField.type = 'file';
+          fileInputField.name = 'file';
+          fileInputField.id = 'fileInput';
+          div.appendChild(fileInputField);
+
+          // Create the submit button for job application form
+          const submitButton = document.createElement('button');
+          submitButton.className = 'w-44 bg-[#3E96F4] rounded text-white md:text-sm text-xs lg:text-base font-semibold p-2 mt-5';
+          submitButton.type = 'submit';
+          submitButton.textContent = 'Submit Application';
+          jobApplicationForm.appendChild(div)
+          jobApplicationForm.appendChild(submitButton);
+
+          // Append all the elements to the popupDiv
+          popupDiv.appendChild(closeButtonDiv);
+          popupDiv.appendChild(jobTitleParagraph);
+          popupDiv.appendChild(experienceLocationDiv);
+          popupDiv.appendChild(skillsRequiredDiv);
+          popupDiv.appendChild(skillsListDiv);
+          popupDiv.appendChild(responsibilitiesDiv);
+          popupDiv.appendChild(responsibilitiesListDiv);
+          popupDiv.appendChild(borderDiv);
+          popupDiv.appendChild(applyParagraph);
+          popupDiv.appendChild(jobApplicationForm);
+          // Append the popupDiv to the document body
+          document.getElementById("job").appendChild(popupDiv);
+           // const openPopupButton = document.getElementById(`openPopup${jobOpening.name}`);
+        const closePopupButton = document.getElementById('closePopup');
+        const popup = document.getElementById('popup');
+
+        // openPopupButton.addEventListener('click', () => {
+        //     popup.classList.remove('hidden');
+        // });
+
+        closePopupButton.addEventListener('click', () => {
+            popup.classList.add('hidden');
+        });
+          })
+          .catch((error) => {
+            // Handle any errors that occurred during the API call
+            console.error(error);
+          });
+
+
+          
+
+
+
+          //  = ============================  end popup =================================
+
+          // alert(`clicked ${jobOpening.name}`)
           // Create the popup container
         //   const popupContainer = document.createElement("div");
         //   popupContainer.classList.add(
@@ -1442,22 +1515,12 @@ import close from "../../public/popup_close_btn.svg"
         // document.body.appendChild(mainContainer);
         document.getElementById("job").appendChild(mainContainer);
 
-        const openPopupButton = document.getElementById(`openPopup${jobOpening.name}`);
-        const closePopupButton = document.getElementById('closePopup');
-        const popup = document.getElementById('popup');
-
-        openPopupButton.addEventListener('click', () => {
-            popup.classList.remove('hidden');
-        });
-
-        closePopupButton.addEventListener('click', () => {
-            popup.classList.add('hidden');
-        });
+        
 
         //new over =========================================== new over ===========================
       });
 
-        
+       
     </script>
   </main>
 </Layout>
