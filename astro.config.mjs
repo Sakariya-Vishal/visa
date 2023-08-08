@@ -10,5 +10,5 @@ export default defineConfig({
   // output: "server",
   // adapter: netlify(),
     site: 'https://Pithiya-Nilesh.github.io',
-    base: '/sanskar',
+    base: '/astro-sanskar',
 });
