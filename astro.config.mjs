@@ -9,6 +9,6 @@ export default defineConfig({
   integrations: [image(), tailwind()],
   // output: "server",
   // adapter: netlify(),
-    // site: 'https://Pithiya-Nilesh.github.io',
-    // base: '/sanskar',
+    site: 'https://Pithiya-Nilesh.github.io',
+    base: '/sanskar',
 });
