@@ -1287,7 +1287,7 @@ import close from "../../public/popup_close_btn.svg"
           const jobTitleParagraph = document.createElement('p');
           jobTitleParagraph.className = 'text-lg md:text-xl lg:text-2xl !leading-[36px] md:!leading-[40px] lg:!leading-[44px] font-semibold';
           // jobTitleParagraph.textContent = 'ERPNext Developer';
-          jobTitleParagraph.textContent = jobDetail.name
+          jobTitleParagraph.textContent = jobDetail.job_title
 
           // jobTitleParagraph.textContent = jobDetail.name
 
@@ -1402,12 +1402,12 @@ import close from "../../public/popup_close_btn.svg"
           div.className = 'grid grid-cols-3 gap-3 md:gap-3 lg:gap-5';
 
           // Create the input fields for job application form
-          const inputFieldNames = ['First Name*', 'Email*', 'Phone*', 'City*'];
+          const inputFieldNames = ['Full Name', 'Email', 'Phone', 'City'];
           inputFieldNames.forEach(fieldName => {
             const inputField = document.createElement('input');
             inputField.className = 'rounded-[3px]';
             inputField.type = 'text';
-            inputField.placeholder = fieldName;
+            inputField.placeholder = fieldName + '*';
             inputField.name = fieldName.toLowerCase().replace(/\s+/g, '_');
             div.appendChild(inputField);
           });
@@ -1425,6 +1425,8 @@ import close from "../../public/popup_close_btn.svg"
           submitButton.className = 'w-44 bg-[#3E96F4] rounded text-white md:text-sm text-xs lg:text-base font-semibold p-2 mt-5';
           submitButton.type = 'submit';
           submitButton.textContent = 'Submit Application';
+          
+
           jobApplicationForm.appendChild(div)
           jobApplicationForm.appendChild(submitButton);
 
@@ -1452,6 +1454,10 @@ import close from "../../public/popup_close_btn.svg"
         closePopupButton.addEventListener('click', () => {
             popup.classList.add('hidden');
         });
+
+        var form = document.getElementById("job_application_form");
+          form.addEventListener("submit", handleContactForm);
+
           })
           .catch((error) => {
             // Handle any errors that occurred during the API call
@@ -1515,12 +1521,87 @@ import close from "../../public/popup_close_btn.svg"
         // document.body.appendChild(mainContainer);
         document.getElementById("job").appendChild(mainContainer);
 
-        
+        function handleContactForm(e) {       
+          console.log("job opening name", jobOpening.name)
+
+          const fileInput = document.getElementById('fileInput');
+          const file = fileInput.files[0];
+
+          const xhr = new XMLHttpRequest();
+            const url = 'https://sanskar.frappe.cloud/api/method/upload_file'; // Replace with your API endpoint URL
+
+            xhr.open('POST', url, true);
+            xhr.setRequestHeader('Accept', 'application/json');
+            // xhr.setRequestHeader('Content-Type', 'application/json')
+            
+            // Set up event listeners for XHR
+            xhr.onload = function() {
+            
+              if (xhr.status === 200) {  
+                  var raw_data = JSON.parse(xhr.response)
+                  var file_url = raw_data.message.file_url
+                  const formData = new FormData(e.target);
+                  const data = Object.fromEntries(formData.entries());
+                  formData.set("data", JSON.stringify(data));
+                  var fullname = data.fullname;
+                  var email = data.email;
+                  var phone = data.phone;
+                  var city = data.city;
+
+                  console.log("data real", data)
+                  console.log("data", fullname, email, phone, city, file_url)
+
+                  fetch("https://sanskar.frappe.cloud/api/resource/Job Applicant",{
+                      method: 'POST',
+                      headers: {
+                          'Accept': 'application/json',
+                          'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify({
+                          job_title: jobOpening.name,
+                          applicant_name: fullname,
+                          email_id: email,
+                          phone_number: phone,
+                          current_location: city,
+                          resume_attachment: file_url
+                      })
+                      }).then((res) => {
+                      if(res.status === 200){
+                          // alert("You have been registered successfully.")
+                          window.location.href="/thank-you"
+                      }
+                      else{
+                          alert("failed")
+                      }
+                  }).catch((error) => {
+                      console.log(error)
+                  })
+
+                } 
+                else {
+                      alert('File upload failed. Please try again later.');
+                }
+              };
+                
+                xhr.onerror = function() {
+                    alert('An error occurred while uploading the file.');
+                };
+
+                const formData = new FormData();
+                formData.append('file', file);
+
+                xhr.send(formData);
+
+                e.preventDefault();
+
+
+          
+        }
 
         //new over =========================================== new over ===========================
       });
 
-       
+             
     </script>
   </main>
 </Layout>
