@@ -1,0 +1,787 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles.css";
+import { Image, Picture } from "@astrojs/image/components";
+
+import contact_insta from "../../public/contact_insta.svg";
+import contact_fb from "../../public/contact_fb.svg";
+import contact_link from "../../public/contact_link.svg";
+import contact_mail from "../../public/contact_mail.svg";
+import contact_phone from "../../public/contact_phone.svg";
+import contact_map from "../../public/contact_map.svg";
+
+// import banner_image from "../../public/contact-us-banner.svg";
+---
+
+<Layout title="Contact Us">
+  <main>
+<section class="banner bg-cover bg-no-repeat h-[calc(100vh-10vh)] flex items-center">
+      <div class="md:max-w-7xl md:mx-auto md:px-24 lg:px-4 w-full lg:w-7/12 px-5">
+        <div class="bg-white w-full lg:w-7/12 p-3 md:p-7 lg:p-7">
+           <form id="contact_form" class="grid gap-3 md:gap-3 lg:gap-5">
+        <div class="text-[#31393C] text-2xl md:text-3xl lg:text-4xl">
+          Get in Touch
+        </div>
+        <div class="text-[#333333] grid gap-3 md:gap-3 lg:gap-5">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 md:gap-3 lg:gap-5">
+            <input
+              class="rounded-[3px]"
+              type="text"
+              placeholder="First Name*"
+              name="first_name"
+            />
+            <input
+              class="rounded-[3px]"
+              type="text"
+              placeholder="Last Name*"
+              name="last_name"
+            />
+          </div>
+          <input
+            class="rounded-[3px]"
+            type="email"
+            placeholder="Email*"
+            name="email"
+          />
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-3 lg:gap-5">
+             <select id="country" class="pl-2" name="country">
+                <option value="">Select a country</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Brunei">Brunei</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cabo Verde">Cabo Verde</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Central African Republic">Central African Republic</option>
+                <option value="Chad">Chad</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo">Congo</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Eswatini">Eswatini</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Greece">Greece</option>
+                <option value="Grenada">Grenada</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Holy See">Holy See</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran">Iran</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Laos">Laos</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libya">Libya</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Micronesia">Micronesia</option>
+                <option value="Moldova">Moldova</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="North Korea">North Korea</option>
+                <option value="North Macedonia">North Macedonia</option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palau">Palau</option>
+                <option value="Palestine">Palestine</option>
+                <option value="Panama">Panama</option>
+                <option value="Papua New Guinea">Papua New Guinea</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Romania">Romania</option>
+                <option value="Russia">Russia</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                <option value="Saint Lucia">Saint Lucia</option>
+                <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                <option value="Samoa">Samoa</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Solomon Islands">Solomon Islands</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Korea">South Korea</option>
+                <option value="South Sudan">South Sudan</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syria">Syria</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Timor-Leste">Timor-Leste</option>
+                <option value="Togo">Togo</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+              </select>
+            <input
+              class="rounded-[3px] md:col-span-2"
+              type="tel"
+              name="phone"
+              id="telephoneCode"
+            />
+          </div>
+          <textarea
+            name="message"
+            rows="4"
+            cols="50"
+            placeholder="Message"
+            class="pl-3 pt-1"
+          ></textarea>
+		  <div
+                class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-3 md:gap-3 lg:gap-5"
+              >
+              <!-- <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div> -->
+                <div>  
+                    <input
+                        class="rounded-[3px] flex flex-wrap"
+                        type="file"
+                        name="file"
+                        id="fileInput"
+                    />
+                    <p class="text-xs mt-2">Allow Formats (.jpg |.pdf |.png |.docx |.txt)</p>
+                </div>
+              </div>
+              <button
+                class="w-24 bg-[#3E96F4] rounded text-white md:text-sm text-xs lg:text-base font-semibold p-2 px-5"
+              >
+                SUBMIT
+              </button>
+            </div>          
+      </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 mt-[6.25rem] md:mt-[6.25rem] lg:mt-[12.50rem]">
+      <div class="flex flex-wrap ">
+        <div class="w-full md:w-9/12 lg:w-9/12">
+          <p class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold mb-5 md:mb-7 lg:mb-10">Our Offices</p>
+          <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 md:gap-0">
+            <div>
+              <p class="text-lg md:text-xl lg:text-2xl text-[#31393C] mb-2 md:mb-3 lg:mb-4">Ahmedabad</p>
+              <div class="flex gap-3 items-start">
+                <Image src={contact_map} alt="map" class="mt-2"/>
+                <p class="text-xs md:text-sm lg:text-base text-[#31393C]">
+                  A-706, Privilon,<br>
+                  Behind Iscon Temple,<br>
+                  Iscon cross Road, SG Highway,<br>
+                  Ahmedabad. (Gujarat-India)</p>
+              </div>
+            </div>
+            <div>
+              <p class="text-lg md:text-xl lg:text-2xl text-[#31393C] mb-2 md:mb-3 lg:mb-4 mt-5 md:mt-0">Junagadh</p>
+              <div class="flex gap-3 items-start">
+                <Image src={contact_map} alt="map" class="mt-2"/>
+                <p class="text-xs md:text-sm lg:text-base text-[#31393C]">
+                  4th Floor, Milestone Complex,<br>
+                  Deep Nagar, Zanzarda Road, <br>
+                  Junagadh. (Gujarat-India)</p>
+              </div>
+            </div>
+          </div>
+          <hr class="my-5 mr-36">
+          <div class="flex flex-wrap justify-between">
+            <div class="flex gap-2 md:gap-3 items-center">
+              <Image src={contact_phone} alt="phone"/>
+              <p class="text-xs md:text-sm lg:text-base text-[#31393C] font-semibold"><a href="tel:+919558112081">(+91) 95581 12081</a></p>
+            </div>
+            <div class="flex mr-36 gap-1 md:gap-3 lg:gap-5">
+              <Image src={contact_link} alt="linkedin"/>
+              <Image src={contact_fb} alt="facebook"/>
+              <Image src={contact_insta} alt="instagram"/>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="w-full md:w-3/12 lg:w-3/12 mt-10 md:mt-0">
+          <p class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold mb-5 md:mb-7 lg:mb-10">Email Us</p>
+          <div>
+            <p class="text-lg md:text-xl lg:text-2xl text-[#31393C] mb-2 md:mb-3 lg:mb-4">Business</p>
+            <div class="flex gap-3 items-start">
+              <Image src={contact_mail} alt="mail" class="mt-2"/>
+              <p class="mb-4 md:mb-6 lg:mb-8 grid text-xs md:text-sm lg:text-base text-[#31393C] font-semibold"><a href="mailto:info@sanskartechnolab.com">info@sanskartechnolab.com</a> <a href="mailto:sales@sanskartechnolab.com">sales@sanskartechnolab.com</a></p>
+            </div>
+            <p class="text-lg md:text-xl lg:text-2xl text-[#31393C] mb-2 md:mb-3 lg:mb-4">Career</p>
+            <div class="flex gap-3 items-center">
+              <Image src={contact_mail} alt="mail"/>
+              <p class="text-xs md:text-sm lg:text-base text-[#31393C] font-semibold"><a href="mailto:career@sanskartechnolab.com">career@sanskartechnolab.com</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-xs md:text-xs lg:text-sm text-[#31393C] mt-12 md:mt-14 lg:mt-16">Disclaimer: All the names of third party Companies or third party software products mention in our website are only for information purpose and we do not say that we own or use or have tie up with this products or companies. If any company wishes to remove any name then contact us and we will surely comply with the authorise personals.</p>
+    </section>
+
+    <section class="bg-[#EBF5FF] p-5 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 justify-items-center gap-5 h-[28.75rem] mt-[6.25rem] md:mt-[6.25rem] lg:mt-[12.50rem]">
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=sanskar technolab ahmedabad&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=sanskar technolab junagadh&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+    </section>
+
+  </main>
+  <style>
+    .banner {
+      background-image: url("../../public/contact-us-banner.svg");
+    }
+  </style>
+  <script>
+    const countrySelect = document.getElementById("country");
+    const telephoneCodeInput = document.getElementById("telephoneCode");
+
+    const countryTelephoneCodes = {
+        "Afghanistan": "+93",
+        "Albania": "+355",
+        "Algeria": "+213",
+        "Andorra": "+376",
+        "Angola": "+244",
+        "Antigua and Barbuda": "+1",
+        "Argentina": "+54",
+        "Armenia": "+374",
+        "Australia": "+61",
+        "Austria": "+43",
+        "Azerbaijan": "+994",
+        "Bahamas": "+1",
+        "Bahrain": "+973",
+        "Bangladesh": "+880",
+        "Barbados": "+1",
+        "Belarus": "+375",
+        "Belgium": "+32",
+        "Belize": "+501",
+        "Benin": "+229",
+        "Bhutan": "+975",
+        "Bolivia": "+591",
+        "Bosnia and Herzegovina": "+387",
+        "Botswana": "+267",
+        "Brazil": "+55",
+        "Brunei": "+673",
+        "Bulgaria": "+359",
+        "Burkina Faso": "+226",
+        "Burundi": "+257",
+        "Cabo Verde": "+238",
+        "Cambodia": "+855",
+        "Cameroon": "+237",
+        "Canada": "+1",
+        "Central African Republic": "+236",
+        "Chad": "+235",
+        "Chile": "+56",
+        "China": "+86",
+        "Colombia": "+57",
+        "Comoros": "+269",
+        "Congo": "+242",
+        "Costa Rica": "+506",
+        "Croatia": "+385",
+        "Cuba": "+53",
+        "Cyprus": "+357",
+        "Czech Republic": "+420",
+        "Democratic Republic of the Congo": "+243",
+        "Denmark": "+45",
+        "Djibouti": "+253",
+        "Dominica": "+1",
+        "Dominican Republic": "+1",
+        "Ecuador": "+593",
+        "Egypt": "+20",
+        "El Salvador": "+503",
+        "Equatorial Guinea": "+240",
+        "Eritrea": "+291",
+        "Estonia": "+372",
+        "Eswatini": "+268",
+        "Ethiopia": "+251",
+        "Fiji": "+679",
+        "Finland": "+358",
+        "France": "+33",
+        "Gabon": "+241",
+        "Gambia": "+220",
+        "Georgia": "+995",
+        "Germany": "+49",
+        "Ghana": "+233",
+        "Greece": "+30",
+        "Grenada": "+1",
+        "Guatemala": "+502",
+        "Guinea": "+224",
+        "Guinea-Bissau": "+245",
+        "Guyana": "+592",
+        "Haiti": "+509",
+        "Holy See": "+379",
+        "Honduras": "+504",
+        "Hungary": "+36",
+        "Iceland": "+354",
+        "India": "+91",
+        "Indonesia": "+62",
+        "Iran": "+98",
+        "Iraq": "+964",
+        "Ireland": "+353",
+        "Israel": "+972",
+        "Italy": "+39",
+        "Jamaica": "+1",
+        "Japan": "+81",
+        "Jordan": "+962",
+        "Kazakhstan": "+7",
+        "Kenya": "+254",
+        "Kiribati": "+686",
+        "Kuwait": "+965",
+        "Kyrgyzstan": "+996",
+        "Laos": "+856",
+        "Latvia": "+371",
+        "Lebanon": "+961",
+        "Lesotho": "+266",
+        "Liberia": "+231",
+        "Libya": "+218",
+        "Liechtenstein": "+423",
+        "Lithuania": "+370",
+        "Luxembourg": "+352",
+        "Madagascar": "+261",
+        "Malawi": "+265",
+        "Malaysia": "+60",
+        "Maldives": "+960",
+        "Mali": "+223",
+        "Malta": "+356",
+        "Marshall Islands": "+692",
+        "Mauritania": "+222",
+        "Mauritius": "+230",
+        "Mexico": "+52",
+        "Micronesia": "+691",
+        "Moldova": "+373",
+        "Monaco": "+377",
+        "Mongolia": "+976",
+        "Montenegro": "+382",
+        "Morocco": "+212",
+        "Mozambique": "+258",
+        "Myanmar": "+95",
+        "Namibia": "+264",
+        "Nauru": "+674",
+        "Nepal": "+977",
+        "Netherlands": "+31",
+        "New Zealand": "+64",
+        "Nicaragua": "+505",
+        "Niger": "+227",
+        "Nigeria": "+234",
+        "North Korea": "+850",
+        "North Macedonia": "+389",
+        "Norway": "+47",
+        "Oman": "+968",
+        "Pakistan": "+92",
+        "Palau": "+680",
+        "Palestine": "+970",
+        "Panama": "+507",
+        "Papua New Guinea": "+675",
+        "Paraguay": "+595",
+        "Peru": "+51",
+        "Philippines": "+63",
+        "Poland": "+48",
+        "Portugal": "+351",
+        "Qatar": "+974",
+        "Romania": "+40",
+        "Russia": "+7",
+        "Rwanda": "+250",
+        "Saint Kitts and Nevis": "+1",
+        "Saint Lucia": "+1",
+        "Saint Vincent and the Grenadines": "+1",
+        "Samoa": "+685",
+        "San Marino": "+378",
+        "Sao Tome and Principe": "+239",
+        "Saudi Arabia": "+966",
+        "Senegal": "+221",
+        "Serbia": "+381",
+        "Seychelles": "+248",
+        "Sierra Leone": "+232",
+        "Singapore": "+65",
+        "Slovakia": "+421",
+        "Slovenia": "+386",
+        "Solomon Islands": "+677",
+        "Somalia": "+252",
+        "South Africa": "+27",
+        "South Korea": "+82",
+        "South Sudan": "+211",
+        "Spain": "+34",
+        "Sri Lanka": "+94",
+        "Sudan": "+249",
+        "Suriname": "+597",
+        "Switzerland": "+41",
+        "Syria": "+963",
+        "Taiwan": "+886",
+        "Tajikistan": "+992",
+        "Tanzania": "+255",
+        "Thailand": "+66",
+        "Timor-Leste": "+670",
+        "Togo": "+228",
+        "Tonga": "+676",
+        "Trinidad and Tobago": "+1",
+        "Tunisia": "+216",
+        "Turkey": "+90",
+        "Turkmenistan": "+993",
+        "Tuvalu": "+688",
+        "Uganda": "+256",
+        "Ukraine": "+380",
+        "United Arab Emirates": "+971",
+        "United Kingdom": "+44",
+        "United States": "+1",
+        "Uruguay": "+598",
+        "Uzbekistan": "+998",
+        "Vanuatu": "+678",
+        "Venezuela": "+58",
+        "Vietnam": "+84",
+        "Yemen": "+967",
+        "Zambia": "+260",
+        "Zimbabwe": "+263",
+        };
+
+
+    countrySelect.addEventListener("change", (event) => {
+      const selectedCountry = countrySelect.value;
+      const telephoneCode = countryTelephoneCodes[selectedCountry] || "";
+      telephoneCodeInput.value = telephoneCode;
+    });
+    
+    // add event listner to file
+    var fileInput_e = document.getElementById('fileInput');
+    fileInput_e.addEventListener("change", (event) =>   {
+        fileValidation()
+    })
+
+    // add event listner to form
+    var form = document.getElementById("contact_form");
+    form.addEventListener("submit", handleContactForm);
+
+ function blinkBorder(element) {
+    let intervalId;
+    let isRed = false;
+
+    intervalId = setInterval(() => {
+      isRed = !isRed;
+      element.style.backgroundColor = isRed ? '#ffdddd' : 'transparent';
+    }, 500); // 500ms interval for blinking
+
+    // Save the interval ID in the element's dataset to clear it later
+    element.dataset.blinkIntervalId = intervalId;
+  }
+
+  // Function to stop blinking the border
+  function stopBlinkBorder(element) {
+    const intervalId = element.dataset.blinkIntervalId;
+    if (intervalId) {
+      clearInterval(intervalId);
+      element.dataset.blinkIntervalId = null;
+    }
+  }
+
+    // send data in frappe
+    function handleContactForm(e) {       
+    e.preventDefault();
+
+    const firstNameInput = document.querySelector('input[name="first_name"]');
+    const lastNameInput = document.querySelector('input[name="last_name"]');
+    const emailInput = document.querySelector('input[name="email"]');
+
+    const firstNameValue = firstNameInput.value.trim();
+    const lastNameValue = lastNameInput.value.trim();
+    const emailValue = emailInput.value.trim();
+
+      if (firstNameValue === '') {
+        blinkBorder(firstNameInput);      
+        return;
+      }
+      if (lastNameValue === '') {
+        blinkBorder(lastNameInput);      
+        return;
+      }
+      if (emailValue === '') {
+        blinkBorder(emailInput);      
+        return;
+      }
+        const fileInput = document.getElementById('fileInput');
+        const file = fileInput.files[0];
+
+        if (!file) {
+            // alert('Please select a file to upload.');
+                const formData = new FormData(e.target);
+                const data = Object.fromEntries(formData.entries());
+                formData.set("data", JSON.stringify(data));
+                var first_name = data.first_name;
+                var last_name = data.last_name;
+                var email = data.email;
+                var country = data.country;
+                var phone = data.phone;
+                var message = data.message;
+                //   var file = data.file;
+                // console.log(first_name, last_name, email, country, phone, message, file_url);
+
+                // if (first_name === ""){
+                //   alert("Please enter first name")
+                // }
+
+                // if (last_name === ""){
+                //   alert("Please enter last name")
+                // }
+
+                // if (email === ""){
+                //   alert("Please enter email")
+                // }
+                // else{
+                //   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                //   if (!emailRegex.test(email)) {
+                //       alert('Please enter a valid email address.');
+                //   }
+                // }
+
+                fetch("https://sanskar.frappe.cloud/api/resource/Astro Contact",{
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        first_name: first_name,
+                        last_name: last_name,
+                        email: email,
+                        country: country,
+                        phone: phone,
+                        message: message,
+                    })
+                    }).then((res) => {
+                      console.log("asdfasd", res)
+                    if(res.status === 200){
+                        // alert("You have been registered successfully.")
+                        window.location.href="/thank-you"
+                    }
+                    else{
+                        alert("failed")
+                    }
+                }).catch((error) => {
+                    console.log(error)
+                })            
+
+            // return;
+        }
+        else{
+            const xhr = new XMLHttpRequest();
+            const url = 'https://sanskar.frappe.cloud/api/method/upload_file'; // Replace with your API endpoint URL
+
+            xhr.open('POST', url, true);
+            xhr.setRequestHeader('Accept', 'application/json');
+            
+            // Set up event listeners for XHR
+            xhr.onload = function() {
+            
+              if (xhr.status === 200) {  
+                  var raw_data = JSON.parse(xhr.response)
+                  var file_url = raw_data.message.file_url
+                  const formData = new FormData(e.target);
+                  const data = Object.fromEntries(formData.entries());
+                  formData.set("data", JSON.stringify(data));
+                  var first_name = data.first_name;
+                  var last_name = data.last_name;
+                  var email = data.email;
+                  var country = data.country;
+                  var phone = data.phone;
+                  var message = data.message;
+                  //   var file = data.file;
+                  // console.log(first_name, last_name, email, country, phone, message, file_url);
+
+                  fetch("https://sanskar.frappe.cloud/api/resource/Astro Contact",{
+                      method: 'POST',
+                      headers: {
+                          'Accept': 'application/json',
+                          'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify({
+                          first_name: first_name,
+                          last_name: last_name,
+                          email: email,
+                          country: country,
+                          phone: phone,
+                          message: message,
+                          document: file_url
+                      })
+                      }).then((res) => {
+                      if(res.status === 200){
+                          // alert("You have been registered successfully.")
+                          window.location.href="/thank-you"
+                      }
+                      else{
+                          alert("failed")
+                      }
+                  }).catch((error) => {
+                      console.log(error)
+                  })
+
+                } 
+                else {
+                      alert('File upload failed. Please try again later.');
+                }
+              };
+                
+                xhr.onerror = function() {
+                    alert('An error occurred while uploading the file.');
+                };
+
+                const formData = new FormData();
+                formData.append('file', file);
+
+                xhr.send(formData);
+
+                e.preventDefault();
+            }
+        }
+         document.querySelector('input[name="first_name"]').addEventListener('focus', function () {
+          stopBlinkBorder(this);
+          this.style.backgroundColor = '';
+        });       
+        document.querySelector('input[name="last_name"]').addEventListener('focus', function () {
+          stopBlinkBorder(this);
+          this.style.backgroundColor = '';
+        });
+        document.querySelector('input[name="email"]').addEventListener('focus', function () {
+          stopBlinkBorder(this);
+          this.style.backgroundColor = '';
+        });
+
+// validate file foramte in fileupload
+    function fileValidation() {
+        var fileInput =
+            document.getElementById('fileInput');
+            
+        var filePath = fileInput.value;
+        
+       // Allowing file type
+        var allowedExtensions =
+            /(\.jpg|\.pdf|\.png|\.docx|\.txt)$/i;
+            
+        if (!allowedExtensions.exec(filePath)) {
+            alert('Invalid file type');
+            fileInput.value = '';
+            return false;
+        }
+    }
+
+  </script>
+</Layout>

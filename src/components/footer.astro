@@ -1,0 +1,254 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+import footer_logo from "../../public/footer_logo.svg"
+import linkedin_footer from "../../public/linkedin-footer.svg"
+import fb from "../../public/fb.svg"
+import instagram from "../../public/insta-footer.svg"
+import phone from "../../public/phone.svg"
+import map from "../../public/map.svg"
+import email from "../../public/email.svg"
+import form_bg from "../../public/form-bg.svg"
+import right from "../../public/right.svg";
+---
+
+<section class="bg-[#3E96F4] flex flex-wrap relative mt-[3.125rem] md:mt-[3.125rem] lg:mt-[6.25rem]" id="section">
+    <div
+        class="bg-lets-craft w-full md:w-5/12 bg-no-repeat bg-center bg-cover flex place-items-end justify-center"
+    >
+    <!-- class="block md:absolute md:left-80 md:-top-32 ml-0 md:ml-auto"     -->
+    <!-- class="block md:absolute f_left f_top ml-0 md:ml-auto" -->
+
+    <Image
+            src={form_bg} alt="form_bg"
+            alt="Image description"
+    class="block md:absolute  ml-0 md:ml-auto"    
+            
+        />
+    </div>
+    <div
+        class="mx-5 md:max-w-7xl md:mx-auto w-full md:w-7/12 md:px-24 p-0 py-3 md:p-10"
+    >
+        <h4 class="font-semibold text-white text-2xl md:text-3xl lg:text-4xl">
+            Let's craft awesomeness together!
+        </h4>
+        <div
+            class="mt-5 flex justify-between bg-white rounded-lg px-5 py-3 w-56"
+        >
+            <a
+                href="/contact-us"
+                class="text-[#3E96F4] text-sm md:text-base font-semibold font-inter"
+                >Fill up a form now.</a
+            >
+            <Image src={right} width={6} height={12} alt="right arrow "/>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-[#31393C] py-20">
+    <!-- <div class="md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap text-white">
+        <div class="sm:w-full md:w-3/12 lg:w-3/12">
+            <Image src="'../../public/footer_logo.svg" />
+            <p class="text-sm leading-6 mt-5">
+                ServiceNow and ERPNext Consulting, Implementation and
+                Development Specialist.
+            </p>
+            <div class="my-5 pr-4">
+                <div class="flex space-x-6 mt-6 md:mt-6 lg:mt-8">
+                    <a href="" class="text-gray-400">
+                        <Image
+                            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                            src="../../public/linkedin-footer.svg"
+                        />
+                        <p class="sr-only">Linkedin account</p>
+                    </a>
+                    <a href="" class="text-gray-400">
+                        <Image
+                            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                            src="../../public/fb.svg"
+                        />
+                        <p class="sr-only">Facebook page</p>
+                    </a>
+                    <a href="" class="text-gray-400">
+                        <Image
+                            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                            src="../../public/insta-footer.svg"
+                        />
+                        <p class="sr-only">Instagram page</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="sm:w-full md:w-3/12 lg:w-3/12">
+            <div class="text-base text[#F7FFFF] font-bold">ServiceNow</div>
+            <div class="grid gap-5 mt-5">
+                <p class="text-sm ">ServiceNow Development</p><hr>
+                <p class="text-sm ">ServiceNow Partner</p><hr>
+                <p class="text-sm ">ServiceNow Consultation</p><hr>
+                <p class="text-sm ">Hire ServiceNow Developer</p><hr>
+            </div>
+        </div>
+        <div class="sm:w-full md:w-3/12 lg:w-3/12">
+            <div class="text-base text[#F7FFFF] font-bold">ERPNext</div>
+            <div class="grid gap-5 mt-5">
+                <p class="text-sm ">ERPNext Partner</p><hr class="">
+                <p class="text-sm ">ERPNext Amazon Integration</p><hr>
+            </div>
+        </div>
+        <div class="sm:w-full md:w-3/12 lg:w-3/12">
+            <div class="text-base text[#F7FFFF] font-bold">Contact</div>
+        </div>
+    </div> -->
+
+    <div
+        class="md:max-w-7xl mx-5 md:mx-auto md:px-24 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7lg:gap-10 text-white"
+    >
+        <div class="">
+            <a href="/">
+                <Image src={footer_logo} alt="logo" /></a>
+            <p class="!text-sm leading-6 mt-5">
+                ServiceNow and ERPNext Consulting, Implementation and
+                Development Specialist.
+            </p>
+            <div class="my-5 pr-4">
+                <div class="flex space-x-6 mt-6 md:mt-6 lg:mt-8">
+                    <a href="" class="text-gray-400">
+                        <Image
+                            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                            src={linkedin_footer} alt="linkedin_footer"
+                        />
+                        <p class="sr-only">Linkedin account</p>
+                    </a>
+                    <a href="" class="text-gray-400">
+                        <Image
+                            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                            src={fb} alt="facebook"
+                        />
+                        <p class="sr-only">Facebook page</p>
+                    </a>
+                    <a href="" class="text-gray-400">
+                        <Image
+                            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                            src={instagram} alt="instagram"
+                        />
+                        <p class="sr-only">Instagram page</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <h4 class="!text-base text[#F7FFFF] font-bold font-montserrat">ServiceNow</h4>
+            <div class="grid gap-2 md:gap-3 lg:gap-5 mt-5">
+                <p class="b"><p class="text-sm">ServiceNow Development</p></p>
+                <p class="b"><p class="text-sm">ServiceNow Partner</p></p>
+                <p class="b"><p class="text-sm">ServiceNow Consultation</p></p>
+                <p class="b"><p class="text-sm">Hire ServiceNow Developer</p></p>
+            </div>
+        </div>
+        <div class="">
+            <h4 class="!text-base text[#F7FFFF] font-bold font-montserrat">ERPNext</h4>
+            <div class="grid gap-2 md:gap-3 lg:gap-5 mt-5">
+                <p class="b"><p class="text-sm">ERPNext Partner</p></p>
+                <p class="b"><p class="text-sm">ERPNext Amazon Integration</p></p>
+            </div>
+        </div>
+        <div class="">
+            <h4 class="!text-base text[#F7FFFF] font-bold font-montserrat">Contact</h4>
+                <div class="!text-sm mt-5">
+                  <a href="https://www.google.com/maps/search/A-706,+Privilon,+Behind+Iscon+Temple,+Iscon+cross+Road,+SG+Highway,+Ahmedabad./@23.0282855,72.5032655,17z/data=!3m1!4b1?entry=ttu" class="flex gap-2"><Image src={map} alt="map" /> A-706, Privilon, Behind Iscon</a>
+                  <a href="https://www.google.com/maps/search/A-706,+Privilon,+Behind+Iscon+Temple,+Iscon+cross+Road,+SG+Highway,+Ahmedabad./@23.0282855,72.5032655,17z/data=!3m1!4b1?entry=ttu">Temple, Iscon cross Road, SG Highway, Ahmedabad. (Gujarat-India)</a>
+                  <a href="mailto:info@sanskartechnolab.com" class="mt-7 flex gap-2"><Image src={email} alt="email" /><p>info@sanskartechnolab.com</p></a>
+                  <a href="tel:+91 9558112081" class="mt-3 flex gap-2"><Image src={phone} alt="phone" /><p>(+91) 95581 12081</p></a>
+                </div> 
+              </div>
+        </div>
+    </div>
+</footer>
+
+<section class="bg-[#04000E]">
+    <p class="md:max-w-7xl md:mx-auto md:px-24 text-center p-4">
+        <span class="text-[#918F96] text-sm leading-3"
+            >&copy; 2023 Sanskar Technolab All rights reserved</span
+        >
+    </p>
+</section>
+<style>
+
+    /* .f_left{
+        left: 20rem;
+    }
+    .f_top
+    {
+        top: -8rem;
+    }   
+
+    @media only screen and (min-width: 692px) {
+        .f_left{
+        left: 0rem;
+    }
+    .f_top
+    {
+        top: -3rem;
+    }  
+}
+@media only screen and (min-width: 836px) {
+        .f_left{
+        left: 0rem;
+    }
+    .f_top
+    {
+        top: 1rem;
+    }  
+}
+@media only screen and (min-width: 928px) {
+        .f_left{
+        left: 1rem;
+    }
+    .f_top
+    {
+        top: -5.5rem;
+    }  
+}
+
+@media only screen and (min-width: 1194px) {
+        .f_left{
+        left: 8rem;
+    }
+    .f_top
+    {
+        top: -8rem;
+    }  
+} */
+
+    footer
+    {
+        font-family: Open Sans;
+    }
+    section{
+        font-family: Open Sans;
+    }
+    .font-montserrat{
+        font-family: Montserrat;
+    }
+    .bg-lets-craft{
+		background-image: url('../../public/form-bg-3.png');
+	}
+
+    .b{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+</style>
+<script>
+    var currentUrl = window.location.pathname;
+    var contact = '/contact-us';
+    var thanks = '/thank-you';
+
+    // Check if the current URL matches the target URL
+    if (currentUrl === contact || currentUrl === thanks) {
+        var section = document.getElementById("section");
+        section.classList.add('!hidden')
+        // section.classList.add('flex')
+    } else {
+        var section = document.getElementById("section");
+        section.classList.remove('!hidden')
+    }
+</script>

@@ -1,0 +1,140 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import { FrappeApp } from "frappe-js-sdk";
+// if (Astro.request.method === "POST") {
+//   try {
+//     const data = await Astro.request.formData();
+//     const name = data.get("name");
+//     const email = data.get("email");
+//     const phone = data.get("phone");
+
+//     const frappe = new FrappeApp("https://bestdeed.org", {
+//       useToken: true,
+//       token: () => getToken(),
+//       type: "token",
+//     });
+
+//     function getToken() {
+//       return `${import.meta.env.API_KEY}:${import.meta.env.API_SECRET}`;
+//     }
+//     const db = frappe.db();
+//     db.createDoc("Astro Contact Form", {
+//       first_name: name,
+//       email: email,
+//       mobile_no: phone,
+//     })
+//       .then((doc) => {
+//         console.log(doc);
+//         // Redirect to a new page on success
+//         // Astro.redirect("/success-page");
+//       })
+//       .catch((error) => console.error(error));
+//   } catch (error) {
+//     if (error instanceof Error) {
+//       console.error(error.message);
+//     }
+//   }
+// }
+
+---
+
+<Layout title="Contact">
+  <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 my-28 mb-64 bg-white">
+    <!-- <form method="POST" class=""> -->
+        <form id="contact_form">
+      <div class="mb-2 md:mb-4 lg:mb-6">
+        <label class="block text-gray-600 text-base mb-2" for="name">
+          First Name <span class="text-red-600">*</span></label
+        >
+        <input
+          class="bg-white appearance-none border-gray-300 placeholder-gray-400 hover:border-[#40b751] rounded w-full py-2 px-3 text-grey-darker"
+          placeholder=" Enter Full Name"
+          name="name"
+          type="text"
+        />
+      </div>
+      <div class="mb-2 md:mb-4 lg:mb-6">
+        <label class="block text-gray-600 text-base mb-2" for="email">
+          Email <span class="text-red-600">*</span></label
+        >
+        <input
+          class="bg-white appearance-none border-gray-300 placeholder-gray-400 hover:border-[#40b751] rounded w-full py-2 px-3 text-grey-darker"
+          placeholder=" Enter Full Name"
+          name="email"
+          type="text"
+        />
+      </div>
+      <div class="mb-2 md:mb-4 lg:mb-6">
+        <label class="block text-gray-600 text-base mb-2" for="mobile">
+          Mobile <span class="text-red-600">*</span></label
+        >
+        <input
+          class="bg-white appearance-none border-gray-300 placeholder-gray-400 hover:border-[#40b751] rounded w-full py-2 px-3 text-grey-darker"
+          placeholder=" Enter Full Name"
+          name="phone"
+          type="text"
+        />
+      </div>
+      <button 
+        class="bg-white appearance-none transition campaign-request py-2 px-2 text-grey-darker hover:bg-transparent text-black hover:text-gray-500 tracking-wide border border-gray-500 hover:border-gray-500 text-base uppercase rounded"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+
+  <script>
+    function handleContactForm(e){
+        // console.log(e)
+        // alert("form submited")
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData.entries());
+        formData.set("data", JSON.stringify(data));
+        var name = data.name
+        var email = data.email
+        var mobile = data.phone
+        console.log(name, email, mobile)
+
+
+        // console.log("sfgasfdg", formData.get("data"))
+
+        // formData.set("data", JSON.stringify(data));
+        // formData.set("web_form", "Astro Contact Form")
+        // formData.set("cmd", frappe.website.doctype.web_form.accept)
+        // formData.set("for_payment": "false")
+
+        // formData.delete("name")
+        // formData.delete("email")
+        // formData.delete("mobile")
+
+        fetch("https:bestdeed.org/api/resource/Astro Contact Form",{
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                first_name: name,
+                email: email,
+                mobile_no: mobile,
+            })
+            }).then((res) => {
+            if(res.status === 200){
+                alert("You have been registered successfully.")
+                window.location.href="/sanskar/thank-you"
+            }
+            else{
+                alert("faild")
+            }
+        }).catch((error) => {
+            console.log(error)
+        })
+
+        e.preventDefault();
+    }
+    var form = document.getElementById("contact_form")
+    form.addEventListener("submit", handleContactForm);
+
+  </script>
+</Layout>
