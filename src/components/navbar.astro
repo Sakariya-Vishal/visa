@@ -11,7 +11,7 @@ import down_arrow from "../../public/down-arrow.svg";
   >
     <a
       href="/"
-      class="w-8/12 md:w-auto flex items-center flex-shrink-0 text-white mr-6 hover:cursor-pointer"
+      class="w-4/12 md:w-auto grow flex items-center flex-shrink-0 text-white mr-6 hover:cursor-pointer"
     >
       <Image src={logo} alt="logo" />
 
@@ -283,17 +283,24 @@ import down_arrow from "../../public/down-arrow.svg";
                     fill="#2A2A2D"></path>
             </svg> -->
     </a>
-    <div class="block xl:hidden w-2/12 md:w-auto">    
+
+    <div
+          class="lg:hidden flex-none bg-[#3E96F4] inline-block px-3 py-1 whitespace-nowrap rounded-md text-white font-semibold font-inter mr-2"
+        >
+          <a href="/contact-us" class="text-xs md:text-base">Inquire Now</a>
+  </div>
+
+    <div class="block xl:hidden w-2/12 md:w-auto flex-none">
       <button
-        class="flex flex-col justify-center items-center px-3 py-2 border rounded hover:text-black hover:border-white menu"
+        class="flex flex-col justify-center items-center px-2 py-2 border rounded hover:text-black hover:border-white menu"
       >
         <svg
-          class="fill-current h-6 w-"
+          class="fill-current h-5 w-"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
           ><title>Menu</title><path
             d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
-        >Menu
+        >
       </button>
     </div>
 
@@ -306,8 +313,8 @@ import down_arrow from "../../public/down-arrow.svg";
           <span class="group relative inline-block">
             <!-- <span class="flex gap-1"><a href="#" class="text-sm md:text-base">Solutions</a><Image src={down_arrow} alt="Down Arrow" /></span> -->
             <a href="#" class="text-sm md:text-base">Solutions</a>
-            <ul
-              class="sub-menu w-[100%] md:w-auto md:absolute z-10 hidden submenu-bg lg:top-[4.1rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] md:group-hover:block overflow-x-hidden"
+            <!-- <ul
+              class="sub-menu w-[100%] md:w-auto lg:absolute z-10 hidden submenu-bg lg:top-[4.1rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] md:group-hover:block overflow-x-hidden"
             >
               <li class="">
                 <a
@@ -321,16 +328,16 @@ import down_arrow from "../../public/down-arrow.svg";
                   href="#">Service Now</a
                 >
               </li>
-            </ul>
+            </ul> -->
           </span>
         </li>
 
         <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
           <span class="group relative inline-block">
-            <!-- <span class="flex gap-1"><a href="#" class="text-sm md:text-base">Industries</a><Image src={down_arrow} alt="Down Arrow" /></span> -->
-            <a href="#" class="text-sm md:text-base">Industries</a>
+            <span class="flex gap-1"><a href="#" class="text-sm md:text-base">Industries</a><Image src={down_arrow} alt="Down Arrow" /></span>
+            <!-- <a href="#" class="text-sm md:text-base">Industries</a> -->
             <ul
-              class="sub-menu md:absolute z-10 hidden submenu-bg lg:top-[4.1rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] group-hover:block overflow-x-hidden"
+              class="sub-menu lg:absolute z-10 hidden submenu-bg lg:top-[3.75rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] group-hover:block overflow-x-hidden"
             >
               <li class="">
                 <a
@@ -344,42 +351,42 @@ import down_arrow from "../../public/down-arrow.svg";
                   href="/textile">Textile</a
                 >
               </li>
-              <li class="">
+              <!-- <li class="">
                 <a
                   class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
                   href="#">Healthcare</a
                 >
-              </li>
+              </li> -->
               <li class="">
                 <a
                   class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
                   href="/retail">Retail</a
                 >
               </li>
-              <li class="">
+              <!-- <li class="">
                 <a
                   class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
                   href="#">Construction</a
                 >
-              </li>
-              <li class="">
+              </li> -->
+              <!-- <li class="">
                 <a
                   class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
                   href="#">Crowdfunding</a
                 >
-              </li>
+              </li> -->
               <li class="">
                 <a
                   class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
-                  href="#">Human Resources</a
+                  href="/hr-payroll">Human Resources</a
                 >
               </li>
-              <li class="">
+              <!-- <li class="">
                 <a
                   class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
                   href="#">Ayurveda</a
                 >
-              </li>
+              </li> -->
             </ul>
           </span>
         </li>
@@ -396,10 +403,10 @@ import down_arrow from "../../public/down-arrow.svg";
                 </li> -->
         <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
           <span class="group relative inline-block">
-            <!-- <span class="flex gap-1"><a href="#" class="text-sm md:text-base">Solutions</a><Image src={down_arrow} alt="Down Arrow" /></span> -->
-            <a href="#" class="text-sm md:text-base">Company</a>
+            <span class="flex gap-1"><a href="#" class="text-sm md:text-base">Company</a><Image src={down_arrow} alt="Down Arrow" /></span>
+            <!-- <a href="#" class="text-sm md:text-base">Company</a> -->
             <ul
-              class="sub-menu md:absolute z-10 hidden submenu-bg lg:top-[4.1rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] group-hover:block overflow-x-hidden"
+              class="sub-menu lg:absolute z-10 hidden submenu-bg lg:top-[3.75rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] group-hover:block overflow-x-hidden"
             >
               <li class="">
                 <a
@@ -420,7 +427,7 @@ import down_arrow from "../../public/down-arrow.svg";
           <a href="/contact-us" class="text-sm md:text-base"> Contact</a>
         </li>
         <li
-          class="bg-[#3E96F4] inline-block px-4 xl:px-6 py-1 xl:py-2 !leading-8 rounded-md text-white font-semibold font-inter"
+          class="hidden bg-[#3E96F4] lg:inline-block px-4 xl:px-6 py-1 xl:py-2 !leading-8 rounded-md text-white font-semibold font-inter"
         >
           <a href="/contact-us" class="text-sm md:text-base">Inquire Now</a>
         </li>
