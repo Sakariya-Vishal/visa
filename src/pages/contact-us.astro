@@ -25,26 +25,26 @@ import contact_map from "../../public/contact_map.svg";
         <div class="text-[#333333] grid gap-3 md:gap-3 lg:gap-5">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 md:gap-3 lg:gap-5">
             <input
-              class="rounded-[3px]"
+              class="rounded-[3px] border border-[#D9D9D9] text-[#333333]"
               type="text"
               placeholder="First Name*"
               name="first_name"
             />
             <input
-              class="rounded-[3px]"
+              class="rounded-[3px] border border-[#D9D9D9] text-[#333333]"
               type="text"
               placeholder="Last Name*"
               name="last_name"
             />
           </div>
           <input
-            class="rounded-[3px]"
+            class="rounded-[3px] border border-[#D9D9D9] text-[#333333]"
             type="email"
             placeholder="Email*"
             name="email"
           />
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-3 lg:gap-5">
-             <select id="country" class="pl-2" name="country">
+             <select id="country" class="pl-2 border border-[#D9D9D9] text-[#333333]" name="country">
                 <option value="">Select a country</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -242,7 +242,7 @@ import contact_map from "../../public/contact_map.svg";
                 <option value="Zimbabwe">Zimbabwe</option>
               </select>
             <input
-              class="rounded-[3px] md:col-span-2"
+              class="rounded-[3px] md:col-span-2 border border-[#D9D9D9] text-[#333333]"
               type="tel"
               name="phone"
               id="telephoneCode"
@@ -253,7 +253,7 @@ import contact_map from "../../public/contact_map.svg";
             rows="4"
             cols="50"
             placeholder="Message"
-            class="pl-3 pt-1"
+            class="pl-3 pt-1 border border-[#D9D9D9] text-[#333333]"
           ></textarea>
 		  <div
                 class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-3 md:gap-3 lg:gap-5"
@@ -261,7 +261,7 @@ import contact_map from "../../public/contact_map.svg";
               <!-- <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div> -->
                 <div>  
                     <input
-                        class="rounded-[3px] flex flex-wrap"
+                        class="rounded-[4px] flex flex-wrap bg-[#F0F0F0]"
                         type="file"
                         name="file"
                         id="fileInput"
@@ -288,7 +288,7 @@ import contact_map from "../../public/contact_map.svg";
             <div>
               <p class="text-lg md:text-xl lg:text-2xl text-[#31393C] mb-2 md:mb-3 lg:mb-4">Ahmedabad</p>
               <div class="flex gap-3 items-start">
-                <Image src={contact_map} alt="map" class="mt-2"/>
+                <Image src={contact_map} alt="map" class="mt-1"/>
                 <p class="text-xs md:text-sm lg:text-base text-[#31393C]">
                   A-706, Privilon,<br>
                   Behind Iscon Temple,<br>
@@ -299,7 +299,7 @@ import contact_map from "../../public/contact_map.svg";
             <div>
               <p class="text-lg md:text-xl lg:text-2xl text-[#31393C] mb-2 md:mb-3 lg:mb-4 mt-5 md:mt-0">Junagadh</p>
               <div class="flex gap-3 items-start">
-                <Image src={contact_map} alt="map" class="mt-2"/>
+                <Image src={contact_map} alt="map" class="mt-1"/>
                 <p class="text-xs md:text-sm lg:text-base text-[#31393C]">
                   4th Floor, Milestone Complex,<br>
                   Deep Nagar, Zanzarda Road, <br>
@@ -314,9 +314,9 @@ import contact_map from "../../public/contact_map.svg";
               <p class="text-xs md:text-sm lg:text-base text-[#31393C] font-semibold"><a href="tel:+919558112081">(+91) 95581 12081</a></p>
             </div>
             <div class="flex mr-36 gap-1 md:gap-3 lg:gap-5">
-              <a href="https://in.linkedin.com/company/sanskar-technolab-pvt-ltd"><Image src={contact_link} alt="linkedin"/></a>
-              <a href="https://www.facebook.com/SanskarTechnolab/"><Image src={contact_fb} alt="facebook"/></a>
-              <a href="https://www.instagram.com/sanskartechnolab/"><Image src={contact_insta} alt="instagram"/></a>
+              <a href="https://in.linkedin.com/company/sanskar-technolab-pvt-ltd"><Image class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src={contact_link} alt="linkedin"/></a>
+              <a href="https://www.facebook.com/SanskarTechnolab/"><Image class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src={contact_fb} alt="facebook"/></a>
+              <a href="https://www.instagram.com/sanskartechnolab/"><Image class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src={contact_insta} alt="instagram"/></a>
             </div>
 
           </div>
