@@ -15,7 +15,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Manufacturing", "class": "astro-LOEZZAHA" }, { "default": ($$result2) => renderTemplate`
     ${maybeRenderHead($$result2)}<main class="astro-LOEZZAHA">         
         <section class="hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center astro-LOEZZAHA">
-            <img class="absolute right-0 w-5/12 astro-LOEZZAHA" src="../../public/manu-banner.svg" alt="banner image" class="">
+            <img class="absolute right-0 w-5/12 astro-LOEZZAHA" src="../../public/Images/manu-banner.svg" alt="banner image" class="">
             <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex container astro-LOEZZAHA">
                 <div class="w-7/12 astro-LOEZZAHA">
                 <h1 class="text-5xl text-[#31393C] font-semibold leading-[4rem] astro-LOEZZAHA">
@@ -27,7 +27,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                 </p>
                 <div class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-72 astro-LOEZZAHA">
                     <a href="#" class="text-white font-semibold text-base font-inter astro-LOEZZAHA">Schedule a Free demo now</a>
-                    <img src="../../public/right.svg" class="ml-0 astro-LOEZZAHA">
+                    <img src="../../public/Images/right.svg" class="ml-0 astro-LOEZZAHA">
                 </div>
                 </div>
             </div>
@@ -44,10 +44,10 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                 </p>
                 <div class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-72 astro-LOEZZAHA">
                     <a href="#" class="text-white font-semibold font-inter astro-LOEZZAHA">Schedule a Free demo now</a>
-                    <img src="../../public/right.svg" class="ml-0 astro-LOEZZAHA">
+                    <img src="../../public/Images/right.svg" class="ml-0 astro-LOEZZAHA">
                 </div>
             </div>
-            <img src="../../public/manu-banner.svg" alt="banner image" class="mt-5 astro-LOEZZAHA">
+            <img src="../../public/Images/manu-banner.svg" alt="banner image" class="mt-5 astro-LOEZZAHA">
         </section>
 
         <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10 astro-LOEZZAHA">
@@ -58,17 +58,17 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                 </h2>
             </div>
             <div class="flex flex-wrap justify-center gap-10 my-10 astro-LOEZZAHA">
-                <img src="../../public/company1.png" class="astro-LOEZZAHA">
-                <img src="../../public/company2.png" class="astro-LOEZZAHA">
-                <img src="../../public/company3.png" class="astro-LOEZZAHA">
-                <img src="../../public/company4.svg" class="astro-LOEZZAHA">
-                <img src="../../public/company5.svg" class="astro-LOEZZAHA">
+                <img src="../../public/Images/company1.png" class="astro-LOEZZAHA">
+                <img src="../../public/Images/company2.png" class="astro-LOEZZAHA">
+                <img src="../../public/Images/company3.png" class="astro-LOEZZAHA">
+                <img src="../../public/Images/company4.svg" class="astro-LOEZZAHA">
+                <img src="../../public/Images/company5.svg" class="astro-LOEZZAHA">
             </div>
         </section>
 
         <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10 astro-LOEZZAHA">
             <div class="flex flex-wrap items-center astro-LOEZZAHA">
-                <img class="sm:w-full md:w-5/12 lg:w-5/12 astro-LOEZZAHA" src="../../public/boostside.svg">
+                <img class="sm:w-full md:w-5/12 lg:w-5/12 astro-LOEZZAHA" src="../../public/Images/boostside.svg">
                 <div class="sm:w-full md:w-7/12 lg:w-7/12 text-[#31393C] md:pl-10 sm:pl-0 astro-LOEZZAHA">
                     <h2 class="text-4xl font-semibold mb-5 astro-LOEZZAHA">
                         Streamline operations, boost productivity & enhance
@@ -101,7 +101,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                 <div class=" overflow-x-scroll custom-scrollbar astro-LOEZZAHA">
                     <div class="flex gap-7 astro-LOEZZAHA">
                         <div class="grid flex-shrink-0 p-5 let-shadow w-64 h-64 mr-10 astro-LOEZZAHA">
-                            <img class="justify-self-end astro-LOEZZAHA" src="../../public/process.svg">
+                            <img class="justify-self-end astro-LOEZZAHA" src="../../public/Images/process.svg">
                             <p class="text-[#31393C] text-[4rem] leading-[4.75rem] font-bold astro-LOEZZAHA">
                                 23%
                             </p>
@@ -110,7 +110,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                             </p>
                         </div>
                         <div class="grid flex-shrink-0  p-5 rounded-[10px] let-shadow w-64 h-64 mr-10 astro-LOEZZAHA">
-                        <img class="justify-self-end astro-LOEZZAHA" src="../../public/reduction.svg">
+                        <img class="justify-self-end astro-LOEZZAHA" src="../../public/Images/reduction.svg">
                         <p class=" text-[#31393C] text-[4rem] leading-[4.75rem] font-bold astro-LOEZZAHA">
                             40%
                         </p>
@@ -119,7 +119,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                         </p>
                     </div>
                     <div class="grid flex-shrink-0  p-5 rounded-[10px] let-shadow w-64 h-64 mr-10 astro-LOEZZAHA">
-                        <img class="justify-self-end astro-LOEZZAHA" src="../../public/improvment.svg">
+                        <img class="justify-self-end astro-LOEZZAHA" src="../../public/Images/improvment.svg">
                         <p class="text-[#31393C] text-[4rem] leading-[4.75rem] font-bold astro-LOEZZAHA">
                             30%
                         </p>
@@ -128,7 +128,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                         </p>
                     </div>
                     <div class="grid flex-shrink-0 p-5 rounded-[10px] let-shadow w-64 h-64 mr-10 astro-LOEZZAHA">
-                        <img class="justify-self-end astro-LOEZZAHA" src="../../public/rocket.svg">
+                        <img class="justify-self-end astro-LOEZZAHA" src="../../public/Images/rocket.svg">
                         <p class="text-[#31393C] text-[4rem] leading-[4.75rem] font-bold astro-LOEZZAHA">
                             50%
                         </p>
@@ -231,7 +231,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                 <div
                     class="bg-[#3D96F5] rounded-[10px] h-[6.875rem] w-[11.5rem] border border-white justify-center items-center flex flex-wrap text-white"
                 >
-                    <img src="../../public/erpnext.png" />Enterprise
+                    <img src="../../public/Images/erpnext.png" />Enterprise
                     Manufacturing
                 </div>
                 <div
@@ -307,14 +307,14 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                     ERPNext is simplifying<br class="astro-LOEZZAHA">
                     the manufacturing industry at the core!
                 </h2>
-                <img class="mt-10 lg:ml-16 astro-LOEZZAHA" src="../../public/erpnext-feature.svg">
+                <img class="mt-10 lg:ml-16 astro-LOEZZAHA" src="../../public/Images/erpnext-feature.svg">
             </div>
         </section>
             
        
 
         <section class="hidden lg:block mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10 astro-LOEZZAHA">
-            <div class="bg-[url('../../public/join-hand.svg')] bg-cover bg-no-repeat bg-center md:bg-contain md:bg-right h-96 grid p-16 pt-24 items-center astro-LOEZZAHA">
+            <div class="bg-[url('../../public/Images/join-hand.svg')] bg-cover bg-no-repeat bg-center md:bg-contain md:bg-right h-96 grid p-16 pt-24 items-center astro-LOEZZAHA">
                 <h2 class="w-10/12 text4xl leading-[2.75rem] text-white font-semibold astro-LOEZZAHA">
                     Join hands with Sanskar Technolab to handle your ERP
                     manufacturing implementation!
@@ -323,7 +323,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                     <p class="astro-LOEZZAHA">Book a free consultation</p>
                     <div class="flex justify-between bg-white rounded-lg px-5 py w-32 astro-LOEZZAHA">
                         <a href="#" class="text-[#3E96F4] font-semibold text-base font-inter astro-LOEZZAHA">Call now!</a>
-                        <img src="../../public/right.svg" class="ml-0 astro-LOEZZAHA">
+                        <img src="../../public/Images/right.svg" class="ml-0 astro-LOEZZAHA">
                     </div>
                 </div>
             </div>
@@ -331,7 +331,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
 
         <section class="block lg:hidden mt-10 bg-[#3E96F4] pb-10 astro-LOEZZAHA">
         <div class="mx-5 astro-LOEZZAHA">
-            <img src="../../public/cta-mobile.svg" class="astro-LOEZZAHA">
+            <img src="../../public/Images/cta-mobile.svg" class="astro-LOEZZAHA">
             <h2 class="text-4xl leading-[2.75rem] text-white font-semibold astro-LOEZZAHA">
                         Join hands with Sanskar Technolab to handle your ERP
                         manufacturing implementation!
@@ -340,7 +340,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                 <p class="astro-LOEZZAHA">Book a free consultation</p>
                 <div class="flex justify-between bg-white rounded-lg px-5 py-3 w-32 astro-LOEZZAHA">
                     <a href="#" class="text-[#3E96F4] font-semibold text-base font-inter astro-LOEZZAHA">Call now!</a>
-                    <img src="../../public/right.svg" class="ml-0 astro-LOEZZAHA">
+                    <img src="../../public/Images/right.svg" class="ml-0 astro-LOEZZAHA">
                 </div>
             </div>
         </div>
@@ -389,7 +389,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                             allowing manufacturers to create, manage, and track
                             BOMs for their products.
                         </p>
-                        <img src="../../public/faq-bom.svg" class="astro-LOEZZAHA">
+                        <img src="../../public/Images/faq-bom.svg" class="astro-LOEZZAHA">
                         <div class="grid grid-cols-2 mt-5 astro-LOEZZAHA">
                             <div class="flex items-center gap-2 ml-2 astro-LOEZZAHA">
                                 <div class="bg-gradient-to-r from-[#D4EAFF] to-[#3E96F4] rounded-full h-2.5 w-2.5 astro-LOEZZAHA">
@@ -435,7 +435,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
 
             <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 mt-10 gap-10 astro-LOEZZAHA">
                 <div class="flex flex-wrap text-[#31393C] astro-LOEZZAHA">
-                    <img class="lg:w-3/12 md:w-3/12 sm:w-12/12 h-20 astro-LOEZZAHA" src="../../public/industry-rich.svg">
+                    <img class="lg:w-3/12 md:w-3/12 sm:w-12/12 h-20 astro-LOEZZAHA" src="../../public/Images/industry-rich.svg">
                     <div class="lg:w-9/12 md:w-9/12 sm:w-12/12 astro-LOEZZAHA">
                         <p class="text-xl font-semibold astro-LOEZZAHA">
                             Industry Rich Experience
@@ -450,7 +450,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                     </div>
                 </div>
                 <div class="flex flex-wrap text-[#31393C] astro-LOEZZAHA">
-                    <img class="lg:w-3/12 md:w-3/12 sm:w-12/12 h-20 astro-LOEZZAHA" src="../../public/track-record.svg">
+                    <img class="lg:w-3/12 md:w-3/12 sm:w-12/12 h-20 astro-LOEZZAHA" src="../../public/Images/track-record.svg">
                     <div class="lg:w-9/12 md:w-9/12 sm:w-12/12 astro-LOEZZAHA">
                         <p class="text-xl font-semibold astro-LOEZZAHA">Proven Track Record</p>
                         <p class="text-base astro-LOEZZAHA">
@@ -462,7 +462,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                     </div>
                 </div>
                 <div class="flex flex-wrap text-[#31393C] astro-LOEZZAHA">
-                    <img class="lg:w-3/12 md:w-3/12 sm:w-12/12 h-20 astro-LOEZZAHA" src="../../public/approach.svg">
+                    <img class="lg:w-3/12 md:w-3/12 sm:w-12/12 h-20 astro-LOEZZAHA" src="../../public/Images/approach.svg">
                     <div class="lg:w-9/12 md:w-9/12 sm:w-12/12 astro-LOEZZAHA">
                         <p class="text-xl font-semibold astro-LOEZZAHA">
                             Collaborative Approach
@@ -477,7 +477,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                     </div>
                 </div>
                 <div class="flex flex-wrap text-[#31393C] astro-LOEZZAHA">
-                    <img class="lg:w-3/12 md:w-3/12 sm:w-12/12 h-20 astro-LOEZZAHA" src="../../public/skilled.svg">
+                    <img class="lg:w-3/12 md:w-3/12 sm:w-12/12 h-20 astro-LOEZZAHA" src="../../public/Images/skilled.svg">
                     <div class="lg:w-9/12 md:w-9/12 sm:w-12/12 astro-LOEZZAHA">
                         <p class="text-xl font-semibold astro-LOEZZAHA">
                             Skilled and Dedicated Team
@@ -491,7 +491,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                     </div>
                 </div>
                 <div class="flex flex-wrap text-[#31393C] astro-LOEZZAHA">
-                    <img class="lg:w-3/12 md:w-3/12 sm:w-12/12 h-20 astro-LOEZZAHA" src="../../public/timely-delivery.svg">
+                    <img class="lg:w-3/12 md:w-3/12 sm:w-12/12 h-20 astro-LOEZZAHA" src="../../public/Images/timely-delivery.svg">
                     <div class="lg:w-9/12 md:w-9/12 sm:w-12/12 astro-LOEZZAHA">
                         <p class="text-xl font-semibold astro-LOEZZAHA">
                             Timely Delivery and Cost-Effectiveness
@@ -506,7 +506,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                     </div>
                 </div>
                 <div class="flex flex-wrap text-[#31393C] astro-LOEZZAHA">
-                    <img class="lg:w-3/12 md:w-3/12 sm:w-12/12 h-20 astro-LOEZZAHA" src="../../public/training.svg">
+                    <img class="lg:w-3/12 md:w-3/12 sm:w-12/12 h-20 astro-LOEZZAHA" src="../../public/Images/training.svg">
                     <div class="lg:w-9/12 md:w-9/12 sm:w-12/12 astro-LOEZZAHA">
                         <p class="text-xl font-semibold astro-LOEZZAHA">
                             Comprehensive Training and Support
@@ -524,7 +524,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
 
 
         <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10 astro-LOEZZAHA">
-            <div class="bg-[#31393C] flex flex-wrap items-center flex-col-reverse md:flex-col-reverse lg:flex-row rounded-[20px] lg:bg-[url('../../public/cta_bg.svg')] bg-right bg-no-repeat lg:relative astro-LOEZZAHA">
+            <div class="bg-[#31393C] flex flex-wrap items-center flex-col-reverse md:flex-col-reverse lg:flex-row rounded-[20px] lg:bg-[url('../../public/Images/cta_bg.svg')] bg-right bg-no-repeat lg:relative astro-LOEZZAHA">
                 <div class="hidden lg:block lg:absolute f inset-0 z-0 h-72 margin astro-LOEZZAHA"></div>
                 <div class="lg:w-8/12 md:w-full sm:w-full p-5 md:p-12 z-10 astro-LOEZZAHA">
                     <h2 class="text-4xl text-white font-semibold astro-LOEZZAHA">
@@ -532,12 +532,12 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                     </h2>
                     <div class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 md:w-64 lg:w-64 w-auto astro-LOEZZAHA">
                         <a href="#" class="text-white font-semibold text-base font-inter astro-LOEZZAHA">Connect with our team</a>
-                        <img src="../../public/right.svg" class="ml-0 astro-LOEZZAHA">
+                        <img src="../../public/Images/right.svg" class="ml-0 astro-LOEZZAHA">
                     </div>
                 </div>
                 <div class="lg:w-4/12 md:w-full sm:w-full z-10 astro-LOEZZAHA">
-                    <img class="hidden lg:block astro-LOEZZAHA" src="../../public/cta-people.svg">
-                    <img class="block lg:hidden sm:w-full p-5 md:p-12 rounded-[2rem] astro-LOEZZAHA" src="../../public/manufacturing-opration.png">
+                    <img class="hidden lg:block astro-LOEZZAHA" src="../../public/Images/cta-people.svg">
+                    <img class="block lg:hidden sm:w-full p-5 md:p-12 rounded-[2rem] astro-LOEZZAHA" src="../../public/Images/manufacturing-opration.png">
                 </div>
                
             </div>
@@ -555,51 +555,51 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
             </div>
             <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 text-[#31393C] font-bold text-lg mt-10 astro-LOEZZAHA">
                 <div class="rounded-lg mb-shadow flex items-center border border-[#B5CBE3] astro-LOEZZAHA">
-                    <img src="../../public/b&b-manufacturing.svg" class="astro-LOEZZAHA">
+                    <img src="../../public/Images/b&b-manufacturing.svg" class="astro-LOEZZAHA">
                     <p class="astro-LOEZZAHA">Breweries & Beverage Manufacturers</p>
                 </div>
                 <div class="rounded-lg mb-shadow flex items-center border border-[#B5CBE3] astro-LOEZZAHA">
-                    <img src="../../public/furniture.svg" class="astro-LOEZZAHA">
+                    <img src="../../public/Images/furniture.svg" class="astro-LOEZZAHA">
                     <p class="astro-LOEZZAHA">Furniture Manufacturers</p>
                 </div>
                 <div class="rounded-lg mb-shadow flex items-center border border-[#B5CBE3] astro-LOEZZAHA">
-                    <img src="../../public/shoe.svg" class="astro-LOEZZAHA">
+                    <img src="../../public/Images/shoe.svg" class="astro-LOEZZAHA">
                     <p class="astro-LOEZZAHA">Shoe Manufacturers</p>
                 </div>
                 <div class="rounded-lg mb-shadow flex items-center border border-[#B5CBE3] astro-LOEZZAHA">
-                    <img src="../../public/car.svg" class="astro-LOEZZAHA">
+                    <img src="../../public/Images/car.svg" class="astro-LOEZZAHA">
                     <p class="astro-LOEZZAHA">Car Manufacturers</p>
                 </div>
                 <div class="rounded-lg mb-shadow flex items-center border border-[#B5CBE3] astro-LOEZZAHA">
-                    <img src="../../public/electronics.svg" class="astro-LOEZZAHA">
+                    <img src="../../public/Images/electronics.svg" class="astro-LOEZZAHA">
                     <p class="astro-LOEZZAHA">Electronics Manufacturers</p>
                 </div>
                 <div class="rounded-lg mb-shadow flex items-center border border-[#B5CBE3] astro-LOEZZAHA">
-                    <img src="../../public/medical.svg" class="astro-LOEZZAHA">
+                    <img src="../../public/Images/medical.svg" class="astro-LOEZZAHA">
                     <p class="astro-LOEZZAHA">Medical Equipment Manufacturers</p>
                 </div>
                 <div class="rounded-lg mb-shadow flex items-center border border-[#B5CBE3] astro-LOEZZAHA">
-                    <img src="../../public/textile.svg" class="astro-LOEZZAHA">
+                    <img src="../../public/Images/textile.svg" class="astro-LOEZZAHA">
                     <p class="astro-LOEZZAHA">Textile Manufacturers</p>
                 </div>
                 <div class="rounded-lg mb-shadow flex items-center border border-[#B5CBE3] astro-LOEZZAHA">
-                    <img src="../../public/chemical.svg" class="astro-LOEZZAHA">
+                    <img src="../../public/Images/chemical.svg" class="astro-LOEZZAHA">
                     <p class="astro-LOEZZAHA">Chemical Manufacturers</p>
                 </div>
                 <div class="rounded-lg mb-shadow flex items-center border border-[#B5CBE3] astro-LOEZZAHA">
-                    <img src="../../public/metal.svg" class="astro-LOEZZAHA">
+                    <img src="../../public/Images/metal.svg" class="astro-LOEZZAHA">
                     <p class="astro-LOEZZAHA">Metal Fabrication Manufacturers</p>
                 </div>
                 <div class="rounded-lg mb-shadow flex items-center border border-[#B5CBE3] astro-LOEZZAHA">
-                    <img src="../../public/plastic.svg" class="astro-LOEZZAHA">
+                    <img src="../../public/Images/plastic.svg" class="astro-LOEZZAHA">
                     <p class="astro-LOEZZAHA">Plastic Manufacturers</p>
                 </div>
                 <div class="rounded-lg mb-shadow flex items-center border border-[#B5CBE3] astro-LOEZZAHA">
-                    <img src="../../public/toy.svg" class="astro-LOEZZAHA">
+                    <img src="../../public/Images/toy.svg" class="astro-LOEZZAHA">
                     <p class="astro-LOEZZAHA">Toy Manufacturers</p>
                 </div>
                 <div class="rounded-lg mb-shadow flex items-center border border-[#B5CBE3] astro-LOEZZAHA">
-                    <img src="../../public/food.svg" class="astro-LOEZZAHA">
+                    <img src="../../public/Images/food.svg" class="astro-LOEZZAHA">
                     <p class="astro-LOEZZAHA">Food Production Industries</p>
                 </div>
             </div>
@@ -618,7 +618,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
 
             <div class="happy-customer-shadow md:p-10 p-5 rounded-[20px] slideshow md:h-[23rem] h-[33rem] mt-5 astro-LOEZZAHA">
 				<div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 slide astro-LOEZZAHA">
-					<img class="pr-5 astro-LOEZZAHA" src="../../public/customer.svg">
+					<img class="pr-5 astro-LOEZZAHA" src="../../public/Images/customer.svg">
 					<div class="text-[#31393C] astro-LOEZZAHA">
 						<p class="text-xl leading-9 font-semibold my-3 astro-LOEZZAHA">
 							Osswal Infosystems
@@ -638,7 +638,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
 				</div>
 
 				<div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 slide astro-LOEZZAHA">
-					<img class="pr-5 astro-LOEZZAHA" src="../../public/customer.svg">
+					<img class="pr-5 astro-LOEZZAHA" src="../../public/Images/customer.svg">
 					<div class="text-[#31393C] astro-LOEZZAHA">
 						<p class="text-xl leading-9 font-semibold my-3 astro-LOEZZAHA">
 							Osswal Infosystems 2
@@ -658,7 +658,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
 				</div>
 
 				<div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 slide astro-LOEZZAHA">
-					<img class="pr-5 astro-LOEZZAHA" src="../../public/customer.svg">
+					<img class="pr-5 astro-LOEZZAHA" src="../../public/Images/customer.svg">
 					<div class="text-[#31393C] astro-LOEZZAHA">
 						<p class="text-xl leading-9 font-semibold my-3 astro-LOEZZAHA">
 							Osswal Infosystems 3
@@ -679,8 +679,8 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
             
             <div class="flex justify-center gap-3 mt-10 astro-LOEZZAHA">
-                <img src="../../public/previousbtn.svg" id="preBtn" class="astro-LOEZZAHA">
-                <img src="../../public/nextbtn.svg" id="nextBtn" class="astro-LOEZZAHA">
+                <img src="../../public/Images/previousbtn.svg" id="preBtn" class="astro-LOEZZAHA">
+                <img src="../../public/Images/nextbtn.svg" id="nextBtn" class="astro-LOEZZAHA">
             </div>
         </section>
 
@@ -745,8 +745,8 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
 				<div class="bg-white rounded-2xl astro-LOEZZAHA">
 				<div class="flex justify-between p-5 astro-LOEZZAHA" @click="accordion = accordion == 0 ? 1 : 0">
 					<div class="cursor-pointer  astro-LOEZZAHA">Can Sanskar Technolab handle both small-scale and large-scale ERPNext implementations?</div>
-				  <img :class="accordion === 1 ? 'block' : 'hidden'" src="../../public/down-arrow.svg" class="astro-LOEZZAHA">
-				  <img :class="accordion !== 1 ? 'block' : 'hidden'" src="../../public/up-arrow.svg" class="astro-LOEZZAHA">
+				  <img :class="accordion === 1 ? 'block' : 'hidden'" src="../../public/Images/down-arrow.svg" class="astro-LOEZZAHA">
+				  <img :class="accordion !== 1 ? 'block' : 'hidden'" src="../../public/Images/up-arrow.svg" class="astro-LOEZZAHA">
 				</div>
                 <div class="bg-white overflow-hidden astro-LOEZZAHA" :class="accordion !== 0 ? 'h-0' : 'border-t-4'" id="faq1_c">
                 <p class="text-base mb-7 p-3 astro-LOEZZAHA">
@@ -762,8 +762,8 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
 				 <div class="bg-white rounded-2xl astro-LOEZZAHA">
 				<div class="flex justify-between p-5 astro-LOEZZAHA" @click="accordion = accordion == 2 ? 0 : 2">
 					<div class="cursor-pointer astro-LOEZZAHA">Can you provide a free demo for my manufacturing implementation?</div>
-				  <img :class="accordion !== 2 ? 'block' : 'hidden'" src="../../public/down-arrow.svg" class="astro-LOEZZAHA">
-				  <img :class="accordion === 2 ? 'block' : 'hidden'" src="../../public/up-arrow.svg" class="astro-LOEZZAHA">
+				  <img :class="accordion !== 2 ? 'block' : 'hidden'" src="../../public/Images/down-arrow.svg" class="astro-LOEZZAHA">
+				  <img :class="accordion === 2 ? 'block' : 'hidden'" src="../../public/Images/up-arrow.svg" class="astro-LOEZZAHA">
 				</div>
 					<div class="overflow-hidden bg-white astro-LOEZZAHA" :class="accordion !== 2 ? 'h-0' : 'border-t-4'">
 						<p class="p-3 astro-LOEZZAHA">
@@ -774,8 +774,8 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
 				 <div class="bg-white rounded-2xl astro-LOEZZAHA">
 				<div class="flex justify-between p-5 astro-LOEZZAHA" @click="accordion = accordion == 3 ? 0 : 3">
 					<div class="cursor-pointer astro-LOEZZAHA">Do you sign an NDA for the project?</div>
-				  <img :class="accordion !== 3 ? 'block' : 'hidden'" src="../../public/down-arrow.svg" class="astro-LOEZZAHA">
-				  <img :class="accordion === 3 ? 'block' : 'hidden'" src="../../public/up-arrow.svg" class="astro-LOEZZAHA">
+				  <img :class="accordion !== 3 ? 'block' : 'hidden'" src="../../public/Images/down-arrow.svg" class="astro-LOEZZAHA">
+				  <img :class="accordion === 3 ? 'block' : 'hidden'" src="../../public/Images/up-arrow.svg" class="astro-LOEZZAHA">
 				</div>
 					<div class="overflow-hidden bg-white astro-LOEZZAHA" :class="accordion !== 3 ? 'h-0' : 'border-t-4'">
 						<p class="p-3 astro-LOEZZAHA">
@@ -786,8 +786,8 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
 			  <div class="bg-white rounded-2xl astro-LOEZZAHA">
 				<div class="flex justify-between p-5 astro-LOEZZAHA" @click="accordion = accordion == 4 ? 0: 4">
 					<div class="cursor-pointer astro-LOEZZAHA">What training and support do you provide during and after ERPNext implementation?</div>
-				  <img :class="accordion !== 4 ? 'block' : 'hidden'" src="../../public/down-arrow.svg" class="astro-LOEZZAHA">
-				  <img :class="accordion === 4 ? 'block' : 'hidden'" src="../../public/up-arrow.svg" class="astro-LOEZZAHA">
+				  <img :class="accordion !== 4 ? 'block' : 'hidden'" src="../../public/Images/down-arrow.svg" class="astro-LOEZZAHA">
+				  <img :class="accordion === 4 ? 'block' : 'hidden'" src="../../public/Images/up-arrow.svg" class="astro-LOEZZAHA">
 				</div>
 					<div class="overflow-hidden bg-white astro-LOEZZAHA" :class="accordion !== 4 ? 'h-0' : 'border-t-4'">
 						<p class="p-3 astro-LOEZZAHA">
@@ -798,8 +798,8 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                 <div class="bg-white rounded-2xl astro-LOEZZAHA">
                     <div class="flex justify-between p-5 astro-LOEZZAHA" @click="accordion = accordion == 5 ? 0: 5">
                         <div class="cursor-pointer astro-LOEZZAHA">Can Sanskar Technolab assist with data migration from our current systems to ERPNext?</div>
-                      <img :class="accordion !== 5 ? 'block' : 'hidden'" src="../../public/down-arrow.svg" class="astro-LOEZZAHA">
-                      <img :class="accordion === 5 ? 'block' : 'hidden'" src="../../public/up-arrow.svg" class="astro-LOEZZAHA">
+                      <img :class="accordion !== 5 ? 'block' : 'hidden'" src="../../public/Images/down-arrow.svg" class="astro-LOEZZAHA">
+                      <img :class="accordion === 5 ? 'block' : 'hidden'" src="../../public/Images/up-arrow.svg" class="astro-LOEZZAHA">
                     </div>
                         <div class="overflow-hidden bg-white astro-LOEZZAHA" :class="accordion !== 5 ? 'h-0' : 'border-t-4'">
                             <p class="p-3 astro-LOEZZAHA">
@@ -812,10 +812,10 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
 
         <!-- <section class="bg-[#3E96F4] flex mt-40 relative">
             <div
-                class="bg-[url(../../public/form-bg-3.png)] w-5/12 bg-no-repeat bg-center bg-cover"
+                class="bg-[url(../../public/Images/form-bg-3.png)] w-5/12 bg-no-repeat bg-center bg-cover"
             >
                 <img
-                    src="../../public/form-bg.svg"
+                    src="../../public/Images/form-bg.svg"
                     alt="Image description"
                     class="absolute left-52 -top-32"
                 />
@@ -830,13 +830,13 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                     <a href="#" class="text-[#3E96F4] text-base font-semibold font-inter"
                         >Fill up a form now.</a
                     >
-                    <img src="../../public/right.svg" class="ml-0" />
+                    <img src="../../public/Images/right.svg" class="ml-0" />
                 </div>
             </div>
         </section> -->
         <section class="bg-[#3E96F4] flex flex-wrap mt-40 relative  astro-LOEZZAHA">
-			<div class="bg-[url(../../public/form-bg-3.png)] w-full md:w-5/12 bg-no-repeat bg-center bg-cover astro-LOEZZAHA">
-				<img src="../../public/form-bg.svg" alt="Image description" class="block md:absolute md:left-52 md:-top-32 astro-LOEZZAHA">
+			<div class="bg-[url(../../public/Images/form-bg-3.png)] w-full md:w-5/12 bg-no-repeat bg-center bg-cover astro-LOEZZAHA">
+				<img src="../../public/Images/form-bg.svg" alt="Image description" class="block md:absolute md:left-52 md:-top-32 astro-LOEZZAHA">
 			</div>
 			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 w-full md:w-7/12 p-10 astro-LOEZZAHA">
 				<h4 class="font-semibold text-white text-4xl astro-LOEZZAHA">
@@ -844,7 +844,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
 				</h4>
 				<div class="mt-5 flex justify-between bg-white rounded-lg px-5 py-3 w-56 astro-LOEZZAHA">
 					<a href="#" class="text-[#3E96F4] text-base font-semibold font-inter astro-LOEZZAHA">Fill up a form now.</a>
-					<img src="../../public/right.svg" class="ml-0 astro-LOEZZAHA">
+					<img src="../../public/Images/right.svg" class="ml-0 astro-LOEZZAHA">
 				</div>
 			</div>
 		</section>

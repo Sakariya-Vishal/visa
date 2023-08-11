@@ -147,7 +147,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				</div>
 
 				<Image
-					src="../../public/banner.png"
+					src="../../public/Images/banner.png"
 					alt="banner image"
 					class="sm:w-full md:w-4/12 lg:w-4/12"
 				/>
@@ -179,7 +179,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					class="sm:w-full md:w-4/12 lg:w-4/12 sm:grid md:absolute lg:absolute right-0"
 				>
 					<Image
-						src="../../public/banner.png"
+						src="../../public/Images/banner.png"
 						alt="banner image"
 						class=""
 					/>
@@ -241,12 +241,12 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					<a href="#" class="text-white font-semibold"
 						>Book a free demo now!</a
 					>
-					<img src="../../public/right.svg" class="ml-0" />
+					<img src="../../public/Images/right.svg" class="ml-0" />
 				</div>
 			</div>
 
 			<Image
-				src="../../public/banner.png"
+				src="../../public/Images/banner.png"
 				alt="banner image"
 				class="w-5/12"
 			/>
@@ -526,7 +526,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 		</section>
 
 		<!-- <section
-			class="md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap md:items-center sm:text-left  py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] mx-5"
+			class="md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap md:items-center sm:text-left  py-[3.125rem] md:py-[2rem] lg:py-[4rem] mx-5"
 		>
 			<div class="lg:w-3/12 md:w-3/12 sm:w-full p-0 md:p-2 lg:p-2 ">
 				<h1 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold pt-0 md:pt-24 lg:pt-24 pb-4 md:pb-0 lg:pb-0">
@@ -595,7 +595,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 		</section> -->
 
-		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap sm:text-left md:items-center py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] astro-J7PV25F6">
+		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap sm:text-left md:items-center py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-J7PV25F6">
 			<div class="lg:w-3/12 md:w-3/12 sm:w-full p-0 md:p-2 lg:p-2 astro-J7PV25F6">
 				<div class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold pt-0 md:pt-24 lg:pt-24 pb-4 md:pb-0 lg:pb-0 astro-J7PV25F6">
 					Let our numbers do the talking!
@@ -684,7 +684,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 		</section>
 
-		<section class="section-bg-left py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] astro-J7PV25F6">
+		<section class="section-bg-left py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-J7PV25F6">
 			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-J7PV25F6">
 				<div class="md:text-center sm:text-left md:mb-20 astro-J7PV25F6">
 					<h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold astro-J7PV25F6">
@@ -936,7 +936,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 		</section>
 
-		<section class="grid justify-items-center mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] gap-5 md:gap-5 lg:gap-20 md:text-center sm:text-left astro-J7PV25F6">
+		<section class="grid justify-items-center mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] gap-5 md:gap-5 lg:gap-20 md:text-center sm:text-left astro-J7PV25F6">
 			<div class="text-left sm:text-center md:text-center lg:text-center astro-J7PV25F6">
 				<h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold astro-J7PV25F6">
 					Personalized Integration Hub - <br class="hidden md:block lg:block astro-J7PV25F6"> Access all your tools at
@@ -1011,7 +1011,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 		</section>
 
-		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] astro-J7PV25F6">
+		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-J7PV25F6">
 			<div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 astro-J7PV25F6">
 				<div class="move-beyond-bg bg-no-repeat grid gap-2 astro-J7PV25F6">
 					<p class="text-2xl md:text-3xl lg:text-4xl leading-[2rem] md:leading-[2.25rem] lg:leading-[2.75rem] text-[#31393C] font-semibold astro-J7PV25F6">
@@ -1113,7 +1113,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 		</section>
 
-		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] text-center astro-J7PV25F6">
+		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] text-center astro-J7PV25F6">
 			<div class="text-center md:mb-20 astro-J7PV25F6">
 				<h2 class="text-2xl md:text-3xl lg:text-4xl lg:text-[2.25rem] text-[#31393C] font-semibold astro-J7PV25F6">
 					Why Choose Us…
@@ -1195,7 +1195,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 		</section>
 
 		<!-- <section class="absolute" id="grad1"></section> -->
-		<section class="section-bg-center mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] astro-J7PV25F6">
+		<section class="section-bg-center mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-J7PV25F6">
 			<div class="md:text-center sm:text-left md:mb-20 astro-J7PV25F6">
 				<h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold astro-J7PV25F6">
 					Our Happy Customers.
@@ -1306,7 +1306,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 		</section>
 
-		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] astro-J7PV25F6">
+		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-J7PV25F6">
 			<div class="hidden md:block lg:block bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5 astro-J7PV25F6">
 				<h2 class="text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] font-semibold mb-5 ml-3 leading-9 astro-J7PV25F6">
 					Frequently Asked Questions (FAQs)

@@ -20,8 +20,8 @@ ${maybeRenderHead($$result2)}<div x-data="{ accordion: 0 }" class="grid gap-5 bg
 	<div class="bg-white rounded-2xl">
     <div class="flex justify-between p-5" @click="accordion = accordion == 0 ? 1 : 0">
     	<div class="cursor-pointer">Why should I pick ERPNext over other ERP products?</div>
-      <img :class="accordion === 1 ? 'block' : 'hidden'" src="../../public/down-arrow.svg">
-      <img :class="accordion !== 1 ? 'block' : 'hidden'" src="../../public/right.svg">
+      <img :class="accordion === 1 ? 'block' : 'hidden'" src="../../public/Images/down-arrow.svg">
+      <img :class="accordion !== 1 ? 'block' : 'hidden'" src="../../public/Images/right.svg">
     </div>
 		<div class="overflow-hidden bg-white" :class="{ 'h-0': accordion !== 0 }">
 			<div class="sm:w-full md:w-7/12 lg:w-7/12 bg-white rounded-r-[10px] p-8" id="faq1_c">
@@ -79,8 +79,8 @@ ${maybeRenderHead($$result2)}<div x-data="{ accordion: 0 }" class="grid gap-5 bg
  	<div class="bg-white rounded-2xl">
     <div class="flex justify-between p-5" @click="accordion = accordion == 2 ? 0 : 2">
     	<div class="cursor-pointer">How long does my implementation project usually take?</div>
-      <img :class="accordion !== 2 ? 'block' : 'hidden'" src="../../public/down-arrow.svg">
-      <img :class="accordion === 2 ? 'block' : 'hidden'" src="../../public/right.svg">
+      <img :class="accordion !== 2 ? 'block' : 'hidden'" src="../../public/Images/down-arrow.svg">
+      <img :class="accordion === 2 ? 'block' : 'hidden'" src="../../public/Images/right.svg">
     </div>
 		<div class="overflow-hidden bg-white" :class="{ 'h-0': accordion !== 2 }">
 			<p class="p-3">
@@ -91,8 +91,8 @@ ${maybeRenderHead($$result2)}<div x-data="{ accordion: 0 }" class="grid gap-5 bg
  	<div class="bg-white rounded-2xl">
     <div class="flex justify-between p-5" @click="accordion = accordion == 3 ? 0 : 3">
     	<div class="cursor-pointer">Do you provide a free demo before getting started?</div>
-      <img :class="accordion !== 3 ? 'block' : 'hidden'" src="../../public/down-arrow.svg">
-      <img :class="accordion === 3 ? 'block' : 'hidden'" src="../../public/right.svg">
+      <img :class="accordion !== 3 ? 'block' : 'hidden'" src="../../public/Images/down-arrow.svg">
+      <img :class="accordion === 3 ? 'block' : 'hidden'" src="../../public/Images/right.svg">
     </div>
 		<div class="overflow-hidden bg-white" :class="{ 'h-0': accordion !== 3 }">
 			<p class="p-3">
@@ -103,8 +103,8 @@ ${maybeRenderHead($$result2)}<div x-data="{ accordion: 0 }" class="grid gap-5 bg
   <div class="bg-white rounded-2xl">
     <div class="flex justify-between p-5" @click="accordion = accordion == 4 ? 0: 4">
     	<div class="cursor-pointer">What is your implementation process?</div>
-      <img :class="accordion !== 4 ? 'block' : 'hidden'" src="../../public/down-arrow.svg">
-      <img :class="accordion === 4 ? 'block' : 'hidden'" src="../../public/right.svg">
+      <img :class="accordion !== 4 ? 'block' : 'hidden'" src="../../public/Images/down-arrow.svg">
+      <img :class="accordion === 4 ? 'block' : 'hidden'" src="../../public/Images/right.svg">
     </div>
 		<div class="overflow-hidden bg-white" :class="{ 'h-0': accordion !== 4 }">
 			<p class="p-3">

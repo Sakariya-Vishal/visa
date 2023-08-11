@@ -3,27 +3,27 @@ import Layout from "../layouts/Layout.astro";
 import "../styles.css";
 import { Image, Picture } from "@astrojs/image/components";
 
-import c_banner from "../../public/careers_banner.png";
-import right from "../../public/right.svg";
-import work_timing from "../../public/work_timing.svg";
-import five_day_working from "../../public/5_day_working.svg";
-import courses from "../../public/courses.svg";
-import training from "../../public/training.svg";
-import c_process from "../../public/c_process.svg";
-import bonus from "../../public/bonus.svg";
-import c_slider1 from "../../public/c_slider1.png";
-import c_slider2 from "../../public/c_slider2.png";
-import c_slider3 from "../../public/c_slider3.png";
-import c_slider4 from "../../public/c_slider4.png";
-import c_slider5 from "../../public/c_slider5.png";
-import c_map from "../../public/c_map.svg";
-import c_job from "../../public/c_job.svg";
-import c_user from "../../public/c_user.svg";
-import previousbtn from "../../public/previousbtn.svg";
-import nextbtn from "../../public/nextbtn.svg";
-import customer from "../../public/customer.svg";
-import correct from "../../public/correct.svg";
-import close from "../../public/popup_close_btn.svg"
+import c_banner from "../../public/Images/careers_banner.png";
+import right from "../../public/Images/right.svg";
+import work_timing from "../../public/Images/work_timing.svg";
+import five_day_working from "../../public/Images/5_day_working.svg";
+import courses from "../../public/Images/courses.svg";
+import training from "../../public/Images/training.svg";
+import c_process from "../../public/Images/c_process.svg";
+import bonus from "../../public/Images/bonus.svg";
+import c_slider1 from "../../public/Images/c_slider1.png";
+import c_slider2 from "../../public/Images/c_slider2.png";
+import c_slider3 from "../../public/Images/c_slider3.png";
+import c_slider4 from "../../public/Images/c_slider4.png";
+import c_slider5 from "../../public/Images/c_slider5.png";
+import c_map from "../../public/Images/c_map.svg";
+import c_job from "../../public/Images/c_job.svg";
+import c_user from "../../public/Images/c_user.svg";
+import previousbtn from "../../public/Images/previousbtn.svg";
+import nextbtn from "../../public/Images/nextbtn.svg";
+import customer from "../../public/Images/customer.svg";
+import correct from "../../public/Images/correct.svg";
+import close from "../../public/Images/popup_close_btn.svg"
 ---
 
 <Layout title="career">
@@ -246,7 +246,7 @@ import close from "../../public/popup_close_btn.svg"
     </section>
 
     <section
-      class="section-bg-center_career py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem]"
+      class="section-bg-center_career py-[3.125rem] md:py-[2rem] lg:py-[4rem]"
     >
       <div
         class="mx-5 md:max-w-7xl md:mx-auto md:px-24 text-[#31393C]"
@@ -451,7 +451,7 @@ import close from "../../public/popup_close_btn.svg"
 
         </section> -->
 
-    <section class="py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem]">
+    <section class="py-[3.125rem] md:py-[2rem] lg:py-[4rem]">
       <div class="mx-5 md:mx-auto md:max-w-7xl md:px-20">
         <div
           class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8"
@@ -611,7 +611,7 @@ import close from "../../public/popup_close_btn.svg"
     </section>
 
     <section
-      class="section-bg-left py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem]"
+      class="section-bg-left py-[3.125rem] md:py-[2rem] lg:py-[4rem]"
     >
       <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24">
         <div class="md:text-center sm:text-left mb-0 md:mb-10 lg:mb-10">
@@ -629,96 +629,126 @@ import close from "../../public/popup_close_btn.svg"
 
         <div class="c_slider">
           <div class="c_slides">
-            <div class="c_slide">
+            <div class="p-4 c_slide">
               <div
-                class="happy-customer-shadow md:p-10 p-5 rounded-[20px] h-[26rem] md:h-[23rem] lg:h-[23rem] mt-5"
+                class="happy-customer-shadow bg-[#ffffff] md:p-10 p-5 rounded-[20px] h-[26rem] md:h-[23rem] lg:h-[23rem] mt-5"
               >
                 <div
                   class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5"
                 >
-                  <Image class="pr-5" src={customer} alt="customer" />
+                  <Image
+                    class="md:pr-5"
+                    src={customer}
+                    alt="customer"
+                  />
                   <div class="text-[#31393C]">
                     <p
                       class="text-base md:text-lg lg:text-xl leading-9 font-semibold my-3"
                     >
                       Osswal Infosystems
                     </p>
-                    <p class="text-xs md:text-sm lg:text-base pr-5">
-                      Watch Mohit Nagori, Director of Osswal Infosystems Pvt.
-                      Ltd., speak about his company's journey with SAP and UBS.
-                      He shares insights about our collaboration and how to make
-                      a successful partnership work!
+                    <p
+                      class="text-xs md:text-sm lg:text-base pr-5"
+                    >
+                      Watch Mohit Nagori, Director of Osswal
+                      Infosystems Pvt. Ltd., speak about his
+                      company's journey with SAP and UBS. He
+                      shares insights about our collaboration
+                      and how to make a successful partnership
+                      work!
                     </p>
                     <p
                       class="text-xs md:text-sm lg:text-base font-semibold mt-5"
                     >
                       Mohit Nagori
                     </p>
-                    <p class="text-[0.625rem] md:text-xs lg:text-sm">
+                    <p
+                      class="text-[0.625rem] md:text-xs lg:text-sm"
+                    >
                       Director, Osswal Infosystems Pvt. Ltd.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="c_slide">
+            <div class="p-4 c_slide">
               <div
-                class="happy-customer-shadow md:p-10 p-5 rounded-[20px] h-[26rem] md:h-[23rem] lg:h-[23rem] mt-5"
+                class="happy-customer-shadow bg-[#ffffff] md:p-10 p-5 rounded-[20px] h-[26rem] md:h-[23rem] lg:h-[23rem] mt-5"
               >
                 <div
                   class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5"
                 >
-                  <Image class="pr-5" src={customer} alt="customer" />
+                  <Image
+                    class="md:pr-5"
+                    src={customer}
+                    alt="customer"
+                  />
                   <div class="text-[#31393C]">
                     <p
                       class="text-base md:text-lg lg:text-xl leading-9 font-semibold my-3"
                     >
                       Osswal Infosystems 1
                     </p>
-                    <p class="text-xs md:text-sm lg:text-base pr-5">
-                      Watch Mohit Nagori, Director of Osswal Infosystems Pvt.
-                      Ltd., speak about his company's journey with SAP and UBS.
-                      He shares insights about our collaboration and how to make
-                      a successful partnership work!
+                    <p
+                      class="text-xs md:text-sm lg:text-base pr-5"
+                    >
+                      Watch Mohit Nagori, Director of Osswal
+                      Infosystems Pvt. Ltd., speak about his
+                      company's journey with SAP and UBS. He
+                      shares insights about our collaboration
+                      and how to make a successful partnership
+                      work!
                     </p>
                     <p
                       class="text-xs md:text-sm lg:text-base font-semibold mt-5"
                     >
                       Mohit Nagori
                     </p>
-                    <p class="text-[0.625rem] md:text-xs lg:text-sm">
+                    <p
+                      class="text-[0.625rem] md:text-xs lg:text-sm"
+                    >
                       Director, Osswal Infosystems Pvt. Ltd.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="c_slide">
+            <div class="p-4 c_slide">
               <div
-                class="happy-customer-shadow md:p-10 p-5 rounded-[20px] h-[26rem] md:h-[23rem] lg:h-[23rem] mt-5"
+                class="happy-customer-shadow bg-[#ffffff] md:p-10 p-5 rounded-[20px] h-[26rem] md:h-[23rem] lg:h-[23rem] mt-5"
               >
                 <div
                   class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5"
                 >
-                  <Image class="pr-5" src={customer} alt="customer" />
+                  <Image
+                    class="md:pr-5"
+                    src={customer}
+                    alt="customer"
+                  />
                   <div class="text-[#31393C]">
                     <p
                       class="text-base md:text-lg lg:text-xl leading-9 font-semibold my-3"
                     >
                       Osswal Infosystems 2
                     </p>
-                    <p class="text-xs md:text-sm lg:text-base pr-5">
-                      Watch Mohit Nagori, Director of Osswal Infosystems Pvt.
-                      Ltd., speak about his company's journey with SAP and UBS.
-                      He shares insights about our collaboration and how to make
-                      a successful partnership work!
+                    <p
+                      class="text-xs md:text-sm lg:text-base pr-5"
+                    >
+                      Watch Mohit Nagori, Director of Osswal
+                      Infosystems Pvt. Ltd., speak about his
+                      company's journey with SAP and UBS. He
+                      shares insights about our collaboration
+                      and how to make a successful partnership
+                      work!
                     </p>
                     <p
                       class="text-xs md:text-sm lg:text-base font-semibold mt-5"
                     >
                       Mohit Nagori
                     </p>
-                    <p class="text-[0.625rem] md:text-xs lg:text-sm">
+                    <p
+                      class="text-[0.625rem] md:text-xs lg:text-sm"
+                    >
                       Director, Osswal Infosystems Pvt. Ltd.
                     </p>
                   </div>
@@ -726,7 +756,7 @@ import close from "../../public/popup_close_btn.svg"
               </div>
             </div>
           </div>
-          <div class="flex justify-center gap-3 mt-10">
+          <div class="flex justify-center gap-3 md:mt-10">
             <!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
 				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
             <button
@@ -992,7 +1022,7 @@ import close from "../../public/popup_close_btn.svg"
           slidesPerView: 1,
           spaceBetween: 10,
           autoplay: {
-            delay: 5000,
+            delay: 3000,
           },
           navigation: {
             nextEl: ".next-button",
@@ -1005,7 +1035,7 @@ import close from "../../public/popup_close_btn.svg"
             },
             1024: {
               centeredSlides: false,
-              slidesPerView: 2.25,
+              slidesPerView: 3,
             },
           },
         });
@@ -1263,7 +1293,7 @@ import close from "../../public/popup_close_btn.svg"
             // Process the JSON data here
             const jobDetail = data.data
 
-            console.log("asdf", jobDetail)
+            // console.log("asdf", jobDetail)
 
             // Create a div element
 
@@ -1522,9 +1552,84 @@ import close from "../../public/popup_close_btn.svg"
         // document.body.appendChild(mainContainer);
         document.getElementById("job").appendChild(mainContainer);
 
-        function handleContactForm(e) {       
-          console.log("job opening name", jobOpening.name)
+        function blinkBorder(element) {
+			let intervalId;
+			let isRed = false;
 
+			intervalId = setInterval(() => {
+			isRed = !isRed;
+			element.style.backgroundColor = isRed ? '#ffdddd' : 'transparent';
+			}, 500); // 500ms interval for blinking
+
+			element.dataset.blinkIntervalId = intervalId;
+		}
+
+		function stopBlinkBorder(element) {
+			const intervalId = element.dataset.blinkIntervalId;
+			if (intervalId) {
+			clearInterval(intervalId);
+			element.dataset.blinkIntervalId = null;
+			}
+		}
+
+        function handleContactForm(e) {       
+          // console.log("job opening name", jobOpening.name)
+
+          e.preventDefault();
+		
+		const fullNameInput = document.querySelector('input[name="full_name"]');
+		const emailInput = document.querySelector('input[name="email"]');
+		const phoneInput = document.querySelector('input[name="phone"]');
+		const cityInput = document.querySelector('input[name="city"]');
+
+		const fullNameValue = fullNameInput.value.trim();
+		const emailNameValue = emailInput.value.trim();
+		const phoneNameValue = phoneInput.value.trim();
+		const cityNameValue = cityInput.value.trim();
+
+		function stopBlinkForInputs(inputElements) {
+		inputElements.forEach(input => {
+			stopBlinkBorder(input);
+		});
+		}
+
+		function blinkInputs(inputElements) {
+		inputElements.forEach(input => {
+			blinkBorder(input);
+		});
+		}
+
+			if (fullNameValue === '') {
+			blinkBorder(fullNameInput);
+			}
+
+			if (emailNameValue === '') {
+			blinkBorder(emailInput);
+			}
+			if (phoneNameValue === '') {
+			blinkBorder(phoneInput);
+			}
+			if (cityNameValue === '') {
+			blinkBorder(cityInput);
+			}
+
+			fullNameInput.addEventListener('focus', () => {
+			stopBlinkForInputs([fullNameInput, emailInput,phoneInput,cityInput]);
+			});
+
+			emailInput.addEventListener('focus', () => {
+			stopBlinkForInputs([fullNameInput, emailInput,phoneInput,cityInput]);
+			});
+
+			phoneInput.addEventListener('focus', () => {
+			stopBlinkForInputs([fullNameInput, emailInput,phoneInput,cityInput]);
+			});
+
+			cityInput.addEventListener('focus', () => {
+			stopBlinkForInputs([fullNameInput, emailInput,phoneInput,cityInput]);
+			});
+
+          
           const fileInput = document.getElementById('fileInput');
           const file = fileInput.files[0];
 

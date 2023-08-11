@@ -834,7 +834,7 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
 <footer class="bg-[#31393C] py-20 astro-K2F5ZB5C">
     <!-- <div class="md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap text-white">
         <div class="sm:w-full md:w-3/12 lg:w-3/12">
-            <Image src="'../../public/footer_logo.svg" />
+            <Image src="'../../public/Images/footer_logo.svg" />
             <p class="text-sm leading-6 mt-5">
                 ServiceNow and ERPNext Consulting, Implementation and
                 Development Specialist.
@@ -844,21 +844,21 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
                     <a href="" class="text-gray-400">
                         <Image
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-                            src="../../public/linkedin-footer.svg"
+                            src="../../public/Images/linkedin-footer.svg"
                         />
                         <p class="sr-only">Linkedin account</p>
                     </a>
                     <a href="" class="text-gray-400">
                         <Image
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-                            src="../../public/fb.svg"
+                            src="../../public/Images/fb.svg"
                         />
                         <p class="sr-only">Facebook page</p>
                     </a>
                     <a href="" class="text-gray-400">
                         <Image
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-                            src="../../public/insta-footer.svg"
+                            src="../../public/Images/insta-footer.svg"
                         />
                         <p class="sr-only">Instagram page</p>
                     </a>
@@ -1073,7 +1073,7 @@ const $$About = createComponent(async ($$result, $$props, $$slots) => {
 			</h2></div>
 		</section>
 
-		<section class="section-bg-left py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] astro-KH7BTL4R">
+		<section class="section-bg-left py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-KH7BTL4R">
 			<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10  mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-KH7BTL4R">
 				<div class="astro-KH7BTL4R">
 					<h2 class="text-2xl md:text-3xl text-center md:text-center lg:text-start lg:text-4xl mr-0 md:mr-0 lg:mr-20 leading-[2rem] md:leading-[2.50rem] lg:leading-[2.75rem] font-semibold text-[#31393C] astro-KH7BTL4R">Sanskar Technolab's unique approach to setting up enterprises for success!</h2>
@@ -1133,7 +1133,7 @@ const $$About = createComponent(async ($$result, $$props, $$slots) => {
 		</section>	
 
 		<section class="astro-KH7BTL4R">
-			<div class="mx-5 md:max-w-7xl py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] md:mx-auto md:px-24 astro-KH7BTL4R">
+			<div class="mx-5 md:max-w-7xl py-[3.125rem] md:py-[2rem] lg:py-[4rem] md:mx-auto md:px-24 astro-KH7BTL4R">
 				<h2 class="text-2xl md:text-3xl lg:text-4xl leading-[2rem] md:leading-[2.25rem] lg:leading-[2.75rem] pb-2 md:pb-3 lg:pb-4 text-center font-semibold text-[#31393C] astro-KH7BTL4R">Our Core Values</h2>
 				<p class="text-xs md:text-sm lg:text-base text-center text-[#000000] font-semibold leading-4 md:leading-5 lg:leading-6 astro-KH7BTL4R">Our Guiding Principles to drive the desired action.</p>
 				<div class="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 mt-8 md:mt-10 lg:mt-14 mb-0 md:mb-0 lg:mb-0 gap-6 md:gap-10 lg:gap-14 astro-KH7BTL4R">
@@ -1171,7 +1171,7 @@ const $$About = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 		</section>
 
-		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 text-center py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] astro-KH7BTL4R">
+		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 text-center py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-KH7BTL4R">
 					<div class="text-center astro-KH7BTL4R">
 						<h2 class="text-2xl md:text-3xl lg:text-4xl lg:text-[2.25rem] text-[#31393C] font-semibold astro-KH7BTL4R">
 							Our Team
@@ -1232,7 +1232,7 @@ const $$About = createComponent(async ($$result, $$props, $$slots) => {
 					</div>
 		</section>
 
-		<section class="py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] astro-KH7BTL4R">
+		<section class="py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-KH7BTL4R">
 			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-KH7BTL4R">
 				<h2 class="text-center text-lg md:text-xl lg:text-2xl font-semibold mb-1 md:mb-1 lg:mb-2 mx-4 md:mx-20 lg:mx-48 astro-KH7BTL4R">Assets of Sanskar Technolabs - Brilliant Minds working to bring your ideas to life.</h2>
 				<p class="text-center text-xs md:text-sm lg:text-base mb-6 md:mb-6 lg:mb-10 astro-KH7BTL4R">Our strength lies within Sanskar’s team who is constantly bringing out the best for our clients</p>
@@ -1244,7 +1244,7 @@ const $$About = createComponent(async ($$result, $$props, $$slots) => {
 
 
 		<section class="section-bg-center astro-KH7BTL4R">
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] astro-KH7BTL4R">
+			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-KH7BTL4R">
 				<h2 class="text-center text-[#31393C] font-semibold text-2xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem] pb-4 md:pb-6 lg:pb-8 astro-KH7BTL4R">Empowering Communities: <br class="astro-KH7BTL4R"> Sanskar Technolab's Dual Mission of Business <br class="hidden md:block astro-KH7BTL4R"> Excellence and Social Responsibility!</h2>
 				<p class="text-center text-[#000000] leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base font-normal pb-2 md:pb-3 lg:pb-4 astro-KH7BTL4R">At Sanskar Technolabs, we believe in the power of collective impact and the importance of giving <br class="hidden md:hidden lg:block astro-KH7BTL4R"> back to society. As part of our commitment to social responsibility, we have partnered with Best <br class="hidden md:hidden lg:block astro-KH7BTL4R"> Deed, a leading crowdfunding platform, to support causes that align with our values.</p>
 				<p class="text-center text-[#31393C] leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base font-semibold astro-KH7BTL4R">Together, we have contributed to a range of initiatives close to our hearts...</p>
@@ -1272,7 +1272,7 @@ const $$About = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 		</section>
 
-		<section class="py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] astro-KH7BTL4R">
+		<section class="py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-KH7BTL4R">
 			<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-10 xl:gap-0 mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-KH7BTL4R">
 				 <div class="flex justify-center md:justify-center lg:justify-start astro-KH7BTL4R">
             ${renderComponent($$result2, "Image", $$Image, { "class": " astro-KH7BTL4R", "src": impactful_story, "alt": "Impactful Story", "width": 483, "height": 486 })}

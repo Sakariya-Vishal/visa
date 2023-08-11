@@ -174,7 +174,7 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
         </div>
         </section>
 
-        <section class="section-bg-center_career py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] astro-GDQBJPLB">
+        <section class="section-bg-center_career py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-GDQBJPLB">
             <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 text-[#31393C] astro-GDQBJPLB">
                 <div class="text-left md:text-center  font-semibold text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-10 lg:mb-10 astro-GDQBJPLB">
                     Recent Job Openings!
@@ -344,7 +344,7 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
 
         </section> -->
 
-        <section class="py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] astro-GDQBJPLB">
+        <section class="py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-GDQBJPLB">
             <div class="mx-5 md:mx-auto md:max-w-7xl md:px-20 astro-GDQBJPLB">
                 <div class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8 astro-GDQBJPLB">
                     <div class="text-left md:text-center font-semibold text-2xl md:text-4xl  mb-0 md:mb-2 lg:mb-2 astro-GDQBJPLB">
@@ -427,7 +427,7 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
 
 
 
-        <section class="section-bg-left py-[3.125rem] md:py-[3.125rem] lg:py-[6.25rem] astro-GDQBJPLB">
+        <section class="section-bg-left py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-GDQBJPLB">
             <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-GDQBJPLB">
                 <div class="md:text-center sm:text-left mb-0 md:mb-10 lg:mb-10 astro-GDQBJPLB">
                     <h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold astro-GDQBJPLB">

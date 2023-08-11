@@ -1,14 +1,14 @@
 ---
 import { Image, Picture } from "@astrojs/image/components";
-import footer_logo from "../../public/footer_logo.svg"
-import linkedin_footer from "../../public/linkedin-footer.svg"
-import fb from "../../public/fb.svg"
-import instagram from "../../public/insta-footer.svg"
-import phone from "../../public/phone.svg"
-import map from "../../public/map.svg"
-import email from "../../public/email.svg"
-import form_bg from "../../public/form-bg.svg"
-import right from "../../public/right.svg";
+import footer_logo from "../../public/Images/footer_logo.svg"
+import linkedin_footer from "../../public/Images/linkedin-footer.svg"
+import fb from "../../public/Images/fb.svg"
+import instagram from "../../public/Images/insta-footer.svg"
+import phone from "../../public/Images/phone.svg"
+import map from "../../public/Images/map.svg"
+import email from "../../public/Images/email.svg"
+import form_bg from "../../public/Images/form-bg.svg"
+import right from "../../public/Images/right.svg";
 ---
 
 <section class="bg-[#3E96F4] flex flex-wrap relative mt-[3.125rem] md:mt-[3.125rem] lg:mt-[6.25rem]" id="section">
@@ -42,36 +42,37 @@ import right from "../../public/right.svg";
             <Image src={right} width={6} height={12} alt="right arrow "/>
         </div>
     </div>
+    </div>
 </section>
 
 <footer class="bg-[#31393C] py-20">
     <!-- <div class="md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap text-white">
         <div class="sm:w-full md:w-3/12 lg:w-3/12">
-            <Image src="'../../public/footer_logo.svg" />
+            <Image src="'../../public/Images/footer_logo.svg" />
             <p class="text-sm leading-6 mt-5">
                 ServiceNow and ERPNext Consulting, Implementation and
                 Development Specialist.
             </p>
             <div class="my-5 pr-4">
                 <div class="flex space-x-6 mt-6 md:mt-6 lg:mt-8">
-                    <a href="" class="text-gray-400">
+                    <a href="https://in.linkedin.com/company/sanskar-technolab-pvt-ltd" class="text-gray-400">
                         <Image
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-                            src="../../public/linkedin-footer.svg"
+                            src="../../public/Images/linkedin-footer.svg"
                         />
                         <p class="sr-only">Linkedin account</p>
                     </a>
-                    <a href="" class="text-gray-400">
+                    <a href="https://www.facebook.com/SanskarTechnolab/" class="text-gray-400">
                         <Image
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-                            src="../../public/fb.svg"
+                            src="../../public/Images/fb.svg"
                         />
                         <p class="sr-only">Facebook page</p>
                     </a>
-                    <a href="" class="text-gray-400">
+                    <a href="https://www.instagram.com/sanskartechnolab/" class="text-gray-400">
                         <Image
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-                            src="../../public/insta-footer.svg"
+                            src="../../public/Images/insta-footer.svg"
                         />
                         <p class="sr-only">Instagram page</p>
                     </a>
@@ -100,7 +101,7 @@ import right from "../../public/right.svg";
     </div> -->
 
     <div
-        class="md:max-w-7xl mx-5 md:mx-auto md:px-24 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7lg:gap-10 text-white"
+        class="md:max-w-7xl mx-5 md:mx-auto md:px-24 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-7lg:gap-10 text-white"
     >
         <div class="">
             <a href="/">
@@ -111,21 +112,21 @@ import right from "../../public/right.svg";
             </p>
             <div class="my-5 pr-4">
                 <div class="flex space-x-6 mt-6 md:mt-6 lg:mt-8">
-                    <a href="" class="text-gray-400">
+                    <a href="https://in.linkedin.com/company/sanskar-technolab-pvt-ltd" class="text-gray-400">
                         <Image
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                             src={linkedin_footer} alt="linkedin_footer"
                         />
                         <p class="sr-only">Linkedin account</p>
                     </a>
-                    <a href="" class="text-gray-400">
+                    <a href="https://www.facebook.com/SanskarTechnolab/" class="text-gray-400">
                         <Image
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                             src={fb} alt="facebook"
                         />
                         <p class="sr-only">Facebook page</p>
                     </a>
-                    <a href="" class="text-gray-400">
+                    <a href="https://www.instagram.com/sanskartechnolab/" class="text-gray-400">
                         <Image
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                             src={instagram} alt="instagram"
@@ -135,37 +136,52 @@ import right from "../../public/right.svg";
                 </div>
             </div>
         </div>
-        <div class="">
-            <h4 class="!text-base text[#F7FFFF] font-bold font-montserrat">ServiceNow</h4>
-            <div class="grid gap-2 md:gap-3 lg:gap-5 mt-5">
-                <p class="b"><p class="text-sm">ServiceNow Development</p></p>
-                <p class="b"><p class="text-sm">ServiceNow Partner</p></p>
-                <p class="b"><p class="text-sm">ServiceNow Consultation</p></p>
-                <p class="b"><p class="text-sm">Hire ServiceNow Developer</p></p>
+       <div class="">
+            <h4 class="!text-base text[#F7FFFF] font-bold font-montserrat"> Industries</h4>
+            <div class="grid gap-2 md:gap-2 lg:gap-3 mt-2">
+                
+				<p class="border-bottom"></p> <a href="/manufacturing" class="mt-3 text-sm">Manufacturing</a>
+                <a href="/textile" class="text-sm">Textile</a>
+                <!--<a href="#" class="text-sm">Healthcare</a>-->
+                <a href="/retail" class="text-sm">Retail</a>
+				<!--<a href="#" class="text-sm">Construction</a>
+                <a href="#" class="text-sm">Crowdfunding</a>-->
+                <a href="/hr-payroll" class="text-sm">Human Resources</a>
+                <!--<p class="border-bottom"></p><a href="#" class="text-sm">Ayurveda</a>-->
             </div>
         </div>
-        <div class="">
-            <h4 class="!text-base text[#F7FFFF] font-bold font-montserrat">ERPNext</h4>
-            <div class="grid gap-2 md:gap-3 lg:gap-5 mt-5">
-                <p class="b"><p class="text-sm">ERPNext Partner</p></p>
-                <p class="b"><p class="text-sm">ERPNext Amazon Integration</p></p>
-            </div>
+
+		 <div class="">
+            <h4 class="!text-base text[#F7FFFF] font-bold font-montserrat">Discover</h4>
+                <div class="grid gap-2 md:gap-2 lg:gap-3 mt-2">
+                    <p class="border-bottom"></p><a href="/about" class="mt-3 text-sm">About</a>
+                    <a href="/career" class="text-sm">Career</a>
+                    <a href="/contact-us" class="text-sm">Contact</a>
+                    <a href="/migoo-case-study" class="text-sm">Migoo Case Study</a>
+                </div>
         </div>
-        <div class="">
+         <div>
             <h4 class="!text-base text[#F7FFFF] font-bold font-montserrat">Contact</h4>
-                <div class="!text-sm mt-5">
-                  <a href="https://www.google.com/maps/search/A-706,+Privilon,+Behind+Iscon+Temple,+Iscon+cross+Road,+SG+Highway,+Ahmedabad./@23.0282855,72.5032655,17z/data=!3m1!4b1?entry=ttu" class="flex gap-2"><Image src={map} alt="map" /> A-706, Privilon, Behind Iscon</a>
-                  <a href="https://www.google.com/maps/search/A-706,+Privilon,+Behind+Iscon+Temple,+Iscon+cross+Road,+SG+Highway,+Ahmedabad./@23.0282855,72.5032655,17z/data=!3m1!4b1?entry=ttu">Temple, Iscon cross Road, SG Highway, Ahmedabad. (Gujarat-India)</a>
-                  <a href="mailto:info@sanskartechnolab.com" class="mt-7 flex gap-2"><Image src={email} alt="email" /><p>info@sanskartechnolab.com</p></a>
-                  <a href="tel:+91 9558112081" class="mt-3 flex gap-2"><Image src={phone} alt="phone" /><p>(+91) 95581 12081</p></a>
-                </div> 
-              </div>
+            <div class="!text-sm mt-5">
+                <div class="flex gap-1">
+                    <div class="w-1/12"><a href="https://www.google.com/maps/search/A-706,+Privilon,+Behind+Iscon+Temple,+Iscon+cross+Road,+SG+Highway,+Ahmedabad./@23.0282855,72.5032655,17z/data=!3m1!4b1?entry=ttu" class="flex gap-2"><Image class="ml-1 mt-1" src={map} alt="map" /></a></div>
+                    <div class="w-11/12"> A-706, Privilon, Behind Iscon Temple, Iscon cross Road, SG Highway, Ahmedabad. (Gujarat-India) </div>
+                </div>
+                <div class="flex mt-7 gap-1">
+                    <div class="w-1/12"><a href="mailto:info@sanskartechnolab.com" ><Image src={email} alt="email" /></a></div>
+                    <div class="w-11/12"><p>info@sanskartechnolab.com</p></div>
+                </div>
+                <div class="flex gap-1">
+                    <div class="w-1/12 flex justify-center"><a href="tel:+91 9558112081" class="mt-3 flex gap-2"><Image src={phone} alt="phone" /></a></div>
+                    <div class="w-11/12 mt-3">(+91) 95581 12081</div>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
 
 <section class="bg-[#04000E]">
-    <p class="md:max-w-7xl md:mx-auto md:px-24 text-center p-4">
+    <p class="md:max-w-7xl md:mx-auto md:px-24 text-left p-2">
         <span class="text-[#918F96] text-sm leading-3"
             >&copy; 2023 Sanskar Technolab All rights reserved</span
         >
@@ -230,10 +246,14 @@ import right from "../../public/right.svg";
         font-family: Montserrat;
     }
     .bg-lets-craft{
-		background-image: url('../../public/form-bg-3.png');
+		background-image: url('../../public/Images/form-bg-3.png');
 	}
 
     .b{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    .border-bottom{
         border-bottom: 1px solid rgba(255, 255, 255, 0.10);
     }
 </style>

@@ -13,9 +13,9 @@ const $$Test = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Test;
   return renderTemplate`<!-- 
 <div class="slideshow">
-    <img class="slide" src="../../public/project-manager.svg" alt="Slide 1" />
-    <img class="slide" src="../../public/project-manager.svg" alt="Slide 2" />
-    <img class="slide" src="../../public/customer.svg" alt="Slide 3" />
+    <img class="slide" src="../../public/Images/project-manager.svg" alt="Slide 1" />
+    <img class="slide" src="../../public/Images/project-manager.svg" alt="Slide 2" />
+    <img class="slide" src="../../public/Images/customer.svg" alt="Slide 3" />
 </div>
 <button id="preBtn">Pre Slide</button>
 <button id="nextBtn">Next Slide</button> --><!-- <section
@@ -99,7 +99,7 @@ const $$Test = createComponent(async ($$result, $$props, $$slots) => {
                 <div
                     class="bg-[#3D96F5] rounded-[10px] h-[6.875rem] w-[11.5rem] border border-white justify-center items-center flex flex-wrap text-white"
                 >
-                    <img src="../../public/erpnext.png" />Enterprise
+                    <img src="../../public/Images/erpnext.png" />Enterprise
                     Manufacturing
                 </div>
                 <div
@@ -173,7 +173,7 @@ const $$Test = createComponent(async ($$result, $$props, $$slots) => {
                         <div
 							class=" flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] shadow drop-shadow-lg w-64 h-64 mr-10"
 						>
-							<img src="../../public/calender.svg" />
+							<img src="../../public/Images/calender.svg" />
 							<p
 								class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
 							>
@@ -186,7 +186,7 @@ const $$Test = createComponent(async ($$result, $$props, $$slots) => {
                         <div
                         class=" flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] shadow drop-shadow-lg w-64 h-64 mr-10"
                     >
-                        <img src="../../public/dollar.svg" />
+                        <img src="../../public/Images/dollar.svg" />
                         <p
                             class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
                         >
@@ -199,7 +199,7 @@ const $$Test = createComponent(async ($$result, $$props, $$slots) => {
                     <div
                         class=" flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] shadow drop-shadow-lg w-64 h-64 mr-10"
                     >
-                        <img src="../../public/time.svg" />
+                        <img src="../../public/Images/time.svg" />
                         <p
                             class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
                         >
@@ -212,7 +212,7 @@ const $$Test = createComponent(async ($$result, $$props, $$slots) => {
                     <div
                         class=" flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] shadow drop-shadow-lg w-64 h-64 mr-10"
                     >
-                        <img src="../../public/rocket.svg" />
+                        <img src="../../public/Images/rocket.svg" />
                         <p
                             class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
                         >
@@ -246,7 +246,7 @@ const $$Test = createComponent(async ($$result, $$props, $$slots) => {
         <div
             class="bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] shadow drop-shadow-lg mr-10 w-64"
         >
-            <img src="../../public/calender.svg" />
+            <img src="../../public/Images/calender.svg" />
             <p
                 class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
             >
@@ -257,7 +257,7 @@ const $$Test = createComponent(async ($$result, $$props, $$slots) => {
         <div
             class="bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] shadow drop-shadow-lg mr-10 w-64"
         >
-            <img src="../../public/calender.svg" />
+            <img src="../../public/Images/calender.svg" />
             <p
                 class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
             >
@@ -268,7 +268,7 @@ const $$Test = createComponent(async ($$result, $$props, $$slots) => {
         <div
             class="bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] shadow drop-shadow-lg mr-10 w-64"
         >
-            <img src="../../public/calender.svg" />
+            <img src="../../public/Images/calender.svg" />
             <p
                 class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
             >
@@ -279,7 +279,7 @@ const $$Test = createComponent(async ($$result, $$props, $$slots) => {
         <div
             class="bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] shadow drop-shadow-lg mr-10 w-64"
         >
-            <img src="../../public/calender.svg" />
+            <img src="../../public/Images/calender.svg" />
             <p
                 class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
             >
@@ -290,7 +290,7 @@ const $$Test = createComponent(async ($$result, $$props, $$slots) => {
         <div
             class="bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] shadow drop-shadow-lg mr-10 w-64"
         >
-            <img src="../../public/calender.svg" />
+            <img src="../../public/Images/calender.svg" />
             <p
                 class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
             >

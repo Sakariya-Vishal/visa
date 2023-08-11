@@ -8,7 +8,7 @@ const $$Navbar = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead($$result)}<nav class="drop-shadow-md p-5 bg-white astro-5KNYCIEN">
     <div class="md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap items-center justify-between astro-5KNYCIEN">
         <a href="/" class="w-8/12 md:w-auto flex items-center flex-shrink-0 text-white mr-6 hover:cursor-pointer astro-5KNYCIEN">
-            <img src="../../public/logo.svg" alt="logo" class="astro-5KNYCIEN">
+            <img src="../../public/Images/logo.svg" alt="logo" class="astro-5KNYCIEN">
 
             <!-- <svg
                 width="201"
@@ -341,7 +341,7 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead($$result)}<footer class="bg-[#31393C] py-20 astro-K2F5ZB5C">
     <!-- <div class="md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap text-white">
         <div class="sm:w-full md:w-3/12 lg:w-3/12">
-            <img src="'../../public/footer_logo.svg" />
+            <img src="'../../public/Images/footer_logo.svg" />
             <p class="text-sm leading-6 mt-5">
                 ServiceNow and ERPNext Consulting, Implementation and
                 Development Specialist.
@@ -351,21 +351,21 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
                     <a href="" class="text-gray-400">
                         <img
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-                            src="../../public/linkedin-footer.svg"
+                            src="../../public/Images/linkedin-footer.svg"
                         />
                         <p class="sr-only">Linkedin account</p>
                     </a>
                     <a href="" class="text-gray-400">
                         <img
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-                            src="../../public/fb.svg"
+                            src="../../public/Images/fb.svg"
                         />
                         <p class="sr-only">Facebook page</p>
                     </a>
                     <a href="" class="text-gray-400">
                         <img
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-                            src="../../public/insta-footer.svg"
+                            src="../../public/Images/insta-footer.svg"
                         />
                         <p class="sr-only">Instagram page</p>
                     </a>
@@ -395,7 +395,7 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
 
     <div class="md:max-w-7xl mx-5 md:mx-auto md:px-24 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 text-white astro-K2F5ZB5C">
         <div class=" astro-K2F5ZB5C">
-            <a href="/" class="astro-K2F5ZB5C"><img src="'../../public/footer_logo.svg" class="astro-K2F5ZB5C"></a>
+            <a href="/" class="astro-K2F5ZB5C"><img src="'../../public/Images/footer_logo.svg" class="astro-K2F5ZB5C"></a>
             <p class="text-sm leading-6 mt-5 astro-K2F5ZB5C">
                 ServiceNow and ERPNext Consulting, Implementation and
                 Development Specialist.
@@ -403,15 +403,15 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
             <div class="my-5 pr-4 astro-K2F5ZB5C">
                 <div class="flex space-x-6 mt-6 md:mt-6 lg:mt-8 astro-K2F5ZB5C">
                     <a href="" class="text-gray-400 astro-K2F5ZB5C">
-                        <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 astro-K2F5ZB5C" src="../../public/linkedin-footer.svg">
+                        <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 astro-K2F5ZB5C" src="../../public/Images/linkedin-footer.svg">
                         <p class="sr-only astro-K2F5ZB5C">Linkedin account</p>
                     </a>
                     <a href="" class="text-gray-400 astro-K2F5ZB5C">
-                        <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 astro-K2F5ZB5C" src="../../public/fb.svg">
+                        <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 astro-K2F5ZB5C" src="../../public/Images/fb.svg">
                         <p class="sr-only astro-K2F5ZB5C">Facebook page</p>
                     </a>
                     <a href="" class="text-gray-400 astro-K2F5ZB5C">
-                        <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 astro-K2F5ZB5C" src="../../public/insta-footer.svg">
+                        <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 astro-K2F5ZB5C" src="../../public/Images/insta-footer.svg">
                         <p class="sr-only astro-K2F5ZB5C">Instagram page</p>
                     </a>
                 </div>
@@ -436,10 +436,10 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
         <div class=" astro-K2F5ZB5C">
             <h4 class="text-base text[#F7FFFF] font-bold font-montserrat astro-K2F5ZB5C">Contact</h4>
                 <div class="text-sm mt-5 astro-K2F5ZB5C">
-                  <a href="https://www.google.com/maps/search/A-706,+Privilon,+Behind+Iscon+Temple,+Iscon+cross+Road,+SG+Highway,+Ahmedabad./@23.0282855,72.5032655,17z/data=!3m1!4b1?entry=ttu" class="flex gap-2 astro-K2F5ZB5C"><img src="../../public/map.svg" class="astro-K2F5ZB5C"> A-706, Privilon, Behind Iscon</a>
+                  <a href="https://www.google.com/maps/search/A-706,+Privilon,+Behind+Iscon+Temple,+Iscon+cross+Road,+SG+Highway,+Ahmedabad./@23.0282855,72.5032655,17z/data=!3m1!4b1?entry=ttu" class="flex gap-2 astro-K2F5ZB5C"><img src="../../public/Images/map.svg" class="astro-K2F5ZB5C"> A-706, Privilon, Behind Iscon</a>
                   <a href="https://www.google.com/maps/search/A-706,+Privilon,+Behind+Iscon+Temple,+Iscon+cross+Road,+SG+Highway,+Ahmedabad./@23.0282855,72.5032655,17z/data=!3m1!4b1?entry=ttu" class="astro-K2F5ZB5C">Temple, Iscon cross Road, SG Highway, Ahmedabad. (Gujarat-India)</a>
-                  <a href="mailto:info@sanskartechnolab.com" class="mt-7 flex gap-2 astro-K2F5ZB5C"><img src="../../public/email.svg" class="astro-K2F5ZB5C"><p class="astro-K2F5ZB5C">info@sanskartechnolab.com</p></a>
-                  <a href="tel:+91 9558112081" class="mt-3 flex gap-2 astro-K2F5ZB5C"><img src="../../public/phone.svg" class="astro-K2F5ZB5C"><p class="astro-K2F5ZB5C">(+91) 95581 12081</p></a>
+                  <a href="mailto:info@sanskartechnolab.com" class="mt-7 flex gap-2 astro-K2F5ZB5C"><img src="../../public/Images/email.svg" class="astro-K2F5ZB5C"><p class="astro-K2F5ZB5C">info@sanskartechnolab.com</p></a>
+                  <a href="tel:+91 9558112081" class="mt-3 flex gap-2 astro-K2F5ZB5C"><img src="../../public/Images/phone.svg" class="astro-K2F5ZB5C"><p class="astro-K2F5ZB5C">(+91) 95581 12081</p></a>
                 </div>
               </div>
         </div>
@@ -491,12 +491,12 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<a href="#" class="text-white font-semibold"
 							>Book a free demo now!</a
 						>
-						<img src="../../public/right.svg" />
+						<img src="../../public/Images/right.svg" />
 					</div>
 				</div>
 
 				<img
-					src="../../public/banner.png"
+					src="../../public/Images/banner.png"
 					alt="banner image"
 					class="sm:w-full md:w-4/12 lg:w-4/12"
 				/>
@@ -521,14 +521,14 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<a href="#" class="text-white font-semibold"
 							>Book a free demo now!</a
 						>
-						<img src="../../public/right.svg" class="ml-0" />
+						<img src="../../public/Images/right.svg" class="ml-0" />
 					</div>
 				</div>
 				<div
 					class="sm:w-full md:w-4/12 lg:w-4/12 sm:grid md:absolute lg:absolute right-0"
 				>
 					<img
-						src="../../public/banner.png"
+						src="../../public/Images/banner.png"
 						alt="banner image"
 						class=""
 					/>
@@ -537,7 +537,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 		</section> -->
 
 		<section class="hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center astro-J7PV25F6">
-			<img class="absolute right-0 w-5/12 astro-J7PV25F6" src="../../public/banner.png" alt="banner image" class="">
+			<img class="absolute right-0 w-5/12 astro-J7PV25F6" src="../../public/Images/banner.png" alt="banner image" class="">
 			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex astro-J7PV25F6">
 				<div class="w-7/12 astro-J7PV25F6">
 					<h1 class=" text-[3.5rem] text-[#31393C] font-semibold leading-[4rem] astro-J7PV25F6">
@@ -548,7 +548,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</p>
 					<div class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 md:w-72 sm:w-auto astro-J7PV25F6">
 						<a href="#" class="text-white font-semibold font-inter astro-J7PV25F6">Book a free demo now!</a>
-						<img src="../../public/right.svg" class="ml-0 astro-J7PV25F6">
+						<img src="../../public/Images/right.svg" class="ml-0 astro-J7PV25F6">
 					</div>
 					</div>
 			</div>
@@ -564,10 +564,10 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				</p>
 				<div class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-auto md:w-72 astro-J7PV25F6">
 					<a href="#" class="text-white font-semibold font-inter astro-J7PV25F6">Book a free demo now!</a>
-					<img src="../../public/right.svg" class="ml-0 astro-J7PV25F6">
+					<img src="../../public/Images/right.svg" class="ml-0 astro-J7PV25F6">
 				</div>
 			</div>
-			<img src="../../public/banner.png" alt="banner image" class="mt-5 astro-J7PV25F6">
+			<img src="../../public/Images/banner.png" alt="banner image" class="mt-5 astro-J7PV25F6">
 		</section>
 
 		<!-- <div class="flex flex-wrap items-center mb-20 mt-10">
@@ -587,12 +587,12 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					<a href="#" class="text-white font-semibold"
 						>Book a free demo now!</a
 					>
-					<img src="../../public/right.svg" class="ml-0" />
+					<img src="../../public/Images/right.svg" class="ml-0" />
 				</div>
 			</div>
 
 			<img
-				src="../../public/banner.png"
+				src="../../public/Images/banner.png"
 				alt="banner image"
 				class="w-5/12"
 			/>
@@ -650,30 +650,30 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				<div class="flex flex-wrap mt-5 astro-J7PV25F6">
 					<div class="sm:mr-0 md:mr-0 lg:mr-14 sm:w-full md:w-full lg:w-7/12 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 items-center astro-J7PV25F6">
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/FinancialAccounting.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Financial Accounting</p>
+							<img src="../../public/Images/FinancialAccounting.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Financial Accounting</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/OrderManagement.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Order Management</p>
+							<img src="../../public/Images/OrderManagement.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Order Management</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/HR&payroll.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">HR & payroll</p>
+							<img src="../../public/Images/HR&payroll.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">HR & payroll</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/Manufacturing.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Manufacturing</p>
+							<img src="../../public/Images/Manufacturing.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Manufacturing</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/CRM.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">
+							<img src="../../public/Images/CRM.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">
 								CRM
 							</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/Website.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Website</p>
+							<img src="../../public/Images/Website.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Website</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/Helpdesk.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Helpdesk</p>
+							<img src="../../public/Images/Helpdesk.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Helpdesk</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/AssetManagement.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Asset Management</p>
+							<img src="../../public/Images/AssetManagement.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Asset Management</p>
 						</div>
 					</div>
 					<div class="sm:w-full md:w-full lg:w-4/12 text-[#31393C] mt-5 md:mt-5 lg:mt-0 astro-J7PV25F6">
@@ -705,30 +705,30 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				<div class="flex flex-wrap mt-5 astro-J7PV25F6">
 					<div class="sm:mr-0 md:mr-0 lg:mr-14 sm:w-full md:w-full lg:w-7/12 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 items-center astro-J7PV25F6">
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/FinancialAccounting.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Financial Accounting</p>
+							<img src="../../public/Images/FinancialAccounting.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Financial Accounting</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/OrderManagement.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Order Management</p>
+							<img src="../../public/Images/OrderManagement.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Order Management</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/HR&payroll.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">HR & payroll</p>
+							<img src="../../public/Images/HR&payroll.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">HR & payroll</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/Manufacturing.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Manufacturing</p>
+							<img src="../../public/Images/Manufacturing.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Manufacturing</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/CRM.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">
+							<img src="../../public/Images/CRM.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">
 								CRM
 							</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/Website.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Website</p>
+							<img src="../../public/Images/Website.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Website</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/Helpdesk.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Helpdesk</p>
+							<img src="../../public/Images/Helpdesk.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Helpdesk</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/AssetManagement.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Asset Management</p>
+							<img src="../../public/Images/AssetManagement.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Asset Management</p>
 						</div>
 					</div>
 					<div class="sm:w-full md:w-full lg:w-4/12 text-[#31393C] mt-5 md:mt-5 lg:mt-0 astro-J7PV25F6">
@@ -758,7 +758,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				<div class="overflow-x-scroll overflow-y-hidden custom-scrollbar astro-J7PV25F6">
 					<div class="flex gap-7 astro-J7PV25F6">
 						<div class="flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] let-shadow w-64 h-64 mr-10 astro-J7PV25F6">
-							<img src="../../public/calender.svg" class="astro-J7PV25F6">
+							<img src="../../public/Images/calender.svg" class="astro-J7PV25F6">
 							<p class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold astro-J7PV25F6">
 								12+
 							</p>
@@ -767,7 +767,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 							</p>
 						</div>
 						<div class=" flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] let-shadow w-64 h-64 mr-10 astro-J7PV25F6">
-						<img src="../../public/dollar.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/dollar.svg" class="astro-J7PV25F6">
 						<p class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold astro-J7PV25F6">
 							35%
 						</p>
@@ -776,7 +776,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						</p>
 					</div>
 					<div class=" flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] let-shadow w-64 h-64 mr-10 astro-J7PV25F6">
-						<img src="../../public/time.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/time.svg" class="astro-J7PV25F6">
 						<p class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold astro-J7PV25F6">
 							20%
 						</p>
@@ -785,7 +785,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						</p>
 					</div>
 					<div class=" flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] let-shadow w-64 h-64 mr-10 astro-J7PV25F6">
-						<img src="../../public/rocket.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/rocket.svg" class="astro-J7PV25F6">
 						<p class="mt-10 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold astro-J7PV25F6">
 							45%
 						</p>
@@ -814,7 +814,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				</h2>
 			</div>
 			<div class="flex mt-5 astro-J7PV25F6">
-				<img class="flex-none astro-J7PV25F6" src="../../public/previousbtn.svg" id="preScrollButton">
+				<img class="flex-none astro-J7PV25F6" src="../../public/Images/previousbtn.svg" id="preScrollButton">
 				<div class="grow h-14 flex gap-20 items-center justify-between overflow-x-scroll custom-scrollbar1 ml-10 astro-J7PV25F6" id="scrollContainer">
 					<div class="drop-shadow-lg shadow rounded-lg mr-5 text-[#31393C] astro-J7PV25F6" id="menuf1">
 						<button class="text-[#3E96F4] px-10 py-2 font-semibold text-lg astro-J7PV25F6" id="menuf">Manufacturing</button>
@@ -841,12 +841,12 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<button class="text-[#31393C] px-10 py-2 font-semibold text-lg astro-J7PV25F6" id="ayurveda">Ayurveda</button>
 					</div>
 				</div>
-				<img class="flex-none astro-J7PV25F6" src="../../public/nextbtn.svg" id="nextScrollButton">
+				<img class="flex-none astro-J7PV25F6" src="../../public/Images/nextbtn.svg" id="nextScrollButton">
 			</div>
 
 			<div class="flex flex-wrap justify-items-center items-center astro-J7PV25F6" id="menuf_c">
 				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
-					<img src="../../public/manufacturing.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
+					<img src="../../public/Images/manufacturing.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
 				<!-- </div> -->
 				<div class="sm:w-full md:w-4/12 lg:w-4/12 astro-J7PV25F6">
 					<p class="text-[1.75rem] text-[#31393C] font-semibold astro-J7PV25F6">
@@ -857,14 +857,14 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</p>
 					<div class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36 astro-J7PV25F6">
 						<a href="manufacturing" class="text-white font-semibold font-inter astro-J7PV25F6">learn more</a>
-						<img src="../../public/right.svg" class="ml-0 astro-J7PV25F6">
+						<img src="../../public/Images/right.svg" class="ml-0 astro-J7PV25F6">
 					</div>
 
 				</div>
 			</div>
 			<div class="hidden flex-wrap justify-items-center items-center astro-J7PV25F6" id="text_c">
 				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
-					<img src="../../public/textile_i.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
+					<img src="../../public/Images/textile_i.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
 				<!-- </div> -->
 				<div class="sm:w-full md:w-4/12 lg:w-4/12 astro-J7PV25F6">
 					<p class="text-[1.75rem] text-[#31393C] font-semibold astro-J7PV25F6">
@@ -875,14 +875,14 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</p>
 					<div class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36 astro-J7PV25F6">
 						<a href="#" class="text-white font-semibold font-inter astro-J7PV25F6">learn more</a>
-						<img src="../../public/right.svg" class="ml-0 astro-J7PV25F6">
+						<img src="../../public/Images/right.svg" class="ml-0 astro-J7PV25F6">
 					</div>
 				</div>
 			</div>
 
 			<div class="hidden flex-wrap justify-items-center items-center astro-J7PV25F6" id="health_c">
 				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
-					<img src="../../public/healthcare.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
+					<img src="../../public/Images/healthcare.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
 				<!-- </div> -->
 				<div class="sm:w-full md:w-4/12 lg:w-4/12 astro-J7PV25F6">
 					<p class="text-[1.75rem] text-[#31393C] font-semibold astro-J7PV25F6">
@@ -893,14 +893,14 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</p>
 					<div class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36 astro-J7PV25F6">
 						<a href="#" class="text-white font-semibold font-inter astro-J7PV25F6">learn more</a>
-						<img src="../../public/right.svg" class="ml-0 astro-J7PV25F6">
+						<img src="../../public/Images/right.svg" class="ml-0 astro-J7PV25F6">
 					</div>
 				</div>
 			</div>
 
 			<div class="hidden flex-wrap justify-items-center items-center astro-J7PV25F6" id="rent_c">
 				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
-					<img src="../../public/retail.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
+					<img src="../../public/Images/retail.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
 				<!-- </div> -->
 				<div class="sm:w-full md:w-4/12 lg:w-4/12 astro-J7PV25F6">
 					<p class="text-[1.75rem] text-[#31393C] font-semibold astro-J7PV25F6">
@@ -911,14 +911,14 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</p>
 					<div class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36 astro-J7PV25F6">
 						<a href="#" class="text-white font-semibold font-inter astro-J7PV25F6">learn more</a>
-						<img src="../../public/right.svg" class="ml-0 astro-J7PV25F6">
+						<img src="../../public/Images/right.svg" class="ml-0 astro-J7PV25F6">
 					</div>
 				</div>
 			</div>
 
 			<div class="hidden flex-wrap justify-items-center items-center astro-J7PV25F6" id="construction_c">
 				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
-					<img src="../../public/construction.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
+					<img src="../../public/Images/construction.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
 				<!-- </div> -->
 				<div class="sm:w-full md:w-4/12 lg:w-4/12 astro-J7PV25F6">
 					<p class="text-[1.75rem] text-[#31393C] font-semibold astro-J7PV25F6">
@@ -929,14 +929,14 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</p>
 					<div class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36 astro-J7PV25F6">
 						<a href="#" class="text-white font-semibold font-inter astro-J7PV25F6">learn more</a>
-						<img src="../../public/right.svg" class="ml-0 astro-J7PV25F6">
+						<img src="../../public/Images/right.svg" class="ml-0 astro-J7PV25F6">
 					</div>
 				</div>
 			</div>
 
 			<div class="hidden flex-wrap justify-items-center items-center astro-J7PV25F6" id="crowdfunding_c">
 				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
-					<img src="../../public/crowdfunding.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
+					<img src="../../public/Images/crowdfunding.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
 				<!-- </div> -->
 				<div class="sm:w-full md:w-4/12 lg:w-4/12 astro-J7PV25F6">
 					<p class="text-[1.75rem] text-[#31393C] font-semibold astro-J7PV25F6">
@@ -947,14 +947,14 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</p>
 					<div class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36 astro-J7PV25F6">
 						<a href="#" class="text-white font-semibold font-inter astro-J7PV25F6">learn more</a>
-						<img src="../../public/right.svg" class="ml-0 astro-J7PV25F6">
+						<img src="../../public/Images/right.svg" class="ml-0 astro-J7PV25F6">
 					</div>
 				</div>
 			</div>
 
 			<div class="hidden flex-wrap justify-items-center items-center astro-J7PV25F6" id="hr_c">
 				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
-					<img src="../../public/hr.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
+					<img src="../../public/Images/hr.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
 				<!-- </div> -->
 				<div class="sm:w-full md:w-4/12 lg:w-4/12 astro-J7PV25F6">
 					<p class="text-[1.75rem] text-[#31393C] font-semibold astro-J7PV25F6">
@@ -965,14 +965,14 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</p>
 					<div class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36 astro-J7PV25F6">
 						<a href="#" class="text-white font-semibold font-inter astro-J7PV25F6">learn more</a>
-						<img src="../../public/right.svg" class="ml-0 astro-J7PV25F6">
+						<img src="../../public/Images/right.svg" class="ml-0 astro-J7PV25F6">
 					</div>
 				</div>
 			</div>
 
 			<div class="hidden flex-wrap justify-items-center items-center astro-J7PV25F6" id="ayurveda_c">
 				<!-- <div class="sm:w-full md:w-8/12 lg:w-8/12"> -->
-					<img src="../../public/ayurveda.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
+					<img src="../../public/Images/ayurveda.svg" class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12 astro-J7PV25F6">
 				<!-- </div> -->
 				<div class="sm:w-full md:w-4/12 lg:w-4/12 astro-J7PV25F6">
 					<p class="text-[1.75rem] text-[#31393C] font-semibold astro-J7PV25F6">
@@ -983,7 +983,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</p>
 					<div class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-36 astro-J7PV25F6">
 						<a href="#" class="text-white font-semibold font-inter astro-J7PV25F6">learn more</a>
-						<img src="../../public/right.svg" class="ml-0 astro-J7PV25F6">
+						<img src="../../public/Images/right.svg" class="ml-0 astro-J7PV25F6">
 					</div>
 				</div>
 			</div>
@@ -1002,53 +1002,53 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				</p>
 			</div>
 			<div class="hidden lg:flex flex-wrap justify-between mt-10 astro-J7PV25F6">
-				<img src="../../public/paypal.svg" class="astro-J7PV25F6">
-				<img src="../../public/dropbox.svg" class="astro-J7PV25F6">
-				<img src="../../public/razorpay.svg" class="astro-J7PV25F6">
-				<img src="../../public/stripe.svg" class="astro-J7PV25F6">
-				<img src="../../public/slack.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/paypal.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/dropbox.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/razorpay.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/stripe.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/slack.svg" class="astro-J7PV25F6">
 			</div>
 			<div class="hidden lg:flex flex-wrap justify-between mt-10 astro-J7PV25F6">
-				<img src="../../public/google.svg" class="astro-J7PV25F6">
-				<img src="../../public/shopify.svg" class="astro-J7PV25F6">
-				<img src="../../public/woocommerce.svg" class="astro-J7PV25F6">
-				<img src="../../public/sendGrid.svg" class="astro-J7PV25F6">
-				<img src="../../public/strip.svg" class="astro-J7PV25F6">
-				<img src="../../public/aws.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/google.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/shopify.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/woocommerce.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/sendGrid.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/strip.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/aws.svg" class="astro-J7PV25F6">
 			</div>
 			<div class="hidden lg:flex flex-wrap justify-between mt-10 sm:mx-auto md:mx-40 astro-J7PV25F6">
-				<img src="../../public/unicommerce.svg" class="astro-J7PV25F6">
-				<img src="../../public/outlook.svg" class="astro-J7PV25F6">
-				<img src="../../public/insta.svg" class="astro-J7PV25F6">
-				<img src="../../public/twitter.svg" class="astro-J7PV25F6">
-				<img src="../../public/whatsapp.svg" class="astro-J7PV25F6">
-				<img src="../../public/linkedin.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/unicommerce.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/outlook.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/insta.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/twitter.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/whatsapp.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/linkedin.svg" class="astro-J7PV25F6">
 			</div>
 
 			<div class="flex md:flex lg:hidden flex-wrap md:justify-center mt-10 gap-9 astro-J7PV25F6">
-				<img src="../../public/paypal.svg" class="astro-J7PV25F6">
-				<img src="../../public/dropbox.svg" class="astro-J7PV25F6">
-				<img src="../../public/razorpay.svg" class="astro-J7PV25F6">
-				<img src="../../public/stripe.svg" class="astro-J7PV25F6">
-				<img src="../../public/slack.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/paypal.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/dropbox.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/razorpay.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/stripe.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/slack.svg" class="astro-J7PV25F6">
 				<!-- </div>
 			<div class="flex lg:hidden flex-wrap justify-between mt-10"> -->
-				<img src="../../public/google.svg" class="astro-J7PV25F6">
-				<img src="../../public/shopify.svg" class="astro-J7PV25F6">
-				<img src="../../public/woocommerce.svg" class="astro-J7PV25F6">
-				<img src="../../public/sendGrid.svg" class="astro-J7PV25F6">
-				<img src="../../public/strip.svg" class="astro-J7PV25F6">
-				<img src="../../public/aws.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/google.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/shopify.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/woocommerce.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/sendGrid.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/strip.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/aws.svg" class="astro-J7PV25F6">
 				<!-- </div>
 			<div
 				class="flex lg:hidden flex-wrap justify-between mt-10 sm:mx-auto md:mx-40"
 			> -->
-				<img src="../../public/unicommerce.svg" class="astro-J7PV25F6">
-				<img src="../../public/outlook.svg" class="astro-J7PV25F6">
-				<img src="../../public/insta.svg" class="astro-J7PV25F6">
-				<img src="../../public/twitter.svg" class="astro-J7PV25F6">
-				<img src="../../public/whatsapp.svg" class="astro-J7PV25F6">
-				<img src="../../public/linkedin.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/unicommerce.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/outlook.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/insta.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/twitter.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/whatsapp.svg" class="astro-J7PV25F6">
+				<img src="../../public/Images/linkedin.svg" class="astro-J7PV25F6">
 			</div>
 
 			<div class="flex flex-wrap justify-between items-center mt-10 sm:mx-auto md:mx-56 astro-J7PV25F6">
@@ -1057,14 +1057,14 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				</div>
 				<div class="flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-52 sm:mt-5 astro-J7PV25F6">
 					<a href="#" class="text-white font-semibold font-inter astro-J7PV25F6">We can help!</a>
-					<img src="../../public/right.svg" class="astro-J7PV25F6">
+					<img src="../../public/Images/right.svg" class="astro-J7PV25F6">
 				</div>
 			</div>
 		</section>
 
 		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-20 astro-J7PV25F6">
 			<div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 astro-J7PV25F6">
-				<div class="bg-[url('../../public/bg.svg')] bg-no-repeat grid gap-2 astro-J7PV25F6">
+				<div class="bg-[url('../../public/Images/bg.svg')] bg-no-repeat grid gap-2 astro-J7PV25F6">
 					<p class="text-4xl leading-[44px] text-[#31393C] font-semibold astro-J7PV25F6">
 						Move beyond traditional softwares with these
 						one-of-a-kind tools!
@@ -1074,7 +1074,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</div>
 					<div class="flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 md:w-72 sm:w-auto astro-J7PV25F6">
 						<a href="#" class="text-white font-semibold font-inter astro-J7PV25F6">Schedule a call back now!</a>
-						<img src="../../public/right.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/right.svg" class="astro-J7PV25F6">
 					</div>
 				</div>
 
@@ -1083,37 +1083,37 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						ERPNext
 					</div>
 					<div class="flex bg-white rounded-lg p-2 items-center gap-2 astro-J7PV25F6">
-						<img src="../../public/cost-efective.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/cost-efective.svg" class="astro-J7PV25F6">
 						<p class="text-[#31393C] text-base leading-4 astro-J7PV25F6">
 							Cost-effective solution
 						</p>
 					</div>
 					<div class="flex bg-white rounded-lg p-2 items-center gap-2 astro-J7PV25F6">
-						<img src="../../public/user-friendly.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/user-friendly.svg" class="astro-J7PV25F6">
 						<p class="text-[#31393C] text-base leading-4 astro-J7PV25F6">
 							User-friendly interface
 						</p>
 					</div>
 					<div class="flex bg-white rounded-lg p-2 items-center gap-2 astro-J7PV25F6">
-						<img src="../../public/easy-customized.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/easy-customized.svg" class="astro-J7PV25F6">
 						<p class="text-[#31393C] text-base leading-4 astro-J7PV25F6">
 							Easy customization
 						</p>
 					</div>
 					<div class="flex bg-white rounded-lg p-2 items-center gap-2 astro-J7PV25F6">
-						<img src="../../public/robust.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/robust.svg" class="astro-J7PV25F6">
 						<p class="text-[#31393C] text-base leading-4 astro-J7PV25F6">
 							Robust security features
 						</p>
 					</div>
 					<div class="flex bg-white rounded-lg p-2 items-center gap-2 astro-J7PV25F6">
-						<img src="../../public/scalable.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/scalable.svg" class="astro-J7PV25F6">
 						<p class="text-[#31393C] text-base leading-4 astro-J7PV25F6">
 							Highly Scalable architecture
 						</p>
 					</div>
 					<div class="flex bg-white rounded-lg p-2 items-center gap-2 astro-J7PV25F6">
-						<img src="../../public/mobile-friendly.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/mobile-friendly.svg" class="astro-J7PV25F6">
 						<p class="text-[#31393C] text-base leading-4 astro-J7PV25F6">
 							Mobile-friendly
 						</p>
@@ -1125,37 +1125,37 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						ServiceNow
 					</div>
 					<div class="flex bg-white rounded-lg p-2 items-center gap-2 astro-J7PV25F6">
-						<img src="../../public/it-service.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/it-service.svg" class="astro-J7PV25F6">
 						<p class="text-[#31393C] text-base leading-4 astro-J7PV25F6">
 							IT service management capabilities
 						</p>
 					</div>
 					<div class="flex bg-white rounded-lg p-2 items-center gap-2 astro-J7PV25F6">
-						<img src="../../public/communication.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/communication.svg" class="astro-J7PV25F6">
 						<p class="text-[#31393C] text-base leading-4 astro-J7PV25F6">
 							Enhanced collaboration and communication
 						</p>
 					</div>
 					<div class="flex bg-white rounded-lg p-2 items-center gap-2 astro-J7PV25F6">
-						<img src="../../public/easy-customized.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/easy-customized.svg" class="astro-J7PV25F6">
 						<p class="text-[#31393C] text-base leading-4 astro-J7PV25F6">
 							Extensive customization options
 						</p>
 					</div>
 					<div class="flex bg-white rounded-lg p-2 items-center gap-2 astro-J7PV25F6">
-						<img src="../../public/analytics.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/analytics.svg" class="astro-J7PV25F6">
 						<p class="text-[#31393C] text-base leading-4 astro-J7PV25F6">
 							Advanced analytics and reporting
 						</p>
 					</div>
 					<div class="flex bg-white rounded-lg p-2 items-center gap-2 astro-J7PV25F6">
-						<img src="../../public/robust.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/robust.svg" class="astro-J7PV25F6">
 						<p class="text-[#31393C] text-base leading-4 astro-J7PV25F6">
 							Robust security
 						</p>
 					</div>
 					<div class="flex bg-white rounded-lg p-2 items-center gap-2 astro-J7PV25F6">
-						<img src="../../public/integration.svg" class="astro-J7PV25F6">
+						<img src="../../public/Images/integration.svg" class="astro-J7PV25F6">
 						<p class="text-[#31393C] text-base leading-4 astro-J7PV25F6">
 							Integrated suite of enterprise-level solution
 						</p>
@@ -1175,7 +1175,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 			<div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-24 md:gap-24 gap-10 justify-items-center astro-J7PV25F6">
 				<div class="grid justify-items-center astro-J7PV25F6">
-					<img src="../../public/industry-rich-expertise.svg" class="astro-J7PV25F6">
+					<img src="../../public/Images/industry-rich-expertise.svg" class="astro-J7PV25F6">
 					<div class="text-xl text-[#31393C] font-semibold my-3 astro-J7PV25F6">
 						Industry-rich expertise
 					</div>
@@ -1186,7 +1186,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</p>
 				</div>
 				<div class="grid justify-items-center astro-J7PV25F6">
-					<img src="../../public/cost-saving.svg" class="astro-J7PV25F6">
+					<img src="../../public/Images/cost-saving.svg" class="astro-J7PV25F6">
 					<div class="text-xl text-[#31393C] font-semibold my-3 astro-J7PV25F6">
 						Cost savings
 					</div>
@@ -1197,7 +1197,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</p>
 				</div>
 				<div class="grid justify-items-center astro-J7PV25F6">
-					<img src="../../public/update-development.svg" class="astro-J7PV25F6">
+					<img src="../../public/Images/update-development.svg" class="astro-J7PV25F6">
 					<div class="text-xl text-[#31393C] font-semibold my-3 astro-J7PV25F6">
 						Best and updated development practices
 					</div>
@@ -1208,7 +1208,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</p>
 				</div>
 				<div class="grid justify-items-center astro-J7PV25F6">
-					<img src="../../public/timely.svg" class="astro-J7PV25F6">
+					<img src="../../public/Images/timely.svg" class="astro-J7PV25F6">
 					<div class="text-xl text-[#31393C] font-semibold my-3 astro-J7PV25F6">
 						Timely delivery
 					</div>
@@ -1220,7 +1220,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</p>
 				</div>
 				<div class="grid justify-items-center astro-J7PV25F6">
-					<img src="../../public/project-manager.svg" class="astro-J7PV25F6">
+					<img src="../../public/Images/project-manager.svg" class="astro-J7PV25F6">
 					<div class="text-xl text-[#31393C] font-semibold my-3 astro-J7PV25F6">
 						Dedicated project manager
 					</div>
@@ -1232,7 +1232,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</p>
 				</div>
 				<div class="grid justify-items-center astro-J7PV25F6">
-					<img src="../../public/support.svg" class="astro-J7PV25F6">
+					<img src="../../public/Images/support.svg" class="astro-J7PV25F6">
 					<div class="text-xl text-[#31393C] font-semibold my-3 astro-J7PV25F6">
 						Post-project support
 					</div>
@@ -1258,7 +1258,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 
 			<div class="happy-customer-shadow md:p-10 p-5 rounded-[20px] slideshow md:h-[23rem] h-[33rem] mt-5 astro-J7PV25F6">
 				<div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 slide astro-J7PV25F6">
-					<img class="pr-5 astro-J7PV25F6" src="../../public/customer.svg">
+					<img class="pr-5 astro-J7PV25F6" src="../../public/Images/customer.svg">
 					<div class="text-[#31393C] astro-J7PV25F6">
 						<p class="text-xl leading-9 font-semibold my-3 astro-J7PV25F6">
 							Osswal Infosystems
@@ -1278,7 +1278,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				</div>
 
 				<div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 slide astro-J7PV25F6">
-					<img class="pr-5 astro-J7PV25F6" src="../../public/customer.svg">
+					<img class="pr-5 astro-J7PV25F6" src="../../public/Images/customer.svg">
 					<div class="text-[#31393C] astro-J7PV25F6">
 						<p class="text-xl leading-9 font-semibold my-3 astro-J7PV25F6">
 							Osswal Infosystems 2
@@ -1298,7 +1298,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				</div>
 
 				<div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 slide astro-J7PV25F6">
-					<img class="pr-5 astro-J7PV25F6" src="../../public/customer.svg">
+					<img class="pr-5 astro-J7PV25F6" src="../../public/Images/customer.svg">
 					<div class="text-[#31393C] astro-J7PV25F6">
 						<p class="text-xl leading-9 font-semibold my-3 astro-J7PV25F6">
 							Osswal Infosystems 3
@@ -1318,8 +1318,8 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				</div>
 			</div>
 			<div class="flex justify-center gap-3 mt-10 astro-J7PV25F6">
-				<img src="../../public/previousbtn.svg" id="preBtn" class="astro-J7PV25F6">
-				<img src="../../public/nextbtn.svg" id="nextBtn" class="astro-J7PV25F6">
+				<img src="../../public/Images/previousbtn.svg" id="preBtn" class="astro-J7PV25F6">
+				<img src="../../public/Images/nextbtn.svg" id="nextBtn" class="astro-J7PV25F6">
 			</div>
 		</section>
 
@@ -1572,8 +1572,8 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				<div class="bg-white rounded-2xl astro-J7PV25F6">
 				<div class="flex justify-between p-5 astro-J7PV25F6" @click="accordion = accordion == 0 ? 1 : 0">
 					<div class="cursor-pointer  astro-J7PV25F6">Why should I pick ERPNext over other ERP products?</div>
-				  <img :class="accordion === 1 ? 'block' : 'hidden'" src="../../public/down-arrow.svg" class="astro-J7PV25F6">
-				  <img :class="accordion !== 1 ? 'block' : 'hidden'" src="../../public/up-arrow.svg" class="astro-J7PV25F6">
+				  <img :class="accordion === 1 ? 'block' : 'hidden'" src="../../public/Images/down-arrow.svg" class="astro-J7PV25F6">
+				  <img :class="accordion !== 1 ? 'block' : 'hidden'" src="../../public/Images/up-arrow.svg" class="astro-J7PV25F6">
 				</div>
 					<div class="overflow-hidden bg-white astro-J7PV25F6" :class="accordion !== 0 ? 'h-0' : 'border-t-4'">
 						<div class="sm:w-full md:w-7/12 lg:w-7/12 bg-white rounded-r-[10px] p-8 astro-J7PV25F6" id="faq1_c">
@@ -1628,8 +1628,8 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				 <div class="bg-white rounded-2xl astro-J7PV25F6">
 				<div class="flex justify-between p-5 astro-J7PV25F6" @click="accordion = accordion == 2 ? 0 : 2">
 					<div class="cursor-pointer astro-J7PV25F6">How long does my implementation project usually take?</div>
-				  <img :class="accordion !== 2 ? 'block' : 'hidden'" src="../../public/down-arrow.svg" class="astro-J7PV25F6">
-				  <img :class="accordion === 2 ? 'block' : 'hidden'" src="../../public/up-right.svg" class="astro-J7PV25F6">
+				  <img :class="accordion !== 2 ? 'block' : 'hidden'" src="../../public/Images/down-arrow.svg" class="astro-J7PV25F6">
+				  <img :class="accordion === 2 ? 'block' : 'hidden'" src="../../public/Images/up-right.svg" class="astro-J7PV25F6">
 				</div>
 					<div class="overflow-hidden bg-white astro-J7PV25F6" :class="accordion !== 2 ? 'h-0' : 'border-t-4'">
 						<p class="p-3 astro-J7PV25F6">
@@ -1640,8 +1640,8 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				 <div class="bg-white rounded-2xl astro-J7PV25F6">
 				<div class="flex justify-between p-5 astro-J7PV25F6" @click="accordion = accordion == 3 ? 0 : 3">
 					<div class="cursor-pointer astro-J7PV25F6">Do you provide a free demo before getting started?</div>
-				  <img :class="accordion !== 3 ? 'block' : 'hidden'" src="../../public/down-arrow.svg" class="astro-J7PV25F6">
-				  <img :class="accordion === 3 ? 'block' : 'hidden'" src="../../public/up-right.svg" class="astro-J7PV25F6">
+				  <img :class="accordion !== 3 ? 'block' : 'hidden'" src="../../public/Images/down-arrow.svg" class="astro-J7PV25F6">
+				  <img :class="accordion === 3 ? 'block' : 'hidden'" src="../../public/Images/up-right.svg" class="astro-J7PV25F6">
 				</div>
 					<div class="overflow-hidden bg-white astro-J7PV25F6" :class="accordion !== 3 ? 'h-0' : 'border-t-4'">
 						<p class="p-3 astro-J7PV25F6">
@@ -1652,8 +1652,8 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			  <div class="bg-white rounded-2xl astro-J7PV25F6">
 				<div class="flex justify-between p-5 astro-J7PV25F6" @click="accordion = accordion == 4 ? 0: 4">
 					<div class="cursor-pointer astro-J7PV25F6">What is your implementation process?</div>
-				  <img :class="accordion !== 4 ? 'block' : 'hidden'" src="../../public/down-arrow.svg" class="astro-J7PV25F6">
-				  <img :class="accordion === 4 ? 'block' : 'hidden'" src="../../public/up-right.svg" class="astro-J7PV25F6">
+				  <img :class="accordion !== 4 ? 'block' : 'hidden'" src="../../public/Images/down-arrow.svg" class="astro-J7PV25F6">
+				  <img :class="accordion === 4 ? 'block' : 'hidden'" src="../../public/Images/up-right.svg" class="astro-J7PV25F6">
 				</div>
 					<div class="overflow-hidden bg-white astro-J7PV25F6" :class="accordion !== 4 ? 'h-0' : 'border-t-4'">
 						<p class="p-3 astro-J7PV25F6">
@@ -1666,7 +1666,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 
 		<!-- <section class="flex lg:mt-40 md:mt-40 mt-10">
 			<img
-				src="../../public/form-bg.svg"
+				src="../../public/Images/form-bg.svg"
 				alt="Image description"
 				class=""
 			/>
@@ -1683,7 +1683,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 							class="text-[#3E96F4] text-base font-semibold"
 							>Fill up a form now.</a
 						>
-						<img src="../../public/right.svg" class="ml-0" />
+						<img src="../../public/Images/right.svg" class="ml-0" />
 					</div>
 				</div>
 			</div>
@@ -1691,8 +1691,8 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 
 
 		<section class="bg-[#3E96F4] flex flex-wrap mt-40 relative  astro-J7PV25F6">
-			<div class="bg-[url(../../public/form-bg-3.png)] w-full md:w-5/12 bg-no-repeat bg-center bg-cover astro-J7PV25F6">
-				<img src="../../public/form-bg.svg" alt="Image description" class="block md:absolute md:left-52 md:-top-32 astro-J7PV25F6">
+			<div class="bg-[url(../../public/Images/form-bg-3.png)] w-full md:w-5/12 bg-no-repeat bg-center bg-cover astro-J7PV25F6">
+				<img src="../../public/Images/form-bg.svg" alt="Image description" class="block md:absolute md:left-52 md:-top-32 astro-J7PV25F6">
 			</div>
 			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 w-full md:w-7/12 p-0 py-3 md:p-10 astro-J7PV25F6">
 				<h4 class="font-semibold text-white text-4xl astro-J7PV25F6">
@@ -1700,7 +1700,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				</h4>
 				<div class="mt-5 flex justify-between bg-white rounded-lg px-5 py-3 w-56 astro-J7PV25F6">
 					<a href="#" class="text-[#3E96F4] text-base font-semibold font-inter astro-J7PV25F6">Fill up a form now.</a>
-					<img src="../../public/right.svg" class="ml-0 astro-J7PV25F6">
+					<img src="../../public/Images/right.svg" class="ml-0 astro-J7PV25F6">
 				</div>
 			</div>
 		</section>

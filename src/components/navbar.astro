@@ -1,8 +1,8 @@
 ---
 import { Image, Picture } from "@astrojs/image/components";
 import "../styles.css";
-import logo from "../../public/logo.svg";
-import down_arrow from "../../public/down-arrow.svg";
+import logo from "../../public/Images/logo.svg";
+import down_arrow from "../../public/Images/down-arrow.svg";
 ---
 
 <nav class="border-b-2 p-5 bg-white">
@@ -285,14 +285,14 @@ import down_arrow from "../../public/down-arrow.svg";
     </a>
 
     <div
-          class="lg:hidden flex-none bg-[#3E96F4] inline-block px-3 py-1 whitespace-nowrap rounded-md text-white font-semibold font-inter mr-2"
+          class="lg:hidden flex-none bg-[#3E96F4] inline-block px-3 md:py-2 pb-1 whitespace-nowrap rounded-md text-white font-semibold font-inter mr-2"
         >
           <a href="/contact-us" class="text-xs md:text-base">Inquire Now</a>
   </div>
 
-    <div class="block xl:hidden w-2/12 md:w-auto flex-none">
+    <div class="block xl:hidden w-1/12 md:w-auto flex-none">
       <button
-        class="flex flex-col justify-center items-center px-2 py-2 border rounded hover:text-black hover:border-white menu"
+        class="flex flex-col justify-center items-center px-2 py-2 text-[9px] rounded hover:text-black hover:border-white menu"
       >
         <svg
           class="fill-current h-5 w-"
@@ -300,7 +300,7 @@ import down_arrow from "../../public/down-arrow.svg";
           xmlns="http://www.w3.org/2000/svg"
           ><title>Menu</title><path
             d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
-        >
+        >MENU
       </button>
     </div>
 
@@ -309,10 +309,10 @@ import down_arrow from "../../public/down-arrow.svg";
       id="menu"
     >
       <ul class="!leading-8 lg:flex-grow" id="main-menu">
-        <li class="block mt-5 xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
-          <span class="group relative inline-block">
+        <!-- <li class="block mt-5 xl:inline-block xl:mt-0 mr-8 text-[#31393C]"> -->
+          <!-- <span class="group relative inline-block"> -->
             <!-- <span class="flex gap-1"><a href="#" class="text-sm md:text-base">Solutions</a><Image src={down_arrow} alt="Down Arrow" /></span> -->
-            <a href="#" class="text-sm md:text-base">Solutions</a>
+            <!-- <a href="#" class="text-sm md:text-base">Solutions</a> -->
             <!-- <ul
               class="sub-menu w-[100%] md:w-auto lg:absolute z-10 hidden submenu-bg lg:top-[4.1rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] md:group-hover:block overflow-x-hidden"
             >
@@ -329,10 +329,10 @@ import down_arrow from "../../public/down-arrow.svg";
                 >
               </li>
             </ul> -->
-          </span>
-        </li>
+          <!-- </span> -->
+        <!-- </li> -->
 
-        <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
+        <li class="block mt-5 xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
           <span class="group relative inline-block">
             <span class="flex gap-1"><a href="#" class="text-sm md:text-base">Industries</a><Image src={down_arrow} alt="Down Arrow" /></span>
             <!-- <a href="#" class="text-sm md:text-base">Industries</a> -->
@@ -423,9 +423,9 @@ import down_arrow from "../../public/down-arrow.svg";
             </ul>
           </span>
         </li>
-        <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
+        <!-- <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
           <a href="/contact-us" class="text-sm md:text-base"> Contact</a>
-        </li>
+        </li> -->
         <li
           class="hidden bg-[#3E96F4] lg:inline-block px-4 xl:px-6 py-1 xl:py-2 !leading-8 rounded-md text-white font-semibold font-inter"
         >
@@ -494,7 +494,7 @@ import down_arrow from "../../public/down-arrow.svg";
         menuItem.addEventListener("mouseleave", function () {
           hideTimeout = setTimeout(function () {
             submenu.style.display = "none";
-          }, 150); // 2-second delay
+          }, 300);
         });
       }
     });
