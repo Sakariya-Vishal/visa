@@ -252,11 +252,11 @@ import close from "../../public/Images/popup_close_btn.svg"
         class="mx-5 md:max-w-7xl md:mx-auto md:px-24 text-[#31393C]"
         id="job"
       >
-        <div
+        <h2
           class="text-left md:text-center font-semibold text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-10 lg:mb-10"
         >
           Recent Job Openings!
-        </div>
+        </h2>
 
         <!-- <div
                     class="border border-[#B5CBE3] rounded text-sm md:text-sm lg:text-base  bg-white p-5 mx-auto md:mx-20 lg:mx-40 mb-5"
@@ -351,11 +351,11 @@ import close from "../../public/Images/popup_close_btn.svg"
             class="pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]"
         >
             <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 text-[#31393C] flex justify-between">
-                <div
+                <h2
                     class="text-center font-semibold text-2xl md:text-3xl lg:text-4xl"
                 >
                 We work. We Learn. We Grow & Have Fun.
-                </div>
+                </h2>
                 <div class="hidden md:flex">
                     <div class="flex justify-center gap-3">
                         <Image src={previousbtn} alt="previousbtn" id="preBtn" />
@@ -456,11 +456,11 @@ import close from "../../public/Images/popup_close_btn.svg"
         <div
           class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8"
         >
-          <div
+          <h2
             class="text-left md:text-center font-semibold text-2xl md:text-4xl mb-0 md:mb-2 lg:mb-2"
           >
             We work. We Learn. We Grow & Have Fun.
-          </div>
+          </h2>
 
           <div class="mt-8 flex gap-4 lg:mt-0 mb-0 md:mb-0 lg:mb-2">
             <button
@@ -566,7 +566,7 @@ import close from "../../public/Images/popup_close_btn.svg"
                 </div>
               </div>
 
-              <div class="swiper-slide max-w-[26rem]">
+              <div class="swiper-slide !max-w-[26rem]">
                 <div class="">
                   <Image src={c_slider4} alt="slider1" class="w-auto md:w-96" />
                   <div
@@ -1035,7 +1035,7 @@ import close from "../../public/Images/popup_close_btn.svg"
             },
             1024: {
               centeredSlides: false,
-              slidesPerView: 3,
+              slidesPerView: 2.70,
             },
           },
         });
@@ -1575,12 +1575,13 @@ import close from "../../public/Images/popup_close_btn.svg"
         function handleContactForm(e) {       
           // console.log("job opening name", jobOpening.name)
 
-          e.preventDefault();
+           e.preventDefault();
 		
 		const fullNameInput = document.querySelector('input[name="full_name"]');
 		const emailInput = document.querySelector('input[name="email"]');
 		const phoneInput = document.querySelector('input[name="phone"]');
 		const cityInput = document.querySelector('input[name="city"]');
+		
 
 		const fullNameValue = fullNameInput.value.trim();
 		const emailNameValue = emailInput.value.trim();
@@ -1614,25 +1615,24 @@ import close from "../../public/Images/popup_close_btn.svg"
 			}
 
 			fullNameInput.addEventListener('focus', () => {
-			stopBlinkForInputs([fullNameInput, emailInput,phoneInput,cityInput]);
+			stopBlinkForInputs([fullNameInput, emailInput,phoneInput,cityInput,fileInput]);
 			});
 
 			emailInput.addEventListener('focus', () => {
-			stopBlinkForInputs([fullNameInput, emailInput,phoneInput,cityInput]);
+			stopBlinkForInputs([fullNameInput, emailInput,phoneInput,cityInput,fileInput]);
 			});
 
 			phoneInput.addEventListener('focus', () => {
-			stopBlinkForInputs([fullNameInput, emailInput,phoneInput,cityInput]);
+			stopBlinkForInputs([fullNameInput, emailInput,phoneInput,cityInput,fileInput]);
 			});
 
 			cityInput.addEventListener('focus', () => {
-			stopBlinkForInputs([fullNameInput, emailInput,phoneInput,cityInput]);
+			stopBlinkForInputs([fullNameInput, emailInput,phoneInput,cityInput,fileInput]);
 			});
 
           
           const fileInput = document.getElementById('fileInput');
           const file = fileInput.files[0];
-
           const xhr = new XMLHttpRequest();
             const url = 'https://sanskar.frappe.cloud/api/method/upload_file'; // Replace with your API endpoint URL
 
@@ -1685,7 +1685,8 @@ import close from "../../public/Images/popup_close_btn.svg"
 
                 } 
                 else {
-                      alert('File upload failed. Please try again later.');
+                      //alert('File upload failed. Please try again later.');       
+                      blinkBorder(fileInput);
                 }
               };
                 
@@ -1699,7 +1700,6 @@ import close from "../../public/Images/popup_close_btn.svg"
                 xhr.send(formData);
 
                 e.preventDefault();
-
 
           
         }
