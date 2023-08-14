@@ -762,7 +762,7 @@ import form_bg from "../../public/Images/form-bg.svg";
 		>
 			<div class="lg:w-3/12 md:w-3/12 sm:w-full p-0 md:p-2 lg:p-2">
 				<div
-					class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold pt-0 md:pt-24 lg:pt-24 pb-4 md:pb-0 lg:pb-0"
+					class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold pt-0 md:pt-40 lg:pt-44 pb-4 md:pb-0 lg:pb-0"
 				>
 					Let our numbers do the talking!
 			</div>
@@ -1514,7 +1514,7 @@ import form_bg from "../../public/Images/form-bg.svg";
 								<Image
 									src={ayurveda}
 									alt="ayurveda"
-									class="sm:w-full md:w-8/12 lg:w-8/12 p-auto md:p-12"
+									class="sm:w-full md:w-8/12 lg:w-7/12 p-auto md:p-12"
 								/>
 								<!-- </div> -->
 								<div class="sm:w-full md:w-4/12 lg:w-4/12">
@@ -2780,7 +2780,7 @@ import form_bg from "../../public/Images/form-bg.svg";
 			class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem]"
 		>
 			<div
-				class="hidden md:block lg:block bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5"
+				class="hidden bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5"
 			>
 				<h2
 					class="text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] font-semibold mb-5 ml-3 leading-9"
@@ -3014,7 +3014,7 @@ import form_bg from "../../public/Images/form-bg.svg";
 
 			<div
 				x-data="{ accordion: 0 }"
-				class="md:hidden grid gap-5 bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-3 md:p-5 shadow drop-shadow-sm"
+				class="grid gap-5 bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-3 md:p-5 shadow drop-shadow-sm"
 			>
 				<p
 					class="text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] font-semibold ml-3 leading-9"
@@ -3023,7 +3023,7 @@ import form_bg from "../../public/Images/form-bg.svg";
 				</p>
 				<div class="bg-white rounded-2xl">
 					<div
-						class="flex justify-between p-3 md:p-3 lg:p-5"
+						class="flex justify-between p-3 md:p-3 lg:p-4"
 						@click="accordion = accordion == 0 ? 1 : 0"
 					>
 						<div
@@ -3043,11 +3043,11 @@ import form_bg from "../../public/Images/form-bg.svg";
 						/>
 					</div>
 					<div
-						class="overflow-hidden bg-white"
-						:class="accordion !== 0 ? 'h-0' : 'border-t-4'"
+						class="overflow-hidden bg-white rounded-b-[10px]"
+						:class="accordion !== 0 ? 'h-0' : 'border-t-2'"
 					>
 						<div
-							class="sm:w-full md:w-7/12 lg:w-7/12 bg-white rounded-[10px] p-3 md:p-5 lg:p-8"
+							class="w-full bg-white rounded-[10px] p-3 md:p-5 lg:p-5"
 							id="faq1_c"
 						>
 							<p
@@ -3136,7 +3136,7 @@ import form_bg from "../../public/Images/form-bg.svg";
 				</div>
 				<div class="bg-white rounded-2xl">
 					<div
-						class="flex justify-between p-3 md:p-3 lg:p-5"
+						class="flex justify-between p-3 md:p-3 lg:p-4"
 						@click="accordion = accordion == 2 ? 0 : 2"
 					>
 						<div
@@ -3157,11 +3157,11 @@ import form_bg from "../../public/Images/form-bg.svg";
 						/>
 					</div>
 					<div
-						class="overflow-hidden bg-white"
-						:class="accordion !== 2 ? 'h-0' : 'border-t-4'"
+						class="overflow-hidden bg-white rounded-b-[10px]"
+						:class="accordion !== 2 ? 'h-0' : 'border-t-2'"
 					>
 						<div
-							class="sm:w-full md:w-7/12 lg:w-7/12 bg-white rounded-[10px] p-3 md:p-5 lg:p-8"
+							class="w-full bg-white rounded-[10px] p-3 md:p-5 lg:p-5"
 							id="faq2_c"
 						>
 							<p
@@ -3181,7 +3181,7 @@ import form_bg from "../../public/Images/form-bg.svg";
 				</div>
 				<div class="bg-white rounded-2xl">
 					<div
-						class="flex justify-between p-3 md:p-3 lg:p-5"
+						class="flex justify-between p-3 md:p-3 lg:p-4"
 						@click="accordion = accordion == 3 ? 0 : 3"
 					>
 						<div
@@ -3201,11 +3201,11 @@ import form_bg from "../../public/Images/form-bg.svg";
 						/>
 					</div>
 					<div
-						class="overflow-hidden bg-white"
-						:class="accordion !== 3 ? 'h-0' : 'border-t-4'"
+						class="overflow-hidden bg-white rounded-b-[10px]"
+						:class="accordion !== 3 ? 'h-0' : 'border-t-2'"
 					>
 						<div
-							class="sm:w-full md:w-7/12 lg:w-7/12 bg-white rounded-[10px] p-3 md:p-5 lg:p-8"
+							class="w-full bg-white rounded-[10px] p-3 md:p-5 lg:p-5"
 							id="faq3_c"
 						>
 							<p
@@ -3222,7 +3222,7 @@ import form_bg from "../../public/Images/form-bg.svg";
 				</div>
 				<div class="bg-white rounded-2xl">
 					<div
-						class="flex justify-between p-3 md:p-3 lg:p-5"
+						class="flex justify-between p-3 md:p-3 lg:p-4"
 						@click="accordion = accordion == 4 ? 0: 4"
 					>
 						<div
@@ -3242,11 +3242,11 @@ import form_bg from "../../public/Images/form-bg.svg";
 						/>
 					</div>
 					<div
-						class="overflow-hidden bg-white"
-						:class="accordion !== 4 ? 'h-0' : 'border-t-4'"
+						class="overflow-hidden bg-white rounded-b-[10px]"
+						:class="accordion !== 4 ? 'h-0' : 'border-t-2'"
 					>
 						<div
-							class="sm:w-full md:w-7/12 lg:w-7/12 bg-white rounded-[10px] p-3 md:p-5 lg:p-8 text-xs md:text-sm lg:text-base"
+							class="w-full bg-white rounded-[10px] p-3 md:p-5 lg:p-5 text-xs md:text-sm lg:text-base"
 							id="faq4_c"
 						>
 							<p
@@ -3523,6 +3523,8 @@ import form_bg from "../../public/Images/form-bg.svg";
 		z-index: -1;
 		margin-top: 12rem;
 	}
+
+	
 </style>
 
 <script>
@@ -4129,7 +4131,9 @@ import form_bg from "../../public/Images/form-bg.svg";
 	// // Auto slide every 3 seconds
 	// setInterval(nextSlide, 3000);
 
+	
 	// scroll next
+		
 	document
 		.getElementById("nextScrollButton")
 		.addEventListener("click", () => {
@@ -4137,7 +4141,46 @@ import form_bg from "../../public/Images/form-bg.svg";
 			const containerElement = document.getElementById("scrollContainer");
 
 			// Calculate the scroll amount
-			const scrollAmount = containerElement.offsetWidth;
+			// const scrollAmount = containerElement.offsetWidth;
+
+			var scrollAmount = 0
+			const windowWidth = window.innerWidth;
+
+				// if window screen medium
+				if (windowWidth < 1024) {
+					const elementsWithAriaCurrent = document.querySelectorAll('[aria-current="true"]');
+
+					elementsWithAriaCurrent.forEach((element) => {
+						console.log("element", element.innerHTML);
+						if (element.innerHTML === "Manufacturing"){
+							// var scroll = -containerElement.offsetWidth;
+							// scrollAmount = -containerElement.offsetWidth
+							scrollAmount = -10000
+							console.log("asdf", scrollAmount)
+						}
+						else{
+							scrollAmount = 245
+						}
+					})
+
+				}
+				// if window screen large
+				else {
+					const elementsWithAriaCurrent = document.querySelectorAll('[aria-current="true"]');
+
+					elementsWithAriaCurrent.forEach((element) => {
+						console.log("element", element.innerHTML);
+						if (element.innerHTML === "Manufacturing"){
+							var scroll = -containerElement.offsetWidth;
+							scrollAmount = scroll - 40
+						}
+						else{
+							scrollAmount = 250
+						}
+					})
+				}
+		
+			
 
 			// Perform horizontal scroll using the scrollBy method
 			containerElement.scrollBy({
@@ -4153,7 +4196,38 @@ import form_bg from "../../public/Images/form-bg.svg";
 		const containerElement = document.getElementById("scrollContainer");
 
 		// Calculate the scroll amount
-		const scrollAmount = -containerElement.offsetWidth;
+		// const scrollAmount = -containerElement.offsetWidth;
+
+		var scrollAmount = 0
+		const windowWidth = window.innerWidth;
+
+				if (windowWidth < 1024) {
+					const elementsWithAriaCurrent = document.querySelectorAll('[aria-current="true"]');
+
+					elementsWithAriaCurrent.forEach((element) => {
+						console.log("element", element.innerHTML);
+						if (element.innerHTML === "Ayurveda"){
+							var scroll = containerElement.offsetWidth;
+							scrollAmount = 10000
+						}
+						else{
+							scrollAmount = -250
+						}
+					})
+				} else {
+					const elementsWithAriaCurrent = document.querySelectorAll('[aria-current="true"]');
+
+					elementsWithAriaCurrent.forEach((element) => {
+						console.log("element", element.innerHTML);
+						if (element.innerHTML === "Ayurveda"){
+							var scroll = containerElement.offsetWidth;
+							scrollAmount = scroll + 60
+						}
+						else{
+							scrollAmount = -250
+						}
+					})
+				}
 
 		// Perform horizontal scroll using the scrollBy method
 		containerElement.scrollBy({
@@ -4164,31 +4238,31 @@ import form_bg from "../../public/Images/form-bg.svg";
 	});
 
 	//scroll autometic when slide is active construction or manufacturing
-	document.addEventListener("DOMContentLoaded", function () {
-		setInterval(logElementsWithAriaCurrent, 1000);
-});
+// 	document.addEventListener("DOMContentLoaded", function () {
+// 		setInterval(logElementsWithAriaCurrent, 1000);
+// });
 
-	function logElementsWithAriaCurrent() {
-	const elementsWithAriaCurrent = document.querySelectorAll('[aria-current="true"]');
+// function logElementsWithAriaCurrent() {
+// 	const elementsWithAriaCurrent = document.querySelectorAll('[aria-current="true"]');
+	
+// 	let previousElement = null;	
 
-	let previousElement = null;
+// 	elementsWithAriaCurrent.forEach((element) => {
+// 		console.log("previous element", previousElement);
+// 		console.log("current element", element);
 
-	elementsWithAriaCurrent.forEach((element) => {
-		console.log("previous element", previousElement);
-		console.log("current element", element);
+// 		if (previousElement && previousElement.innerHTML === element.innerHTML) {
+// 		console.log("elements match");
+// 		console.log("previous element innerHTML", previousElement.innerHTML);
+// 		console.log("current element innerHTML", element.innerHTML);
+// 		} else {
+// 		console.log("elements do not match");
+// 		// Perform any action you want for non-matching elements here.
+// 		}
 
-		if (previousElement && previousElement.innerHTML === element.innerHTML) {
-		console.log("elements match");
-		console.log("previous element innerHTML", previousElement.innerHTML);
-		console.log("current element innerHTML", element.innerHTML);
-		} else {
-		console.log("elements do not match");
-		// Perform any action you want for non-matching elements here.
-		}
-
-		previousElement = element;
-	});
-	}
+// 		previousElement = element;
+// 	});
+// 	}
 
 
 	// Get the slider elements

@@ -33,6 +33,7 @@ import training from "../../public/Images/training.svg";
 import small_textile_operation from "../../public/Images/small_take_textile.svg";
 
 import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
+
 ---
 
 <Layout title="Textile Industries">
@@ -215,9 +216,9 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
       <div class="mt-8 lg:mx-0">
         <div class="swiper-container !overflow-hidden">
           <div class="swiper-wrapper ml-0 md:ml-10">
-            <div class="swiper-slide md:!w-72 p-3">
+            <div class="swiper-slide  p-3">
               <div
-                class="grid flex-shrink-0 p-5 better_benefuts w-full md:w-64 h-64"
+                class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts w-auto md:w-72 h-72"
               >
                 <Image class="justify-self-end" src={process} alt="process" />
                 <p
@@ -231,9 +232,9 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
               </div>
             </div>
 
-            <div class="swiper-slide md:!w-72 p-3">
+            <div class="swiper-slide  p-3">
               <div
-                class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts w-auto md:w-64 h-64"
+                class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts w-auto md:w-72 h-72"
               >
                 <Image
                   class="justify-self-end"
@@ -252,9 +253,9 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
               </div>
             </div>
 
-            <div class="swiper-slide md:!w-72 p-3">
+            <div class="swiper-slide  p-3">
               <div
-                class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts w-auto md:w-64 h-64"
+                class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts w-auto md:w-72 h-72"
               >
                 <Image
                   class="justify-self-end"
@@ -273,9 +274,9 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
               </div>
             </div>
 
-            <div class="swiper-slide md:!w-72 p-3">
+            <div class="swiper-slide  p-3">
               <div
-                class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts w-64 h-64"
+                class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts w-72 h-72"
               >
                 <Image
                   class="justify-self-end"
@@ -293,9 +294,9 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
               </div>
             </div>
 
-            <div class="swiper-slide md:!w-72 p-3">
+            <div class="swiper-slide  p-3">
               <div
-                class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts w-64 h-64"
+                class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts w-72 h-72"
               >
                 <Image
                   class="justify-self-end"
@@ -313,9 +314,9 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
               </div>
             </div>
 
-            <div class="swiper-slide md:!w-72 p-3">
+            <div class="swiper-slide p-3">
               <div
-                class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts w-64 h-64"
+                class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts w-72 h-72"
               >
                 <Image
                   class="justify-self-end"
@@ -332,6 +333,27 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
                 </p>
               </div>
             </div>
+
+            <!-- <div class="swiper-slide  p-3">
+              <div
+                class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts w-72 h-72"
+              >
+                <Image
+                  class="justify-self-end"
+                  src={improvment}
+                  alt="improvment"
+                />
+                <p
+                  class="text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
+                >
+                  25%
+                </p>
+                <p class="text-[#31393C]">
+                  Improvement in the Quality of Production.
+                </p>
+              </div>
+            </div> -->
+
 
           </div>
         </div>
@@ -483,7 +505,7 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
       revenues.
     </p>
     <div
-      class="hidden md:block lg:block bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5 shadow drop-shadow-sm"
+      class="hidden bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5 shadow drop-shadow-sm"
     >
       <div class="flex flex-wrap">
         <div class="sm:w-full md:w-4/12 lg:w-4/12 mt-3">
@@ -926,7 +948,7 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
 
    <div
                 x-data="{ accordion: 0 }"
-                class="mx-0 md:mx-0 lg:mx-5 md:hidden grid gap-5 bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-3 md:p-4 lg:p-5 shadow drop-shadow-sm"
+                class="mx-0 md:mx-0 lg:mx-5 grid gap-5 bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-3 md:p-4 lg:p-5 shadow drop-shadow-sm"
             >
                 <div class="bg-white rounded-2xl">
                     <div
@@ -950,11 +972,15 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
                         />
                     </div>
                     <div
-                        class="overflow-hidden bg-white"
-                        :class="accordion !== 0 ? 'h-0' : 'border-t-4'"
+                        class="overflow-hidden bg-white rounded-b-[10px]"
+                        :class="accordion !== 0 ? 'h-0' : 'border-t-2'"
                     >
-                        <div
+                        <!--<div
                             class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
+                            id="faqoperation1_c"
+                        >-->
+                        <div
+                            class="w-full bg-white  rounded-[10px] p-5"
                             id="faqoperation1_c"
                         >
                             <p
@@ -1031,11 +1057,11 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
                         />
                     </div>
                     <div
-                        class="overflow-hidden bg-white"
-                        :class="accordion !== 2 ? 'h-0' : 'border-t-4'"
+                        class="overflow-hidden bg-white rounded-b-[10px]"
+                        :class="accordion !== 2 ? 'h-0' : 'border-t-2'"
                     >
                         <div
-                            class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
+                            class="w-full bg-white  rounded-[10px] p-5"
                             id="faqoperation2_c"
                         >
                             <p
@@ -1112,11 +1138,11 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
                         />
                     </div>
                     <div
-                        class="overflow-hidden bg-white"
-                        :class="accordion !== 3 ? 'h-0' : 'border-t-4'"
+                        class="overflow-hidden bg-white rounded-b-[10px]"
+                        :class="accordion !== 3 ? 'h-0' : 'border-t-2'"
                     >
                         <div
-                            class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
+                            class="w-full bg-white  rounded-[10px] p-5"
                             id="faqoperation3_c"
                         >
                            <p
@@ -1206,11 +1232,11 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
                         />
                     </div>
                     <div
-                        class="overflow-hidden bg-white"
-                        :class="accordion !== 4 ? 'h-0' : 'border-t-4'"
+                        class="overflow-hidden bg-white rounded-b-[10px]"
+                        :class="accordion !== 4 ? 'h-0' : 'border-t-2'"
                     >
                         <div
-                            class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
+                            class="w-full bg-white  rounded-[10px] p-5"
                             id="faqoperation4_c"
                         >
                            <p
@@ -1287,11 +1313,11 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
                         />
                     </div>
                     <div
-                        class="overflow-hidden bg-white"
-                        :class="accordion !== 5 ? 'h-0' : 'border-t-4'"
+                        class="overflow-hidden bg-white rounded-b-[10px]"
+                        :class="accordion !== 5 ? 'h-0' : 'border-t-2'"
                     >
                         <div
-                            class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
+                            class="w-full bg-white  rounded-[10px] p-5"
                             id="faqoperation5_c"
                         >
                             <p
@@ -1368,11 +1394,11 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
                         />
                     </div>
                     <div
-                        class="overflow-hidden bg-white"
-                        :class="accordion !== 6 ? 'h-0' : 'border-t-4'"
+                        class="overflow-hidden bg-white rounded-b-[10px]"
+                        :class="accordion !== 6 ? 'h-0' : 'border-t-2'"
                     >
                         <div
-                            class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
+                            class="w-full bg-white  rounded-[10px] p-5"
                             id="faqoperation6_c"
                         >
                             <p
@@ -1700,7 +1726,7 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
     class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem]"
   >
     <div
-      class="hidden md:block lg:block bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5"
+      class="hidden bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5"
     >
       <h2
         class="text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] lg:text-center font-semibold mb-5 ml-3 leading-9"
@@ -1835,7 +1861,7 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
 
     <div
       x-data="{ accordion: 0 }"
-      class="md:hidden grid gap-5 bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-3 md:p-4 lg:p-5 shadow drop-shadow-sm"
+      class="grid gap-5 bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-3 md:p-4 lg:p-5 shadow drop-shadow-sm"
     >
       <p
         class="text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] font-semibold ml-3 leading-9"
@@ -1862,8 +1888,8 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
           />
         </div>
         <div
-          class="overflow-hidden bg-white"
-          :class="accordion !== 0 ? 'h-0' : 'border-t-4'"
+          class="overflow-hidden bg-white rounded-b-[10px]"
+          :class="accordion !== 0 ? 'h-0' : 'border-t-2'"
         >
           <div
             class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
@@ -1900,8 +1926,8 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
           />
         </div>
         <div
-          class="overflow-hidden bg-white"
-          :class="accordion !== 2 ? 'h-0' : 'border-t-4'"
+          class="overflow-hidden bg-white rounded-b-[10px]"
+          :class="accordion !== 2 ? 'h-0' : 'border-t-2'"
         >
           <p class="text-xs md:text-sm lg:text-base p-5">
             Yes, we can provide you with a detailed manufacturing implementation
@@ -1932,8 +1958,8 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
           />
         </div>
         <div
-          class="overflow-hidden bg-white"
-          :class="accordion !== 3 ? 'h-0' : 'border-t-4'"
+          class="overflow-hidden bg-white rounded-b-[10px]"
+          :class="accordion !== 3 ? 'h-0' : 'border-t-2'"
         >
           <p class="text-xs md:text-sm lg:text-base p-5">
             Yes, we sign an NDA with all our clients. At Sanskar Technolab - we
@@ -1965,8 +1991,8 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
           />
         </div>
         <div
-          class="overflow-hidden bg-white"
-          :class="accordion !== 4 ? 'h-0' : 'border-t-4'"
+          class="overflow-hidden bg-white rounded-b-[10px]"
+          :class="accordion !== 4 ? 'h-0' : 'border-t-2'"
         >
           <p class="text-xs md:text-sm lg:text-base px-5 pt-5">
           At Sanskar Technolab, we follow a structured and collaborative process in our service delivery.  It typically involves the following steps:
@@ -2002,8 +2028,8 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
           />
         </div>
         <div
-          class="overflow-hidden bg-white"
-          :class="accordion !== 5 ? 'h-0' : 'border-t-4'"
+          class="overflow-hidden bg-white rounded-b-[10px]"
+          :class="accordion !== 5 ? 'h-0' : 'border-t-2'"
         >
           <ul class="list-disc text-xs md:text-sm lg:text-base p-5 px-10">
            <li class="mb-4"><b>Hire Dedicated Developers on an Hourly Basis: </b>In this model, clients can hire dedicated developers from Sanskar Technolab on an hourly basis. The client has full control and flexibility over the development team, and the developers work exclusively on the client's project. </li>
@@ -2053,11 +2079,12 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
         },
         1024: {
           centeredSlides: false,
-          slidesPerView: 2.25,
+          slidesPerView: 3,
         },
       },
     });
   });
+
   // section Move to Cloud & switch to sophisticated faqs
   const faqoperation1 = document.getElementById("faqoperation1");
   faqoperation1.addEventListener("click", show_faqoperation1);

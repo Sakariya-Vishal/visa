@@ -606,16 +606,10 @@ import contact_map from "../../public/Images/contact_map.svg";
     const lastNameValue = lastNameInput.value.trim();
     const emailValue = emailInput.value.trim();
 
-      if (firstNameValue === '') {
-        blinkBorder(firstNameInput);      
-        return;
-      }
-      if (lastNameValue === '') {
-        blinkBorder(lastNameInput);      
-        return;
-      }
-      if (emailValue === '') {
-        blinkBorder(emailInput);      
+      if (firstNameValue === '' || lastNameValue === '' || emailValue === '' ) {
+        blinkBorder(firstNameInput); 
+        blinkBorder(lastNameInput); 
+        blinkBorder(emailInput);
         return;
       }
         const fileInput = document.getElementById('fileInput');
@@ -752,18 +746,22 @@ import contact_map from "../../public/Images/contact_map.svg";
                 e.preventDefault();
             }
         }
-         document.querySelector('input[name="first_name"]').addEventListener('focus', function () {
-          stopBlinkBorder(this);
-          this.style.backgroundColor = '';
-        });       
-        document.querySelector('input[name="last_name"]').addEventListener('focus', function () {
-          stopBlinkBorder(this);
-          this.style.backgroundColor = '';
-        });
-        document.querySelector('input[name="email"]').addEventListener('focus', function () {
-          stopBlinkBorder(this);
-          this.style.backgroundColor = '';
-        });
+         const firstNameInput = document.querySelector('input[name="first_name"]');
+        const lastNameInput = document.querySelector('input[name="last_name"]');
+        const emailInput = document.querySelector('input[name="email"]');
+
+        function stopBlinkingForNameInputs() {
+            stopBlinkBorder(firstNameInput);
+            stopBlinkBorder(lastNameInput);
+            stopBlinkBorder(emailInput);
+            firstNameInput.style.backgroundColor = '';
+            lastNameInput.style.backgroundColor = '';
+            emailInput.style.backgroundColor = '';
+        }
+
+        firstNameInput.addEventListener('focus', stopBlinkingForNameInputs);
+        lastNameInput.addEventListener('focus', stopBlinkingForNameInputs);
+        emailInput.addEventListener('focus', stopBlinkingForNameInputs);
 
 // validate file foramte in fileupload
     function fileValidation() {

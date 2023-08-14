@@ -144,7 +144,7 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                     Out of the Box features of ERPNext for streamlined workforce management!
                 </h2>
                 <div
-                    class="hidden md:block lg:block bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5 shadow drop-shadow-sm"
+                    class="hidden bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5 shadow drop-shadow-sm"
                 >
                     <div class="flex flex-wrap">
                         <div class="sm:w-full md:w-4/12 lg:w-4/12 mt-3">
@@ -646,7 +646,7 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
 
             <div
                 x-data="{ accordion: 0 }"
-                class="mx-0 md:mx-0 lg:mx-5 md:hidden grid gap-5 bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-3 md:p-4 lg:p-5 shadow drop-shadow-sm"
+                class="mx-0 md:mx-0 lg:mx-5 grid gap-5 bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-3 md:p-4 lg:p-5 shadow drop-shadow-sm"
             >
                 <div class="bg-white rounded-2xl">
                     <div
@@ -670,11 +670,15 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                         />
                     </div>
                     <div
-                        class="overflow-hidden bg-white"
-                        :class="accordion !== 0 ? 'h-0' : 'border-t-4'"
+                        class="overflow-hidden bg-white rounded-b-[10px]"
+                        :class="accordion !== 0 ? 'h-0' : 'border-t-2'"
                     >
-                        <div
+                        <!--<div
                             class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
+                            id="faqoperation1_c"
+                        >-->
+                        <div
+                            class="w-full bg-white  rounded-[10px] p-5"
                             id="faqoperation1_c"
                         >
                             <p
@@ -751,11 +755,11 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                         />
                     </div>
                     <div
-                        class="overflow-hidden bg-white"
-                        :class="accordion !== 2 ? 'h-0' : 'border-t-4'"
+                        class="overflow-hidden bg-white rounded-b-[10px]"
+                        :class="accordion !== 2 ? 'h-0' : 'border-t-2'"
                     >
                         <div
-                            class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
+                            class="w-full bg-white  rounded-[10px] p-5"
                             id="faqoperation2_c"
                         >
                             <p
@@ -832,11 +836,11 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                         />
                     </div>
                     <div
-                        class="overflow-hidden bg-white"
-                        :class="accordion !== 3 ? 'h-0' : 'border-t-4'"
+                        class="overflow-hidden bg-white rounded-b-[10px]"
+                        :class="accordion !== 3 ? 'h-0' : 'border-t-2'"
                     >
                         <div
-                            class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
+                            class="w-full bg-white  rounded-[10px] p-5"
                             id="faqoperation3_c"
                         >
                            <p
@@ -913,11 +917,11 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                         />
                     </div>
                     <div
-                        class="overflow-hidden bg-white"
-                        :class="accordion !== 4 ? 'h-0' : 'border-t-4'"
+                        class="overflow-hidden bg-white rounded-b-[10px]"
+                        :class="accordion !== 4 ? 'h-0' : 'border-t-2'"
                     >
                         <div
-                            class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
+                            class="w-full bg-white  rounded-[10px] p-5"
                             id="faqoperation4_c"
                         >
                            <p
@@ -994,11 +998,11 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                         />
                     </div>
                     <div
-                        class="overflow-hidden bg-white"
-                        :class="accordion !== 5 ? 'h-0' : 'border-t-4'"
+                        class="overflow-hidden bg-white rounded-b-[10px]"
+                        :class="accordion !== 5 ? 'h-0' : 'border-t-2'"
                     >
                         <div
-                            class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
+                            class="w-full bg-white  rounded-[10px] p-5"
                             id="faqoperation5_c"
                         >
                             <p
@@ -1075,11 +1079,11 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                         />
                     </div>
                     <div
-                        class="overflow-hidden bg-white"
-                        :class="accordion !== 6 ? 'h-0' : 'border-t-4'"
+                        class="overflow-hidden bg-white rounded-b-[10px]"
+                        :class="accordion !== 6 ? 'h-0' : 'border-t-2'"
                     >
                         <div
-                            class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
+                            class="w-full bg-white  rounded-[10px] p-5"
                             id="faqoperation6_c"
                         >
                            <p
@@ -1156,11 +1160,11 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                         />
                     </div>
                     <div
-                        class="overflow-hidden bg-white"
-                        :class="accordion !== 7 ? 'h-0' : 'border-t-4'"
+                        class="overflow-hidden bg-white rounded-b-[10px]"
+                        :class="accordion !== 7 ? 'h-0' : 'border-t-2'"
                     >
                         <div
-                            class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
+                            class="w-full bg-white  rounded-[10px] p-5"
                             id="faqoperation7_c"
                         >
                            <p
@@ -1455,7 +1459,7 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                         class="mx-5 md:max-w-7xl md:mx-auto py-[3.125rem] md:py-[4.688rem] lg:py-[6.25rem] md:px-24"
                     >
                         <div
-                            class="hidden md:block lg:block bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5"
+                            class="hidden bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5"
                         >
                             <h2
                                 class="text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] lg:text-center font-semibold mb-5 ml-3 leading-9"
@@ -1594,7 +1598,7 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
 
                         <div
                             x-data="{ accordion: 0 }"
-                            class="md:hidden grid gap-5 bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-3 md:p-4 lg:p-5 shadow drop-shadow-sm"
+                            class="grid gap-5 bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-3 md:p-4 lg:p-5 shadow drop-shadow-sm"
                         >
                             <p
                                 class="text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] font-semibold ml-3 leading-9"
@@ -1622,9 +1626,10 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                                         alt="up-arrow"
                                     />
                                 </div>
-                                <div
-                                    class="overflow-hidden bg-white"
-                                    :class="accordion !== 0 ? 'h-0' : 'border-t-4'"
+
+                                <!--<div
+                                    class="overflow-hidden bg-white rounded-b-[10px]"
+                                    :class="accordion !== 0 ? 'h-0' : 'border-t-2'"
                                 >
                                     <div
                                         class="sm:w-full md:w-7/12 lg:w-7/12 bg-white  rounded-[10px] p-5"
@@ -1636,7 +1641,19 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                                            The duration of the ERPNext implementation for HR and payroll can vary depending on the complexity of your organization's processes, the scale of the implementation, and the customization required. On average, a well-planned implementation can take a few weeks to a few months. To get an accurate timeline of your project, you can connect with us, and based on your requirements, we will give you an exact timeline.
                                         </p>
                                     </div>
+                                </div>-->
+
+                                 <div
+                                    class="overflow-hidden bg-white rounded-b-[10px]"
+                                    :class="accordion !== 0 ? 'h-0' : 'border-t-2'"
+                                >
+                                    <p
+                                        class="text-xs md:text-sm lg:text-base p-5"
+                                    >
+                                       The duration of the ERPNext implementation for HR and payroll can vary depending on the complexity of your organization's processes, the scale of the implementation, and the customization required. On average, a well-planned implementation can take a few weeks to a few months. To get an accurate timeline of your project, you can connect with us, and based on your requirements, we will give you an exact timeline.
+                                    </p>
                                 </div>
+                                
                             </div>
                             <div class="bg-white rounded-2xl">
                                 <div
@@ -1660,8 +1677,8 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                                     />
                                 </div>
                                 <div
-                                    class="overflow-hidden bg-white"
-                                    :class="accordion !== 2 ? 'h-0' : 'border-t-4'"
+                                    class="overflow-hidden bg-white rounded-b-[10px]"
+                                    :class="accordion !== 2 ? 'h-0' : 'border-t-2'"
                                 >
                                     <p
                                         class="text-xs md:text-sm lg:text-base p-5"
@@ -1692,8 +1709,8 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                                     />
                                 </div>
                                 <div
-                                    class="overflow-hidden bg-white"
-                                    :class="accordion !== 3 ? 'h-0' : 'border-t-4'"
+                                    class="overflow-hidden bg-white rounded-b-[10px]"
+                                    :class="accordion !== 3 ? 'h-0' : 'border-t-2'"
                                 >
                                     <p
                                         class="text-xs md:text-sm lg:text-base p-5"
@@ -1724,8 +1741,8 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                                     />
                                 </div>
                                 <div
-                                    class="overflow-hidden bg-white"
-                                    :class="accordion !== 4 ? 'h-0' : 'border-t-4'"
+                                    class="overflow-hidden bg-white rounded-b-[10px]"
+                                    :class="accordion !== 4 ? 'h-0' : 'border-t-2'"
                                 >
                                     <p
                                         class="text-xs md:text-sm lg:text-base p-5"
@@ -1756,8 +1773,8 @@ import erpnext_kirti from "../../public/Images/erpnext_kirti.svg";
                                     />
                                 </div>
                                 <div
-                                    class="overflow-hidden bg-white"
-                                    :class="accordion !== 5 ? 'h-0' : 'border-t-4'"
+                                    class="overflow-hidden bg-white rounded-b-[10px]"
+                                    :class="accordion !== 5 ? 'h-0' : 'border-t-2'"
                                 >
                                     <p
                                         class="text-xs md:text-sm lg:text-base p-5"
