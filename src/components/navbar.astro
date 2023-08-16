@@ -292,7 +292,7 @@ import down_arrow from "../../public/Images/down-arrow.svg";
 
     <div class="block xl:hidden w-1/12 md:w-auto flex-none">
       <button
-        class="flex flex-col justify-center items-center px-2 py-2 text-[9px] rounded hover:text-black hover:border-white menu"
+        class="flex flex-col justify-center items-center px-2 py-2 text-[9px] rounded hover:text-black hover:border-white menu" id="open-menu"
       >
         <svg
           class="fill-current h-5 w-"
@@ -302,7 +302,19 @@ import down_arrow from "../../public/Images/down-arrow.svg";
             d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
         >MENU
       </button>
+      
+      <button
+        class="hidden flex flex-col justify-center items-center px-2 py-2 text-[9px] rounded hover:text-black hover:border-white menu" id="close-menu"
+      >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="#3E96F4"/>
+        <path d="M8 16L16 8" stroke="white" stroke-width="2"/>
+        <path d="M16 16L8 8" stroke="white" stroke-width="2"/>
+        </svg>
+      </button>
+
     </div>
+    
 
     <div
       class="w-full hidden xl:flex xl:items-center xl:w-auto pb-0 md:pb-4 lg:pb-0 font-semibold text-base"
@@ -334,7 +346,7 @@ import down_arrow from "../../public/Images/down-arrow.svg";
 
         <li class="block mt-5 xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
           <span class="group relative inline-block">
-            <span class="flex gap-1"><a href="#" class="text-sm md:text-base">Industries</a><Image src={down_arrow} alt="Down Arrow" /></span>
+            <span class="flex gap-2"><a href="#" class="text-sm md:text-base">Industries</a><Image src={down_arrow} alt="Down Arrow" /></span>
             <!-- <a href="#" class="text-sm md:text-base">Industries</a> -->
             <ul
               class="sub-menu lg:absolute z-10 hidden submenu-bg lg:top-[3.75rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] group-hover:block overflow-x-hidden"
@@ -403,7 +415,7 @@ import down_arrow from "../../public/Images/down-arrow.svg";
                 </li> -->
         <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
           <span class="group relative inline-block">
-            <span class="flex gap-1"><a href="#" class="text-sm md:text-base">Company</a><Image src={down_arrow} alt="Down Arrow" /></span>
+            <span class="flex gap-2"><a href="#" class="text-sm md:text-base">Company</a><Image src={down_arrow} alt="Down Arrow" /></span>
             <!-- <a href="#" class="text-sm md:text-base">Company</a> -->
             <ul
               class="sub-menu lg:absolute z-10 hidden submenu-bg lg:top-[3.75rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] group-hover:block overflow-x-hidden"
@@ -440,11 +452,24 @@ import down_arrow from "../../public/Images/down-arrow.svg";
   nav {
     font-family: Open Sans;
   }
+
   .submenu-bg {
     border: 1px solid #e4e4e4;
     background: #f7fbfe;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
+
+  @media only screen and (max-width: 668px) {
+    
+    .submenu-bg {
+    border: none;
+    background: none;
+    box-shadow: none;
+  }
+}
+
+
+
 </style>
 
 <script>
@@ -457,6 +482,13 @@ import down_arrow from "../../public/Images/down-arrow.svg";
       // alert('Button was clicked!');
       var menu = document.getElementById("menu");
       menu.classList.toggle("!block");
+
+      var menu = document.getElementById("open-menu");
+      menu.classList.toggle("!hidden");
+
+      var menu = document.getElementById("close-menu");
+      menu.classList.toggle("!block");
+
     });
   });
 
