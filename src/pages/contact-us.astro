@@ -13,11 +13,11 @@ import contact_map from "../../public/Images/contact_map.svg";
 // import banner_image from "../../public/Images/contact-us-banner.svg";
 ---
 
-<Layout title="Contact Us">
+<Layout title="Contact Us", keyword="", description="", canonical_href="https://astro.sanskartechnolab.com/contact-us">
   <main>
 <section class="banner bg-cover bg-no-repeat h-[calc(100vh-10vh)] flex items-center">
       <div class="md:max-w-7xl md:mx-auto md:px-24 lg:px-4 w-full lg:w-7/12 px-5">
-        <div class="bg-white w-full lg:w-7/12 p-3 md:p-7 lg:p-7">
+        <div class="bg-white w-full lg:w-7/12 form-padding lg:p-7">
            <form id="contact_form" class="grid gap-3 md:gap-3 lg:gap-5">
         <h1 class="text-[#31393C] text-2xl md:text-3xl lg:text-4xl">
           Get in Touch
@@ -44,7 +44,7 @@ import contact_map from "../../public/Images/contact_map.svg";
             name="email"
           />
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-3 lg:gap-5">
-             <select id="country" class="pl-2 border border-[#D9D9D9] text-[#333333]" name="country">
+             <select id="country" class="rounded-[3px] pl-2 h-[2.5rem] border border-[#D9D9D9] text-[#333333]" name="country" style="height: 40px;">
                 <option value="">Select a country</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -261,7 +261,7 @@ import contact_map from "../../public/Images/contact_map.svg";
               <!-- <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div> -->
                 <div>  
                     <input
-                        class="rounded-[4px] flex flex-wrap bg-[#F0F0F0]"
+                        class="input-file rounded-[4px] flex flex-wrap bg-[#F0F0F0]"
                         type="file"
                         name="file"
                         id="fileInput"
@@ -307,13 +307,13 @@ import contact_map from "../../public/Images/contact_map.svg";
               </div>
             </div>
           </div>
-          <hr class="my-5 mr-36">
+         <hr class="my-5  margin-right">
           <div class="flex flex-wrap justify-between">
             <div class="flex gap-2 md:gap-3 items-center">
               <Image src={contact_phone} alt="phone"/>
               <p class="text-xs md:text-sm lg:text-base text-[#31393C] font-semibold"><a href="tel:+919558112081">(+91) 95581 12081</a></p>
             </div>
-            <div class="flex mr-36 gap-1 md:gap-3 lg:gap-5">
+            <div class="flex margin-right  gap-1 md:gap-3 lg:gap-5">
               <a href="https://in.linkedin.com/company/sanskar-technolab-pvt-ltd"><Image class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src={contact_link} alt="linkedin"/></a>
               <a href="https://www.facebook.com/SanskarTechnolab/"><Image class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src={contact_fb} alt="facebook"/></a>
               <a href="https://www.instagram.com/sanskartechnolab/"><Image class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src={contact_insta} alt="instagram"/></a>
@@ -353,6 +353,52 @@ import contact_map from "../../public/Images/contact_map.svg";
     .banner {
       background-image: url("../../public/Images/contact-us-banner.svg");
     }
+
+    @media (max-width: 374px) {
+    .input-file {
+        width: 14rem;
+    }
+    }
+
+    @media (max-width: 374px) {
+    .form-padding {
+        padding: 0.5rem;
+    }
+    }
+    @media (min-width: 375px) and (max-width: 639px) {
+        .form-padding {
+            padding: 0.75rem;
+        }
+    }
+    @media (min-width: 640px) {
+        .form-padding {
+            padding: 1.75rem;
+        }
+    }
+
+    @media (max-width: 374px) {
+    .margin-right {
+        margin-right: 1rem;
+    }
+    }
+    @media (min-width: 375px) and (max-width: 639px) {
+        .margin-right {
+            margin-right: 7rem;
+        }
+    }
+    @media (min-width: 640px) and (max-width: 1279px) {
+        .margin-right {
+            margin-right: 4rem;
+        }
+    }
+    @media (min-width: 1280px) {
+        .margin-right {
+            margin-right: 9rem;
+        }
+    }
+
+    
+
   </style>
   <script>
     const countrySelect = document.getElementById("country");

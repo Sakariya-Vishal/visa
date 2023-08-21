@@ -158,6 +158,7 @@ import right from "../../public/Images/right.svg";
                     <a href="/career" class="text-sm">Career</a>
                     <a href="/contact-us" class="text-sm">Contact</a>
                     <a href="/migoo-case-study" class="text-sm">Migoo Case Study</a>
+                    <a href="/chatgpt-integration" class="text-sm">ChatGPT Integration</a>
                 </div>
         </div>
          <div>
@@ -260,10 +261,12 @@ import right from "../../public/Images/right.svg";
 <script>
     var currentUrl = window.location.pathname;
     var contact = '/contact-us';
+    var contact1 = '/contact-us/';
     var thanks = '/thank-you';
+    var thanks1 = '/thank-you/';
 
     // Check if the current URL matches the target URL
-    if (currentUrl === contact || currentUrl === thanks) {
+    if (currentUrl === contact || currentUrl === thanks || currentUrl === contact1 || currentUrl === thanks1) {
         var section = document.getElementById("section");
         section.classList.add('!hidden')
         // section.classList.add('flex')
