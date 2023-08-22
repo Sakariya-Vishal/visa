@@ -471,7 +471,7 @@ import close from "../../public/Images/popup_close_btn.svg"
             We work. We Learn. We Grow & Have Fun.
           </h2>
 
-          <div class="mt-8 flex gap-4 lg:mt-0 mb-0 md:mb-0 lg:mb-2">
+          <div class="mt-8 flex gap-4 lg:mt-0 mb-0 md:mb-0 lg:mb-2 hidden md:flex">
             <button
               class="prev-button rounded-full border border-gray-600 p-3 text-gray-600 hover:bg-gray-600 hover:text-white"
             >
@@ -614,6 +614,46 @@ import close from "../../public/Images/popup_close_btn.svg"
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="justify-center mt-8 flex gap-4 lg:mt-0 mb-0 md:mb-0 lg:mb-2 flex md:hidden">
+            <button
+              class="prev-button rounded-full border border-gray-600 p-3 text-gray-600 hover:bg-gray-600 hover:text-white"
+            >
+              <span class="sr-only">Previous Slide</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-5 w-5 rtl:rotate-180"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+              </svg>
+            </button>
+
+            <button
+              class="next-button rounded-full border border-gray-600 p-3 text-gray-600 hover:bg-gray-600 hover:text-white"
+            >
+              <span class="sr-only">Next Slide</span>
+              <svg
+                class="h-5 w-5 rtl:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"></path>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
