@@ -1179,14 +1179,14 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
                     <div class="flex justify-center gap-3 mt-10 astro-FWEFFZRD">
                         <!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
             <Image src={nextbtn} alt="nextbtn" id="next" /> -->
-                        <button class="rounded-full border border-gray-600 p-3 text-gray-600 hover:bg-gray-600 hover:text-white astro-FWEFFZRD" id="prev">
+                        <button class="rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-FWEFFZRD" id="prev">
                             <span class="sr-only astro-FWEFFZRD">Previous Slide</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 rtl:rotate-180 astro-FWEFFZRD">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" class="astro-FWEFFZRD"></path>
                             </svg>
                         </button>
 
-                        <button class="rounded-full border border-gray-600 p-3 text-gray-600 hover:bg-gray-600 hover:text-white astro-FWEFFZRD" id="next">
+                        <button class="rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-FWEFFZRD" id="next">
                             <span class="sr-only astro-FWEFFZRD">Next Slide</span>
                             <svg class="h-5 w-5 rtl:rotate-180 astro-FWEFFZRD" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="astro-FWEFFZRD"></path>

@@ -53,17 +53,17 @@ const $$Contact = createComponent(async ($$result, $$props, $$slots) => {
   ${maybeRenderHead()}<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 my-28 mb-64 bg-white">
     <form method="POST" class="">
       <div class="mb-2 md:mb-4 lg:mb-6">
-        <label class="block text-gray-600 text-base mb-2" for="name">
+        <label class="block text-[#3E96F4] text-base mb-2" for="name">
           First Name <span class="text-red-600">*</span></label>
         <input class="bg-white appearance-none border-gray-300 placeholder-gray-400 hover:border-[#40b751] rounded w-full py-2 px-3 text-grey-darker" placeholder=" Enter Full Name" name="name" type="text">
       </div>
       <div class="mb-2 md:mb-4 lg:mb-6">
-        <label class="block text-gray-600 text-base mb-2" for="email">
+        <label class="block text-[#3E96F4] text-base mb-2" for="email">
           Email <span class="text-red-600">*</span></label>
         <input class="bg-white appearance-none border-gray-300 placeholder-gray-400 hover:border-[#40b751] rounded w-full py-2 px-3 text-grey-darker" placeholder=" Enter Full Name" name="email" type="text">
       </div>
       <div class="mb-2 md:mb-4 lg:mb-6">
-        <label class="block text-gray-600 text-base mb-2" for="mobile">
+        <label class="block text-[#3E96F4] text-base mb-2" for="mobile">
           Mobile <span class="text-red-600">*</span></label>
         <input class="bg-white appearance-none border-gray-300 placeholder-gray-400 hover:border-[#40b751] rounded w-full py-2 px-3 text-grey-darker" placeholder=" Enter Full Name" name="phone" type="text">
       </div>

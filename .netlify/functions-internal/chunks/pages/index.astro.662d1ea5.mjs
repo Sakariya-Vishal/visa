@@ -694,7 +694,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				<div id="carouselExampleCaptions" class="relative astro-J7PV25F6" data-te-carousel-init data-te-carousel-slide>
 					<!-- Other content goes here -->
 					<div class="flex mt-5 inset-0 z-10 astro-J7PV25F6">
-						<button class="rounded-full border border-gray-600 px-2 lg:px-3 text-gray-600 hover:bg-gray-600 hover:text-white astro-J7PV25F6" id="preScrollButton" data-te-target="#carouselExampleCaptions" data-te-slide="prev">
+						<button class="rounded-full border border-[#3E96F4] px-2 lg:px-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-J7PV25F6" id="preScrollButton" data-te-target="#carouselExampleCaptions" data-te-slide="prev">
 							<span class="sr-only astro-J7PV25F6">Previous Slide</span>
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 rtl:rotate-180 astro-J7PV25F6">
 								<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" class="astro-J7PV25F6"></path>
@@ -730,7 +730,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 								<button class="text-[#31393C] px-10 py-2 font-semibold text-sm md:text-base lg:text-lg astro-J7PV25F6" id="ayurveda" type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="7" aria-label="Slide 8">Ayurveda</button>
 							</div>
 						</div>
-						<button class="rounded-full border border-gray-600 px-2 lg:px-3 text-gray-600 hover:bg-gray-600 hover:text-white astro-J7PV25F6" id="nextScrollButton" data-te-target="#carouselExampleCaptions" data-te-slide="next">
+						<button class="rounded-full border border-[#3E96F4] px-2 lg:px-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-J7PV25F6" id="nextScrollButton" data-te-target="#carouselExampleCaptions" data-te-slide="next">
 							<span class="sr-only astro-J7PV25F6">Next Slide</span>
 							<svg class="h-5 w-5 rtl:rotate-180 astro-J7PV25F6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 								<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="astro-J7PV25F6"></path>
@@ -1289,14 +1289,14 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				<div class="flex justify-center gap-3 mt-10 astro-J7PV25F6">
 					<!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
 				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
-					<button class="rounded-full border border-gray-600 p-3 text-gray-600 hover:bg-gray-600 hover:text-white astro-J7PV25F6" id="prev">
+					<button class="rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-J7PV25F6" id="prev">
 						<span class="sr-only astro-J7PV25F6">Previous Slide</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 rtl:rotate-180 astro-J7PV25F6">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" class="astro-J7PV25F6"></path>
 						</svg>
 					</button>
 
-					<button class="rounded-full border border-gray-600 p-3 text-gray-600 hover:bg-gray-600 hover:text-white astro-J7PV25F6" id="next">
+					<button class="rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-J7PV25F6" id="next">
 						<span class="sr-only astro-J7PV25F6">Next Slide</span>
 						<svg class="h-5 w-5 rtl:rotate-180 astro-J7PV25F6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="astro-J7PV25F6"></path>
