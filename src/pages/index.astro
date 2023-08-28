@@ -986,7 +986,7 @@ import migoo_logo from "../../public/Images/migoo-logo.png"
 		<section
 			class="section-bg-left py-[3.125rem] md:py-[2rem] lg:py-[4rem]"
 		>
-			<div class="hidden md:block mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-2 lg:px-0">
+			<div class="hidden md:block mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
 				<div class="md:text-center sm:text-left md:mb-7 lg:mb-10">
 					<h2
 						class="text-2xl md:text-3xl lg:text-4xl text-[#3E96F4] font-bold"
@@ -996,7 +996,7 @@ import migoo_logo from "../../public/Images/migoo-logo.png"
 				</div>
 				<div
 					id="carouselExampleCaptions"
-					class="mx-5 md:max-w-7xl md:mx-auto md:px-28 2xl:px-0 relative"
+					class="mx-5 md:max-w-7xl md:mx-auto 2xl:px-0 relative"
 					data-te-carousel-init
 					data-te-carousel-slide
 				>
@@ -1025,7 +1025,7 @@ import migoo_logo from "../../public/Images/migoo-logo.png"
 						</button>
 
 						<div
-							class="grow flex gap-auto md:gap-20 items-center justify-between overflow-x-scroll custom-scrollbar1 ml-0 md:ml-32"
+							class="grow flex gap-auto md:gap-20 items-center justify-between overflow-x-scroll custom-scrollbar1 margin"
 							data-te-carousel-indicators
 							id="scrollContainer"
 						>
@@ -3844,6 +3844,15 @@ import migoo_logo from "../../public/Images/migoo-logo.png"
 		list-style-image: url("../../Images/industries_bullet.svg");
 	}
 
+	.margin{
+		margin-left: 0
+	}
+	@media (min-width: 1024px) {
+        .margin {
+            margin-left: 10rem;
+        }
+    }
+
 </style>
 
 <script>
@@ -4668,6 +4677,10 @@ import migoo_logo from "../../public/Images/migoo-logo.png"
                 slidesPerView: 1.5,
                 centeredSlides: true,
               },
+			   768: {
+                centeredSlides: false,
+                slidesPerView: 2,
+              },
               1024: {
                 centeredSlides: false,
                 slidesPerView: 3,
@@ -4697,6 +4710,10 @@ import migoo_logo from "../../public/Images/migoo-logo.png"
 					slidesPerView: 1,
 					centeredSlides: true,
 				},
+				820: {
+					centeredSlides: true,
+					slidesPerView: 3,
+				},
 				1024: {
 					centeredSlides: false,
 					slidesPerView: 2,
@@ -4721,6 +4738,10 @@ import migoo_logo from "../../public/Images/migoo-logo.png"
       breakpoints: {
         640: {
           slidesPerView: 1.5,
+          centeredSlides: true,
+        },
+		768: {
+          slidesPerView: 1,
           centeredSlides: true,
         },
         1024: {

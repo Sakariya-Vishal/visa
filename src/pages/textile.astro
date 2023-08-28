@@ -210,7 +210,7 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
           class="text-2xl md:text-3xl lg:text-4xl !leading-[2rem] md:!leading-[2.25rem] lg:!leading-[2.75rem] text-[#31393C] font-semibold"
         >
           Here are the numbers textile companies have <br
-            class="hidden md:block"
+            class="hidden lg:block"
           /> experienced after using ERPNext & ServiceNow!
         </h2>
         <p class="font-semibold text-sm md:text-base mt-3 md:mt-4 lg:mt-5">
@@ -225,7 +225,7 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
           <div class="swiper-wrapper ml-0 md:ml-0 mb-10">
               <div class="swiper-slide  p-3">
               <div
-                class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts  w-full md:w-64 2xl:w-72 h-64 2xl:h-72"
+                class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts w-full md:w-64 2xl:w-72 h-64 2xl:h-72"
               >
                 <Image class="justify-self-end" src={process} alt="process" />
                 <p
@@ -2230,6 +2230,10 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
                 slidesPerView: 1.5,
                 centeredSlides: true,
               },
+              768: {
+                centeredSlides: false,
+                slidesPerView: 2,
+              },
               1024: {
                 centeredSlides: false,
                 slidesPerView: 3,
@@ -2501,6 +2505,10 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
           slidesPerView: 1.5,
           centeredSlides: true,
         },
+        768: {
+          centeredSlides: true,
+          slidesPerView: 1,
+        },
         1024: {
           centeredSlides: false,
           slidesPerView: 2,
@@ -2509,3 +2517,5 @@ import jagdamba_logo from "../../public/Images/jagdamba_logo.svg";
     });
   });
 </script>
+
+

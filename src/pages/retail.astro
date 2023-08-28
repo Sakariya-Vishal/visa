@@ -2729,9 +2729,13 @@ import migoo_logo from "../../public/Images/migoo-logo.png"
               prevEl: ".prev-button",
             },
             breakpoints: {
-              640: {
+               640: {
                 slidesPerView: 1.5,
                 centeredSlides: true,
+              },
+              768: {
+                centeredSlides: false,
+                slidesPerView: 2,
               },
               1024: {
                 centeredSlides: false,
@@ -3156,7 +3160,11 @@ import migoo_logo from "../../public/Images/migoo-logo.png"
           slidesPerView: 1.5,
           centeredSlides: true,
         },
-        1024: {
+        768: {
+          centeredSlides: true,
+          slidesPerView: 1,
+        },
+        1280: {
           centeredSlides: false,
           slidesPerView: 2,
         },
