@@ -38,7 +38,7 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
     ${maybeRenderHead()}<main class="astro-GDQBJPLB">
         <section class="section-bg-right hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center astro-GDQBJPLB">
             ${renderComponent($$result2, "Image", $$Image, { "class": "absolute right-0 w-5/12 astro-GDQBJPLB", "src": c_banner, "alt": "banner image" })}
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex astro-GDQBJPLB">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex astro-GDQBJPLB">
                 <div class="w-7/12 astro-GDQBJPLB">
                     <h1 class="text-5xl text-[#31393C] font-semibold lg:leading-[4rem] xl:leading-[4rem] astro-GDQBJPLB">
                         Dare to dream big, dare to innovate, and let your career
@@ -56,7 +56,7 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
         </section>
 
         <section class="section-bg-right mt-10 md:flex lg:hidden  astro-GDQBJPLB">
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24  h-[calc(100vh-10vh)] flex-wrap items-center astro-GDQBJPLB">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0  h-[calc(100vh-10vh)] flex-wrap items-center astro-GDQBJPLB">
                 <div class=" astro-GDQBJPLB">
                     <div class="text-[1.75rem] md:text-[3rem] leading-9 md:leading-[3.5rem] text-[#31393C] font-semibold astro-GDQBJPLB">
                          Dare to dream big, dare to innovate, and let your career
@@ -75,7 +75,7 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
         </section>
 
         <section class="pb-[3.125rem] md:pb-[3.125rem] lg:pb-[6.25rem] astro-GDQBJPLB">
-        <div class=" mx-5 md:max-w-7xl md:mx-auto md:px-24  astro-GDQBJPLB">
+        <div class=" mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0  astro-GDQBJPLB">
             <div class="md:text-center sm:text-left text-[#31393C] astro-GDQBJPLB">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold astro-GDQBJPLB">
                     Sanskar Technolabs at a glance!
@@ -175,7 +175,7 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
         </section>
 
         <section class="section-bg-center_career py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-GDQBJPLB">
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 text-[#31393C] astro-GDQBJPLB">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 text-[#31393C] astro-GDQBJPLB">
                 <div class="text-left md:text-center  font-semibold text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-10 lg:mb-10 astro-GDQBJPLB">
                     Recent Job Openings!
                 </div>
@@ -243,7 +243,7 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
         <!-- <section
             class="pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]"
         >
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 text-[#31393C] flex justify-between">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 text-[#31393C] flex justify-between">
                 <div
                     class="text-center font-semibold text-2xl md:text-3xl lg:text-4xl"
                 >
@@ -428,7 +428,7 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
 
 
         <section class="section-bg-left py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-GDQBJPLB">
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-GDQBJPLB">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 astro-GDQBJPLB">
                 <div class="md:text-center sm:text-left mb-0 md:mb-10 lg:mb-10 astro-GDQBJPLB">
                     <h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold astro-GDQBJPLB">
                     What do our employees have to say about us?

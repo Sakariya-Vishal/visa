@@ -73,7 +73,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
     ${maybeRenderHead()}<main class="astro-FWEFFZRD">
         <section class="section-bg-right hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center astro-FWEFFZRD">
             ${renderComponent($$result2, "Image", $$Image, { "class": "absolute right-0 w-6/12 p-10 astro-FWEFFZRD", "src": retail_banner, "alt": "manu-banner" })}
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex container astro-FWEFFZRD">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex container astro-FWEFFZRD">
                 <div class="w-6/12 astro-FWEFFZRD">
                     <h1 class="lg:text-4xl xl:text-5xl text-[#31393C] font-semibold lg:leading-[3.5rem] xl:leading-[4rem] astro-FWEFFZRD">
                         Retail implementation services & beyond!
@@ -93,7 +93,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
         </section>
 
         <section class="section-bg-right mt-10 md:flex lg:hidden astro-FWEFFZRD">
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex-wrap items-center h-[calc(100vh-10vh)] astro-FWEFFZRD">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex-wrap items-center h-[calc(100vh-10vh)] astro-FWEFFZRD">
                 <div class=" astro-FWEFFZRD">
                     <div class="text-3xl md:text-4xl text-[#31393C] font-semibold md:leading-[3rem] astro-FWEFFZRD">
                         Retail implementation services & beyond!
@@ -114,7 +114,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
         </section>
 
         <section class="section-bg-left py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-FWEFFZRD">
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24  astro-FWEFFZRD">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0  astro-FWEFFZRD">
             <div class="md:text-center text-left astro-FWEFFZRD">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl !leading-[2rem] md:!leading-[2.25rem] lg:!leading-[2.75rem] text-[#31393C] font-semibold astro-FWEFFZRD">
                     Over 1000+ companies are leveraging <br class="hidden md:block astro-FWEFFZRD"> ERPNext & ServiceNow for their retail operations!
@@ -150,7 +150,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
             </div>
         </section>
 
-        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-FWEFFZRD">
+        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-FWEFFZRD">
             <div class="md:text-center sm:text-left astro-FWEFFZRD">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl !leading-[2rem] md:!leading-[2.25rem] lg:!leading-[2.75rem] text-[#31393C] font-semibold astro-FWEFFZRD">
                     Get better benefits with the best tools <br class="hidden md:block astro-FWEFFZRD"> and skilled implementation partners!
@@ -260,7 +260,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
             </div>
         </section>
 
-        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-FWEFFZRD">
+        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-FWEFFZRD">
             <div class="grid justify-items-center gap-20 astro-FWEFFZRD">
                 <div class="md:text-center sm:text-left astro-FWEFFZRD">
                     <h2 class="text-2xl md:text-3xl lg:text-4xl !leading-[2rem] md:!leading-[2.25rem] lg:!leading-[2.75rem] text-[#31393C] font-semibold astro-FWEFFZRD">
@@ -294,7 +294,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
             </div>
 
             <div class="block lg:hidden bg-[#3E96F4] mt-10 pb-10 astro-FWEFFZRD">
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-FWEFFZRD"> 
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 astro-FWEFFZRD"> 
                 <div class=" astro-FWEFFZRD">
                     ${renderComponent($$result2, "Image", $$Image, { "src": small_retail_operation, "alt": "retail operation", "class": "astro-FWEFFZRD" })}
                     <div class="text-2xl md:text-3xl leading-[2rem] md:leading-[2.5rem] lg:leading-[2.75rem] text-white font-semibold mt-5 astro-FWEFFZRD">
@@ -311,7 +311,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
             </div>
         </section>
 
-        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-FWEFFZRD">
+        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-FWEFFZRD">
             <h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold sm:text-left md:text-center lg:mx-40 md:mx-auto mx-auto mb-10 astro-FWEFFZRD">
                 Move to Cloud & switch to sophisticated retail management with
                 the best tech!
@@ -906,7 +906,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
         </div></section>
 
         <section class="py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-FWEFFZRD">
-            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-FWEFFZRD">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 astro-FWEFFZRD">
                 <div class="astro-FWEFFZRD">
                     <h2 class="text-2xl md:text-3xl text-start md:text-center lg:text-start lg:text-4xl mr-0 md:mr-0 lg:mr-20 leading-[2rem] md:leading-[2.50rem] lg:leading-[2.75rem] font-semibold text-[#31393C] astro-FWEFFZRD">
                         Integrate digital commerce as well with your Brick &
@@ -982,7 +982,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
             </div>
         </section>
 
-        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-FWEFFZRD">
+        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-FWEFFZRD">
             <div class="md:text-center sm:text-left astro-FWEFFZRD">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold  astro-FWEFFZRD">
                     Why Sanskar Technolabs for your <br class="astro-FWEFFZRD">
@@ -1082,7 +1082,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
         </section>
 
         <section class="section-bg-center py-[3.125rem] md:py-[2rem] lg:py-[4rem] relative astro-FWEFFZRD">
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-FWEFFZRD">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 astro-FWEFFZRD">
                 <div class="md:text-center sm:text-left mb-0 md:mb-5 lg:mb-10 astro-FWEFFZRD">
                     <h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold astro-FWEFFZRD">
                         Hear from our customers in a similar industry!
@@ -1198,7 +1198,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
         </section>
 
         <section class="py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-FWEFFZRD">
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-FWEFFZRD">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 astro-FWEFFZRD">
                 <div class="bg-[#31393C] rounded-[20px] flex flex-wrap flex-col-reverse items-center lg:items-start lg:relative astro-FWEFFZRD">
                     <div class="lg:w-9/12 md:w-full w-auto md:px-12 lg:px-12 pb-5 md:pb-12 lg:pb-12 pt-2 md:pt-0 lg:pt-12 z-10 mx-5 lg:mx-0 astro-FWEFFZRD">
                         <h2 class="text-2xl md:text-3xl lg:text-4xl text-white font-semibold astro-FWEFFZRD">
@@ -1222,7 +1222,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
             </div>
         </section>
 
-        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-FWEFFZRD">
+        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-FWEFFZRD">
             <div class="hidden md:block lg:block bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5 astro-FWEFFZRD">
                 <h2 class="text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] lg:text-center font-semibold mb-5 ml-3 leading-9 astro-FWEFFZRD">
                     Frequently Asked Questions (FAQs)

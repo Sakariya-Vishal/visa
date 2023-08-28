@@ -95,7 +95,7 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
                 height={509}
             />
             <div class=" flex">
-                <div class="lg:w-7/12 w-full md:w-full mx-5 md:max-w-7xl md:mx-auto md:px-24">
+                <div class="lg:w-7/12 w-full md:w-full mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0">
                     <h1
                         class="lg:text-[3rem] text-[1.75rem] md:text-[3rem] leading-9 md:leading-[3.5rem] text-[#31393C] font-semibold lg:leading-[3.75rem] xl:leading-[4rem]"
                     >
@@ -132,7 +132,7 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
 
 		<section class="section-bg-right hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center astro-BGV3CHYD">
             ${renderComponent($$result2, "Image", $$Image, { "class": "absolute right-0 w-5/12 h-[33rem] astro-BGV3CHYD", "src": migoo_banner, "alt": "banner image", "width": 737, "height": 509 })}
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex astro-BGV3CHYD">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex astro-BGV3CHYD">
                 <div class="w-7/12 astro-BGV3CHYD">
                     <h1 class="lg:text-[3rem] text-[#31393C] font-semibold lg:leading-[3.75rem] xl:leading-[4rem] astro-BGV3CHYD">
                         Developed Most Complex ERPNEXT Portal for Construction
@@ -153,7 +153,7 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
         </section>
 
 		<section class="section-bg-right mt-10 md:flex lg:hidden astro-BGV3CHYD">
-        <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap h-[calc(100vh-10vh)] items-center justify-evenly astro-BGV3CHYD">
+        <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex flex-wrap h-[calc(100vh-10vh)] items-center justify-evenly astro-BGV3CHYD">
             <div class="astro-BGV3CHYD">
                 <div class="text-[1.75rem] md:text-[3rem] leading-9 md:leading-[3.5rem] text-[#31393C] font-semibold astro-BGV3CHYD">
                     Developed Most Complex ERPNEXT Portal for Construction
@@ -174,7 +174,7 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
         </section>
 
 		<section class="pb-[3.125rem] md:pb-[3.125rem] lg:pb-[6.25rem]  mt-0 sm:mt-48 md:mt-0 lg:mt-0 xl:mt-0 astro-BGV3CHYD">
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-BGV3CHYD">
+			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 astro-BGV3CHYD">
 				<div class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#31393C] leading-[2.25rem] md:leading-[2.75rem] lg:leading-[3rem] astro-BGV3CHYD">Subtle Glimpses of the Project.</div>
 				<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-0 md:gap-10 lg:gap-10 mt-4 md:mt-8 lg:mt-8 astro-BGV3CHYD">
 					<div class="astro-BGV3CHYD">
@@ -207,7 +207,7 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
 		</section>
 
 		<section class="py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-BGV3CHYD">
-			<div class="grid place-items-center grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-16 mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-BGV3CHYD">
+			<div class="grid place-items-center grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-16 mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 astro-BGV3CHYD">
 				 <div class="flex justify-center md:justify-center lg:justify-start astro-BGV3CHYD">
             		${renderComponent($$result2, "Image", $$Image, { "class": " astro-BGV3CHYD", "src": migoo_client_vision, "alt": "Migoo Client Vision", "width": 504, "height": 417 })}
         		</div>
@@ -219,7 +219,7 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
 		</section>
 
 		<section class="section-bg-center_migoo py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-BGV3CHYD">
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-BGV3CHYD">
+			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 astro-BGV3CHYD">
 				<h2 class="text-center text-[#31393C] font-semibold text-2xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem] pb-4 md:pb-4 lg:pb-6 astro-BGV3CHYD">Our work!</h2>				
 				<p class="text-center text-[#000000] leading-4 md:leading-5 lg:leading-6 px-10 md:px-20 lg:px-36 text-xs md:text-sm lg:text-base font-normal pb-2 md:pb-3 lg:pb-4 astro-BGV3CHYD">The team at Sanskar Technolabs understood the client's requirements thoroughly, identified their pain points and developed a full-fledged ERPNEXT web portal within the given deadline. <br class="astro-BGV3CHYD"><br class="astro-BGV3CHYD"><span class="font-semibold astro-BGV3CHYD">Here's the best part:</span> Our team developed the entire web portal from front-end to back-end with ERPNEXT, ensuring a seamless and uniform user experience.</p>
 				
@@ -229,7 +229,7 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
 
 
         <section class="py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-BGV3CHYD">
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-BGV3CHYD">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 astro-BGV3CHYD">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl text-center text-[#31393C] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem] astro-BGV3CHYD">Let the Numbers speak for itself!</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-11 mt-10 md:mt-14 lg:mt-16 text-[#31393C] text-center astro-BGV3CHYD">
                 <div class="flex flex-col items-center  astro-BGV3CHYD">
@@ -276,7 +276,7 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
         </div></section>
 
-		 <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-BGV3CHYD">
+		 <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-BGV3CHYD">
 
             <div class="md:text-center sm:text-left astro-BGV3CHYD">
 				<h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold mb-2 md:mb-3 lg:mb-4 astro-BGV3CHYD">
@@ -394,7 +394,7 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
         </div></section>
 
         <section class="section-bg-left_migoo py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-BGV3CHYD">
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-BGV3CHYD">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 astro-BGV3CHYD">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl text-center text-[#31393C] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem] astro-BGV3CHYD">Our Key Integrations!</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-11 mt-10 md:mt-14 lg:mt-16 text-[#31393C] text-center astro-BGV3CHYD">
                     <div class="flex flex-col items-center  astro-BGV3CHYD">
@@ -444,7 +444,7 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
         </div></section>
 
 		<section class="py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-BGV3CHYD">
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-BGV3CHYD">
+			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 astro-BGV3CHYD">
 				<h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem] astro-BGV3CHYD">Project Challenges & Its Solutions!</h2>
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 md:gap-14 lg:gap-16 mt-8 md:mt-10 lg:mt-12 text-[#31393C] astro-BGV3CHYD">
 					<div class="astro-BGV3CHYD">
@@ -491,7 +491,7 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
 		</section>
 
         <section class="py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-BGV3CHYD">
-			<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10  mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-BGV3CHYD">
+			<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10  mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 astro-BGV3CHYD">
 				<div class="astro-BGV3CHYD">
 					<h2 class="text-2xl md:text-3xl text-center md:text-center lg:text-start lg:text-4xl mr-0 md:mr-0 lg:mr-20 leading-[2rem] md:leading-[2.50rem] lg:leading-[2.75rem] font-semibold text-[#31393C] astro-BGV3CHYD">With Robust Support, we offer more than just implementation!</h2>
 					<div class="flex flex-wrap justify-center md:justify-center lg:justify-start astro-BGV3CHYD">
@@ -543,7 +543,7 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 		</section>	
 
-		<section class="section-bg-center_migoo relative z-50 mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-BGV3CHYD">
+		<section class="section-bg-center_migoo relative z-50 mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-BGV3CHYD">
 			<div class="md:text-center sm:text-left md:mb-10 astro-BGV3CHYD">
 				<h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold astro-BGV3CHYD">
                 Let's hear it from our client!

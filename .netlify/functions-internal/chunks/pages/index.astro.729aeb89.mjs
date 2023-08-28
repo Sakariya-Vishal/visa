@@ -473,7 +473,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 	${maybeRenderHead($$result2)}<main class="astro-J7PV25F6">
 		<!-- <section class="h-[calc(100vh-10vh)] relative"> -->
 		<!-- <div
-				class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap justify-center justify-items-center items-center my-10"
+				class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex flex-wrap justify-center justify-items-center items-center my-10"
 			>
 				<div class="sm:w-full md:w-8/12 lg:w-8/12">
 					<h1
@@ -502,7 +502,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				/>
 			</div> -->
 
-		<!-- <div class="flex flex-wrap mx-5 md:max-w-7xl md:mx-auto md:px-24">
+		<!-- <div class="flex flex-wrap mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0">
 				<div
 					class="sm:w-full md:w-8/12 lg:w-8/12 font-semibold text-[#31393C] sm:mt-5 md:mt-56"
 				>
@@ -538,7 +538,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 
 		<section class="hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center astro-J7PV25F6">
 			<img class="absolute right-0 w-5/12 astro-J7PV25F6" src="../../public/Images/banner.png" alt="banner image" class="">
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex astro-J7PV25F6">
+			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex astro-J7PV25F6">
 				<div class="w-7/12 astro-J7PV25F6">
 					<h1 class=" text-[3.5rem] text-[#31393C] font-semibold leading-[4rem] astro-J7PV25F6">
 						The Leading ERPNext & ServiceNow Company!
@@ -554,7 +554,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 		</section>
 
-		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 md:flex lg:hidden flex-wrap items-center mt-10 mb-20 astro-J7PV25F6">
+		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 md:flex lg:hidden flex-wrap items-center mt-10 mb-20 astro-J7PV25F6">
 			<div class=" astro-J7PV25F6">
 				<div class="text-4xl text-[#31393C] font-semibold  astro-J7PV25F6">
 					The Leading ERPNext & ServiceNow Company!
@@ -571,7 +571,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 		</section>
 
 		<!-- <div class="flex flex-wrap items-center mb-20 mt-10">
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 w-5/12 !ml-40">
+			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 w-5/12 !ml-40">
 				<h1
 					class="text-[4rem] text-[#31393C] font-semibold leading-[64px]"
 				>
@@ -598,7 +598,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			/>
 		</div> -->
 
-		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10 astro-J7PV25F6">
+		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 lg:mt-40 md:mt-40 mt-10 astro-J7PV25F6">
 			<div class="md:text-center sm:text-left astro-J7PV25F6">
 				<h2 class="text-4xl text-[#31393C] font-semibold astro-J7PV25F6">
 					Offering 360-degree ERPNext & ServiceNow services!
@@ -807,7 +807,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 		</section>
 
-		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10 astro-J7PV25F6">
+		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 lg:mt-40 md:mt-40 mt-10 astro-J7PV25F6">
 			<div class="md:text-center sm:text-left md:mb-20 astro-J7PV25F6">
 				<h2 class="text-4xl text-[#31393C] font-semibold astro-J7PV25F6">
 					Industries we have worked with so far!
@@ -990,7 +990,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 
 		</section>
 
-		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10 md:text-center sm:text-left astro-J7PV25F6">
+		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 lg:mt-40 md:mt-40 mt-10 md:text-center sm:text-left astro-J7PV25F6">
 			<div class="md:text-center sm:text-left md:mb-20 astro-J7PV25F6">
 				<h2 class="text-4xl text-[#31393C] font-semibold astro-J7PV25F6">
 					Personalized Integration Hub - Access all your tools at one
@@ -1062,7 +1062,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 		</section>
 
-		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-20 astro-J7PV25F6">
+		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 lg:mt-40 md:mt-40 mt-20 astro-J7PV25F6">
 			<div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 astro-J7PV25F6">
 				<div class="bg-[url('../../public/Images/bg.svg')] bg-no-repeat grid gap-2 astro-J7PV25F6">
 					<p class="text-4xl leading-[44px] text-[#31393C] font-semibold astro-J7PV25F6">
@@ -1164,7 +1164,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 		</section>
 
-		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10 text-center astro-J7PV25F6">
+		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 lg:mt-40 md:mt-40 mt-10 text-center astro-J7PV25F6">
 			<div class="text-center md:mb-20 astro-J7PV25F6">
 				<h2 class="text-4xl text-[#31393C] font-semibold astro-J7PV25F6">
 					Why Choose Us…
@@ -1246,7 +1246,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 		</section>
 
 		<!-- <section class="absolute" id="grad1"></section> -->
-		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10 astro-J7PV25F6">
+		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 lg:mt-40 md:mt-40 mt-10 astro-J7PV25F6">
 			<div class="md:text-center sm:text-left md:mb-20 astro-J7PV25F6">
 				<h2 class="text-4xl text-[#31393C] font-semibold astro-J7PV25F6">
 					Our Happy Customers.
@@ -1323,7 +1323,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			</div>
 		</section>
 
-		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10 astro-J7PV25F6">
+		<section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 lg:mt-40 md:mt-40 mt-10 astro-J7PV25F6">
 			<div class="hidden md:block lg:block bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5 shadow drop-shadow-sm astro-J7PV25F6">
 				<h2 class="text-[1.75rem] font-semibold mb-5 ml-3 leading-9 astro-J7PV25F6">
 					Frequently Asked Questions (FAQs)
@@ -1694,7 +1694,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			<div class="bg-[url(../../public/Images/form-bg-3.png)] w-full md:w-5/12 bg-no-repeat bg-center bg-cover astro-J7PV25F6">
 				<img src="../../public/Images/form-bg.svg" alt="Image description" class="block md:absolute md:left-52 md:-top-32 astro-J7PV25F6">
 			</div>
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 w-full md:w-7/12 p-0 py-3 md:p-10 astro-J7PV25F6">
+			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 w-full md:w-7/12 p-0 py-3 md:p-10 astro-J7PV25F6">
 				<h4 class="font-semibold text-white text-4xl astro-J7PV25F6">
 					Let's craft awesomeness together!
 				</h4>

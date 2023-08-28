@@ -50,7 +50,7 @@ const $$Contact = createComponent(async ($$result, $$props, $$slots) => {
     }
   }
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Contact" }, { "default": ($$result2) => renderTemplate`
-  ${maybeRenderHead()}<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 my-28 mb-64 bg-white">
+  ${maybeRenderHead()}<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 my-28 mb-64 bg-white">
     <form method="POST" class="">
       <div class="mb-2 md:mb-4 lg:mb-6">
         <label class="block text-[#3E96F4] text-base mb-2" for="name">

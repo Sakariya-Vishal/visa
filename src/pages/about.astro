@@ -27,6 +27,8 @@ import impactful_story from '../../public/Images/impactful-story.png';
 import anand_thakker from "../../public/Images/anand_thakker.svg";
 import kirit_gajera from "../../public/Images/kirit_gajera.svg";
 import brilliant_working from "../../public/Images/brilliant_working.svg";
+import cta_mobile from "../../public/Images/cta-mobile.svg";
+import right from "../../public/Images/right.svg";
 
 ---
 
@@ -41,7 +43,7 @@ import brilliant_working from "../../public/Images/brilliant_working.svg";
 				width={1002} 
 				height={616}
 			/>
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex container">
+			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 flex container">
 				<div class="w-7/12">
 			<h1	class="lg:text-[2.75rem] xl:text-[3.5rem] 2xl:text-[3.5rem]  lg:mt-[-6rem] xl:mt-[-16rem] text-[#31393C] font-semibold lg:leading-[3.75rem] xl:leading-[4rem]">
 						Efficient workflows.<br> Satisfied customers.<br> Productive Workforce. 
@@ -53,7 +55,7 @@ import brilliant_working from "../../public/Images/brilliant_working.svg";
 			</div>
 		</div>
 
-		<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex lg:hidden flex-wrap items-center justify-between pt-10 pb-5 h-[calc(100vh-9vh)]" >
+		<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 flex lg:hidden flex-wrap items-center justify-between pt-10 pb-5 h-[calc(100vh-9vh)]" >
 			<div class="">
 				<div class="text-[1.75rem] md:text-[3rem] text-[#31393C] font-semibold leading-9 md:leading-[3.5rem]">
 						Efficient workflows.<br> Productive Workforce. <br> Satisfied customers.
@@ -72,38 +74,116 @@ import brilliant_working from "../../public/Images/brilliant_working.svg";
 		</div>
 	</section>
 
-	<section class="pb-[3.125rem] md:pb-[3.125rem] lg:pb-[6.25rem]">
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 mt-0 md:mt-0 lg:mt-0 xl:mt-0">
-				<h2 class="text-center font-semibold text-[#31393C] text-2xl md:text-3xl lg:text-4xl leading-[2.25rem] md:leading-[2.50rem] lg:leading-[2.75rem]">Who are we?</h2>				
+		<section
+      class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 py-[3.125rem] md:py-[2rem] lg:py-[4rem]"
+    >
+      <div class="md:text-center sm:text-left">
+       <h2 class="text-center font-semibold text-[#31393C] text-2xl md:text-3xl lg:text-4xl leading-[2.25rem] md:leading-[2.50rem] lg:leading-[2.75rem]">Who are we?</h2>				
 				<p class="mt-2 md:mt-3 lg:mt-4 text-center font-normal leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base text-[#31393C]">Sanskar Technolab has been the leading ERPNEXT & ServiceNow implementation partner serving enterprises for the past 12 <br class="hidden md:hidden lg:block"> years. We have a dedicated team of over 50+ skilled developers, designers, and project managers who will understand <br class="hidden md:hidden lg:block"> clients' requirements and offer solutions accordingly.</p>
-				<div class="pt-6 md:pt-8 lg:pt-12 pb-6 md:pb-8 lg:pb-12 text-center font-semibold text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] leading-7 md:leading-8 lg:leading-9 text-[#31393C]">Sneak Peek into our growing numbers!</div>
-					<div class="flex flex-wrap justify-center text-center gap-6 md:gap-8 lg:gap-16 text-[#31393C]">
-						<div class="let-shadow w-56 h-54 p-5 grid justify-items-center">
+      </div>
+	  <p class="pt-6 md:pt-8 lg:pt-12 pb-6 md:pb-8 lg:pb-12 text-center font-semibold text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] leading-7 md:leading-8 lg:leading-9 text-[#31393C]">Sneak Peek into our growing numbers!</p>
+
+      <div class=" ">
+        <div class="swiper-container !overflow-hidden">
+          <div class="swiper-wrapper ml-0 md:ml-0">
+            <div class="swiper-slide p-3">
+              <div class="let-shadow w-auto md:w-64 h-64 p-5 grid justify-items-center">
 							<Image class="" src={twelve} alt="12+ Years of Excellence" width={74} height={60} />	
 							<p class="text-[3.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold">12+</p>
 							<p class="font-normal text-base">Years of Excellence</p>
-						</div>
-						<div class="let-shadow w-56 h-54 p-5 grid justify-items-center">
+				</div>
+            </div>
+
+            <div class="swiper-slide  p-3">
+              <div class="let-shadow w-auto md:w-64 h-64 p-5 grid justify-items-center">
 							<Image src={fifty} alt="12+ Years of Excellence" width={64} height={60} />	
 							<p class="text-[3.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold">50+</p>
 							<p class="font-normal text-base">Dedicated team</p>
 						</div>
-						<div class="let-shadow w-56 h-54 p-5 grid justify-items-center">
+            </div>
+
+            <div class="swiper-slide p-3">
+              <div class="let-shadow w-auto md:w-64 h-64 p-5 grid justify-items-center">
 							<Image src={ten} alt="12+ Years of Excellence" width={61} height={61} />	
 							<p class="text-[3.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold">10+</p>
 							<p class="font-normal text-base">Industries Served!</p>
 						</div>
-						<div class="let-shadow w-56 h-54 p-5 grid justify-items-center">
+            </div>
+
+            <div class="swiper-slide p-3">
+              <div class="let-shadow w-auto md:w-64 h-64 p-5 grid justify-items-center">
 							<Image src={two} alt="12+ Years of Excellence" width={60} height={60} />	
 							<p class="text-[3.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold">2</p>
 							<p class="font-normal text-base">Work Hubs</p>
 						</div>
-					</div>
-			</div>
-		</section>
+            </div>
+
+            <div class="block xl:hidden swiper-slide  p-3">
+              <div class="let-shadow w-auto md:w-64 h-64 p-5 grid justify-items-center">
+							<Image src={fifty} alt="12+ Years of Excellence" width={64} height={60} />	
+							<p class="text-[3.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold">50+</p>
+							<p class="font-normal text-base">Dedicated team</p>
+						</div>
+            </div>
+
+             <div class="block xl:hidden swiper-slide p-3">
+              <div class="let-shadow w-auto md:w-64 h-64 p-5 grid justify-items-center">
+							<Image src={ten} alt="12+ Years of Excellence" width={61} height={61} />	
+							<p class="text-[3.5rem] md:text-[3.75rem] lg:text-[4rem] font-bold">10+</p>
+							<p class="font-normal text-base">Industries Served!</p>
+						</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="justify-center  flex gap-3 mt-5 -mb-7">
+					<!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
+				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
+					<button
+						class="prev-button rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white"
+						
+					>
+						<span class="sr-only">Previous Slide</span>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-3 w-3 rtl:rotate-180"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+						</svg>
+					</button>
+
+					<button
+						class="next-button rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white"
+
+					>
+						<span class="sr-only">Next Slide</span>
+						<svg
+							class="h-3 w-3 rtl:rotate-180"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M9 5l7 7-7 7"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"></path>
+						</svg>
+					</button>
+				</div>
+    </section>
+
 
 		<section class="section-bg-left py-[3.125rem] md:py-[2rem] lg:py-[4rem]">
-			<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10  mx-5 md:max-w-7xl md:mx-auto md:px-24">
+			<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10  mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
 				<div>
 					<h2 class="text-2xl md:text-3xl text-center md:text-center lg:text-start lg:text-4xl mr-0 md:mr-0 lg:mr-20 leading-[2rem] md:leading-[2.50rem] lg:leading-[2.75rem] font-semibold text-[#31393C]">Sanskar Technolab's unique approach to setting up enterprises for success!</h2>
 					<div class="flex flex-wrap justify-center md:justify-center lg:justify-start">
@@ -145,28 +225,50 @@ import brilliant_working from "../../public/Images/brilliant_working.svg";
 					</div>
 				</div>
 			</div>
-
-			<div
-				class="hidden lg:block mx-5 md:max-w-7xl md:mx-auto md:px-24 pt-[3.125rem] md:pt-[3.125rem] lg:pt-[6.25rem]"
-				>
-				<div
-					class="bg-image bg-cover bg-no-repeat bg-center md:bg-contain md:bg-right h-96 grid p-16 pt-24 items-center"
-				>
-					<h2 class="w-10/12 pr-16 lg:text-2xl xl:text-4xl lg:leading-[2.25rem] xl:leading-[2.75rem] text-white font-semibold">
-							Partner with us to unleash the potential of the best tech for your business!
-						</h2>
-					<div
-						class="text-white text-base font-semibold flex items-center gap-3 lg:-mt-20 xl:-mt-16 font-inter"
-					>
-					<div
-								class="flex justify-between bg-white rounded-lg lg:px-4 xl:px-5 py-2 w-56" >
-								<a href="/contact-us" class="text-[#3E96F4] font-semibold text-base font-inter">Book a free demo.</a>
-								<Image src={right_arrow} alt="Drive To Innovation" width={6} height={12} />
-							</div>
-					</div>
-				</div>
-			</div>
 		</section>	
+
+		<section class="section-bg-left py-[3.125rem] md:py-[6.25rem] lg:py-[3.125rem]">
+            <div class="hidden lg:block md:max-w-7xl md:mx-auto md:px-24">
+                <div
+                    class="bg-partner bg-cover bg-no-repeat bg-center md:bg-contain md:bg-right h-96 grid p-16 pt-24 items-center"
+                >
+                    <h2 class="w-10/12 pr-16 lg:text-2xl xl:text-4xl lg:leading-[2.25rem] xl:leading-[2.75rem] text-white font-semibold">
+									Partner with us to unleash the potential of the best tech for your business!
+								</h2>
+                    							<div
+								class="text-white text-base font-semibold flex items-center gap-3 lg:-mt-20 xl:-mt-16 font-inter"
+							>
+							<div
+										class="flex justify-between bg-white rounded-lg lg:px-4 xl:px-5 py-2 w-56" >
+										<a href="/contact-us" class="text-[#3E96F4] font-semibold text-base font-inter">Book a free demo.</a>
+										<Image src={right_arrow} alt="Drive To Innovation" width={6} height={12} />
+									</div>
+							</div>
+                </div>
+            </div>
+
+            <div
+                class="block lg:hidden md:max-w-7xl md:mx-auto md:px-24 mt-10 bg-[#3E96F4] pb-10"
+            >
+                <div class="mx-5">
+                    <Image src={cta_mobile} alt="cta-mobile" />
+                    <h2
+                        class="text-2xl md:text-3xl lg:text-4xl !leading-[2rem] md:!leading-[2.75rem] text-white font-semibold"
+                    >
+                       Partner with us to unleash the potential of the best tech for your business!
+                </h2>
+                    	<div
+								class="text-white text-base font-semibold flex items-center gap-3 mt-3 md:mt-5 font-inter"
+							>
+							<div
+										class="flex justify-between bg-white rounded-lg px-4 py-2 w-56" >
+										<a href="/contact-us" class="text-[#3E96F4] font-semibold text-base font-inter">Book a free demo.</a>
+										<Image src={right_arrow} alt="Drive To Innovation" width={6} height={12} />
+									</div>
+							</div>
+                </div>
+            </div>
+        </section>
 
 		<section>
 			<div class="mx-5 md:max-w-7xl py-[3.125rem] md:py-[2rem] lg:py-[4rem] md:mx-auto md:px-24">
@@ -208,7 +310,7 @@ import brilliant_working from "../../public/Images/brilliant_working.svg";
 		</section>
 
 		<section
-					class="mx-5 md:max-w-7xl md:mx-auto md:px-24 text-center py-[3.125rem] md:py-[2rem] lg:py-[4rem]" >
+					class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 text-center py-[3.125rem] md:py-[2rem] lg:py-[4rem]" >
 					<div class="text-center">
 						<h2
 							class="text-2xl md:text-3xl lg:text-4xl lg:text-[2.25rem] text-[#31393C] font-semibold"
@@ -278,8 +380,8 @@ import brilliant_working from "../../public/Images/brilliant_working.svg";
 		</section>
 
 		<section class="py-[3.125rem] md:py-[2rem] lg:py-[4rem]">
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24">
-				<h2 class="text-center text-lg md:text-xl lg:text-2xl font-semibold mb-1 md:mb-1 lg:mb-2 mx-4 md:mx-20 lg:mx-48">Assets of Sanskar Technolabs - Brilliant Minds working to bring your ideas to life.</h2>
+			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
+				<h2 class="text-center text-lg md:text-xl lg:text-2xl font-semibold mb-1 md:mb-1 lg:mb-2 mx-4 md:mx-20 lg:mx-48">Assets of Sanskar Technolabs - Brilliant Minds working to bring <br class="hidden md:hidden lg:hidden xl:block"> your ideas to life.</h2>
 				<p class="text-center text-xs md:text-sm lg:text-base mb-6 md:mb-6 lg:mb-10">Our strength lies within Sanskar’s team who is constantly bringing out the best for our clients</p>
 				<div class="flex justify-center">
 					<Image src={brilliant_working} alt="Sanskar working" width={924} height={662} />
@@ -289,7 +391,7 @@ import brilliant_working from "../../public/Images/brilliant_working.svg";
 
 
 		<section class="section-bg-center">
-			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem]">
+			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 py-[3.125rem] md:py-[2rem] lg:py-[4rem]">
 				<h2 class="text-center text-[#31393C] font-semibold text-2xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem] pb-4 md:pb-6 lg:pb-8">Empowering Communities: <br > Sanskar Technolab's Dual Mission of Business <br class="hidden md:block"> Excellence and Social Responsibility!</h2>
 				<p class="text-center text-[#000000] leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base font-normal pb-2 md:pb-3 lg:pb-4">At Sanskar Technolabs, we believe in the power of collective impact and the importance of giving <br class="hidden md:hidden lg:block" /> back to society. As part of our commitment to social responsibility, we have partnered with Best <br class="hidden md:hidden lg:block" /> Deed, a leading crowdfunding platform, to support causes that align with our values.</p>
 				<p class="text-center text-[#31393C] leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base font-semibold">Together, we have contributed to a range of initiatives close to our hearts...</p>
@@ -317,14 +419,14 @@ import brilliant_working from "../../public/Images/brilliant_working.svg";
 			</div>
 		</section>
 
-		<section class="py-[3.125rem] md:py-[2rem] lg:py-[4rem]">
-			<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-10 xl:gap-0 mx-5 md:max-w-7xl md:mx-auto md:px-24">
+		<section class="py-[3.125rem] md:py-[3.125rem] lg:py-[3.125rem] xl:py-[6.25rem]">
+			<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-10 xl:gap-0 mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
 				 <div class="flex justify-center md:justify-center lg:justify-start">
             <Image class="" src={impactful_story} alt="Impactful Story" width={483} height={486} />
         </div>
-				<div>
+				<div> 
 					<p class="text-[#31393C] pb-1 font-semibold text-[1rem] md:text-[1.375rem] lg:text-[1.75rem] leading-7 md:leading-8 lg:leading-9">Our Impactful Story: </p>
-					<h2 class="text-[#31393C] pb-2 md:pb-4 lg:pb-6 font-semibold  text-2xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">12 Years of Excellence & Innovation!</h2>
+					<h2 class="text-[#31393C] pb-2 md:pb-4 lg:pb-6 font-semibold  text-2xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">12 Years of Excellence & <br class="hidden md:hidden lg:hidden xl:block"> Innovation!</h2>
 					<p class="text-[#31393C]  pb-2 md:pb-4 lg:pb-6 leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base font-normal">Sanskar Technolabs was started 12 years ago with a clear mission & vision to leverage the best technologies and tools to offer out-of-the-box solutions for our client by adopting the best practices, target market preferences, and latest trends.</p>
 					<p class="text-[#31393C]  pb-2 md:pb-4 lg:pb-6 leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base font-normal"> From our inception, we have consistently pushed the boundaries of excellence, fueled by continuous innovation and a commitment to providing tailored solutions. Placing our clients at the heart of everything we do, we strive to create not just solutions, but experiences that resonate with their unique needs.</p>
 					<p class="text-[#31393C]  pb-2 md:pb-4 lg:pb-6 leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base font-normal">As we look ahead, our dedication to crafting desired solutions for both our clients and their end customers remains the same. ONWARDS & UPDWARDS! </p>
@@ -334,9 +436,9 @@ import brilliant_working from "../../public/Images/brilliant_working.svg";
 </Layout>
 
 <style>
-  .bg-image { 
-    background-image: url('../../public/Images/partner.svg');
-  }
+  .bg-partner {
+        background-image: url("../../public/Images/join-hand.svg");
+	}
   .let-shadow {
             border-radius: 10px;
             border: 2px solid #fff;
@@ -415,4 +517,36 @@ import brilliant_working from "../../public/Images/brilliant_working.svg";
 		margin-top: -10rem; 
 	}
 	}
+	
 </style>
+
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+          const swiper = new Swiper(".swiper-container", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            autoplay: {
+              delay: 3000,
+            },
+            navigation: {
+              nextEl: ".next-button",
+              prevEl: ".prev-button",
+            },
+            breakpoints: {
+              640: {
+                slidesPerView: 1.5,
+                centeredSlides: true,
+              },
+              1024: {
+                centeredSlides: false,
+                slidesPerView: 3,
+              },
+              1280: {
+                centeredSlides: false,
+                slidesPerView: 4,
+              },
+            },
+          });
+        });
+</script>

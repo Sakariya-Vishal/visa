@@ -19,7 +19,7 @@ const $$Test = createComponent(async ($$result, $$props, $$slots) => {
 </div>
 <button id="preBtn">Pre Slide</button>
 <button id="nextBtn">Next Slide</button> --><!-- <section
-            class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10"
+            class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 lg:mt-40 md:mt-40 mt-10"
         >
             <div class="md:text-center sm:text-left">
                 <h2
@@ -227,7 +227,7 @@ const $$Test = createComponent(async ($$result, $$props, $$slots) => {
                 </div>
             </div>
             
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex container">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex container">
                 <div class="w-3/12">
                     <h1 class="text-[3.5rem] text-[#31393C] font-semibold leading-[4rem]">
                         Let our numbers do the talking!
@@ -321,7 +321,7 @@ const $$Test = createComponent(async ($$result, $$props, $$slots) => {
 
 
 
-    <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex container">
+    <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex container">
         <div class="w-3/12">
             <h1
                 class="text-[3.5rem] text-[#31393C] font-semibold leading-[4rem]"

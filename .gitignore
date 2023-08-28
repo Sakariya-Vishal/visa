@@ -19,7 +19,3 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
-
-dist2/
-dist3/
-dist.zip

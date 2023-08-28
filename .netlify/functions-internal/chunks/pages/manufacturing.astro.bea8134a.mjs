@@ -76,7 +76,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
     ${maybeRenderHead()}<main class="astro-LOEZZAHA">
         <section class="section-bg-right hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center astro-LOEZZAHA">
             ${renderComponent($$result2, "Image", $$Image, { "class": "absolute right-0 w-5/12 astro-LOEZZAHA", "src": manu_banner, "alt": "manu-banner" })}
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex container astro-LOEZZAHA">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex container astro-LOEZZAHA">
                 <div class="w-7/12 astro-LOEZZAHA">
                     <h1 class="lg:text-4xl xl:text-5xl text-[#31393C] font-semibold lg:leading-[3.5rem] xl:leading-[4rem] astro-LOEZZAHA">
                         Automate tasks, Cut Costs and Boost Revenues for your
@@ -96,7 +96,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
         </section>
 
         <section class="section-bg-right mt-10 md:flex lg:hidden astro-LOEZZAHA">
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap items-center justify-evenly h-[calc(100vh-10vh)] astro-LOEZZAHA">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex flex-wrap items-center justify-evenly h-[calc(100vh-10vh)] astro-LOEZZAHA">
                 <div class=" astro-LOEZZAHA">
                     <div class="text-3xl md:text-4xl text-[#31393C] font-semibold md:leading-[3rem] astro-LOEZZAHA">
                         Automate tasks, Cut Costs and Boost Revenues for your
@@ -117,7 +117,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
         </section>
 
        <section class="section-bg-left_servicenow pb-[3.125rem] md:pb-[3.125rem] lg:pb-[6.25rem] astro-LOEZZAHA">
-        <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24  pt-[6.25rem] md:pt-[6.25rem] lg:pt-[5rem] xl:pt-[0rem] md:px-24  astro-LOEZZAHA">
+        <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0  pt-[6.25rem] md:pt-[6.25rem] lg:pt-[5rem] xl:pt-[0rem] md:px-24  astro-LOEZZAHA">
             <div class="md:text-center sm:text-left astro-LOEZZAHA">
                  <h2 class="text-2xl md:text-3xl lg:text-4xl !leading-[2.5rem] md:!leading-[2.75rem] lg:!leading-[3rem] text-[#31393C] font-semibold astro-LOEZZAHA">
                     Over 1000+ companies are leveraging <br class="hidden md:hidden lg:hidden xl:block astro-LOEZZAHA"> ERPNext & ServiceNow
@@ -169,7 +169,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
         <!-- <section
             class="section-bg-left pt-[3.25rem] md:pt-[3.25rem] lg:pt-[6.5rem]"
         >
-        <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 ">
+        <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 ">
             <div class="flex flex-wrap items-center">
                 <Image
                     class="sm:w-full md:w-5/12 lg:w-5/12"
@@ -215,7 +215,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
         </section> -->
 
         <!-- <section
-            class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap sm:text-left md:items-center pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]"
+            class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex flex-wrap sm:text-left md:items-center pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]"
         >
             <div
                 class="lg:w-3/12 md:w-3/12 sm:w-full text-[#31393C] font-semibold mb-5 md:mb-0"
@@ -304,7 +304,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
             </div>
         </section> -->
 
-        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap sm:text-left md:items-center py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-LOEZZAHA">
+        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex flex-wrap sm:text-left md:items-center py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-LOEZZAHA">
             <div class="lg:w-3/12 md:w-full sm:w-full text-[#31393C] font-semibold mb-5 md:mb-0 astro-LOEZZAHA">
                 <h1 class="text-2xl md:text-3xl lg:text-4xl astro-LOEZZAHA">
                     Lesser costs, better results!
@@ -404,7 +404,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
         </section>
 
         <!-- <section
-            class="mx-5 md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap sm:text-left md:items-center pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]"
+            class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex flex-wrap sm:text-left md:items-center pt-[6.25rem] md:pt-[6.25rem] lg:pt-[12.5rem]"
         >
             <div
                 class="lg:w-3/12 md:w-3/12 sm:w-full text-[#31393C] font-semibold mb-5 md:mb-0"
@@ -541,7 +541,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
         </section> -->
 
         <!-- <section
-            class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:mt-40 md:mt-40 mt-10"
+            class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 lg:mt-40 md:mt-40 mt-10"
         >
             <div class="md:text-center sm:text-left">
                 <h2
@@ -689,7 +689,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
             </div>
         </section> -->
 
-        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-LOEZZAHA">
+        <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-LOEZZAHA">
             <div class="md:text-center sm:text-left items-center justify-items-center astro-LOEZZAHA">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] leading-[2rem] md:leading-[2.75rem] lg:leading-[3rem] font-semibold astro-LOEZZAHA">
                     ERPNext is simplifying<br class="hidden md:hidden lg:hidden xl:block astro-LOEZZAHA">
@@ -734,7 +734,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
             </div>
         </section>
 
-            <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24  py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-LOEZZAHA">
+            <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0  py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-LOEZZAHA">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold sm:text-left md:text-center lg:mx-40 md:mx-auto mx-auto mb-10 astro-LOEZZAHA">
                     How can the right tools benefit your manufacturing
                     operations?
@@ -1238,7 +1238,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
             </div>
             
             </section>
-            <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-LOEZZAHA">
+            <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-LOEZZAHA">
                 <div class="md:text-center sm:text-left astro-LOEZZAHA">
                     <h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold  astro-LOEZZAHA">
                         Why Sanskar Technolabs for your <br class="astro-LOEZZAHA"> Manufacturing implementation
@@ -1364,7 +1364,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                 </div>
             </section>
 
-            <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-LOEZZAHA">
+            <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 py-[3.125rem] md:py-[2rem] lg:py-[4rem] astro-LOEZZAHA">
                 <div class="md:text-center sm:text-left astro-LOEZZAHA">
                     <h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold astro-LOEZZAHA">
                         Different manufacturing businesses <br class="astro-LOEZZAHA"> we have helped
@@ -1428,7 +1428,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
             </section>
 
             <section class="section-bg-center py-[3.125rem] md:py-[2rem] lg:py-[4rem] relative astro-LOEZZAHA">
-                <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 astro-LOEZZAHA">
+                <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 astro-LOEZZAHA">
                     <div class="md:text-center sm:text-left mb-0 md:mb-5 lg:mb-10 astro-LOEZZAHA">
                         <h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold astro-LOEZZAHA">
                             Hear from our customers in a similar industry!
@@ -1808,7 +1808,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                     class="absolute left-52 -top-32"
                 />
             </div>
-            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 w-7/12 p-10">
+            <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 w-7/12 p-10">
                 <h4 class="font-semibold text-white text-4xl">
                     Let's craft awesomeness together!
                 </h4>
@@ -1833,7 +1833,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                 />
             </div>
             <div
-                class="mx-5 md:max-w-7xl md:mx-auto md:px-24 w-full md:w-7/12 p-10"
+                class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 w-full md:w-7/12 p-10"
             >
                 <h4 class="font-semibold text-white text-4xl">
                     Let's craft awesomeness together!
