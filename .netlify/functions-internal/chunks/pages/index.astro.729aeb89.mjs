@@ -656,7 +656,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 							<img src="../../public/Images/OrderManagement.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Order Management</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/Images/HR&payroll.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">HR & payroll</p>
+							<img src="../../public/Images/hr-payroll.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">HR & payroll</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
 							<img src="../../public/Images/Manufacturing.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Manufacturing</p>
@@ -711,7 +711,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 							<img src="../../public/Images/OrderManagement.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Order Management</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
-							<img src="../../public/Images/HR&payroll.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">HR & payroll</p>
+							<img src="../../public/Images/hr-payroll.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">HR & payroll</p>
 						</div>
 						<div class="flex shadow drop-shadow-lg rounded-[8px] font-semibold text-lg p-3 module-shadow astro-J7PV25F6">
 							<img src="../../public/Images/Manufacturing.svg" class="mr-2 astro-J7PV25F6"><p class="astro-J7PV25F6">Manufacturing</p>
