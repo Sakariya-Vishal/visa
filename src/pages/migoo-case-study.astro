@@ -139,14 +139,14 @@ import m_adhar from '../../public/Images/m_adhar.svg';
 		<section
             class="section-bg-right mt-10 md:flex lg:hidden"
         >
-        <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 flex flex-wrap h-[calc(100vh-10vh)] items-center justify-evenly">
+        <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 flex flex-wrap banner-height items-center justify-evenly">
             <div>
-                <div
+                <h1
                     class="text-[1.75rem] md:text-[3rem] leading-9 md:leading-[3.5rem] text-[#31393C] font-semibold"
                 >
                     Developed Most Complex ERPNEXT Portal for Construction
                     Industry!
-                </div>
+                </h1>
                 <p
                     class="text[#31393C] text-sm md:text-base leading-5 md:leading-6 mt-5"
                 >
@@ -163,7 +163,7 @@ import m_adhar from '../../public/Images/m_adhar.svg';
                     <Image src={right} alt="right" class="ml-0" />
                 </div>
             </div>
-            <Image class="mt-4 mb-16 md:mb-0"  src={migoo_banner} alt="manu-banner" />
+            <Image class="banner-image"  src={migoo_banner} alt="manu-banner" />
         </div>
         </section>
 
@@ -988,6 +988,29 @@ import m_adhar from '../../public/Images/m_adhar.svg';
     height: 34rem;
     padding: 1rem;
   }
+}
+
+
+.banner-image {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+@media (min-width: 321px) {
+  .banner-image {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.banner-height{
+	height: h-[calc(100vh-10vh)];
+}
+
+@media (min-width: 321px){
+	.banner-height{
+	height: calc(100vh - 10vh);
+}
 }
 </style>
 

@@ -92,15 +92,15 @@ import khetan_logo from "../../public/Images/Khetan-group-logo.png"
 
         <section class="section-bg-right mt-10 md:flex lg:hidden">
             <div
-                class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 flex flex-wrap items-center justify-evenly h-[calc(100vh-20vh)] md:h-[calc(100vh-10vh)]"
+                class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 flex flex-wrap items-center justify-evenly banner-height"
             >
                 <div class="">
-                    <div
+                    <h1
                         class="text-3xl md:text-4xl text-[#31393C] font-semibold md:leading-[3rem]"
                     >
                         Automate tasks, Cut Costs and Boost Revenues for your
                         Manufacturing Company!
-                    </div>
+                    </h1>
                     <p
                         class="text-[#31393C] leading-6 md:leading-7 text-sm md:text-base mt-3 md:mt-5 lg:mt-7"
                     >
@@ -124,7 +124,7 @@ import khetan_logo from "../../public/Images/Khetan-group-logo.png"
        <section
             class="section-bg-left_servicenow pb-[3.125rem] md:pb-[3.125rem] lg:pb-[6.25rem]" 
         >
-        <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0  pt-[6.25rem] md:pt-[6.25rem] lg:pt-[5rem] xl:pt-[0rem] md:px-24 ">
+        <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0  pt-[3.1255rem] md:pt-[6.25rem] lg:pt-[5rem] xl:pt-[0rem] md:px-24 ">
             <div class="md:text-center sm:text-left">
                  <h2
                     class="text-2xl md:text-3xl lg:text-4xl !leading-[2.5rem] md:!leading-[2.75rem] lg:!leading-[3rem] text-[#31393C] font-semibold"
@@ -3221,6 +3221,16 @@ import khetan_logo from "../../public/Images/Khetan-group-logo.png"
     height: 34rem;
     padding: 1rem;
   }
+}
+
+.banner-height{
+	height: h-[calc(100vh-20vh)];
+}
+
+@media (min-width: 321px){
+	.banner-height{
+	height: calc(100vh - 20vh);
+}
 }
                 </style>
                 <script>

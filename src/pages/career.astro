@@ -75,11 +75,11 @@ import close from "../../public/Images/popup_close_btn.svg"
 
     <section class="section-bg-right mt-10 md:flex lg:hidden">
       <div
-        class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 h-[calc(100vh-20vh)] md:h-[calc(100vh-10vh)] flex-wrap items-center"
+        class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 banner-height flex-wrap items-center"
       >
         <div class="">
           <div
-            class="text-[1.75rem] md:text-[3rem] leading-9 md:leading-[3.5rem] text-[#31393C] font-semibold"
+            class="banner-text text-[1.75rem] md:text-[3rem] leading-9 md:leading-[3.5rem] text-[#31393C] font-semibold"
           >
             Dare to dream big, dare to innovate, and let your career soar with
             us!
@@ -100,7 +100,7 @@ import close from "../../public/Images/popup_close_btn.svg"
             <Image src={right} width={6} height={12} alt="right arrow " />
           </div>
         </div>
-        <Image class="mt-10 md:mt-0" src={c_banner} alt="banner image" width={737} height={509} />
+        <Image class="banner-image" src={c_banner} alt="banner image" width={737} height={509} />
       </div>
     </section>
 
@@ -1121,6 +1121,61 @@ import close from "../../public/Images/popup_close_btn.svg"
         }
       }
 
+
+.banner-image {
+  margin-top: 1rem;
+}
+
+@media (min-width: 375px) {
+  .banner-image {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 390px) {
+  .banner-image {
+    margin-top: 6rem;
+  }
+}
+
+@media (min-width: 414px) {
+  .banner-text {
+    margin-top: 3rem;
+  }
+  .banner-image {
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 481px) {
+  .banner-image {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-image {
+    margin-top: 3rem;
+  }
+}
+
+
+@media (min-width: 900px) {
+  .banner-image {
+    margin-top: 10rem;
+  }
+}
+
+.banner-height{
+	height: h-[calc(100vh-10vh)];
+	padding-bottom: 2rem;
+}
+
+@media (min-width: 321px){
+	.banner-height{
+	height: calc(100vh - 10vh);
+}
+}
     </style>
 
     <script>

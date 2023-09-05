@@ -109,14 +109,14 @@ import cta_mobile from "../../public/Images/cta-mobile.svg";
 
         <section class="section-bg-right mt-10 md:flex lg:hidden">
             <div
-                class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 flex flex-wrap items-center justify-evenly h-[calc(100vh-10vh)]"
+                class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 flex flex-wrap items-center justify-evenly banner-height"
             >
                 <div class="">
-                    <div
+                    <h1
                         class="text-3xl md:text-4xl text-[#31393C] font-semibold md:leading-[3rem]"
                     >
                        Drive Desired Results for your business with the Leading ERPNext Partner!
-                    </div>
+                    </h1>
                     <p
                         class="text-[#31393C] leading-6 md:leading-7 text-sm md:text-base mt-3 md:mt-5 lg:mt-7"
                     >
@@ -2632,6 +2632,16 @@ import cta_mobile from "../../public/Images/cta-mobile.svg";
                 width: 36rem;
             }
             }
+
+            .banner-height{
+	height: h-[calc(100vh-10vh)];
+}
+
+@media (min-width: 321px){
+	.banner-height{
+	height: calc(100vh - 10vh);
+}
+}
         
         </style>
 

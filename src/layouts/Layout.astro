@@ -4,6 +4,8 @@ import Navbar from "../components/navbar.astro";
 import Footer from "../components/footer.astro";
 import { Image, Picture } from "@astrojs/image/components";
 import scroll from "../../public/Images/scroll-top.svg"
+import favicon from "../../public/favicon/favicon-32x32.png";
+
 export interface Props {
 	title: string;
 	keyword?: string;
@@ -21,7 +23,7 @@ const { title, keyword='', description='', canonical_href=''} = Astro.props;
 		<!-- <meta name="description" content="Astro description" /> -->
 		<meta name="viewport" content="width=device-width" />
 		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-		<link rel="icon" href="../../public/Images/favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" href={favicon} sizes="32x32">
 		
 		<meta name="generator" content={Astro.generator} />
 		<meta name="robots" content="noindex,nofollow">
