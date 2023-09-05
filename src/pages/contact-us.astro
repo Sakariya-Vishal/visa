@@ -14,7 +14,7 @@ import contact_map from "../../public/Images/contact_map.svg";
 ---
 
 <Layout title="Contact Us", keyword="", description="", canonical_href="https://astro.sanskartechnolab.com/contact-us">
-<section class="banner bg-cover bg-no-repeat h-[calc(100vh-10vh)] flex items-center">
+<section class="banner bg-cover bg-no-repeat banner-height flex items-center">
       <div class="md:max-w-7xl md:mx-auto md:px-24 lg:px-4 w-full lg:w-10/12 xl:w-7/12 px-5">
         <div class="bg-white w-full lg:w-7/12 form-padding lg:p-7">
            <form id="contact_form" class="grid gap-3 md:gap-3 lg:gap-5">
@@ -394,7 +394,29 @@ import contact_map from "../../public/Images/contact_map.svg";
         }
     }
 
-    
+    .banner-height{
+	height: h-[calc(100vh-10vh)];
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+@media (min-width: 1025px)and (max-width: 1023px){
+	.banner-height{
+	height: calc(100vh - 10vh);
+}
+}
+
+@media (min-width: 321px)and (max-width: 1023px) {
+	.banner-height{
+	height: calc(100vh - 10vh);
+}
+}
+
+@media (min-width: 1025px) {
+	.banner-height{
+	height: calc(100vh - 10vh);
+}
+}
 
   </style>
   <script>
