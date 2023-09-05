@@ -251,8 +251,8 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
                 </div>
                 <div class="hidden md:flex">
                     <div class="flex justify-center gap-3">
-                        <Image src={previousbtn} alt="previousbtn" id="preBtn" />
-                        <Image src={nextbtn} alt="nextbtn" id="nextBtn" />
+                        <Image loading="eager"  src={previousbtn} alt="previousbtn" id="preBtn" />
+                        <Image loading="eager"  src={nextbtn} alt="nextbtn" id="nextBtn" />
                     </div>
                 </div>
             </div>
@@ -296,28 +296,28 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
 						>
 							<div class="block flex gap-7">
 								<div class="w-96">
-                                    <Image src={c_slider1} alt="slider1" class="w-96" />
+                                    <Image loading="eager"  src={c_slider1} alt="slider1" class="w-96" />
                                     <div class="we-work p-5 h-60">
                                         <div class="font-semibold text-base md:text-lg lg:text-xl">Culture at the core</div>
                                         <p class="text-xs md:text-sm lg:text-base">Sanskar Technolabs promotes an uplifting culture where we learn, have fun, and grow together!</p>
                                     </div>
                                 </div>
 								<div class="w-96">
-                                    <Image src={c_slider2} alt="slider2" class="w-96" />
+                                    <Image loading="eager"  src={c_slider2} alt="slider2" class="w-96" />
                                     <div class="we-work p-5 h-60">
                                         <div class="font-semibold text-base md:text-lg lg:text-xl">Converse & Grow</div>
                                         <p class="text-xs md:text-sm lg:text-base">The management and employees are always up for collaboration and conversation. Don't hold back—ask questions, seek clarity, and share your ideas freely.</p>
                                     </div>
                                 </div>
 								<div class="w-96">
-                                    <Image src={c_slider3} alt="slider3" class="w-96" />
+                                    <Image loading="eager"  src={c_slider3} alt="slider3" class="w-96" />
                                     <div class="we-work p-5 h-60">
                                         <div class="font-semibold text-base md:text-lg lg:text-xl">Collaborative Growth</div>
                                         <p class="text-xs md:text-sm lg:text-base">You grow. We grow! We thrive on a culture of shared learning. Together, we'll embark on a journey of continuous growth where knowledge is shared, skills are honed, and success is celebrated.</p>
                                     </div>
                                 </div>
                                 <div class="w-96">
-                                    <Image src={c_slider1} alt="slider4" class="w-96" />
+                                    <Image loading="eager"  src={c_slider1} alt="slider4" class="w-96" />
                                     <div class="we-work p-5 h-60">
                                         <div class="font-semibold text-base md:text-lg lg:text-xl">Take charge</div>
                                         <p class="text-xs md:text-sm lg:text-base">Take charge of your professional journey and pride in your work. At Sanskar Technolab, we empower you to take ownership of your projects and outcomes.</p>
@@ -332,7 +332,7 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
 							style="backface-visibility: hidden"
 						>
                         <div class="w-96">
-                            <Image src={c_slider1} alt="slider1" class="w-96" />
+                            <Image loading="eager"  src={c_slider1} alt="slider1" class="w-96" />
                             <div class="we-work p-5 h-60">
                                 <div class="font-semibold text-base md:text-lg lg:text-xl">Culture at the core</div>
                                 <p class="text-xs md:text-sm lg:text-base">Sanskar Technolabs promotes an uplifting culture where we learn, have fun, and grow together!</p>
@@ -521,8 +521,8 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
                 
             </div>
             <div class="flex justify-center gap-3 mt-10 astro-GDQBJPLB">
-				<!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
-				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
+				<!-- <Image loading="eager"  src={previousbtn} alt="previousbtn" id="prev" />
+				<Image loading="eager"  src={nextbtn} alt="nextbtn" id="next" /> -->
                 <button class="rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-GDQBJPLB" id="prev">
                             <span class="sr-only astro-GDQBJPLB">Previous Slide</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 rtl:rotate-180 astro-GDQBJPLB">

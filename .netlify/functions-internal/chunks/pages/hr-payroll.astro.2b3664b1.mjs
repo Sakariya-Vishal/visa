@@ -907,22 +907,22 @@ const $$HrPayroll = createComponent(async ($$result, $$props, $$slots) => {
                 </div>
                 <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 my-10">
                    <div class="box-shadow p-6 md:p-6 lg:p-8"> 
-                        <Image src={erpnext_khetan} alt="Khetan Group" />
+                        <Image loading="eager"  src={erpnext_khetan} alt="Khetan Group" />
                         <p class="mt-4 md:mt-6 lg:mt-8 text-lg md:text-lg lg:text-xl font-semibold text-[#31393C]">Khetan Group</p>
                         <p class="mt-2 text-xs md:text-sm lg:text-base text-[#31393C]">Khetan Group is the biggest manufacturer of Stainless Steel Pipes, Telescopic Channels, Tundish Board, and Quartz Powder, with a team of over 500+ employees. They need an updated system for managing employees. Sanskar Technolabs implemented modern ERPNext to streamline their tasks of bulk payments, overtime calculations, and payment automated employee management for leaves, seamless employee expenses management, etc.</p>
                     </div>
                     <div class="box-shadow p-6 md:p-6 lg:p-8">
-                        <Image src={erpnext_urjaa} alt="Urjaa Group" />
+                        <Image loading="eager"  src={erpnext_urjaa} alt="Urjaa Group" />
                         <p class="mt-4 md:mt-6 lg:mt-8 text-lg md:text-lg lg:text-xl font-semibold text-[#31393C]">Urjaa Group </p>
                         <p class="mt-2 text-xs md:text-sm lg:text-base text-[#31393C]">Urjaa Group is India's leading cotton textile company, working with a mission to redefine how the world buys raw textile materials. Like any other business, effective employee management is also a challenge for Urjaa Group. They reached out to us with their own set of challenges. We implemented ERPNext and its out-of-the-box features, such as notice board, biometric integration, streamlined leave tracking & payout; Sanskar Technolabs have helped them out. </p>
                     </div>
                     <div class="box-shadow p-6 md:p-6 lg:p-8">
-                        <Image src={erpnext_advantis_quartz} alt="Advantis Quartz" />
+                        <Image loading="eager"  src={erpnext_advantis_quartz} alt="Advantis Quartz" />
                         <p class="mt-4 md:mt-6 lg:mt-8 text-lg md:text-lg lg:text-xl font-semibold text-[#31393C]">Advantis Quartz</p>
                         <p class="mt-2 text-xs md:text-sm lg:text-base text-[#31393C]">Advantis Quartz is a high-end flagship brand owned and is the leading manufacturer of raw materials for quarries and its engineering. They have a huge team working with them, and they need to establish a strategic management process for the same. Sanskar Techolabs team implemented ERPNext for their required solutions, such as easy employee recruitment & onboarding, biometric integration for time overtime tracking, and automated payout accordingly. </p>
                     </div>
                     <div class="box-shadow p-6 md:p-6 lg:p-8">
-                        <Image src={erpnext_kirti} alt="Kirti Telent" />
+                        <Image loading="eager"  src={erpnext_kirti} alt="Kirti Telent" />
                         <p class="mt-4 md:mt-6 lg:mt-8 text-lg md:text-lg lg:text-xl font-semibold text-[#31393C]">Kirti Telnet Pvt. Ltd </p>
                         <p class="mt-2 text-xs md:text-sm lg:text-base text-[#31393C]">Kirti Telnet is an expert company in data communications & networking with a large team. They are willing to streamline the employee recruitment and training process and other requirements. Sanskar Technolabs understands their needs and offers customized HR & payroll Implementation services such as employee data management, training, performance measurements, etc. </p>
                     </div>
@@ -1011,8 +1011,8 @@ const $$HrPayroll = createComponent(async ($$result, $$props, $$slots) => {
 
 
 				<div class="flex justify-center gap-3 md:mt-10 astro-WLVQXR5U">
-					<!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
-				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
+					<!-- <Image loading="eager"  src={previousbtn} alt="previousbtn" id="prev" />
+				<Image loading="eager"  src={nextbtn} alt="nextbtn" id="next" /> -->
 					<button class="rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-WLVQXR5U" id="prev">
 						<span class="sr-only astro-WLVQXR5U">Previous Slide</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 rtl:rotate-180 astro-WLVQXR5U">

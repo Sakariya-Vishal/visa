@@ -1170,8 +1170,8 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
 
 
 				<div class="flex justify-center gap-3 md:mt-10 astro-LOEZZAHA">
-					<!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
-				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
+					<!-- <Image loading="eager"  src={previousbtn} alt="previousbtn" id="prev" />
+				<Image loading="eager"  src={nextbtn} alt="nextbtn" id="next" /> -->
 					<button class="rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-LOEZZAHA" id="prev">
 						<span class="sr-only astro-LOEZZAHA">Previous Slide</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 rtl:rotate-180 astro-LOEZZAHA">
@@ -1449,7 +1449,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
             <div
                 class="bg-[url(../../public/Images/form-bg-3.png)] w-5/12 bg-no-repeat bg-center bg-cover"
             >
-                <Image
+                <Image loading="eager" 
                     src="../../public/Images/form-bg.svg"
                     alt="Image description"
                     class="absolute left-52 -top-32"
@@ -1465,7 +1465,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                     <a href="#" class="text-[#3E96F4] text-base font-semibold font-inter"
                         >Fill up a form now.</a
                     >
-                    <Image src="../../public/Images/right.svg" alt="right" class="ml-0" />
+                    <Image loading="eager"  src="../../public/Images/right.svg" alt="right" class="ml-0" />
                 </div>
             </div>
         </section> -->
@@ -1473,7 +1473,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
             <div
                 class="bg-form-3 w-full md:w-5/12 bg-no-repeat bg-center bg-cover"
             >
-                <Image
+                <Image loading="eager" 
                     src={form_bg}
                     alt="form-bg"
                     class="block md:absolute md:left-52 md:-top-32"
@@ -1493,7 +1493,7 @@ const $$Manufacturing = createComponent(async ($$result, $$props, $$slots) => {
                         class="text-[#3E96F4] text-base font-semibold font-inter"
                         >Fill up a form now.</a
                     >
-                    <Image src={right} alt="right" class="ml-0" />
+                    <Image loading="eager"  src={right} alt="right" class="ml-0" />
                 </div>
             </div>
         </section> -->

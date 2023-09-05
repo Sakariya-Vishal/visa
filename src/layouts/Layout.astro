@@ -65,7 +65,7 @@ const { title, keyword='', description='', canonical_href=''} = Astro.props;
 	<body>
 		<main>
 			<div class="fixed right-5 bottom-5 z-10 hidden items-center cursor-pointer" id="s_top">
-				<Image src={scroll} alt="scroll to top"/>
+				<Image loading="eager"  src={scroll} alt="scroll to top"/>
 				<!-- Scroll To Top -->
 			</div>
 			<Navbar />

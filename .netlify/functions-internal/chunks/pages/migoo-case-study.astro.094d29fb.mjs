@@ -87,7 +87,7 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
         <!-- <section
             class="section-bg-right flex h-[calc(100vh-10vh)] relative flex-wrap items-center justify-evenly sm:flex-col-reverse"
         >
-            <Image
+            <Image loading="eager" 
                 class="lg:absolute lg:right-0 lg:w-5/12 w-full md:w-full"
                 src={migoo_banner}
                 alt="banner image"
@@ -118,7 +118,7 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
                             class="text-white text-base font-semibold font-inter"
                             >Schedule a Free demo now</a
                         >
-                        <Image
+                        <Image loading="eager" 
                             src={right}
                             width={6}
                             height={12}
@@ -633,8 +633,8 @@ const $$MigooCaseStudy = createComponent(async ($$result, $$props, $$slots) => {
                 
             </div>
             <div class="flex justify-center gap-3 mt-10 astro-BGV3CHYD">
-				<!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
-				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
+				<!-- <Image loading="eager"  src={previousbtn} alt="previousbtn" id="prev" />
+				<Image loading="eager"  src={nextbtn} alt="nextbtn" id="next" /> -->
 				<button class="rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-BGV3CHYD" id="prev">
                             <span class="sr-only astro-BGV3CHYD">Previous Slide</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 rtl:rotate-180 astro-BGV3CHYD">

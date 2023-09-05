@@ -203,15 +203,15 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
                     </div>
                     <div class="flex flex-wrap gap-2 md:gap-3 lg:gap-5 mt-3 md:mt-auto">
                         <div class="flex gap-1 md:gap-1 lg:gap-2 w-full md:w-auto">
-                            <Image src={c_user} alt="user" />
+                            <Image loading="eager"  src={c_user} alt="user" />
                             <p>20</p>
                         </div>
                         <div class="flex gap-1 md:gap-1 lg:gap-2 w-full md:w-auto">
-                            <Image src={c_job} alt="job" />
+                            <Image loading="eager"  src={c_job} alt="job" />
                             <p>0 Year</p>
                         </div>
                         <div class="flex gap-1 md:gap-1 lg:gap-2 w-full md:w-auto">
-                            <Image src={c_map} alt="map" />
+                            <Image loading="eager"  src={c_map} alt="map" />
                             <p>Ahmedabad, Junagadh</p>
                         </div>
                     </div>
@@ -225,15 +225,15 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
                     </div>
                     <div class="flex flex-wrap gap-2 md:gap-3 lg:gap-5 mt-3 md:mt-auto">
                         <div class="flex gap-2 md:gap-1 lg:gap-2 w-full md:w-auto">
-                            <Image src={c_user} alt="user" />
+                            <Image loading="eager"  src={c_user} alt="user" />
                             <p>1</p>
                         </div>
                         <div class="flex gap-1 md:gap-1 lg:gap-2 w-full md:w-auto">
-                            <Image src={c_job} alt="job" />
+                            <Image loading="eager"  src={c_job} alt="job" />
                             <p>0-2 Years</p>
                         </div>
                         <div class="flex gap-1 md:gap-1 lg:gap-2 w-full md:w-auto">
-                            <Image src={c_map} alt="map" />
+                            <Image loading="eager"  src={c_map} alt="map" />
                             <p>Ahmedabad, Junagadh</p>
                         </div>
                     </div>
@@ -246,15 +246,15 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
                         <div class="font-semibold mb-2 md:mb-3 lg:mb-1">ERPNext Developer</div>
                         <div class="flex flex-wrap gap-2 md:gap-3 lg:gap-5 mt-3 md:mt-auto">
                             <div class="flex gap-1 md:gap-1 lg:gap-2 w-full md:w-auto">
-                                <Image src={c_user} alt="user" />
+                                <Image loading="eager"  src={c_user} alt="user" />
                                 <p>1</p>
                             </div>
                             <div class="flex gap-1 md:gap-1 lg:gap-2 w-full md:w-auto">
-                                <Image src={c_job} alt="job" />
+                                <Image loading="eager"  src={c_job} alt="job" />
                                 <p>3+ Years (Preferred)</p>
                             </div>
                             <div class="flex gap-1 md:gap-1 lg:gap-2 w-full md:w-auto">
-                                <Image src={c_map} alt="map" />
+                                <Image loading="eager"  src={c_map} alt="map" />
                                 <p>Ahmedabad, Junagadh</p>
                             </div>
                         </div>
@@ -295,8 +295,8 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
                 </h2>
                 <div class="hidden md:flex">
                     <div class="flex justify-center gap-3">
-                        <Image src={previousbtn} alt="previousbtn" id="preBtn" />
-                        <Image src={nextbtn} alt="nextbtn" id="nextBtn" />
+                        <Image loading="eager"  src={previousbtn} alt="previousbtn" id="preBtn" />
+                        <Image loading="eager"  src={nextbtn} alt="nextbtn" id="nextBtn" />
                     </div>
                 </div>
             </div>
@@ -340,28 +340,28 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
 						>
 							<div class="block flex gap-7">
 								<div class="w-96">
-                                    <Image src={c_slider1} alt="slider1" class="w-96" />
+                                    <Image loading="eager"  src={c_slider1} alt="slider1" class="w-96" />
                                     <div class="we-work p-5 h-60">
                                         <div class="font-semibold text-base md:text-lg lg:text-xl">Culture at the core</div>
                                         <p class="text-xs md:text-sm lg:text-base">Sanskar Technolabs promotes an uplifting culture where we learn, have fun, and grow together!</p>
                                     </div>
                                 </div>
 								<div class="w-96">
-                                    <Image src={c_slider2} alt="slider2" class="w-96" />
+                                    <Image loading="eager"  src={c_slider2} alt="slider2" class="w-96" />
                                     <div class="we-work p-5 h-60">
                                         <div class="font-semibold text-base md:text-lg lg:text-xl">Converse & Grow</div>
                                         <p class="text-xs md:text-sm lg:text-base">The management and employees are always up for collaboration and conversation. Don't hold back—ask questions, seek clarity, and share your ideas freely.</p>
                                     </div>
                                 </div>
 								<div class="w-96">
-                                    <Image src={c_slider3} alt="slider3" class="w-96" />
+                                    <Image loading="eager"  src={c_slider3} alt="slider3" class="w-96" />
                                     <div class="we-work p-5 h-60">
                                         <div class="font-semibold text-base md:text-lg lg:text-xl">Collaborative Growth</div>
                                         <p class="text-xs md:text-sm lg:text-base">You grow. We grow! We thrive on a culture of shared learning. Together, we'll embark on a journey of continuous growth where knowledge is shared, skills are honed, and success is celebrated.</p>
                                     </div>
                                 </div>
                                 <div class="w-96">
-                                    <Image src={c_slider1} alt="slider4" class="w-96" />
+                                    <Image loading="eager"  src={c_slider1} alt="slider4" class="w-96" />
                                     <div class="we-work p-5 h-60">
                                         <div class="font-semibold text-base md:text-lg lg:text-xl">Take charge</div>
                                         <p class="text-xs md:text-sm lg:text-base">Take charge of your professional journey and pride in your work. At Sanskar Technolab, we empower you to take ownership of your projects and outcomes.</p>
@@ -376,7 +376,7 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
 							style="backface-visibility: hidden"
 						>
                         <div class="w-96">
-                            <Image src={c_slider1} alt="slider1" class="w-96" />
+                            <Image loading="eager"  src={c_slider1} alt="slider1" class="w-96" />
                             <div class="we-work p-5 h-60">
                                 <div class="font-semibold text-base md:text-lg lg:text-xl">Culture at the core</div>
                                 <p class="text-xs md:text-sm lg:text-base">Sanskar Technolabs promotes an uplifting culture where we learn, have fun, and grow together!</p>
@@ -684,7 +684,7 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
         <!-- <div class="p-4 c_slide">
             <div class="happy-customer-shadow bg-[#ffffff] md:p-6 lg:p-8 lg:mx-10 xl:mx-40 p-5 rounded-[20px] employee_card_height">
                 <div class="md:flex md:gap-3">
-                    <Image
+                    <Image loading="eager" 
                        class="image-small w-full md:w-5/12 lg:w-6/12 md:mr-2 lg:mr-3 md:h-[18rem] lg:h-[16rem] xl:h-[18rem] lg:object-cover"
                         src={nishit_jolapara}
                         alt="Nishit Jolapara"
@@ -725,8 +725,8 @@ const $$Career = createComponent(async ($$result, $$props, $$slots) => {
 
           </div>
           <div class="flex justify-center gap-3 md:mt-10 astro-GDQBJPLB">
-            <!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
-				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
+            <!-- <Image loading="eager"  src={previousbtn} alt="previousbtn" id="prev" />
+				<Image loading="eager"  src={nextbtn} alt="nextbtn" id="next" /> -->
             <button class="rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-GDQBJPLB" id="prev">
               <span class="sr-only astro-GDQBJPLB">Previous Slide</span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 rtl:rotate-180 astro-GDQBJPLB">

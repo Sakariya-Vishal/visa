@@ -18,7 +18,7 @@ import right from "../../public/Images/right.svg";
     <!-- class="block md:absolute md:left-80 md:-top-32 ml-0 md:ml-auto"     -->
     <!-- class="block md:absolute f_left f_top ml-0 md:ml-auto" -->
 
-    <Image
+    <Image loading="eager" 
             src={form_bg} alt="form_bg"
             alt="Image description"
     class="block md:absolute  ml-0 md:ml-auto"    
@@ -39,7 +39,7 @@ import right from "../../public/Images/right.svg";
                 class="text-[#3E96F4] text-sm md:text-base font-semibold font-inter"
                 >Fill up a form now.</a
             >
-            <Image src={right} width={6} height={12} alt="right arrow "/>
+            <Image loading="eager"  src={right} width={6} height={12} alt="right arrow "/>
         </div>
     </div>
     </div>
@@ -48,7 +48,7 @@ import right from "../../public/Images/right.svg";
 <footer class="bg-[#31393C] py-10 md:py-16 lg:py-20">
     <!-- <div class="md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex flex-wrap text-white">
         <div class="sm:w-full md:w-3/12 lg:w-3/12">
-            <Image src="'../../public/Images/footer_logo.svg" />
+            <Image loading="eager"  src="'../../public/Images/footer_logo.svg" />
             <p class="text-sm leading-6 mt-5">
                 ServiceNow and ERPNext Consulting, Implementation and
                 Development Specialist.
@@ -56,21 +56,21 @@ import right from "../../public/Images/right.svg";
             <div class="my-5 pr-4">
                 <div class="flex space-x-6 mt-6 md:mt-6 lg:mt-8">
                     <a href="https://in.linkedin.com/company/sanskar-technolab-pvt-ltd" class="text-gray-400">
-                        <Image
+                        <Image loading="eager" 
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                             src="../../public/Images/linkedin-footer.svg"
                         />
                         <p class="sr-only">Linkedin account</p>
                     </a>
                     <a href="https://www.facebook.com/SanskarTechnolab/" class="text-gray-400">
-                        <Image
+                        <Image loading="eager" 
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                             src="../../public/Images/fb.svg"
                         />
                         <p class="sr-only">Facebook page</p>
                     </a>
                     <a href="https://www.instagram.com/sanskartechnolab/" class="text-gray-400">
-                        <Image
+                        <Image loading="eager" 
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                             src="../../public/Images/insta-footer.svg"
                         />
@@ -105,7 +105,7 @@ import right from "../../public/Images/right.svg";
     >
         <div class="">
             <a href="/">
-                <Image src={footer_logo} alt="logo" /></a>
+                <Image loading="eager"  src={footer_logo} alt="logo" /></a>
             <p class="!text-sm leading-6 mt-5">
                 ServiceNow and ERPNext Consulting, Implementation and
                 Development Specialist.
@@ -113,21 +113,21 @@ import right from "../../public/Images/right.svg";
             <div class="my-5 pr-4">
                 <div class="flex space-x-6 mt-6 md:mt-6 lg:mt-8">
                     <a href="https://in.linkedin.com/company/sanskar-technolab-pvt-ltd" class="text-gray-400">
-                        <Image
+                        <Image loading="eager" 
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                             src={linkedin_footer} alt="linkedin_footer"
                         />
                         <p class="sr-only">Linkedin account</p>
                     </a>
                     <a href="https://www.facebook.com/SanskarTechnolab/" class="text-gray-400">
-                        <Image
+                        <Image loading="eager" 
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                             src={fb} alt="facebook"
                         />
                         <p class="sr-only">Facebook page</p>
                     </a>
                     <a href="https://www.instagram.com/sanskartechnolab/" class="text-gray-400">
-                        <Image
+                        <Image loading="eager" 
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                             src={instagram} alt="instagram"
                         />
@@ -166,15 +166,15 @@ import right from "../../public/Images/right.svg";
             <h4 class="!text-base text[#F7FFFF] font-bold">Contact</h4>
             <div class="!text-sm mt-5">
                 <div class="flex gap-1">
-                    <div class="w-1/12"><a href="https://www.google.com/maps/search/A-706,+Privilon,+Behind+Iscon+Temple,+Iscon+cross+Road,+SG+Highway,+Ahmedabad./@23.0282855,72.5032655,17z/data=!3m1!4b1?entry=ttu" class="flex gap-2"><Image class="ml-1 mt-1" src={map} alt="map" /></a></div>
+                    <div class="w-1/12"><a href="https://www.google.com/maps/search/A-706,+Privilon,+Behind+Iscon+Temple,+Iscon+cross+Road,+SG+Highway,+Ahmedabad./@23.0282855,72.5032655,17z/data=!3m1!4b1?entry=ttu" class="flex gap-2"><Image loading="eager"  class="ml-1 mt-1" src={map} alt="map" /></a></div>
                     <div class="w-11/12"> A-706, Privilon, Behind Iscon Temple, Iscon cross Road, SG Highway, Ahmedabad. (Gujarat-India) </div>
                 </div>
                 <div class="flex mt-7 gap-1">
-                    <div class="w-1/12"><a href="mailto:info@sanskartechnolab.com" ><Image src={email} alt="email" /></a></div>
+                    <div class="w-1/12"><a href="mailto:info@sanskartechnolab.com" ><Image loading="eager"  src={email} alt="email" /></a></div>
                     <div class="w-11/12"><p>info@sanskartechnolab.com</p></div>
                 </div>
                 <div class="flex gap-1">
-                    <div class="w-1/12 flex lg:justify-center"><a href="tel:+91 9558112081" class="mt-3 flex gap-2"><Image src={phone} alt="phone" /></a></div>
+                    <div class="w-1/12 flex lg:justify-center"><a href="tel:+91 9558112081" class="mt-3 flex gap-2"><Image loading="eager"  src={phone} alt="phone" /></a></div>
                     <div class="w-11/12 mt-3">(+91) 95581 12081</div>
                 </div>
             </div>

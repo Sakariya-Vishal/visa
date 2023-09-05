@@ -142,7 +142,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 			${renderComponent($$result2, "Image", $$Image, { "src": banner, "alt": "banner", "class": "w-full md:w-6/12 astro-J7PV25F6" })}
 		</div>
 
-			<!-- <Image
+			<!-- <Image loading="eager" 
 				class="absolute right-0 w-5/12"
 				src={banner}
 				alt="banner image"
@@ -170,7 +170,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 							class="text-white text-base font-semibold font-inter"
 							>Book a free demo now!</a
 						>
-						<Image
+						<Image loading="eager" 
 							src={right}
 							width={6}
 							height={12}
@@ -264,7 +264,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<!-- <div
 							class="bg-[#ffffff] flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold items-center text-sm md:text-base lg:text-lg p-3 module-shadow"
 						>
-							<Image src={Website} alt="Website" class="mr-2" /><p
+							<Image loading="eager"  src={Website} alt="Website" class="mr-2" /><p
 							>
 								Project
 							</p>
@@ -382,7 +382,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image
+							<Image loading="eager" 
 								src={FinancialAccounting}
 								alt="FinancialAccounting"
 								class="mr-2"
@@ -391,7 +391,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image
+							<Image loading="eager" 
 								src={OrderManagement}
 								alt="OrderManagement"
 								class="mr-2"
@@ -400,7 +400,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image
+							<Image loading="eager" 
 								src={Hr_payroll}
 								alt="Hr_payroll"
 								class="mr-2"
@@ -409,7 +409,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image
+							<Image loading="eager" 
 								src={Manufacturing}
 								alt="Manufacturing"
 								class="mr-2"
@@ -418,12 +418,12 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image src={CRM} class="mr-2" alt="CRM" /><p>CRM</p>
+							<Image loading="eager"  src={CRM} class="mr-2" alt="CRM" /><p>CRM</p>
 						</div>
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image src={Website} alt="Website" class="mr-2" /><p
+							<Image loading="eager"  src={Website} alt="Website" class="mr-2" /><p
 							>
 								Website
 							</p>
@@ -431,7 +431,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image
+							<Image loading="eager" 
 								src={Helpdesk}
 								alt="Helpdesk"
 								class="mr-2"
@@ -440,7 +440,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image
+							<Image loading="eager" 
 								src={AssetManagement}
 								alt="AssetManagement"
 								class="mr-2"
@@ -768,7 +768,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 											class="text-white font-semibold font-inter"
 											>Learn More</a
 										>
-										<Image
+										<Image loading="eager" 
 											src={right}
 											width={6}
 											height={12}
@@ -842,7 +842,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 											class="text-white font-semibold font-inter"
 											>Learn More</a
 										>
-										<Image
+										<Image loading="eager" 
 											src={right}
 											width={6}
 											height={12}
@@ -879,7 +879,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 											class="text-white font-semibold font-inter"
 											>Learn More</a
 										>
-										<Image
+										<Image loading="eager" 
 											src={right}
 											width={6}
 											height={12}
@@ -945,7 +945,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 											class="text-white font-semibold font-inter"
 											>Learn More</a
 										>
-										<Image
+										<Image loading="eager" 
 											src={right}
 											width={6}
 											height={12}
@@ -969,7 +969,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 								id="menuf_c"
 							>
 				
-								<Image
+								<Image loading="eager" 
 									src={manufacturing}
 									alt="manufacturing"
 									class="sm:w-full md:w-8/12 lg:w-7/12 p-auto md:p-12"
@@ -1008,7 +1008,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 											class="text-white font-semibold font-inter"
 											>Learn More</a
 										>
-										<Image
+										<Image loading="eager" 
 											src={right}
 											width={6}
 											height={12}
@@ -1046,8 +1046,8 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						Industries we have worked with so far!
 					</h2>
 					<div class="flex justify-between items-center border-y py-2 gap-3 absolute z-10 w-full astro-J7PV25F6">
-						<!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
-					<Image src={nextbtn} alt="nextbtn" id="next" /> -->
+						<!-- <Image loading="eager"  src={previousbtn} alt="previousbtn" id="prev" />
+					<Image loading="eager"  src={nextbtn} alt="nextbtn" id="next" /> -->
 						<button class="pb  rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-J7PV25F6">
 							<span class="sr-only astro-J7PV25F6">Previous Slide</span>
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="lg:h-5 md:h-4 h-3 lg:w-5 md:w-4 w-3 rtl:rotate-180 astro-J7PV25F6">
@@ -1172,7 +1172,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 											class="text-white font-semibold font-inter"
 											>Learn More</a
 										>
-										<Image
+										<Image loading="eager" 
 											src={right}
 											width={6}
 											height={12}
@@ -1250,7 +1250,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 											class="text-white font-semibold font-inter"
 											>Learn More</a
 										>
-										<Image
+										<Image loading="eager" 
 											src={right}
 											width={6}
 											height={12}
@@ -1290,7 +1290,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 											class="text-white font-semibold font-inter"
 											>Learn More</a
 										>
-										<Image
+										<Image loading="eager" 
 											src={right}
 											width={6}
 											height={12}
@@ -1360,7 +1360,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 											class="text-white font-semibold font-inter"
 											>Learn More</a
 										>
-										<Image
+										<Image loading="eager" 
 											src={right}
 											width={6}
 											height={12}
@@ -1395,7 +1395,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				</p>
 			</div>
 			<div class="astro-J7PV25F6">
-				<!-- <Image src={integration_tools} alt="integration_tools" class=""/> -->
+				<!-- <Image loading="eager"  src={integration_tools} alt="integration_tools" class=""/> -->
 				<div class="hidden lg:flex flex-wrap justify-between mt-0 lg:gap-6 xl:gap-8 astro-J7PV25F6">
 					${renderComponent($$result2, "Image", $$Image, { "src": paypal, "alt": "paypal", "class": "astro-J7PV25F6" })}
 					${renderComponent($$result2, "Image", $$Image, { "src": dropbox, "alt": "dropbox", "class": "astro-J7PV25F6" })}
@@ -1666,7 +1666,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 							<div
 								class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5"
 							>
-								<Image
+								<Image loading="eager" 
 									class="md:pr-5"
 									src={customer}
 									alt="customer"
@@ -1708,7 +1708,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 							<div
 								class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5"
 							>
-								<Image
+								<Image loading="eager" 
 									class="md:pr-5"
 									src={customer}
 									alt="customer"
@@ -1750,7 +1750,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 							<div
 								class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5"
 							>
-								<Image
+								<Image loading="eager" 
 									class="md:pr-5"
 									src={customer}
 									alt="customer"
@@ -1918,8 +1918,8 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 
 
 				<div class="flex justify-center gap-3 md:mt-10 astro-J7PV25F6">
-					<!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
-				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
+					<!-- <Image loading="eager"  src={previousbtn} alt="previousbtn" id="prev" />
+				<Image loading="eager"  src={nextbtn} alt="nextbtn" id="next" /> -->
 					<button class="rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-J7PV25F6" id="prev">
 						<span class="sr-only astro-J7PV25F6">Previous Slide</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 rtl:rotate-180 astro-J7PV25F6">

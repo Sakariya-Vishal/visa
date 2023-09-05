@@ -142,11 +142,11 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<a href="#" class="text-white font-semibold"
 							>Book a free demo now!</a
 						>
-						<Image src={right} alt="right arrow " />
+						<Image loading="eager"  src={right} alt="right arrow " />
 					</div>
 				</div>
 
-				<Image
+				<Image loading="eager" 
 					src="../../public/Images/banner.png"
 					alt="banner image"
 					class="sm:w-full md:w-4/12 lg:w-4/12"
@@ -172,13 +172,13 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<a href="#" class="text-white font-semibold"
 							>Book a free demo now!</a
 						>
-						<Image src={right} alt="right arrow " class="ml-0" />
+						<Image loading="eager"  src={right} alt="right arrow " class="ml-0" />
 					</div>
 				</div>
 				<div
 					class="sm:w-full md:w-4/12 lg:w-4/12 sm:grid md:absolute lg:absolute right-0"
 				>
-					<Image
+					<Image loading="eager" 
 						src="../../public/Images/banner.png"
 						alt="banner image"
 						class=""
@@ -245,7 +245,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				</div>
 			</div>
 
-			<Image
+			<Image loading="eager" 
 				src="../../public/Images/banner.png"
 				alt="banner image"
 				class="w-5/12"
@@ -436,7 +436,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image
+							<Image loading="eager" 
 								src={FinancialAccounting}
 								alt="FinancialAccounting"
 								class="mr-2"
@@ -445,7 +445,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image
+							<Image loading="eager" 
 								src={OrderManagement}
 								alt="OrderManagement"
 								class="mr-2"
@@ -454,7 +454,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image
+							<Image loading="eager" 
 								src={Hr_payroll}
 								alt="Hr_payroll"
 								class="mr-2"
@@ -463,7 +463,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image
+							<Image loading="eager" 
 								src={Manufacturing}
 								alt="Manufacturing"
 								class="mr-2"
@@ -472,12 +472,12 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image src={CRM} class="mr-2" alt="CRM" /><p>CRM</p>
+							<Image loading="eager"  src={CRM} class="mr-2" alt="CRM" /><p>CRM</p>
 						</div>
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image src={Website} alt="Website" class="mr-2" /><p
+							<Image loading="eager"  src={Website} alt="Website" class="mr-2" /><p
 							>
 								Website
 							</p>
@@ -485,7 +485,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image
+							<Image loading="eager" 
 								src={Helpdesk}
 								alt="Helpdesk"
 								class="mr-2"
@@ -494,7 +494,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold text-lg p-3 module-shadow"
 						>
-							<Image
+							<Image loading="eager" 
 								src={AssetManagement}
 								alt="AssetManagement"
 								class="mr-2"
@@ -541,7 +541,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] let-shadow w-64 h-64"
 						>
-							<Image src={calender} alt="calender" />
+							<Image loading="eager"  src={calender} alt="calender" />
 							<p
 								class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
 							>
@@ -554,7 +554,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] let-shadow w-64 h-64"
 						>
-							<Image src={dollar} alt="dollar" />
+							<Image loading="eager"  src={dollar} alt="dollar" />
 							<p
 								class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
 							>
@@ -567,7 +567,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] let-shadow w-64 h-64"
 						>
-							<Image src={time} alt="time" />
+							<Image loading="eager"  src={time} alt="time" />
 							<p
 								class="mt-14 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
 							>
@@ -580,7 +580,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 						<div
 							class="flex-shrink-0 bg-gradient-to-r from-[#9FCEFF] to-[#E7F2FF] p-5 rounded-[10px] let-shadow w-64 h-64"
 						>
-							<Image src={rocket} alt="rocket" />
+							<Image loading="eager"  src={rocket} alt="rocket" />
 							<p
 								class="mt-10 text-[#31393C] text-[4rem] leading-[4.75rem] font-bold"
 							>
@@ -948,7 +948,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 				</p>
 			</div>
 			<div class="astro-J7PV25F6">
-				<!-- <Image src={integration_tools} alt="integration_tools" class=""/> -->
+				<!-- <Image loading="eager"  src={integration_tools} alt="integration_tools" class=""/> -->
 				<div class="hidden lg:flex flex-wrap justify-between mt-0 lg:gap-6 xl:gap-8 astro-J7PV25F6">
 					${renderComponent($$result2, "Image", $$Image, { "src": paypal, "alt": "paypal", "class": "astro-J7PV25F6" })}
 					${renderComponent($$result2, "Image", $$Image, { "src": dropbox, "alt": "dropbox", "class": "astro-J7PV25F6" })}
@@ -1287,8 +1287,8 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 					</div>
 				</div>
 				<div class="flex justify-center gap-3 mt-10 astro-J7PV25F6">
-					<!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
-				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
+					<!-- <Image loading="eager"  src={previousbtn} alt="previousbtn" id="prev" />
+				<Image loading="eager"  src={nextbtn} alt="nextbtn" id="next" /> -->
 					<button class="rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-J7PV25F6" id="prev">
 						<span class="sr-only astro-J7PV25F6">Previous Slide</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 rtl:rotate-180 astro-J7PV25F6">

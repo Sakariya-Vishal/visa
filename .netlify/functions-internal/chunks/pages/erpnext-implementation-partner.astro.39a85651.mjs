@@ -190,8 +190,8 @@ const $$ErpnextImplementationPartner = createComponent(async ($$result, $$props,
             </div>
             <div class="lg:w-9/12 md:w-full w-full md:pl-5 astro-3F3F7VEO">
             <div class="md:flex justify-end gap-3 mt-5 -mb-7 hidden astro-3F3F7VEO">
-					<!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
-				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
+					<!-- <Image loading="eager"  src={previousbtn} alt="previousbtn" id="prev" />
+				<Image loading="eager"  src={nextbtn} alt="nextbtn" id="next" /> -->
 					<button class="prev-button rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-3F3F7VEO">
 						<span class="sr-only astro-3F3F7VEO">Previous Slide</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-3 w-3 rtl:rotate-180 astro-3F3F7VEO">
@@ -286,8 +286,8 @@ const $$ErpnextImplementationPartner = createComponent(async ($$result, $$props,
                     </div>
                 </div>
                 <div class="justify-center md:hidden flex gap-3 mt-5 -mb-7 astro-3F3F7VEO">
-					<!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
-				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
+					<!-- <Image loading="eager"  src={previousbtn} alt="previousbtn" id="prev" />
+				<Image loading="eager"  src={nextbtn} alt="nextbtn" id="next" /> -->
 					<button class="prev-button rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-3F3F7VEO">
 						<span class="sr-only astro-3F3F7VEO">Previous Slide</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-3 w-3 rtl:rotate-180 astro-3F3F7VEO">

@@ -414,7 +414,7 @@ function warnForMissingAlt() {
   }
   altWarningShown = true;
   console.warn(`
-[@astrojs/image] "alt" text was not provided for an <Image> or <Picture> component.
+[@astrojs/image] "alt" text was not provided for an <Image loading="eager" > or <Picture> component.
 
 A future release of @astrojs/image may throw a build error when "alt" text is missing.
 
@@ -728,7 +728,7 @@ const $$Navbar = createComponent(async ($$result, $$props, $$slots) => {
       <ul class="!leading-8 lg:flex-grow astro-5KNYCIEN" id="main-menu">
         <!-- <li class="block mt-5 xl:inline-block xl:mt-0 mr-8 text-[#31393C]"> -->
           <!-- <span class="group relative inline-block"> -->
-            <!-- <span class="flex gap-1"><a href="#" class="text-sm md:text-base">Solutions</a><Image src={down_arrow} alt="Down Arrow" /></span> -->
+            <!-- <span class="flex gap-1"><a href="#" class="text-sm md:text-base">Solutions</a><Image loading="eager"  src={down_arrow} alt="Down Arrow" /></span> -->
             <!-- <a href="#" class="text-sm md:text-base">Solutions</a> -->
             <!-- <ul
               class="sub-menu w-[100%] md:w-auto lg:absolute z-10 hidden submenu-bg lg:top-[4.1rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] md:group-hover:block overflow-x-hidden"
@@ -873,7 +873,7 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
 <footer class="bg-[#31393C] py-10 md:py-16 lg:py-20 astro-K2F5ZB5C">
     <!-- <div class="md:max-w-7xl md:mx-auto md:px-24 flex flex-wrap text-white">
         <div class="sm:w-full md:w-3/12 lg:w-3/12">
-            <Image src="'../../public/Images/footer_logo.svg" />
+            <Image loading="eager"  src="'../../public/Images/footer_logo.svg" />
             <p class="text-sm leading-6 mt-5">
                 ServiceNow and ERPNext Consulting, Implementation and
                 Development Specialist.
@@ -881,21 +881,21 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
             <div class="my-5 pr-4">
                 <div class="flex space-x-6 mt-6 md:mt-6 lg:mt-8">
                     <a href="https://in.linkedin.com/company/sanskar-technolab-pvt-ltd" class="text-gray-400">
-                        <Image
+                        <Image loading="eager" 
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                             src="../../public/Images/linkedin-footer.svg"
                         />
                         <p class="sr-only">Linkedin account</p>
                     </a>
                     <a href="https://www.facebook.com/SanskarTechnolab/" class="text-gray-400">
-                        <Image
+                        <Image loading="eager" 
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                             src="../../public/Images/fb.svg"
                         />
                         <p class="sr-only">Facebook page</p>
                     </a>
                     <a href="https://www.instagram.com/sanskartechnolab/" class="text-gray-400">
-                        <Image
+                        <Image loading="eager" 
                             class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                             src="../../public/Images/insta-footer.svg"
                         />

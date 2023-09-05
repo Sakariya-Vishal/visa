@@ -491,8 +491,8 @@ Expected \`${defaultExpectedValue}\` value but got \`${suffix}\`.`;
    * import myImage from "../assets/my_image.png";
    * ---
    *
-   * <Image src={myImage} alt="..." />
-   * <Image src="https://example.com/logo.png" width={300} height={300} alt="..." />
+   * <Image loading="eager"  src={myImage} alt="..." />
+   * <Image loading="eager"  src="https://example.com/logo.png" width={300} height={300} alt="..." />
    * ```
    *
    * In most cases, this error happens when the value passed to `src` is undefined.
@@ -616,10 +616,10 @@ Expected \`${defaultExpectedValue}\` value but got \`${suffix}\`.`;
    * ---
    *
    * <!-- GOOD: `src` is the full imported image. -->
-   * <Image src={myImage} alt="Cool image" />
+   * <Image loading="eager"  src={myImage} alt="Cool image" />
    *
    * <!-- BAD: `src` is an image's `src` path instead of the full image. -->
-   * <Image src={myImage.src} alt="Cool image" />
+   * <Image loading="eager"  src={myImage.src} alt="Cool image" />
    * ```
    */
   LocalImageUsedWrongly: {

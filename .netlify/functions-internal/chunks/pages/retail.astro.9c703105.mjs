@@ -269,7 +269,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
                     <div
                         class="grid flex-shrink-0 p-4 rounded-[10px] let-shadow w-auto md:w-64 h-64"
                     >
-                        <Image
+                        <Image loading="eager" 
                             class="justify-self-end"
                             src={rocket}
                             alt="rocket"
@@ -288,7 +288,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
                     <div
                         class="grid flex-shrink-0 p-4 rounded-[10px] let-shadow w-auto md:w-64 h-64"
                     >
-                        <Image
+                        <Image loading="eager" 
                             class="justify-self-end"
                             src={rocket}
                             alt="rocket"
@@ -307,8 +307,8 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
         </div>
       </div>
       <div class="justify-center  flex gap-3 mt-5 -mb-7 astro-FWEFFZRD">
-					<!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
-				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
+					<!-- <Image loading="eager"  src={previousbtn} alt="previousbtn" id="prev" />
+				<Image loading="eager"  src={nextbtn} alt="nextbtn" id="next" /> -->
 					<button class="prev-button rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-FWEFFZRD">
 						<span class="sr-only astro-FWEFFZRD">Previous Slide</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-3 w-3 rtl:rotate-180 astro-FWEFFZRD">
@@ -1277,7 +1277,7 @@ const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
 
             <div class="discover_bg_image discover_image_height bg-no-repeat bg-cover block lg:absolute right-0 rounded-[20px] astro-FWEFFZRD">
             </div>
-            <!-- <Image 
+            <!-- <Image loading="eager"  
                             class="lg:w-4/12 md:w-full sm:w-full h-[10rem] absolute"
                             src={future_retail}
                             alt="cta-people"

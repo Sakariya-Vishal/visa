@@ -235,7 +235,7 @@ const $$Textile = createComponent(async ($$result, $$props, $$slots) => {
               <div
                 class="grid flex-shrink-0 p-5 rounded-[10px] better_benefuts w-72 h-72"
               >
-                <Image
+                <Image loading="eager" 
                   class="justify-self-end"
                   src={improvment}
                   alt="improvment"
@@ -255,8 +255,8 @@ const $$Textile = createComponent(async ($$result, $$props, $$slots) => {
           </div>
         </div>
           <div class="justify-center flex gap-3 mt-5 -mb-7 astro-DEDTLRN5">
-					<!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
-				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
+					<!-- <Image loading="eager"  src={previousbtn} alt="previousbtn" id="prev" />
+				<Image loading="eager"  src={nextbtn} alt="nextbtn" id="next" /> -->
 					<button class="prev-button rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-DEDTLRN5">
 						<span class="sr-only astro-DEDTLRN5">Previous Slide</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-3 w-3 rtl:rotate-180 astro-DEDTLRN5">
@@ -1161,8 +1161,8 @@ const $$Textile = createComponent(async ($$result, $$props, $$slots) => {
 				  </div>
 
 				<div class="flex justify-center gap-3 md:mt-10 astro-DEDTLRN5">
-					<!-- <Image src={previousbtn} alt="previousbtn" id="prev" />
-				<Image src={nextbtn} alt="nextbtn" id="next" /> -->
+					<!-- <Image loading="eager"  src={previousbtn} alt="previousbtn" id="prev" />
+				<Image loading="eager"  src={nextbtn} alt="nextbtn" id="next" /> -->
 					<button class="rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white astro-DEDTLRN5" id="prev">
 						<span class="sr-only astro-DEDTLRN5">Previous Slide</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 rtl:rotate-180 astro-DEDTLRN5">
