@@ -1,0 +1,40 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+import scroll from "../../public/Images/scroll-top.svg"
+import "../styles.css";
+---
+<div class="fixed right-5 bottom-5 z-30 hidden items-center cursor-pointer" id="s_top">
+    <Image loading="eager" src={scroll} alt="scroll to top"/>
+    <!-- Scroll To Top -->
+</div>
+
+<script>
+    function checkScrollPosition() {
+        var scrollToTopButton = document.getElementById("s_top");
+
+        if (window.scrollY > 300) {
+            scrollToTopButton.style.display = "block";
+        } else {
+            scrollToTopButton.style.display = "none";
+        }
+        }
+
+        var scroll = document.getElementById("s_top");
+        scroll.addEventListener("click", scrollToTop);
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // You can also use 'auto' or 'instant'
+            });
+            }
+
+        // Attach the scroll event listener to the window
+        window.addEventListener("scroll", checkScrollPosition);
+
+
+        // const cookieAccepted = document.cookie.includes("cookieConsent=accepted");
+        // if(cookieAccepted){
+        //     var popup = document.getElementById("s_top")
+        //     popup.classList.add("!bottom-40")
+        // }
+</script>

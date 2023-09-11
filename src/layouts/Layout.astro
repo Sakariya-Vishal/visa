@@ -2,9 +2,10 @@
 import Navbar from "../components/navbar.astro";
 // import Navbar from "../pages/test.astro"
 import Footer from "../components/footer.astro";
-import { Image, Picture } from "@astrojs/image/components";
-import scroll from "../../public/Images/scroll-top.svg"
+// import { Image, Picture } from "@astrojs/image/components";
 import favicon from "../../public/favicon-32x32.png";
+import CookieConsent from "../components/CookieConsent.astro";
+import ScrollToTop from "../components/ScrollToTop.astro";
 
 export interface Props {
 	title: string;
@@ -68,57 +69,28 @@ const { title, keyword='', description='', canonical_href=''} = Astro.props;
 		  
 	</head>
 	<body>
-		<main>
-			<div class="fixed right-5 bottom-5 z-10 hidden items-center cursor-pointer" id="s_top">
-				<Image loading="eager"  src={scroll} alt="scroll to top"/>
-				<!-- Scroll To Top -->
-			</div>
+		<header>
 			<Navbar />
+		</header>
+		<main>
+			<ScrollToTop />
+			<CookieConsent />
 			<slot />
-			<Footer />
 			<!-- <script 
 				src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js" defer
-			></script> -->
-			<script
+				></script> -->
+				<script
 				src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
 				defer></script>
 				<!-- <script src="../../node_modules/flowbite/dist/flowbite.min.js" defer></script> -->
 				<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
 				<script
 				src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js" defer></script>
-
+				
 				<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" defer></script> -->
 				
 				<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" defer></script> -->
-
 		</main>
-		<script>
-			
-
-				function checkScrollPosition() {
-					var scrollToTopButton = document.getElementById("s_top");
-
-					if (window.scrollY > 300) {
-						scrollToTopButton.style.display = "block";
-					} else {
-						scrollToTopButton.style.display = "none";
-					}
-					}
-
-					var scroll = document.getElementById("s_top");
-					scroll.addEventListener("click", scrollToTop);
-					function scrollToTop() {
-						window.scrollTo({
-							top: 0,
-							behavior: 'smooth' // You can also use 'auto' or 'instant'
-						});
-						}
-
-					// Attach the scroll event listener to the window
-					window.addEventListener("scroll", checkScrollPosition);
-
-
-
-		</script>
+		<Footer />
 	</body>
 </html>
