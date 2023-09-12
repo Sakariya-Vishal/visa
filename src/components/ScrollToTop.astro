@@ -5,7 +5,6 @@ import "../styles.css";
 ---
 <div class="fixed right-5 bottom-5 z-30 hidden items-center cursor-pointer" id="s_top">
     <Image loading="eager" src={scroll} alt="scroll to top"/>
-    <!-- Scroll To Top -->
 </div>
 
 <script>
@@ -18,7 +17,6 @@ import "../styles.css";
             scrollToTopButton.style.display = "none";
         }
         }
-
         var scroll = document.getElementById("s_top");
         scroll.addEventListener("click", scrollToTop);
         function scrollToTop() {
@@ -30,11 +28,4 @@ import "../styles.css";
 
         // Attach the scroll event listener to the window
         window.addEventListener("scroll", checkScrollPosition);
-
-
-        // const cookieAccepted = document.cookie.includes("cookieConsent=accepted");
-        // if(cookieAccepted){
-        //     var popup = document.getElementById("s_top")
-        //     popup.classList.add("!bottom-40")
-        // }
 </script>
