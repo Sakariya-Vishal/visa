@@ -11,4 +11,9 @@ export default defineConfig({
   // adapter: netlify(),
   site: 'https://Pithiya-Nilesh.github.io',
   base: '/astro-sanskar',
+  build: {
+    cacheControl: {
+      static: 60 * 60 * 24 * 365, // Cache static files for 1 year
+    }
+  },
 });

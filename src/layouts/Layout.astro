@@ -6,7 +6,6 @@ import Footer from "../components/footer.astro";
 import favicon from "../../public/favicon-32x32.png";
 import CookieConsent from "../components/CookieConsent.astro";
 import ScrollToTop from "../components/ScrollToTop.astro";
-
 export interface Props {
 	title: string;
 	keyword?: string;
@@ -41,32 +40,24 @@ const { title, keyword='', description='', canonical_href=''} = Astro.props;
 		{canonical_href && <link rel="canonical" href={canonical_href} />}
 
 		<title>{title}</title>
+		
 		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css"
-			rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css"
+		rel="stylesheet"
 		/> 
 		<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
+		
 		<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
-
+		
 		<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet" /> -->
-
+		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-
+		
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 
 		<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
-		  
+
+		
 	</head>
 	<body>
 		<header>
@@ -83,14 +74,30 @@ const { title, keyword='', description='', canonical_href=''} = Astro.props;
 				src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
 				defer></script>
 				<!-- <script src="../../node_modules/flowbite/dist/flowbite.min.js" defer></script> -->
+				
 				<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+				
 				<script
 				src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js" defer></script>
 				
 				<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" defer></script> -->
 				
 				<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" defer></script> -->
-		</main>
-		<Footer />
-	</body>
-</html>
+				
+				<link
+					href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+					rel="stylesheet"
+				/>
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+				
+				<link
+					href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+					rel="stylesheet"
+				/>
+
+			</main>
+			<Footer />
+		</body>
+		</html>
+		
