@@ -24,7 +24,7 @@ const $$Astro = createAstro();
 const $$ThankYou = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$ThankYou;
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Sanskar Technolabs | Thank You", ",": true, "keyword": "", ",": true, "description": "", ",": true, "canonical_href": "https://astro.sanskartechnolab.com/thank-you" }, { "default": ($$result2) => renderTemplate`
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Sanskar Technolabs | Thank You", ",": true, "keyword": "", ",": true, "description": "", ",": true, "canonical_href": "https://sanskartechnolab.com/thank-you" }, { "default": ($$result2) => renderTemplate`
     ${maybeRenderHead()}<section class="h-[calc(100vh-10vh)] grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 md:gap-5 items-center mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0">
       <div class="order-2 sm:order-1">    
         <h1 class="text-[1.75rem] md:text-[3rem] !leading-[2.25rem] md:!leading-[3.5rem] text-[#31393C] font-semibold">

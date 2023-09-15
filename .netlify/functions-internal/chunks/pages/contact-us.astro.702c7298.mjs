@@ -32,7 +32,7 @@ const $$Astro = createAstro();
 const $$ContactUs = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$ContactUs;
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Contact Us", ",": true, "keyword": "", ",": true, "description": "", ",": true, "canonical_href": "https://astro.sanskartechnolab.com/contact-us", "class": "astro-5C24FMMT" }, { "default": ($$result2) => renderTemplate`
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Contact Us", ",": true, "keyword": "", ",": true, "description": "", ",": true, "canonical_href": "https://sanskartechnolab.com/contact-us", "class": "astro-5C24FMMT" }, { "default": ($$result2) => renderTemplate`
 ${maybeRenderHead()}<section class="banner bg-cover bg-no-repeat h-[calc(100vh-10vh)] flex items-center astro-5C24FMMT">
       <div class="md:max-w-7xl md:mx-auto md:px-24 lg:px-4 w-full lg:w-7/12 px-5 astro-5C24FMMT">
         <div class="bg-white w-full lg:w-7/12 form-padding lg:p-7 astro-5C24FMMT">

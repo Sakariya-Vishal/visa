@@ -46,7 +46,7 @@ const $$Astro = createAstro();
 const $$Textile = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Textile;
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": " ERPNext Implementation partner for Textile Industry.", ",": true, "keyword": "ERPnext development services, Servicenow implementation services", ",": true, "description": "We are among the leading ERPNext implementation solutions provider company looking forward to streamline the operations of Textile businesses.", ",": true, "canonical_href": "https://astro.sanskartechnolab.com/textile", "class": "astro-DEDTLRN5" }, { "default": ($$result2) => renderTemplate`
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": " ERPNext Implementation partner for Textile Industry.", ",": true, "keyword": "ERPnext development services, Servicenow implementation services", ",": true, "description": "We are among the leading ERPNext implementation solutions provider company looking forward to streamline the operations of Textile businesses.", ",": true, "canonical_href": "https://sanskartechnolab.com/textile", "class": "astro-DEDTLRN5" }, { "default": ($$result2) => renderTemplate`
     
     ${maybeRenderHead()}<section class="section-bg-right hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center astro-DEDTLRN5">
       ${renderComponent($$result2, "Image", $$Image, { "class": "absolute right-0 w-6/12 p-5 h-5/6 astro-DEDTLRN5", "src": textile_banner, "alt": "textile-banner", "width": 650, "height": 366 })}

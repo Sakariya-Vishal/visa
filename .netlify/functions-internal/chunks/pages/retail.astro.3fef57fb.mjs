@@ -83,7 +83,7 @@ const $$Astro = createAstro();
 const $$Retail = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Retail;
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "ERPNext development services for Retail Industry.", ",": true, "keyword": "ERPNext software development company, erp implementation companies, Erpnext solution company, ServiceNow company", ",": true, "description": "Hire ERPNext developers from Sanskar Technolabs & elevate your Retail Business operations and Simplify the process.", ",": true, "canonical_href": "https://astro.sanskartechnolab.com/retail", "class": "astro-FWEFFZRD" }, { "default": ($$result2) => renderTemplate`
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "ERPNext development services for Retail Industry.", ",": true, "keyword": "ERPNext software development company, erp implementation companies, Erpnext solution company, ServiceNow company", ",": true, "description": "Hire ERPNext developers from Sanskar Technolabs & elevate your Retail Business operations and Simplify the process.", ",": true, "canonical_href": "https://sanskartechnolab.com/retail", "class": "astro-FWEFFZRD" }, { "default": ($$result2) => renderTemplate`
     ${maybeRenderHead()}<section class="section-bg-right hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center astro-FWEFFZRD">
       ${renderComponent($$result2, "Image", $$Image, { "class": "absolute right-0 w-5/12 p-10 astro-FWEFFZRD", "src": retail_banner, "alt": "manu-banner" })}
       <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 lg:px-0 flex container astro-FWEFFZRD">

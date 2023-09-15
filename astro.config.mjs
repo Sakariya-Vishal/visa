@@ -9,11 +9,14 @@ export default defineConfig({
   integrations: [image(), tailwind()],
   // output: "server",
   // adapter: netlify(),
-  site: 'https://Pithiya-Nilesh.github.io',
-  base: '/astro-sanskar',
+
+  // site: 'https://Pithiya-Nilesh.github.io',
+  // base: '/astro-sanskar',
+  
   build: {
     cacheControl: {
       static: 60 * 60 * 24 * 365, // Cache static files for 1 year
-    }
+    },
+    format: "file",
   },
 });
