@@ -6,5 +6,11 @@ main{
     font-family: 'Inter', sans-serif;
 }
 
-  
-  
+.banner-bg {
+    background: linear-gradient(
+        45deg,
+        #fff 0%,
+        #f1f8ff 18.23%,
+        #8ec5ff 100%
+    );
+}

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build --base=/assets/astro_sanskar/astro_sanskar/assets",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

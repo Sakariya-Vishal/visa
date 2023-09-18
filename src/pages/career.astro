@@ -38,7 +38,7 @@ import close from "../../public/Images/popup_close_btn.svg"
 
 <Layout title="Careers Page | Sanskar Technolabs", keyword="erp implementation partner, erpnext implementation, erp implementation companies, ERPNext software development company, Hire ERPNext developers, ERPnext development services, Erpnext solution company, ServiceNow company, ServiceNow implementation partner, Servicenow implementation services, Servicenow implementation solutions", description="Accelerate your career with Sanskar technolabs and join the team of amazing individuals at the leading ERPNext software development company.", canonical_href="https://sanskartechnolab.com/career">
   <!-- <main> -->
-    <section
+    <!-- <section
       class="section-bg-right hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center"
     >
       <Image loading="eager" 
@@ -59,13 +59,12 @@ import close from "../../public/Images/popup_close_btn.svg"
           >
             Take charge of your career with Sanskar Technolab!
           </p>
-          <div
-            class="mt-7 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
+          <div id="scrollButton"
+            class="mt-7 cursor-pointer flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
           >
-            <a
-              href="/contact-us"
+            <button
               class="text-white text-base font-semibold font-inter"
-              >View Recent Openings!</a
+              >View Recent Openings!</button
             >
             <Image loading="eager"  src={right} width={6} height={12} alt="right arrow " />
           </div>
@@ -102,18 +101,107 @@ import close from "../../public/Images/popup_close_btn.svg"
         </div>
         <Image loading="eager"  class="banner-image" src={c_banner} alt="banner image" width={737} height={509} />
       </div>
-    </section>
+    </section> -->
 
-    <section class="pb-[2rem] md:pb-[3.125rem] lg:pb-[6.25rem]">
+    <section
+		class="hidden lg:flex section-bg h-[75vh] flex items-center banner-bg"
+	>
+		<div
+			class="flex flex-wrap items-center mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0"
+		>
+			<div class="w-full md:w-6/12">
+				<h1
+					class="text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] !leading-[2.25rem] md:!leading-[3.5rem] lg:leading-[4rem] text-[#31393C] font-extrabold"
+				>
+					Dare to dream big, dare to innovate, and let your career soar with
+            us!
+				</h1>
+				<p
+					class="text-[#31393C] leading-7 font-normal text-sm md:text-base lg:text-lg mt-6"
+				>
+					Take charge of your career with Sanskar Technolab!
+				</p>
+				<div id="scrollButton"
+					class="mt-7 flex justify-between cursor-pointer bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
+				>
+					<button
+						href="/contact-us"
+						class="text-white text-base font-semibold font-inter"
+						>View Recent Openings!</button
+					>
+					<Image
+						loading="eager"
+						src={right}
+						width={6}
+						height={12}
+						alt="right arrow "
+					/>
+				</div>
+			</div>
+
+			<Image
+				loading="eager"
+				src={c_banner}
+				alt="banner"
+				class="w-full md:w-6/12 lg:p-20 md:p-16"
+			/>
+		</div>
+
+	</section>
+
+<section
+		class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
+	>
+		<div
+			class="flex flex-wrap items-center mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0"
+		>
+			<div class="w-full lg:w-6/12">
+				<div
+					class="text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] !leading-[2.25rem] md:!leading-[3.5rem] lg:leading-[4rem] text-[#31393C] font-extrabold"
+				>
+					Dare to dream big, dare to innovate, and let your career soar with
+            us!
+				</div>
+				<p
+					class="text-[#31393C] leading-7 font-normal text-sm md:text-base lg:text-lg mt-3 md:mt-6"
+				>
+					Take charge of your career with Sanskar Technolab!
+				</p>
+				<div id="scrollButton1"
+					class="mt-4 md:mt-7 flex justify-between cursor-pointer bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
+				>
+					<button
+						href="/contact-us"
+						class="text-white text-base font-semibold font-inter"
+						>View Recent Openings!</button
+					>
+					<Image
+						loading="eager"
+						src={right}
+						width={6}
+						height={12}
+						alt="right arrow "
+					/>
+				</div>
+			</div>
+
+			<Image
+				loading="eager"
+				src={c_banner}
+				alt="banner"
+				class="banner-image w-full"
+			/>
+		</div>
+	</section>
+    <section class="py-[2rem] md:py-[3.125rem] lg:py-[6.25rem]">
       <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
         <div class="md:text-center sm:text-left text-[#31393C]">
-          <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold">
+          <h2 class="text-[#3E96F4] text-2xl md:text-3xl lg:text-4xl font-semibold">
             Sanskar Technolabs at a glance!
           </h2>
           <p class="text-xs md:text-sm lg:text-base mt-5 lg:mx-40 md:mx-20 mx-auto">
-            Sanskar Technolabs is the leading ERPNext & ServiceNow
-            implementation partner, with a growing team of over 50+ professional
-            managers, developers, designers, consultants, marketors and writers.
+           Sanskar Technolabs can help you simplify your business
+					operations by leveraging one-of-a-kind platforms!
           </p>
           <div
             class="text-lg md:text-xl lg:text-2xl font-semibold mt-8 md:mt-10 lg:mt-10"
@@ -263,7 +351,7 @@ import close from "../../public/Images/popup_close_btn.svg"
         id="job"
       >
         <h2
-          class="text-left md:text-center font-semibold text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-10 lg:mb-10"
+          class="text-[#3E96F4] text-left md:text-center font-semibold text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-10 lg:mb-10"
         >
           Recent Job Openings!
         </h2>
@@ -349,9 +437,6 @@ import close from "../../public/Images/popup_close_btn.svg"
         <!-- <button id="openPopup" class="px-4 py-2 bg-blue-500 text-white"
           >Open Popup</button
         > -->
-
-        
-
 
 
       </div>
@@ -687,7 +772,7 @@ import close from "../../public/Images/popup_close_btn.svg"
       <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
         <div class="md:text-center sm:text-left mb-0 md:mb-10 lg:mb-10">
           <h2
-            class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold"
+            class="text-[#3E96F4] text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold"
           >
             What do our employees have to say about us?
           </h2>
@@ -1147,7 +1232,7 @@ import close from "../../public/Images/popup_close_btn.svg"
   margin-top: 1rem;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .banner-image {
     margin-top: 2rem;
   }
@@ -1187,9 +1272,11 @@ import close from "../../public/Images/popup_close_btn.svg"
   }
 }
 
+
 .banner-height{
 	height: h-[calc(100vh-10vh)];
 	padding-bottom: 2rem;
+  padding-top: 2rem;  
 }
 
 @media (min-width: 321px){
@@ -1200,6 +1287,23 @@ import close from "../../public/Images/popup_close_btn.svg"
     </style>
 
     <script>
+    var scrollButton = document.getElementById("scrollButton");
+    var section2 = document.getElementById("job");
+
+    // Add an event listener to the button
+    scrollButton.addEventListener("click", function() {
+        // Scroll to section2
+        section2.scrollIntoView({ behavior: "smooth" });
+    });
+
+    var scrollButton1 = document.getElementById("scrollButton1");
+
+    // Add an event listener to the button
+    scrollButton1.addEventListener("click", function() {
+        // Scroll to section2
+        section2.scrollIntoView({ behavior: "smooth" });
+    });
+
       // Slides
       // Get the slider elements
       const slider = document.querySelector(".c_slider");
@@ -1476,7 +1580,7 @@ import close from "../../public/Images/popup_close_btn.svg"
         );
         userSection.appendChild(
           createImage(
-            "https://sanskar.frappe.cloud/files/c_user.svg",
+            "https://sanskartechnolab.com/files/c_user.svg",
             "user"
           )
         );
@@ -1497,7 +1601,7 @@ import close from "../../public/Images/popup_close_btn.svg"
         );
         jobSection.appendChild(
           createImage(
-            "https://sanskar.frappe.cloud/files/c_job.svg",
+            "https://sanskartechnolab.com/files/c_job.svg",
             "job"
           )
         );
@@ -1518,7 +1622,7 @@ import close from "../../public/Images/popup_close_btn.svg"
         );
         locationSection.appendChild(
           createImage(
-            "https://sanskar.frappe.cloud/files/c_map.svg",
+            "https://sanskartechnolab.com/files/c_map.svg",
             "map"
           )
         );
@@ -1610,7 +1714,7 @@ import close from "../../public/Images/popup_close_btn.svg"
 
           // Create the close image element
           const closeImage = document.createElement('img');
-          closeImage.src = 'https://sanskar.frappe.cloud/files/popup_close_btn.svg';
+          closeImage.src = 'https://sanskartechnolab.com/files/popup_close_btn.svg';
           closeImage.alt = 'close';
           closeImage.className = 'cursor-pointer';
 
@@ -1670,7 +1774,7 @@ import close from "../../public/Images/popup_close_btn.svg"
             skillItemDiv.className = 'flex gap-2';
 
             const skillImage = document.createElement('img');
-            skillImage.src = 'https://sanskar.frappe.cloud/files/correct.svg';
+            skillImage.src = 'https://sanskartechnolab.com/files/correct.svg';
             skillImage.alt = 'correct';
 
             const skillParagraph = document.createElement('p');
@@ -1706,7 +1810,7 @@ import close from "../../public/Images/popup_close_btn.svg"
             responsibilityItemDiv.className = 'flex gap-2';
 
             const responsibilityImage = document.createElement('img');
-            responsibilityImage.src = 'https://sanskar.frappe.cloud/files/correct.svg';
+            responsibilityImage.src = 'https://sanskartechnolab.com/files/correct.svg';
             responsibilityImage.alt = 'correct';
 
             const responsibilityParagraph = document.createElement('p');

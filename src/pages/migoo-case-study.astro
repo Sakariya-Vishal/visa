@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import "../styles.css";
 import { Image, Picture } from "@astrojs/image/components";
 
-import migoo_banner from "../../public/Images/migoo_banner.png";
+import migoo_banner from "../../public/Images/migoo_banner.svg";
 import right from "../../public/Images/right.svg";
 import customer from "../../public/Images/customer.svg";
 import migoo_client_vision from "../../public/Images/migoo_client_vision.svg";
@@ -90,7 +90,7 @@ import m_adhar from '../../public/Images/m_adhar.svg';
             </div>
         </section> -->
 
-
+<!-- 
 		<section
             class="section-bg-right hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center"
         >
@@ -141,12 +141,12 @@ import m_adhar from '../../public/Images/m_adhar.svg';
         >
         <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 flex flex-wrap banner-height items-center justify-evenly">
             <div>
-                <h1
+                <div
                     class="text-[1.75rem] md:text-[3rem] leading-9 md:leading-[3.5rem] text-[#31393C] font-semibold"
                 >
                     Developed Most Complex ERPNEXT Portal for Construction
                     Industry!
-                </h1>
+                </div>
                 <p
                     class="text[#31393C] text-sm md:text-base leading-5 md:leading-6 mt-5"
                 >
@@ -165,11 +165,106 @@ import m_adhar from '../../public/Images/m_adhar.svg';
             </div>
             <Image loading="eager"  class="banner-image"  src={migoo_banner} alt="manu-banner" />
         </div>
-        </section>
+        </section> -->
 
-		<section class="pb-[2rem] md:pb-[2rem] lg:pb-[6.25rem]  mt-0 sm:mt-48 md:mt-0 lg:mt-0 xl:mt-0">
+        <section
+        class="hidden lg:flex section-bg h-[75vh] flex items-center banner-bg"
+      >
+        <div
+          class="flex flex-wrap items-center mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0"
+        >
+          <div class="w-full md:w-6/12">
+            <h1
+                    class="text-[1.75rem] md:text-[3rem] leading-9 md:leading-[3.5rem] text-[#31393C] font-semibold"
+                >
+                    Developed Most Complex ERPNEXT Portal for Construction
+                    Industry!
+          </h1>
+                <p
+                    class="text[#31393C] text-sm md:text-base leading-5 md:leading-6 mt-5"
+                >
+                    Our team at Sanskar Technolabs has developed a full-fledged
+                    platform by leveraging ERPNEXT for renting, buying, selling
+                    and managing heavy-duty construction equipment.
+                </p>
+            <div
+              class="mt-7 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
+            >
+              <a
+                href="/contact-us"
+                class="text-white text-base font-semibold font-inter"
+                >Schedule a Free demo now</a
+              >
+              <Image
+                loading="eager"
+                src={right}
+                width={6}
+                height={12}
+                alt="right arrow "
+              />
+            </div>
+          </div>
+    
+          <Image
+            loading="eager"
+            src={migoo_banner}
+            alt="banner"
+            class="w-full md:w-6/12 lg:p-20 md:p-16"
+          />
+        </div>
+    
+      </section>
+    
+      <section
+        class="section-bg flex items-center md:flex lg:hidden banner-bg"
+      >
+        <div
+          class="flex flex-wrap items-center mx-5 gap-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0"
+        >
+          <div class="w-full lg:w-6/12 mt-5">
+            <div
+                    class="text-[1.75rem] md:text-[3rem] leading-9 md:leading-[3.5rem] text-[#31393C] font-semibold"
+                >
+                    Developed Most Complex ERPNEXT Portal for Construction
+                    Industry!
+                </div>
+                <p
+                    class="text[#31393C] text-sm md:text-base leading-5 md:leading-6 mt-5"
+                >
+                    Our team at Sanskar Technolabs has developed a full-fledged
+                    platform by leveraging ERPNEXT for renting, buying, selling
+                    and managing heavy-duty construction equipment.
+                </p>
+            <div
+              class="mt-4 md:mt-7 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
+            >
+              <a
+                href="/contact-us"
+                class="text-white text-base font-semibold font-inter"
+                >Schedule a Free demo now</a
+              >
+              <Image
+                loading="eager"
+                src={right}
+                width={6}
+                height={12}
+                alt="right arrow"
+              />
+            </div>
+          </div>
+    
+          <Image
+            loading="eager"
+            src={migoo_banner}
+            alt="banner"
+            class="w-full"
+          />
+        </div>
+      </section>
+
+		<section class="py-[2rem] md:py-[2rem] lg:py-[6.25rem]  mt-0 sm:mt-48 md:mt-0 lg:mt-0 xl:mt-0">
 			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
-				<h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#31393C] leading-[2.25rem] md:leading-[2.75rem] lg:leading-[3rem]">Subtle Glimpses of the Project.</h2>
+				<h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#3E96F4] leading-[2.25rem] md:leading-[2.75rem] lg:leading-[3rem]">Subtle Glimpses of the Project.</h2>
 				<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-0 md:gap-10 lg:gap-10 mt-4 md:mt-8 lg:mt-8">
 					<div>
 						<Image loading="eager"  class="hidden md:block lg:block xl:block  flex flex-wrap justify-center items-center mb-2 md:mb-4 lg:mb-4" src={migoo_logo} alt="Unique Approach" width={205} height={65} />
@@ -206,7 +301,7 @@ import m_adhar from '../../public/Images/m_adhar.svg';
             		<Image loading="eager"  class="" src={migoo_client_vision} alt="Migoo Client Vision" width={504} height={417} />
         		</div>
 				<div>
-					<h2 class="text-[#31393C] pb-2 md:pb-4 lg:pb-6 font-semibold  text-2xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Client's Vision & Mission!</h2>
+					<h2 class="text-[#3E96F4] pb-2 md:pb-4 lg:pb-6 font-semibold  text-2xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Client's Vision & Mission!</h2>
 					<p class="text-[#31393C]  pb-2 md:pb-4 lg:pb-6 leading-4 md:leading-5 lg:leading-6 text-xs md:text-sm lg:text-base font-normal">Arjun Pachani, the founder of Migoo Equipment, personally experienced the daily challenges of construction companies and how inefficient and disorganized equipment management led to wastage of time, higher expenses, and missed opportunities. <br /> <br />So, our client had a clear vision of simplifying these tasks and creating a smooth and user-friendly platform for both vendors and customers.</p>					
 				</div>
 			</div>
@@ -214,7 +309,7 @@ import m_adhar from '../../public/Images/m_adhar.svg';
 
 		<section class="section-bg-center_migoo py-[2rem] md:py-[2rem] lg:py-[4rem]">
 			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
-				<h2 class="text-left md:text-center text-[#31393C] font-semibold text-2xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem] pb-4 md:pb-4 lg:pb-6">Our work!</h2>				
+				<h2 class="text-left md:text-center text-[#3E96F4] font-semibold text-2xl md:text-3xl lg:text-4xl leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem] pb-4 md:pb-4 lg:pb-6">Our work!</h2>				
 				<p class="text-left md:text-center text-[#000000] leading-4 md:leading-5 lg:leading-6 px-0 md:px-20 lg:px-36 text-xs md:text-sm lg:text-base font-normal pb-2 md:pb-3 lg:pb-4">The team at Sanskar Technolabs understood the client's requirements thoroughly, identified their pain points and developed a full-fledged ERPNEXT web portal within the given deadline. <br/><br/><span class="font-semibold">Here's the best part:</span> Our team developed the entire web portal from front-end to back-end with ERPNEXT, ensuring a seamless and uniform user experience.</p>
 				
 				<Image loading="eager"  class="flex flex-wrap justify-center mt-8 md:mt-12 lg:mt-16" src={our_works} alt="Our works" width={1100} height={259} />				
@@ -224,7 +319,7 @@ import m_adhar from '../../public/Images/m_adhar.svg';
 
         <section class="py-[2rem] md:py-[2rem] lg:py-[4rem]">
             <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl text-left md:text-center text-[#31393C] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Let the Numbers speak for itself!</h2>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl text-left md:text-center text-[#3E96F4] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Let the Numbers speak for itself!</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-11 mt-10 md:mt-14 lg:mt-16 text-[#31393C] text-center">
                 <div class="flex flex-col items-center ">
                     <Image loading="eager"  src={m_cost_efective} alt="Cost Efective" width={64} height={72} />
@@ -274,7 +369,7 @@ import m_adhar from '../../public/Images/m_adhar.svg';
 
             <div class="md:text-center sm:text-left">
 				<h2
-					class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold mb-2 md:mb-3 lg:mb-4"
+					class="text-2xl md:text-3xl lg:text-4xl text-[#3E96F4] font-semibold mb-2 md:mb-3 lg:mb-4"
 				>
                     Our End Solutions!
 				</h2>
@@ -445,7 +540,7 @@ import m_adhar from '../../public/Images/m_adhar.svg';
 
         <section class="section-bg-left_migoo my-[2rem] md:my-[5rem] lg:my-[4rem]">
             <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl text-center text-[#31393C] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Our Key Integrations!</h2>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl text-center text-[#3E96F4] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Our Key Integrations!</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-11 mt-10 md:mt-14 lg:mt-16 text-[#31393C] text-center">
                     <div class="flex flex-col items-center ">
                             <Image loading="eager"  src={m_smartflo} alt="Call integration" width={82} height={60} />
@@ -495,7 +590,7 @@ import m_adhar from '../../public/Images/m_adhar.svg';
 
 		<section class="py-[2rem] md:py-[2rem] lg:py-[4rem]">
 			<div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
-				<h2 class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Project Challenges & Its Solutions!</h2>
+				<h2 class="text-2xl md:text-3xl lg:text-4xl text-[#3E96F4] font-semibold leading-[1.75rem] md:leading-[2.25rem] lg:leading-[2.75rem]">Project Challenges & Its Solutions!</h2>
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 md:gap-14 lg:gap-16 mt-8 md:mt-10 lg:mt-12 text-[#31393C]">
 					<div>
 						<Image loading="eager"  class="mb-4" src={problem1} alt="Problem1" width={60} height={60} />
@@ -543,7 +638,7 @@ import m_adhar from '../../public/Images/m_adhar.svg';
         <section class="py-[2rem] md:py-[2rem] lg:py-[4rem]">
 			<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10  mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
 				<div>
-					<h2 class="text-2xl md:text-3xl text-center md:text-center lg:text-start lg:text-4xl mr-0 md:mr-0 lg:mr-20 leading-[2rem] md:leading-[2.50rem] lg:leading-[2.75rem] font-semibold text-[#31393C]">With Robust Support, we offer more than just implementation!</h2>
+					<h2 class="text-2xl md:text-3xl text-center md:text-center lg:text-start lg:text-4xl mr-0 md:mr-0 lg:mr-20 leading-[2rem] md:leading-[2.50rem] lg:leading-[2.75rem] font-semibold text-[#3E96F4]">With Robust Support, we offer more than just implementation!</h2>
 					<div class="flex flex-wrap justify-center md:justify-center lg:justify-start">
 						<Image loading="eager"  class="flex flex-wrap justify-center items-center mt-10 md:mt-12 lg:mt-16" src={m_support} alt="Support" width={448} height={373} />
 					</div>
@@ -598,7 +693,7 @@ import m_adhar from '../../public/Images/m_adhar.svg';
 		>
 			<div class="md:text-center sm:text-left">
       <h2
-					class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold"
+					class="text-2xl md:text-3xl lg:text-4xl text-[#3E96F4] font-semibold"
 				>
                 Let's hear it from our client!
 				</h2>

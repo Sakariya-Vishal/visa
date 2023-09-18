@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import "../styles.css";
 import { Image, Picture } from "@astrojs/image/components";
 
-import implementation_partner from "../../public/Images/implementation_partner.png";
+import implementation_partner from "../../public/Images/implementation_partner.svg";
 import right from "../../public/Images/right.svg";
 
 import business_process from "../../public/Images/business_process.png";
@@ -75,7 +75,7 @@ import cta_mobile from "../../public/Images/cta-mobile.svg";
 
 <Layout title="Sanskar Technolabs  | Trusted ERPNext Implementation partner.", keyword="erp implementation partner, erpnext implementation, erp implementation partner, erp implementation companies, ERPNext software development company, ERPnext development services, Erpnext solution company, Frappe ERPNext, Erpnext software, ERPNext open-source, ServiceNow company, Servicenow implementation services", description="Sanskar Technolabs is your trusted partner to avail best ERPNext implementation services from the best minds.", canonical_href="https://sanskartechnolab.com/erpnext-implementation-partner">
     <main>
-        <section
+        <!-- <section
             class="section-bg-right hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center"
         >
             <Image loading="eager" 
@@ -133,15 +133,104 @@ import cta_mobile from "../../public/Images/cta-mobile.svg";
                 </div>
                 <Image loading="eager"  src={implementation_partner} alt="implementation-partner-banner" class="mt-5" />
             </div>
-        </section>
+        </section> -->
+
+        <section
+    class="hidden lg:flex section-bg h-[75vh] flex items-center banner-bg"
+  >
+    <div
+      class="flex flex-wrap items-center mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0"
+    >
+      <div class="w-full md:w-6/12">
+        <h1
+            class="text-[1.75rem] md:text-[3rem] leading-9 md:leading-[3.5rem] text-[#31393C] font-semibold"
+          >
+          Drive Desired Results for <br /> your business with the <br /> Leading ERPNext Partner!
+      </h1>
+          <p
+            class="text[#31393C] text-sm md:text-base leading-5 md:leading-6 mt-5"
+          >
+          Sanskar Technolabs is an renowned ERPNext development <br /> offering ERPNext solutions for various Industries such as <br /> Manufacturing, Textile, Retail or Construction - our team has got <br /> you covered.
+          </p>
+        <div
+          class="mt-7 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
+        >
+          <a
+            href="/contact-us"
+            class="text-white text-base font-semibold font-inter"
+            >Book a free demo today!</a
+          >
+          <Image
+            loading="eager"
+            src={right}
+            width={6}
+            height={12}
+            alt="right arrow "
+          />
+        </div>
+      </div>
+
+      <Image
+        loading="eager"
+        src={implementation_partner}
+        alt="banner"
+        class="w-full md:w-6/12"
+      />
+    </div>
+
+  </section>
+
+  <section
+    class="section-bg flex items-center md:flex lg:hidden banner-bg"
+  >
+    <div
+      class="flex flex-wrap items-center mx-5 gap-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0"
+    >
+      <div class="w-full lg:w-6/12 mt-5">
+        <div
+            class="text-[1.75rem] md:text-[3rem] leading-9 md:leading-[3.5rem] text-[#31393C] font-semibold"
+          >
+          Drive Desired Results for <br /> your business with the <br /> Leading ERPNext Partner!
+          </div>
+          <p
+            class="text[#31393C] text-sm md:text-base leading-5 md:leading-6 mt-5"
+          >
+          Sanskar Technolabs is an renowned ERPNext development <br /> offering ERPNext solutions for various Industries such as <br /> Manufacturing, Textile, Retail or Construction - our team has got <br /> you covered.
+          </p>
+        <div
+          class="mt-4 md:mt-7 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
+        >
+          <a
+            href="/contact-us"
+            class="text-white text-base font-semibold font-inter"
+            >Book a free demo today!</a
+          >
+          <Image
+            loading="eager"
+            src={right}
+            width={6}
+            height={12}
+            alt="right arrow"
+          />
+        </div>
+      </div>
+
+      <Image
+        loading="eager"
+        src={implementation_partner}
+        alt="banner"
+        class="w-full"
+      />
+    </div>
+  </section>
 
          <section
-            class="section-bg-left_servicenow pb-[2rem] md:pb-[2rem] lg:pb-[6.25rem]" 
+            class="section-bg-left_servicenow py-[2rem] md:py-[3.125rem] lg:py-[6.25rem]" 
         >
-        <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0  pt-[6.25rem] md:pt-[6.25rem] lg:pt-[5rem] xl:pt-[0rem] md:px-24 ">
+        <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 md:px-24 ">
             <div class="md:text-center sm:text-left">
                  <h2
-                    class="text-2xl md:text-3xl lg:text-4xl !leading-[2rem] md:!leading-[2.75rem] lg:!leading-[3rem] text-[#31393C] font-semibold"
+                    class="text-2xl md:text-3xl lg:text-4xl !leading-[2rem] md:!leading-[2.75rem] lg:!leading-[3rem] text-[#3E96F4] font-semibold"
                 >
                     Some of the leading companies are using <br class="hidden md:hidden lg:hidden xl:block"/>
                     ERPNext for streamlined operations & better management.
@@ -194,7 +283,7 @@ import cta_mobile from "../../public/Images/cta-mobile.svg";
         <div
           class="max-w-7xl items-end justify-between sm:flex"
         >
-          <h2 class="!leading-[2rem] text-[#31393C] font-semibold md:!leading-[2.5rem] lg:!leading-[2.75rem] text-2xl md:text-3xl lg:text-4xl">
+          <h2 class="!leading-[2rem] text-[#3E96F4] font-semibold md:!leading-[2.5rem] lg:!leading-[2.75rem] text-2xl md:text-3xl lg:text-4xl">
                     Our Numbers Speak for Ourselves!
                 </h2>
 
@@ -401,7 +490,7 @@ import cta_mobile from "../../public/Images/cta-mobile.svg";
 
         <section>
 			<div class="mx-5 md:max-w-7xl py-[2rem] md:py-[2rem] lg:py-[4rem] md:mx-auto md:px-24">
-				<h2 class="text-2xl md:text-3xl lg:text-4xl leading-[2rem] md:leading-[2.25rem] lg:leading-[2.75rem] pb-2 md:pb-3 lg:pb-4 text-left md:text-center font-semibold text-[#31393C]">Why Choose ERPNext for your business operations?</h2>
+				<h2 class="text-2xl md:text-3xl lg:text-4xl leading-[2rem] md:leading-[2.25rem] lg:leading-[2.75rem] pb-2 md:pb-3 lg:pb-4 text-left md:text-center font-semibold text-[#3E96F4]">Why Choose ERPNext for your business operations?</h2>
 				<p class="my-2 md:my-0 mx-5 md:mx-20 lg:mx-28 xl:mx-48 text-xs md:text-sm lg:text-base text-center text-[#31393C] font-semibold leading-4 md:leading-5 lg:leading-6">ERPNext is the leading ERP software designed to streamline your business workflows, boost customer satisfaction, and drive business growth.</p>
 				<div class="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 mt-8 md:mt-10 lg:mt-14 mb-0 md:mb-0 lg:mb-0 gap-6 md:gap-10 lg:gap-16">
 					<div class="flex flex-col items-center">
@@ -434,7 +523,7 @@ import cta_mobile from "../../public/Images/cta-mobile.svg";
 
         <section class="py-[2rem] md:py-[2rem] lg:py-[4rem]">
             <div class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
-                <h2 class="lg:mx-48 text-2xl md:text-3xl lg:text-4xl !leading-[2rem] md:!leading-[2.25rem] lg:!leading-[2.75rem] pb-2 md:pb-3 lg:pb-4 text-left md:text-center font-semibold text-[#31393C]">Everything we offer at Sanskar Technolab for ERPNext!</h2>
+                <h2 class="lg:mx-48 text-2xl md:text-3xl lg:text-4xl !leading-[2rem] md:!leading-[2.25rem] lg:!leading-[2.75rem] pb-2 md:pb-3 lg:pb-4 text-left md:text-center font-semibold text-[#3E96F4]">Everything we offer at Sanskar Technolab for ERPNext!</h2>
                     <div
                         class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 mt-6 md:mt-8 lg:mt-10 gap-16 md:gap-14 lg:gap-24" >
                         <div class="text-[#31393C] text-center">
@@ -519,7 +608,7 @@ import cta_mobile from "../../public/Images/cta-mobile.svg";
                 class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0  py-[2rem] md:py-[2rem] lg:py-[4rem]"
             >
                 <h2
-                    class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] !leading-[2rem] md:!leading-[2.25rem] lg:!leading-[2.75rem] font-semibold sm:text-left md:text-center lg:mx-40 md:mx-auto mx-auto mb-10"
+                    class="text-2xl md:text-3xl lg:text-4xl text-[#3E96F4] !leading-[2rem] md:!leading-[2.25rem] lg:!leading-[2.75rem] font-semibold sm:text-left md:text-center lg:mx-40 md:mx-auto mx-auto mb-10"
                 >
                    The range of ERPNext Modules we can handle at Sanskar Technolab!
                 </h2>
@@ -1977,7 +2066,7 @@ import cta_mobile from "../../public/Images/cta-mobile.svg";
 		>
 			<div class="text-left sm:text-center md:text-center lg:text-center">
 				<h2
-					class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold"
+					class="text-2xl md:text-3xl lg:text-4xl text-[#3E96F4] font-semibold"
 				>
 					Personalized Integration Hub - <br class="hidden md:block lg:block" /> Access all your tools at
 					one place.
@@ -2110,7 +2199,7 @@ import cta_mobile from "../../public/Images/cta-mobile.svg";
       <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 py-[2rem] md:py-[2rem] lg:py-[4rem]">
                 <div class="text-left md:text-center">
                     <h2
-                        class="text-2xl md:text-3xl !leading-[2rem] md:!leading-[2.25rem] lg:!leading-[2.75rem] lg:text-4xl text-[#31393C] font-semibold "
+                        class="text-2xl md:text-3xl !leading-[2rem] md:!leading-[2.25rem] lg:!leading-[2.75rem] lg:text-4xl text-[#3E96F4] font-semibold "
                     >
                         Why Choose Sanskar Technolabs as your <br class="hidden md:block"/> ERPNext Implementation Partner?
                     </h2>
@@ -2255,7 +2344,7 @@ import cta_mobile from "../../public/Images/cta-mobile.svg";
                             class="hidden bg-[#EBF5FF] rounded-[20px] text-[#31393C] p-5"
                         >
                             <h2
-                                class="text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] lg:text-center font-semibold mb-5 ml-3 leading-9"
+                                class="text-[#3E96F4] text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] lg:text-center font-semibold mb-5 ml-3 leading-9"
                             >
                                 Frequently Asked Questions (FAQs)
                             </h2>

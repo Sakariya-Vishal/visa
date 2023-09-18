@@ -17,6 +17,6 @@ export default defineConfig({
     cacheControl: {
       static: 60 * 60 * 24 * 365, // Cache static files for 1 year
     },
-    format: "file",
+    // format: "file",
   },
 });

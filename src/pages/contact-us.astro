@@ -18,7 +18,7 @@ import contact_map from "../../public/Images/contact_map.svg";
       <div class="md:max-w-7xl md:mx-auto md:px-24 lg:px-4 w-full lg:w-10/12 xl:w-7/12 px-5">
         <div class="bg-white w-full lg:w-7/12 form-padding lg:p-7">
            <form id="contact_form" class="grid gap-3 md:gap-3 lg:gap-5">
-        <h1 class="text-[#31393C] text-2xl md:text-3xl lg:text-4xl">
+        <h1 class="text-[#3E96F4] text-2xl md:text-3xl lg:text-4xl">
           Get in Touch
         </h1>
         <div class="text-[#333333] grid gap-3 md:gap-3 lg:gap-5">
@@ -279,31 +279,41 @@ import contact_map from "../../public/Images/contact_map.svg";
       </div>
     </section>
 
-    <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 mt-[6.25rem] md:mt-[6.25rem] lg:mt-[12.50rem]">
+    <section class="mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 my-[4rem] md:my-[5rem] lg:my-[10rem]"">
       <div class="flex flex-wrap md:gap-10 lg:gap-0 ">
         <div class="w-full md:w-full lg:w-9/12">
-          <p class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold mb-5 md:mb-7 lg:mb-10">Our Offices</p>
+          <h2 class="text-2xl md:text-3xl lg:text-4xl text-[#3E96F4] font-semibold mb-5 md:mb-7 lg:mb-10">Our Offices</h2>
           <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 md:gap-0">
             <div>
               <p class="text-lg md:text-xl lg:text-2xl text-[#31393C] mb-2 md:mb-3 lg:mb-4">Ahmedabad</p>
-              <div class="flex gap-3 items-start">
+              <!-- <div class="flex gap-3 items-start">
                 <Image loading="eager"  src={contact_map} alt="map" class="mt-1"/>
                 <p class="text-xs md:text-sm lg:text-base text-[#31393C]">
                   A-706, Privilon,<br>
                   Behind Iscon Temple,<br>
                   Iscon cross Road, SG Highway,<br>
                   Ahmedabad. (Gujarat-India)</p>
-              </div>
+              </div> -->
+              <!-- <div > -->
+                <a class="flex gap-3 items-start" href="https://www.google.com/maps?sca_esv=566178271&output=search&q=B+-+305+-+308,+Shilp+Corporate+park,+Rajpath+Rangoli+Road,+Thaltej,+Ahmedabad.&source=lnms&entry=mc&sa=X&ved=2ahUKEwiW966Zr7OBAxWQwjgGHQHWAAsQ0pQJegQICBAB">
+                <Image loading="eager"  src={contact_map} alt="map" class="mt-1"/>
+                <p class="text-xs md:text-sm lg:text-base text-[#31393C]">
+                  B - 305 - 308,<br>
+                  Shilp Corporate park,<br>
+                  Rajpath Rangoli Road,<br>
+                  Thaltej, Ahmedabad. (Gujarat-India)</p>
+                </a>
+              <!-- </div> -->
             </div>
             <div>
               <p class="text-lg md:text-xl lg:text-2xl text-[#31393C] mb-2 md:mb-3 lg:mb-4 mt-5 md:mt-0">Junagadh</p>
-              <div class="flex gap-3 items-start">
+              <a class="flex gap-3 items-start" href="https://www.google.com/maps?sca_esv=566178271&output=search&q=4th+Floor,+Milestone+Complex,+Deep+Nagar,+Zanzarda+Road,+Junagadh.+(Gujarat-India)&source=lnms&entry=mc&sa=X&ved=2ahUKEwi-jM_bsrOBAxV0-jgGHd-0AB4Q0pQJegQIDRAB">
                 <Image loading="eager"  src={contact_map} alt="map" class="mt-1"/>
                 <p class="text-xs md:text-sm lg:text-base text-[#31393C]">
                   4th Floor, Milestone Complex,<br>
                   Deep Nagar, Zanzarda Road, <br>
                   Junagadh. (Gujarat-India)</p>
-              </div>
+                </a>
             </div>
           </div>
          <hr class="my-5  margin-right">
@@ -322,7 +332,7 @@ import contact_map from "../../public/Images/contact_map.svg";
         </div>
 
         <div class="w-full md:w-3/12 lg:w-3/12 mt-10 md:mt-0">
-          <p class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold mb-5 md:mb-7 lg:mb-10">Email Us</p>
+          <h2 class="text-2xl md:text-3xl lg:text-4xl text-[#3E96F4] font-semibold mb-5 md:mb-7 lg:mb-10">Email Us</h2>
           <div>
             <p class="text-lg md:text-xl lg:text-2xl text-[#31393C] mb-2 md:mb-3 lg:mb-4">Business</p>
             <div class="flex gap-3 items-start">
@@ -336,16 +346,17 @@ import contact_map from "../../public/Images/contact_map.svg";
             </div>
           </div>
         </div>
-
       </div>
 
       <p class="text-xs md:text-xs lg:text-sm text-[#31393C] mt-12 md:mt-14 lg:mt-16">Disclaimer: All the names of third party Companies or third party software products mention in our website are only for information purpose and we do not say that we own or use or have tie up with this products or companies. If any company wishes to remove any name then contact us and we will surely comply with the authorise personals.</p>
     </section>
 
-    <section class="bg-[#EBF5FF] p-5 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 justify-items-center gap-5 h-[28.75rem] mt-[6.25rem] md:mt-[6.25rem] lg:mt-[12.50rem]">
-      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=sanskar technolab ahmedabad&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+    <section class="bg-[#EBF5FF] p-5 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 justify-items-center gap-5 h-[28.75rem]">
+      <!-- <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=sanskar technolab ahmedabad&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div> -->
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=B - 305 - 308, Shilp Corporate park, Rajpath Rangoli Road, Thaltej, Ahmedabad. &t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
       <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=sanskar technolab junagadh&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
     </section>
+
   <style>
     .banner {
       background-image: url("../../public/Images/contact-us-banner.png");
