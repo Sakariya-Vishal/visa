@@ -13,7 +13,7 @@ import contact_map from "../../public/Images/contact_map.svg";
 // import banner_image from "../../public/Images/contact-us-banner.svg";
 ---
 
-<Layout title="Contact Us", keyword="", description="", canonical_href="https://sanskartechnolab.com/contact-us">
+<Layout title="Contact Us Page | Sanskar Technolab", keyword="", description="Contact the team at Sanskar Technolab and we’ll get back to you.", canonical_href="https://sanskartechnolab.com/contact-us">
 <section class="banner bg-cover bg-no-repeat banner-height flex items-center">
       <div class="md:max-w-7xl md:mx-auto md:px-24 lg:px-4 w-full lg:w-10/12 xl:w-7/12 px-5">
         <div class="bg-white w-full lg:w-7/12 form-padding lg:p-7">
@@ -254,7 +254,7 @@ import contact_map from "../../public/Images/contact_map.svg";
             placeholder="Message"
             class="pl-3 pt-1 border border-[#D9D9D9] text-[#333333]"
           ></textarea>
-		  <div
+		    <div
                 class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-3 md:gap-3 lg:gap-5"
               >
               <!-- <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div> -->
@@ -265,9 +265,10 @@ import contact_map from "../../public/Images/contact_map.svg";
                         name="file"
                         id="fileInput"
                     />
-                    <p class="text-xs mt-2">Allow Formats (.jpg |.pdf |.png |.docx |.txt)</p>
+                    
                 </div>
-              </div>
+        </div>
+        <p class="text-xs -mt-3">Allow Formats (.jpg |.pdf |.png |.docx |.txt)</p>
               <button
                 class="w-24 bg-[#3E96F4] rounded text-white md:text-sm text-xs lg:text-base font-semibold p-2 px-5"
               >
@@ -648,18 +649,19 @@ import contact_map from "../../public/Images/contact_map.svg";
     var form = document.getElementById("contact_form");
     form.addEventListener("submit", handleContactForm);
 
- function blinkBorder(element) {
-    let intervalId;
+function blinkBorder(element) {
     let isRed = false;
 
-    intervalId = setInterval(() => {
-      isRed = !isRed;
-      element.style.backgroundColor = isRed ? '#ffdddd' : 'transparent';
-    }, 500); // 500ms interval for blinking
-
-    // Save the interval ID in the element's dataset to clear it later
-    element.dataset.blinkIntervalId = intervalId;
-  }
+    const intervalId = setInterval(() => {
+        if (isRed) {
+            clearInterval(intervalId); // Stop the blinking after one cycle
+            element.style.backgroundColor = 'transparent'; // Set the final state
+        } else {
+            isRed = true;
+            element.style.backgroundColor = '#ffdddd'; // Set the blink color
+        }
+    }, 500);
+}
 
   // Function to stop blinking the border
   function stopBlinkBorder(element) {
@@ -677,15 +679,18 @@ import contact_map from "../../public/Images/contact_map.svg";
     const firstNameInput = document.querySelector('input[name="first_name"]');
     const lastNameInput = document.querySelector('input[name="last_name"]');
     const emailInput = document.querySelector('input[name="email"]');
+    const messageInput = document.querySelector('textarea[name="message"]');
 
     const firstNameValue = firstNameInput.value.trim();
     const lastNameValue = lastNameInput.value.trim();
     const emailValue = emailInput.value.trim();
+    const messageValue = messageInput.value.trim();
 
-      if (firstNameValue === '' || lastNameValue === '' || emailValue === '' ) {
+      if (firstNameValue === '' || lastNameValue === '' || emailValue === '' || messageValue === '' ) {
         blinkBorder(firstNameInput); 
         blinkBorder(lastNameInput); 
         blinkBorder(emailInput);
+        blinkBorder(messageInput);
         return;
       }
         const fileInput = document.getElementById('fileInput');
@@ -822,22 +827,27 @@ import contact_map from "../../public/Images/contact_map.svg";
                 e.preventDefault();
             }
         }
-         const firstNameInput = document.querySelector('input[name="first_name"]');
-        const lastNameInput = document.querySelector('input[name="last_name"]');
-        const emailInput = document.querySelector('input[name="email"]');
+//        const firstNameInput = document.querySelector('input[name="first_name"]');
+//         const lastNameInput = document.querySelector('input[name="last_name"]');
+//         const emailInput = document.querySelector('input[name="email"]');
+//         const messageInput = document.querySelector('input[name="message"]');
 
-        function stopBlinkingForNameInputs() {
-            stopBlinkBorder(firstNameInput);
-            stopBlinkBorder(lastNameInput);
-            stopBlinkBorder(emailInput);
-            firstNameInput.style.backgroundColor = '';
-            lastNameInput.style.backgroundColor = '';
-            emailInput.style.backgroundColor = '';
-        }
+//         function stopBlinkingForNameInputs() {
+//             stopBlinkBorder(firstNameInput);
+//             stopBlinkBorder(lastNameInput);
+//             stopBlinkBorder(emailInput);
+//             stopBlinkBorder(messageInput);
+//             firstNameInput.style.backgroundColor = '';
+//             lastNameInput.style.backgroundColor = '';
+//             emailInput.style.backgroundColor = '';
+//             messageInput.style.backgroundColor = '';
+//         }
 
-        firstNameInput.addEventListener('focus', stopBlinkingForNameInputs);
-        lastNameInput.addEventListener('focus', stopBlinkingForNameInputs);
-        emailInput.addEventListener('focus', stopBlinkingForNameInputs);
+//         firstNameInput.addEventListener('focus', stopBlinkingForNameInputs);
+//         lastNameInput.addEventListener('focus', stopBlinkingForNameInputs);
+//         emailInput.addEventListener('focus', stopBlinkingForNameInputs);
+//         messageInput.addEventListener('focus', stopBlinkingForNameInputs);
+
 
 // validate file foramte in fileupload
     function fileValidation() {

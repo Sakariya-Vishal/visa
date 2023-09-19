@@ -166,21 +166,25 @@ import right from "../../public/Images/right.svg";
             <h4 class="!text-base text[#F7FFFF] font-bold">Contact</h4>
             <div class="!text-sm mt-5">
                 <!-- <div class=""> -->
-                    <a class="flex gap-1 justify-between" href="https://www.google.com/maps?sca_esv=566178271&output=search&q=B+-+305+-+308,+Shilp+Corporate+park,+Rajpath+Rangoli+Road,+Thaltej,+Ahmedabad.&source=lnms&entry=mc&sa=X&ved=2ahUKEwiW966Zr7OBAxWQwjgGHQHWAAsQ0pQJegQICBAB">
-                    <div class="w-1/12"><Image loading="eager"  class="ml-1 mt-1 -mr-2" src={map} alt="map" /></div>
-                    <div class="w-11/12">B - 305 - 308, Shilp Corporate park, Rajpath Rangoli Road, Thaltej, Ahmedabad. (Gujarat-India). </div>
+                    <div class="flex gap-1">
+                        <a class="flex gap-1 justify-between" href="https://www.google.com/maps?sca_esv=566178271&output=search&q=B+-+305+-+308,+Shilp+Corporate+park,+Rajpath+Rangoli+Road,+Thaltej,+Ahmedabad.&source=lnms&entry=mc&sa=X&ved=2ahUKEwiW966Zr7OBAxWQwjgGHQHWAAsQ0pQJegQICBAB">
+                        <div class="w-1/12"><Image loading="eager"  class="ml-1 mt-1 -mr-2" src={map} alt="map" /></div>
+                        <div class="w-11/12">B - 305 - 308, Shilp Corporate park, Rajpath Rangoli Road, Thaltej, Ahmedabad. (Gujarat-India). </div>
                     </a>
+                </div>
                 <!-- </div> -->
                  <!-- <div class="flex  cursor-pointer  mt-7 gap-1">
                     <div class="w-1/12 mt-1"><Image loading="eager"  src={email} alt="email" /><a href="mailto:info@sanskartechnolab.com" ></a></div>
                     <div class="w-11/12"><p>info@sanskartechnolab.com</p></div>
                 </div> -->
 
-                <div class="flex  cursor-pointer gap-1 justify-between"><a href="mailto:info@sanskartechnolab.com" class="mt-3 flex gap-2">
+                <div class="flex cursor-pointer gap-1">
+                    <a href="mailto:info@sanskartechnolab.com" class="mt-3 flex gap-3 md:gap-2 lg:gap-2 xl:gap-3">
                     <div class="w-1/12 mt-1"><Image loading="eager"  src={email} alt="email" /></div>
                     <div class="w-11/12">info@sanskartechnolab.com</div></a>
                 </div>
-                <div class="flex gap-1 justify-between"><a href="tel:+91 9558112081" class="mt-3 flex gap-2">
+                <div class="flex cursor-pointer gap-1">
+                    <a href="tel:+91 9558112081" class="mt-3 flex gap-3 md:gap-2 lg:gap-2 xl:gap-3">
                     <div class="w-1/12 flex lg:justify-center"><Image loading="eager"  src={phone} alt="phone" /></div>
                     <div class="w-11/12 ">(+91) 95581 12081</div></a>
                 </div>
@@ -272,9 +276,11 @@ import right from "../../public/Images/right.svg";
     var contact1 = '/contact-us/';
     var thanks = '/thank-you';
     var thanks1 = '/thank-you/';
+    var sitemap = '/sitemap';
+    var sitemap1 = '/sitemap/';
 
     // Check if the current URL matches the target URL
-    if (currentUrl === contact || currentUrl === thanks || currentUrl === contact1 || currentUrl === thanks1) {
+    if (currentUrl === contact || currentUrl === thanks || currentUrl === sitemap || currentUrl === contact1 || currentUrl === thanks1 || currentUrl === sitemap1) {
         var section = document.getElementById("section");
         section.classList.add('!hidden')
         // section.classList.add('flex')
