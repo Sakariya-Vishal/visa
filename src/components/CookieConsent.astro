@@ -5,13 +5,13 @@ import close from "../../public/Images/popup_close_btn.svg"
 import "../styles.css";
 ---
 
-<div class="cookie-consent fixed bottom-0 md:left-24 md:right-24 lg:left-10 lg:right-10 mx-5 md:max-w-7xl md:mx-auto text-white z-20 bg-[#31393C] rounded-t-[20px] opacity-80 " id="cookies-popup">
+<div class="cookie-consent fixed bottom-0 md:left-36 md:right-36 lg:left-40 lg:right-40 xl:left-36 xl:right-36 2xl:left-10 2xl:right-10 mx-5 md:max-w-7xl md:mx-auto text-white z-20 bg-[#31393C] rounded-t-[20px] opacity-80 " id="cookies-popup">
     <Image src={close} alt="close" class="absolute right-2 top-2 cursor-pointer" id="close"/>
     <div class="p-2 md:p-5 lg:p-8 mx-5 md:max-w-7xl md:mx-auto">
         <p class="font-bold text-base md:text-lg lg:text-xl">Cookies & Privacy</p>
         <div class="flex flex-wrap justify-between items-center">
-            <p class="w-full lg:w-9/12 font-semibold lg:text-base md:text-sm text-xs">This website uses cookies to ensure you get the best experience.</p>
-            <div class="w-full lg:w-3/12 flex items-center inter font-semibold lg:text-base md:text-sm text-xs mt-3 md:mt-5 lg:mt-0 gap-3">
+            <p class="w-full md:w-6/12 lg:w-8/12 xl:w-9/12 font-semibold lg:text-base md:text-sm text-xs">This website uses cookies to ensure you get the best experience.</p>
+            <div class="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 flex items-center inter font-semibold lg:text-base md:text-sm text-xs mt-3 md:mt-5 lg:mt-0 gap-3">
                 <a href="/privacy-policy" class=" underline px-2" id="more_info">More information</a>
                 <!-- <button class="bg-blue-500 px-2" id="accept_button">Accept</button> -->
                 <div class="flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-1 md:py-2 lg:py-2 md:w-28 w-20">
@@ -58,9 +58,49 @@ import "../styles.css";
     var popup = document.getElementById("cookies-popup")
     popup.classList.add("hidden")
   }
-  else{
-    var scroll = document.getElementById("s_top")
-    scroll.classList.add("!bottom-28", "md:!bottom-10")
+  else{    
+    var style = document.createElement("style");
+
+// Define your custom class with an inline media query
+var customCSS = `
+@media (max-width: 279px){
+.custom-class {
+  margin-bottom: 8rem; 
+}
+}
+
+@media (min-width: 280px) and (max-width: 434px){
+.custom-class {
+  margin-bottom: 6rem; 
+}
+}
+
+@media (min-width: 435px) and (max-width: 768px) {
+.custom-class {
+  margin-bottom: 5rem; 
+}
+}
+
+@media (min-width: 769px) {
+.custom-class {
+  margin-bottom: 1.25rem; 
+}
+}
+
+
+`;
+
+// Set the custom CSS as the innerHTML of the style element
+style.innerHTML = customCSS;
+
+// Append the style element to the document's head
+document.head.appendChild(style);
+
+// Add the custom class to your elements
+var scroll = document.getElementById("s_top");
+scroll.classList.add("custom-class");
+var chat = document.getElementById("chat_icon");
+chat.classList.add("custom-class");
   }
 
   var close = document.getElementById("close");

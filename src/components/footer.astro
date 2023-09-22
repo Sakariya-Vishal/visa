@@ -107,28 +107,28 @@ import right from "../../public/Images/right.svg";
             <a href="/">
                 <Image loading="eager"  src={footer_logo} alt="logo" /></a>
             <p class="!text-sm leading-6 mt-5">
-                ServiceNow and ERPNext Consulting, Implementation and
+                ERPNext and ServiceNow Consulting, Implementation and
                 Development Specialist.
             </p>
             <div class="my-5 pr-4">
                 <div class="flex space-x-6 mt-6 md:mt-6 lg:mt-8">
                     <a href="https://in.linkedin.com/company/sanskar-technolab-pvt-ltd" class="text-gray-400">
                         <Image loading="eager" 
-                            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                            class="transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300"
                             src={linkedin_footer} alt="linkedin_footer"
                         />
                         <p class="sr-only">Linkedin account</p>
                     </a>
                     <a href="https://www.facebook.com/SanskarTechnolab/" class="text-gray-400">
                         <Image loading="eager" 
-                            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                            class="transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300"
                             src={fb} alt="facebook"
                         />
                         <p class="sr-only">Facebook page</p>
                     </a>
                     <a href="https://www.instagram.com/sanskartechnolab/" class="text-gray-400">
                         <Image loading="eager" 
-                            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                            class="transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300"
                             src={instagram} alt="instagram"
                         />
                         <p class="sr-only">Instagram page</p>
@@ -159,7 +159,7 @@ import right from "../../public/Images/right.svg";
                     <a href="/contact-us" class="text-sm">Contact</a>
                     <a href="/migoo-case-study" class="text-sm">Migoo Case Study</a>
                     <a href="/chatgpt-integration" class="text-sm">ChatGPT Integration</a>
-                    <a href="/erpnext-implementation-partner" class="text-sm">ERRNext Implementation Partner</a>
+                    <a href="/erpnext-implementation-partner" class="text-sm">ERPNext Implementation Partner</a>
                 </div>
         </div>
          <div>
@@ -169,7 +169,7 @@ import right from "../../public/Images/right.svg";
                     <div class="flex gap-1">
                         <a class="flex gap-1 justify-between" href="https://www.google.com/maps?sca_esv=566178271&output=search&q=B+-+305+-+308,+Shilp+Corporate+park,+Rajpath+Rangoli+Road,+Thaltej,+Ahmedabad.&source=lnms&entry=mc&sa=X&ved=2ahUKEwiW966Zr7OBAxWQwjgGHQHWAAsQ0pQJegQICBAB">
                         <div class="w-1/12"><Image loading="eager"  class="ml-1 mt-1 -mr-2" src={map} alt="map" /></div>
-                        <div class="w-11/12">B - 305 - 308, Shilp Corporate park, Rajpath Rangoli Road, Thaltej, Ahmedabad. (Gujarat-India). </div>
+                        <div class="w-11/12">B - 305 - 308, Shilp Corporate Park, Rajpath Rangoli Road, Thaltej - 380059, Ahmedabad, Gujarat, India.</div>
                     </a>
                 </div>
                 <!-- </div> -->
@@ -194,11 +194,16 @@ import right from "../../public/Images/right.svg";
 </footer>
 
 <section class="bg-[#04000E]">
-    <p class="md:max-w-7xl md:mx-auto md:px-24 lg:px-0 text-center p-2">
-        <span class="text-[#918F96] text-sm leading-3"
-            >&copy; 2023 Sanskar Technolab All Rights Reserved</span
-        >
-    </p>
+    <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 md:max-w-7xl text-center md:text-left md:mx-auto md:px-24 lg:px-0 p-2 text-[#918F96] text-sm leading-3">
+        
+        <p>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/sitemap">| Sitemap</a>
+        </p>
+        <p class="text-center md:text-right">
+           &copy; 2023 Sanskar Technolab All Rights Reserved
+        </p>
+        </div>
 </section>
 <style>
 
