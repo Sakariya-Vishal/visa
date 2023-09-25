@@ -10,8 +10,8 @@ export default defineConfig({
   // output: "server",
   // adapter: netlify(),
 
-  // site: 'https://Pithiya-Nilesh.github.io',
-  // base: '/astro-sanskar',
+  site: 'https://Pithiya-Nilesh.github.io',
+  base: '/astro-sanskar',
   
   build: {
     cacheControl: {
