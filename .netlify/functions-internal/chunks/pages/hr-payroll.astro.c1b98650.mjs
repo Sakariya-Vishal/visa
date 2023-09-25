@@ -47,7 +47,7 @@ const $$Astro = createAstro();
 const $$HrPayroll = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$HrPayroll;
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "ERPNext services for Human Resources & Payroll", ",": true, "keyword": "Erpnext solution company, erpnext implementation, erp implementation companies, ERPNext software development company, ERPnext development services, Frappe ERPNext, Erpnext software, ERPNext open-source, ServiceNow company", ",": true, "description": "Hire dedicated ERPNext developers from Sanskar Technolabs to streamline your HR & payroll tasks efficiently.", ",": true, "canonical_href": "https://sanskartechnolab.com/hr-payroll", "class": "astro-WLVQXR5U" }, { "default": ($$result2) => renderTemplate`
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "ERPNext services for Human Resources & Payroll", ",": true, "keyword": "Erpnext solution company, erpnext implementation, erp implementation companies, ERPNext software development company, ERPNext development services, Frappe ERPNext, Erpnext software, ERPNext open-source, ServiceNow company", ",": true, "description": "Hire dedicated ERPNext developers from Sanskar Technolabs to streamline your HR & payroll tasks efficiently.", ",": true, "canonical_href": "https://sanskartechnolab.com/hr-payroll", "class": "astro-WLVQXR5U" }, { "default": ($$result2) => renderTemplate`
         ${maybeRenderHead()}<section class="section-bg-right hidden lg:flex h-[calc(100vh-10vh)] relative flex-wrap items-center astro-WLVQXR5U">
             <div class="absolute right-0 w-4/12 astro-WLVQXR5U">
                 ${renderComponent($$result2, "Image", $$Image, { "src": hr_payroll_banner, "alt": "manu-banner", "width": 438, "height": 454, "class": "astro-WLVQXR5U" })}
@@ -409,7 +409,7 @@ const $$HrPayroll = createComponent(async ($$result, $$props, $$slots) => {
                                     </div>
                                     </div>
                                     <p class="text-sm md:text-sm lg:text-base leading-7 w-12/12 astro-WLVQXR5U">
-                                        ERPnext allows organizations to onboard and implement ERPNext with minimal dependency on external support.
+                                        ERPNext allows organizations to onboard and implement ERPNext with minimal dependency on external support.
                                     </p>
                                 </div>
                                <div class="flex  gap-5 ml-2 mb-2 astro-WLVQXR5U">
@@ -737,7 +737,7 @@ const $$HrPayroll = createComponent(async ($$result, $$props, $$slots) => {
                                     </div>
                                     </div>
                                     <p class="text-xs md:text-sm lg:text-base leading-1 astro-WLVQXR5U">
-                                       ERPnext allows organizations to onboard and implement ERPNext with minimal dependency on external support.s
+                                       ERPNext allows organizations to onboard and implement ERPNext with minimal dependency on external support.s
                                     </p>
                                 </div>
                                  <div class="flex  gap-5 ml-2 mb-2 astro-WLVQXR5U">
@@ -961,7 +961,7 @@ const $$HrPayroll = createComponent(async ($$result, $$props, $$slots) => {
 							Advantis Quartz
 							</div>
 							<p class="text-xs md:text-sm lg:text-base astro-WLVQXR5U">
-								Advantis Quartz is a high-end flagship brand, the manufacturer of raw materials for quarries and its engineering. We reached out to the team at Sanskar Technolabs through their website. They understand our requirements and prepared a detailed sheet with every task and timeline to implement the ERPnext for our business. They helped us in implementing almost every ERPNext module such as accounting, purchase, inventory, manufacturing, sales, Hr & payroll, and asset management. 
+								Advantis Quartz is a high-end flagship brand, the manufacturer of raw materials for quarries and its engineering. We reached out to the team at Sanskar Technolabs through their website. They understand our requirements and prepared a detailed sheet with every task and timeline to implement the ERPNext for our business. They helped us in implementing almost every ERPNext module such as accounting, purchase, inventory, manufacturing, sales, Hr & payroll, and asset management. 
 
 							</p>
 							<div class="text-xs md:text-sm lg:text-base astro-WLVQXR5U">
@@ -997,7 +997,7 @@ const $$HrPayroll = createComponent(async ($$result, $$props, $$slots) => {
 							Advantis Quartz
 							</div>
 							<p class="text-xs md:text-sm lg:text-base astro-WLVQXR5U">
-								Advantis Quartz is a high-end flagship brand, the manufacturer of raw materials for quarries and its engineering. We reached out to the team at Sanskar Technolabs through their website. They understand our requirements and prepared a detailed sheet with every task and timeline to implement the ERPnext for our business. They helped us in implementing almost every ERPNext module such as accounting, purchase, inventory, manufacturing, sales, Hr & payroll, and asset management. 
+								Advantis Quartz is a high-end flagship brand, the manufacturer of raw materials for quarries and its engineering. We reached out to the team at Sanskar Technolabs through their website. They understand our requirements and prepared a detailed sheet with every task and timeline to implement the ERPNext for our business. They helped us in implementing almost every ERPNext module such as accounting, purchase, inventory, manufacturing, sales, Hr & payroll, and asset management. 
 
 							</p>
 							<div class="text-xs md:text-sm lg:text-base astro-WLVQXR5U">

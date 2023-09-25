@@ -117,7 +117,7 @@ const $$Astro = createAstro();
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Sanskar Technolabs | Best ERPNext Implementation partner", ",": true, "keyword": "erpnext implementation partners, erpnext implementation, erp implementation partner, erp implementation companies, ERPNext software development company, Hire ERPNext developers, ERPnext development services , Erpnext solution company, Frappe ERPNext , Erpnext software , ERPNext open-source, ServiceNow company, ServiceNow implementation partner, Servicenow implementation services, Servicenow implementation solutions", ",": true, "description": "We are among the leading ERPNext Implementation companies offering ERPNext solutions to scale & succeed.", ",": true, "canonical_href": "https://sanskartechnolab.com/", "class": "astro-J7PV25F6" }, { "default": ($$result2) => renderTemplate`	
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Sanskar Technolabs | Best ERPNext Implementation partner", ",": true, "keyword": "erpnext implementation partners, erpnext implementation, erp implementation partner, erp implementation companies, ERPNext software development company, Hire ERPNext developers, ERPNext development services , Erpnext solution company, Frappe ERPNext , Erpnext software , ERPNext open-source, ServiceNow company, ServiceNow implementation partner, Servicenow implementation services, Servicenow implementation solutions", ",": true, "description": "We are among the leading ERPNext Implementation companies offering ERPNext solutions to scale & succeed.", ",": true, "canonical_href": "https://sanskartechnolab.com/", "class": "astro-J7PV25F6" }, { "default": ($$result2) => renderTemplate`	
 		
 		
 
@@ -1882,7 +1882,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 							Advantis Quartz
 							</div>
 							<p class="text-xs md:text-sm lg:text-base astro-J7PV25F6">
-								Advantis Quartz is a high-end flagship brand, the manufacturer of raw materials for quarries and its engineering. We reached out to the team at Sanskar Technolabs through their website. They understand our requirements and prepared a detailed sheet with every task and timeline to implement the ERPnext for our business. They helped us in implementing almost every ERPNext module such as accounting, purchase, inventory, manufacturing, sales, Hr & payroll, and asset management. 
+								Advantis Quartz is a high-end flagship brand, the manufacturer of raw materials for quarries and its engineering. We reached out to the team at Sanskar Technolabs through their website. They understand our requirements and prepared a detailed sheet with every task and timeline to implement the ERPNext for our business. They helped us in implementing almost every ERPNext module such as accounting, purchase, inventory, manufacturing, sales, Hr & payroll, and asset management. 
 
 							</p>
 							<div class="text-xs md:text-sm lg:text-base astro-J7PV25F6">

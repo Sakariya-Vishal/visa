@@ -727,6 +727,7 @@ function blinkBorder(element) {
     // send data in frappe
     function handleContactForm(e) {       
     e.preventDefault();
+    disableUserInteractions()
 
     const firstNameInput = document.querySelector('input[name="first_name"]');
       const lastNameInput = document.querySelector('input[name="last_name"]');
@@ -821,13 +822,16 @@ function blinkBorder(element) {
                       console.log("asdfasd", res)
                     if(res.status === 200){
                         // alert("You have been registered successfully.")
+                        enableUserInteractions();
                         window.location.href="/thank-you"
                     }
                     else{
+                      enableUserInteractions();
                         alert("failed")
                     }
                 }).catch((error) => {
                     console.log(error)
+                    enableUserInteractions();
                 })            
 
             // return;
@@ -875,22 +879,28 @@ function blinkBorder(element) {
                       }).then((res) => {
                       if(res.status === 200){
                           // alert("You have been registered successfully.")
+                          enableUserInteractions();
                           window.location.href="/thank-you"
                       }
                       else{
+                        enableUserInteractions();
                           alert("failed")
                       }
                   }).catch((error) => {
+                    enableUserInteractions();
                       console.log(error)
+
                   })
 
                 } 
                 else {
+                  enableUserInteractions();
                       alert('File upload failed. Please try again later.');
                 }
               };
                 
                 xhr.onerror = function() {
+                  enableUserInteractions();
                     alert('An error occurred while uploading the file.');
                 };
 
@@ -1183,5 +1193,18 @@ countrySelect.addEventListener("change", (event) => {
   const selectedCountry = countrySelect.value;
   updateTelephoneCode(selectedCountry);
 });
+
+
+// Helper function to disable user interactions
+function disableUserInteractions() {
+  document.body.style.pointerEvents = 'none';
+  document.body.style.opacity = '0.5';
+}
+
+// Helper function to re-enable user interactions
+function enableUserInteractions() {
+  document.body.style.pointerEvents = 'auto';
+  document.body.style.opacity = '1';
+}
   </script>
 </Layout>

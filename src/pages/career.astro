@@ -39,7 +39,7 @@ import close from "../../public/Images/popup_close_btn.svg";
 <Layout
   title="Career Page | Sanskar Technolab"
   ,
-  keyword="erp implementation partner, erpnext implementation, erp implementation companies, ERPNext software development company, Hire ERPNext developers, ERPnext development services, Erpnext solution company, ServiceNow company, ServiceNow implementation partner, Servicenow implementation services, Servicenow implementation solutions"
+  keyword="erp implementation partner, erpnext implementation, erp implementation companies, ERPNext software development company, Hire ERPNext developers, ERPNext development services, Erpnext solution company, ServiceNow company, ServiceNow implementation partner, Servicenow implementation services, Servicenow implementation solutions"
   ,
   description="Accelerate your career with Sanskar technolab and join the team of amazing individuals at the leading ServiceNow & ERPNext software development company."
   ,
@@ -2210,6 +2210,7 @@ import close from "../../public/Images/popup_close_btn.svg";
       // console.log("job opening name", jobOpening.name)
 
       e.preventDefault();
+      disableUserInteractions()
 
       const fullNameInput = document.querySelector('input[name="name"]');
       const emailInput = document.querySelector('input[name="email"]');
@@ -2325,21 +2326,26 @@ import close from "../../public/Images/popup_close_btn.svg";
             .then((res) => {
               if (res.status === 200) {
                 // alert("You have been registered successfully.")
+                enableUserInteractions()
                 window.location.href = "/thank-you";
               } else {
+                enableUserInteractions()
                 alert("failed");
               }
             })
             .catch((error) => {
+              enableUserInteractions()
               console.log(error);
             });
         } else {
           //alert('File upload failed. Please try again later.');
+          enableUserInteractions()
           blinkBorder(fileInput);
         }
       };
 
       xhr.onerror = function () {
+        enableUserInteractions()
         alert("An error occurred while uploading the file.");
       };
 
@@ -2355,6 +2361,18 @@ import close from "../../public/Images/popup_close_btn.svg";
     
   });
 
+
+  // Helper function to disable user interactions
+function disableUserInteractions() {
+  document.body.style.pointerEvents = 'none';
+  document.body.style.opacity = '0.5';
+}
+
+// Helper function to re-enable user interactions
+function enableUserInteractions() {
+  document.body.style.pointerEvents = 'auto';
+  document.body.style.opacity = '1';
+}
  
 </script>
 <!-- </main> -->

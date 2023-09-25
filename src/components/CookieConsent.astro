@@ -1,120 +1,130 @@
 ---
 import { Image, Picture } from "@astrojs/image/components";
 import right from "../../public/Images/right.svg";
-import close from "../../public/Images/popup_close_btn.svg"
+import close from "../../public/Images/popup_close_btn.svg";
 import "../styles.css";
 ---
 
-<div class="cookie-consent fixed bottom-0 md:left-36 md:right-36 lg:left-40 lg:right-40 xl:left-36 xl:right-36 2xl:left-10 2xl:right-10 mx-5 md:max-w-7xl md:mx-auto text-white z-20 bg-[#31393C] rounded-t-[20px] opacity-80 " id="cookies-popup">
-    <Image src={close} alt="close" class="absolute right-2 top-2 cursor-pointer" id="close"/>
-    <div class="p-2 md:p-5 lg:p-8 mx-5 md:max-w-7xl md:mx-auto">
-        <p class="font-bold text-base md:text-lg lg:text-xl">Cookies & Privacy</p>
-        <div class="flex flex-wrap justify-between items-center">
-            <p class="w-full md:w-6/12 lg:w-8/12 xl:w-9/12 font-semibold lg:text-base md:text-sm text-xs">This website uses cookies to ensure you get the best experience.</p>
-            <div class="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 flex items-center inter font-semibold lg:text-base md:text-sm text-xs mt-3 md:mt-5 lg:mt-0 gap-3">
-                <a href="/privacy-policy" class=" underline px-2" id="more_info">More information</a>
-                <!-- <button class="bg-blue-500 px-2" id="accept_button">Accept</button> -->
-                <div class="flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-1 md:py-2 lg:py-2 md:w-28 w-20">
-                    <button
-                        class="text-white font-semibold lg:text-base md:text-sm" id="accept_button"
-                        >Accept
-                    </button>
-                    <Image
-                        loading="eager"
-                        src={right}
-                        width={6}
-                        height={12}
-                        alt="right arrow "
-                    />
-                </div>
-            </div>
+<div
+  class="cookie-consent fixed bottom-0 md:left-24 md:right-24 lg:left-10 lg:right-10 mx-5 md:max-w-7xl md:mx-auto text-white z-20 bg-[#31393C] rounded-t-[20px] opacity-80"
+  id="cookies-popup"
+>
+  <Image
+    src={close}
+    alt="close"
+    class="absolute right-2 top-2 cursor-pointer"
+    id="close"
+  />
+  <div class="p-2 md:p-5 lg:p-8 mx-5 md:max-w-7xl md:mx-auto">
+    <p class="font-bold text-base md:text-lg lg:text-xl">Cookies & Privacy</p>
+    <div class="flex flex-wrap justify-between items-center">
+    <p class="w-full md:w-6/12 lg:w-8/12 xl:w-9/12 font-semibold lg:text-base md:text-sm text-xs">This website uses cookies to ensure you get the best experience.</p>
+    <div class="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 flex items-center inter font-semibold lg:text-base md:text-sm text-xs mt-3 md:mt-5 lg:mt-0 gap-3">
+    <a href="/privacy-policy" class=" underline px-2" id="more_info">More information</a>
+    <!-- <button class="bg-blue-500 px-2" id="accept_button">Accept</button> -->
+    <div class="flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-1 md:py-2 lg:py-2 md:w-28 w-20">
+    <button
+    class="text-white font-semibold lg:text-base md:text-sm" id="accept_button"
+    >Accept
+    </button>
+    
+          <Image
+            loading="eager"
+            src={right}
+            width={6}
+            height={12}
+            alt="right arrow "
+          />
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <script>
-    
   function acceptCookies() {
     const expirationDate = new Date();
     expirationDate.setDate(expirationDate.getDate() + 1); // Add 1 day
     document.cookie = `cookieConsent=accepted; expires=${expirationDate.toUTCString()}; path=/`;
 
-    var popup = document.getElementById("cookies-popup")
-    popup.classList.add("hidden")
+    var popup = document.getElementById("cookies-popup");
+    popup.classList.add("hidden");
   }
 
   var accept = document.getElementById("accept_button");
   accept.addEventListener("click", acceptCookies);
 
   const cookieAccepted = document.cookie.includes("cookieConsent=accepted");
-//   var rejected_cookie = window.localStorage.getItem("rejected_cookie");
-//   if(cookieAccepted || rejected_cookie == "1"){
-//     var popup = document.getElementById("cookies-popup")
-//     popup.classList.add("hidden")
-//   }
+  //   var rejected_cookie = window.localStorage.getItem("rejected_cookie");
+  //   if(cookieAccepted || rejected_cookie == "1"){
+  //     var popup = document.getElementById("cookies-popup")
+  //     popup.classList.add("hidden")
+  //   }
 
-    const cookieRejected = document.cookie.includes("cookieConsent=rejected")
-  if(cookieAccepted || cookieRejected){
-    var popup = document.getElementById("cookies-popup")
-    popup.classList.add("hidden")
-  }
-  else{    
+  const cookieRejected = document.cookie.includes("cookieConsent=rejected");
+  if (cookieAccepted || cookieRejected) {
+    var popup = document.getElementById("cookies-popup");
+    popup.classList.add("hidden");
+  } else {
     var style = document.createElement("style");
 
-// Define your custom class with an inline media query
-var customCSS = `
+    // Define your custom class with an inline media query
+    var customCSS = `
 @media (max-width: 279px){
 .custom-class {
-  margin-bottom: 8rem; 
+margin-bottom: 8rem; /* Apply 8rem margin for screens up to 318px */
 }
 }
+
 
 @media (min-width: 280px) and (max-width: 434px){
 .custom-class {
-  margin-bottom: 6rem; 
+margin-bottom: 7rem;
 }
 }
+
 
 @media (min-width: 435px) and (max-width: 768px) {
 .custom-class {
-  margin-bottom: 5rem; 
+margin-bottom: 5rem;
 }
 }
 
+
 @media (min-width: 769px) {
 .custom-class {
-  margin-bottom: 1.25rem; 
+margin-bottom: 1.25rem; /* Apply 1.25rem margin for screens larger than 768px */
 }
 }
+
+
 
 
 `;
 
-// Set the custom CSS as the innerHTML of the style element
-style.innerHTML = customCSS;
+    // Set the custom CSS as the innerHTML of the style element
+    style.innerHTML = customCSS;
 
-// Append the style element to the document's head
-document.head.appendChild(style);
+    // Append the style element to the document's head
+    document.head.appendChild(style);
 
-// Add the custom class to your elements
-var scroll = document.getElementById("s_top");
-scroll.classList.add("custom-class");
-var chat = document.getElementById("chat_icon");
-chat.classList.add("custom-class");
+    // Add the custom class to your elements
+    var scroll = document.getElementById("s_top");
+    scroll.classList.add("custom-class");
+    var chat = document.getElementById("chat_icon");
+    chat.classList.add("custom-class");
   }
 
   var close = document.getElementById("close");
   close.addEventListener("click", close_popup);
 
-  function close_popup(){
+  function close_popup() {
     // window.localStorage.setItem("rejected_cookie", "1")
     const expirationDate = new Date();
     expirationDate.setDate(expirationDate.getDate() + 1); // Add 1 day
     document.cookie = `cookieConsent=rejected; expires=${expirationDate.toUTCString()}; path=/`;
 
-    var popup = document.getElementById("cookies-popup")
-    popup.classList.add("hidden")
+    var popup = document.getElementById("cookies-popup");
+    popup.classList.add("hidden");
   }
-
 </script>
-

@@ -32,7 +32,7 @@ import "../styles.css";
             class="flex items-center gap-2 bg-[#F6F9FB] rounded-t-lg p-4 text-[#31393c] lg:text-lg md:text-base text-sm font-semibold"
         >
             <Image loading="eager" src={sanskar_chat_logo} alt="sanskar logo" />
-            <p>Chat With Sanskar</p>
+            <p>Sanskar ChatBot</p>
         </div>
 
         <div
@@ -94,6 +94,14 @@ import "../styles.css";
         background: #fff;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     }
+ 
+#messages::-webkit-scrollbar {
+    width: 2px;
+}
+
+#messages::-webkit-scrollbar-thumb {
+    background-color: #3E96F4; 
+}
 </style>
 
 <script>
@@ -122,6 +130,7 @@ import "../styles.css";
     var selected_technology = [];
     var questions_answer = [];
     var user_details = [];
+    var need_customization = 0
 
     //  Auto Create Message Design Of User.
     function create_user_message_div(
@@ -182,9 +191,11 @@ import "../styles.css";
         outerDivClasses,
         message,
         buttons = [],
-        checkboxes = []
+        button_parent_class = 'grid justify-items-start',
+        checkboxes = [],
     ) {
         scrollToBottom()
+        disablePreviousInputs()
 
         const parent = document.getElementById(parent_id);
 
@@ -197,7 +208,7 @@ import "../styles.css";
         messageParagraph.textContent = message;
 
         const btn_div = document.createElement("span");
-        btn_div.className = "grid justify-items-start";
+        btn_div.className = button_parent_class;
         if (buttons.length === 0) {
         } else {
             // btn_div.className = 'text-[#31393C] bg-[#F6F9FB] text-xs lg:text-base md:text-sm p-4 py-2 rounded-r-[10px] rounded-b-[10px] inline-block';
@@ -215,6 +226,10 @@ import "../styles.css";
         }
 
         const checkboxSpan = document.createElement("span");
+        const showMoreButton = document.createElement("button");
+        showMoreButton.textContent = "Show More";
+        showMoreButton.className = "text-[#3E96F4] text-xs lg:text-base md:text-sm ml-5";
+
         if (checkboxes.length === 0) {
         } else {
             checkboxSpan.className =
@@ -223,30 +238,86 @@ import "../styles.css";
 
             // const options = checkboxes;
 
-            checkboxes.forEach((option) => {
-                const checkboxDiv = document.createElement("div");
-                checkboxDiv.className = "flex gap-2 items-center ml-5";
-                const checkbox = document.createElement("input");
-                checkbox.type = "checkbox";
-                checkbox.value = option;
-                checkbox.id = option;
+            // ####################### new code start ###########################
+            
+            
+            let visibleCheckboxes = 5;
+            // var showMoreButton = document.getElementById("show_more")
+            showMoreButton.addEventListener("click", () => {
+            const hiddenCheckboxes = checkboxes.slice(visibleCheckboxes, visibleCheckboxes + 5);
 
-                const label = document.createElement("label");
-                label.htmlFor = option.value;
-                label.appendChild(document.createTextNode(option));
+            hiddenCheckboxes.forEach((option) => {
+            const checkboxDiv = document.createElement("div");
+            checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-xs lg:text-base md:text-sm";
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.value = option;
+            checkbox.id = option;
 
-                checkboxDiv.appendChild(checkbox);
-                checkboxDiv.appendChild(label);
+            const label = document.createElement("label");
+            label.htmlFor = option.value;
+            label.appendChild(document.createTextNode(option));
 
-                checkboxSpan.appendChild(checkboxDiv);
+            checkboxDiv.appendChild(checkbox);
+            checkboxDiv.appendChild(label);
 
-                // Add event listener to track checkbox changes
-                // checkbox.addEventListener('change', updateSelectedValues);
-                // checkbox.addEventListener('change', function (event) {
-                //     updateSelectedValues(event.target.id);
-                // });
-            });
+            checkboxSpan.appendChild(checkboxDiv);
             scrollToBottom()
+            });
+
+            visibleCheckboxes += hiddenCheckboxes.length;
+
+            if (visibleCheckboxes >= checkboxes.length) {
+            showMoreButton.style.display = "none"; // Hide the button when all checkboxes are visible
+            }
+            });
+
+            // Initially, show the first 5 checkboxes
+            for (let i = 0; i < visibleCheckboxes; i++) {
+            const option = checkboxes[i];
+            const checkboxDiv = document.createElement("div");
+            checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-xs lg:text-base md:text-sm";
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.value = option;
+            checkbox.id = option;
+
+            const label = document.createElement("label");
+            label.htmlFor = option.value;
+            label.appendChild(document.createTextNode(option));
+
+            checkboxDiv.appendChild(checkbox);
+            checkboxDiv.appendChild(label);
+
+            checkboxSpan.appendChild(checkboxDiv);
+            
+            }
+            // ####################### new code end ###########################
+
+            // checkboxes.forEach((option) => {
+            //     const checkboxDiv = document.createElement("div");
+            //     checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-xs lg:text-base md:text-sm";
+            //     const checkbox = document.createElement("input");
+            //     checkbox.type = "checkbox";
+            //     checkbox.value = option;
+            //     checkbox.id = option;
+
+            //     const label = document.createElement("label");
+            //     label.htmlFor = option.value;
+            //     label.appendChild(document.createTextNode(option));
+
+            //     checkboxDiv.appendChild(checkbox);
+            //     checkboxDiv.appendChild(label);
+
+            //     checkboxSpan.appendChild(checkboxDiv);
+
+            //     // Add event listener to track checkbox changes
+            //     // checkbox.addEventListener('change', updateSelectedValues);
+            //     // checkbox.addEventListener('change', function (event) {
+            //     //     updateSelectedValues(event.target.id);
+            //     // });
+            // });
+            // scrollToBottom()
 
             function updateSelectedValues(id) {
                 selected_module = [];
@@ -283,11 +354,17 @@ import "../styles.css";
         innerSpan.appendChild(timestampParagraph);
         outerDiv.appendChild(messageParagraph);
         outerDiv.appendChild(checkboxSpan);
+        if (checkboxes.length !== 0) {
+            outerDiv.appendChild(showMoreButton);
+            outerDiv.appendChild(document.createElement("br"))
+        }
         outerDiv.appendChild(btn_div);
         // outerDiv.appendChild(innerSpan);
 
         parent.appendChild(outerDiv);
         scrollToBottom()
+
+        
     }
 
     function auto_message(send_hello=false) {
@@ -330,7 +407,7 @@ import "../styles.css";
             "messages",
             "px-2 pt-2 mr-5",
             message,
-            buttons
+            buttons,
         );
     }
 
@@ -478,10 +555,33 @@ import "../styles.css";
                     "px-2 pt-2 mr-5 mt-5 -mb-3",
                     message1,
                     [],
+                    '',
                     []
                 );
                 set_get_user_name_bot_message();
                
+            }
+            
+            else if (question === "Please provide information about your customization.") {
+                questions_answer.push({question: question, answer: message})
+                chat_message.value = "";
+                create_user_message_div(
+                    "messages",
+                    "px-2 pt-2 text-right ml-5 mt-5",
+                    message,
+                );
+
+                var message1 = `Please provide your contact information so we can reach out to you.`;
+                create_bot_message_div(
+                    "messages",
+                    "px-2 pt-2 mr-5 mt-5 -mb-3",
+                    message1,
+                    [],
+                    '',
+                    []
+                );
+                set_get_user_name_bot_message();
+                
             }
 
             else if (question === "What is Your Name ?") {
@@ -524,12 +624,12 @@ import "../styles.css";
                     "px-2 pt-2 mr-5 mt-5",
                     message1,
                     [],
+                    '',
                     []
                 );
                 auto_message()
             }
 
-            console.log("questions and answers", questions_answer);
 
             // var token = window.localStorage.getItem("chat_token")
             // if (!token){
@@ -561,8 +661,6 @@ import "../styles.css";
         }
     }
 
-    
-
     // Auto Message Button Actions ERPNext
 
     function erpnext() {
@@ -573,11 +671,26 @@ import "../styles.css";
         var buttons = [
             {
                 button_id: "e_module_check_confirm",
-                button_label: "confirm",
+                button_label: "Confirm",
                 button_click_action: e_module_check_confirm,
                 button_class:
                     "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
             },
+            {
+                button_id: "erpnext_custom",
+                button_label: "Customazation",
+                button_click_action: e_module_custom,
+                button_class:
+                    "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
+            },
+            // {
+            //     button_id: "show_more",
+            //     button_label: "Show More",
+            //     button_click_action: e_module_custom,
+            //     button_class:
+            //         "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
+            // }
+
         ];
         // var checkboxes = [{"value": "Accounting", "id": "e_acco"}, {"value": "Manufacturing", "id": "e_manu"}, {"value": "HR & Payroll", "id": "e_hr"}, {"value": "LMS", "id": "e_lms"}]
         // var checkboxes = ["Accounting", "Manufacturing", "HR & Payroll", "LMS"];
@@ -602,24 +715,25 @@ import "../styles.css";
 //     "LMS (Learning Management System)"
 // ]
 
-var checkboxes = ["Sales","Purchase","Inventory",  "Accounts",
-    "Human Resources (HR)",
-    "Projects",
-    "CRM",
-    "Manufacturing",
-    "Website",
-    "Support",
-    "Asset Management",
-    "Healthcare",
-    "LMS (Learning Management System)"
-]
-        var message = "Which ERPNext Module You Want To Impliment ?";
+    var checkboxes = ["Sales","Purchase","Inventory",  "Accounts",
+        "Human Resources (HR)",
+        "Projects",
+        "CRM",
+        "Manufacturing",
+        "Website",
+        "Support",
+        "Asset Management",
+        "Healthcare",
+        "LMS (Learning Management System)"
+    ]
+        var message = "Which ERPNext Module You Want To Implement ?";
         // create_bot_message_div('messages', 'px-2 pt-2 mr-5 mt-5', message, '10:00 AM', buttons)
         create_bot_message_div(
             "messages",
             "px-2 pt-2 mr-5 mt-5",
             message,
             buttons,
+            '',
             checkboxes
         );
     }
@@ -629,20 +743,22 @@ var checkboxes = ["Sales","Purchase","Inventory",  "Accounts",
         // Loop through checkboxes by their IDs
         // const checkboxIds = ["e_acco", "e_manu", "e_hr", "e_lms"];
         const checkboxIds = ["Sales","Purchase","Inventory",  "Accounts",
-    "Human Resources (HR)",
-    "Projects",
-    "CRM",
-    "Manufacturing",
-    "Website",
-    "Support",
-    "Asset Management",
-    "Healthcare",
-    "LMS (Learning Management System)"
+            "Human Resources (HR)",
+            "Projects",
+            "CRM",
+            "Manufacturing",
+            "Website",
+            "Support",
+            "Asset Management",
+            "Healthcare",
+            "LMS (Learning Management System)"
         ];
         checkboxIds.forEach((id) => {
             const checkbox = document.getElementById(id);
-            if (checkbox.checked) {
-                selected_module.push({"module_name": checkbox.value});
+            if (checkbox){
+                if (checkbox.checked) {
+                    selected_module.push({"module_name": checkbox.value});
+                }
             }
         });
 
@@ -653,6 +769,7 @@ var checkboxes = ["Sales","Purchase","Inventory",  "Accounts",
                 "px-2 pt-2 mr-5 mt-5",
                 message,
                 [],
+                '',
                 []
             );
             erpnext()
@@ -663,10 +780,49 @@ var checkboxes = ["Sales","Purchase","Inventory",  "Accounts",
                 "px-2 pt-2 mr-5 mt-5 -mb-3",
                 message,
                 [],
+                '',
                 []
             );
             set_get_user_name_bot_message();
         }
+    }
+
+    function e_module_custom(){
+        need_customization = 1
+        selected_module = [];
+        // Loop through checkboxes by their IDs
+        // const checkboxIds = ["e_acco", "e_manu", "e_hr", "e_lms"];
+        const checkboxIds = ["Sales","Purchase","Inventory",  "Accounts",
+            "Human Resources (HR)",
+            "Projects",
+            "CRM",
+            "Manufacturing",
+            "Website",
+            "Support",
+            "Asset Management",
+            "Healthcare",
+            "LMS (Learning Management System)"
+        ];
+        checkboxIds.forEach((id) => {
+            const checkbox = document.getElementById(id);
+            if (checkbox){
+                if (checkbox.checked) {
+                    selected_module.push({"module_name": checkbox.value});
+                }
+            }
+        });
+
+      
+            var message = `Please provide information about your customization.`;
+            create_bot_message_div(
+                "messages",
+                "px-2 pt-2 mr-5 mt-5 -mb-3",
+                message,
+                [],
+                '',
+                []
+            );
+
     }
 
     // Auto Message Button Actions Service Now
@@ -677,53 +833,62 @@ var checkboxes = ["Sales","Purchase","Inventory",  "Accounts",
         // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': s_account, 'button_class': 'border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5'},
         //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': s_manufacturing, 'button_class': 'border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5'}]
 
-        // var message = "Which Service Now Module You Want To Impliment ?"
+        // var message = "Which Service Now Module You Want To Implement ?"
         // create_bot_message_div('messages', 'px-2 pt-2 mr-5 mt-5', message, '10:00 AM', buttons)
 
         var buttons = [
             {
                 button_id: "s_modeule_check_confirm",
-                button_label: "confirm",
+                button_label: "Confirm",
                 button_click_action: s_module_check_confirm,
                 button_class:
                     "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
             },
+
+            {
+                button_id: "service_now_custom",
+                button_label: "Customization",
+                button_click_action: s_module_custom,
+                button_class:
+                    "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
+            }
         ];
         // var checkboxes = [{"value": "Accounting", "id": "s_acco"}, {"value": "Manufacturing", "id": "s_manu"}, {"value": "HR & Payroll", "id": "s_hr"}, {"value": "LMS", "id": "s_lms"}]
         // var checkboxes = ["Accounting", "Manufacturing", "HR & Payroll", "LMS"];
 
         var checkboxes = [
-    "Incident Management",
-    "Problem Management",
-    "Service Catalog",
-    "Asset Management",
-    "Service Portal",
-    "CMDB (Configuration Management Database)",
-    "Security Incident Response",
-    "HR Service Delivery",
-    "Customer Service Management (CSM)",
-    "IT Operations Management (ITOM)",
-    "IT Business Management (ITBM)",
-    "GRC (Governance, Risk, and Compliance)",
-    "Performance Analytics",
-    "AI and Chatbots",
-    "Field Service Management",
-    "Financial Management",
-    "Vendor Risk Management",
-    "Project Portfolio Management (PPM)",
-    "Cloud Management",
-    "DevOps",
-]
+            "Incident Management",
+            "Problem Management",
+            "Service Catalog",
+            "Asset Management",
+            "Service Portal",
+            "CMDB (Configuration Management Database)",
+            "Security Incident Response",
+            "HR Service Delivery",
+            "Customer Service Management (CSM)",
+            "IT Operations Management (ITOM)",
+            "IT Business Management (ITBM)",
+            "GRC (Governance, Risk, and Compliance)",
+            "Performance Analytics",
+            "AI and Chatbots",
+            "Field Service Management",
+            "Financial Management",
+            "Vendor Risk Management",
+            "Project Portfolio Management (PPM)",
+            "Cloud Management",
+            "DevOps",
+        ]
 
 
 
-        var message = "Which Service Module You Want To Impliment ?";
+        var message = "Which Service Module You Want To Implement ?";
         // create_bot_message_div('messages', 'px-2 pt-2 mr-5 mt-5', message, '10:00 AM', buttons)
         create_bot_message_div(
             "messages",
             "px-2 pt-2 mr-5 mt-5",
             message,
             buttons,
+            '',
             checkboxes
         );
     }
@@ -739,29 +904,31 @@ var checkboxes = ["Sales","Purchase","Inventory",  "Accounts",
         //     "LMS",
         // ];
         var checkboxIds = [ "Incident Management",
-    "Problem Management",
-    "Service Catalog",
-    "Asset Management",
-    "Service Portal",
-    "CMDB (Configuration Management Database)",
-    "Security Incident Response",
-    "HR Service Delivery",
-    "Customer Service Management (CSM)",
-    "IT Operations Management (ITOM)",
-    "IT Business Management (ITBM)",
-    "GRC (Governance, Risk, and Compliance)",
-    "Performance Analytics",
-    "AI and Chatbots",
-    "Field Service Management",
-    "Financial Management",
-    "Vendor Risk Management",
-    "Project Portfolio Management (PPM)",
-    "Cloud Management",
-    "DevOps",]
+            "Problem Management",
+            "Service Catalog",
+            "Asset Management",
+            "Service Portal",
+            "CMDB (Configuration Management Database)",
+            "Security Incident Response",
+            "HR Service Delivery",
+            "Customer Service Management (CSM)",
+            "IT Operations Management (ITOM)",
+            "IT Business Management (ITBM)",
+            "GRC (Governance, Risk, and Compliance)",
+            "Performance Analytics",
+            "AI and Chatbots",
+            "Field Service Management",
+            "Financial Management",
+            "Vendor Risk Management",
+            "Project Portfolio Management (PPM)",
+            "Cloud Management",
+            "DevOps",]
         checkboxIds.forEach((id) => {
             const checkbox = document.getElementById(id);
-            if (checkbox.checked) {
-                selected_module.push({"module_name": checkbox.value});
+            if (checkbox){
+                if (checkbox.checked) {
+                    selected_module.push({"module_name": checkbox.value});
+                }
             }
         });
         if (selected_module.length === 0) {
@@ -771,6 +938,7 @@ var checkboxes = ["Sales","Purchase","Inventory",  "Accounts",
                 "px-2 pt-2 mr-5 mt-5",
                 message,
                 [],
+                '',
                 []
             );
             service_now()
@@ -782,10 +950,62 @@ var checkboxes = ["Sales","Purchase","Inventory",  "Accounts",
                 "px-2 pt-2 mr-5 mt-5 -mb-3",
                 message,
                 [],
+                '',
                 []
             );
             set_get_user_name_bot_message();
         }
+    }
+
+    function s_module_custom(){
+        need_customization = 1
+        selected_module = [];
+        // const checkboxIds = ["e_acco", "e_manu", "e_hr", "e_lms"];
+        // const checkboxIds = [
+        //     "Accounting",
+        //     "Manufacturing",
+        //     "HR & Payroll",
+        //     "LMS",
+        // ];
+        var checkboxIds = [ "Incident Management",
+            "Problem Management",
+            "Service Catalog",
+            "Asset Management",
+            "Service Portal",
+            "CMDB (Configuration Management Database)",
+            "Security Incident Response",
+            "HR Service Delivery",
+            "Customer Service Management (CSM)",
+            "IT Operations Management (ITOM)",
+            "IT Business Management (ITBM)",
+            "GRC (Governance, Risk, and Compliance)",
+            "Performance Analytics",
+            "AI and Chatbots",
+            "Field Service Management",
+            "Financial Management",
+            "Vendor Risk Management",
+            "Project Portfolio Management (PPM)",
+            "Cloud Management",
+            "DevOps",]
+        checkboxIds.forEach((id) => {
+            const checkbox = document.getElementById(id);
+            if (checkbox){
+                if (checkbox.checked) {
+                    selected_module.push({"module_name": checkbox.value});
+                }
+            }
+        });
+
+        var message = `Please provide information about your customization.`;
+            create_bot_message_div(
+                "messages",
+                "px-2 pt-2 mr-5 mt-5 -mb-3",
+                message,
+                [],
+                '',
+                []
+            );
+        
     }
 
     // Auto Message Button Actions ERPNext Customization
@@ -801,6 +1021,7 @@ var checkboxes = ["Sales","Purchase","Inventory",  "Accounts",
             "px-2 pt-2 mr-5 mt-5",
             message,
             [],
+            '',
             []
         );
     }
@@ -814,6 +1035,7 @@ var checkboxes = ["Sales","Purchase","Inventory",  "Accounts",
             "px-2 pt-2 mr-5 mt-5",
             message,
             [],
+            '',
             []
         );
     }
@@ -825,64 +1047,73 @@ var checkboxes = ["Sales","Purchase","Inventory",  "Accounts",
             "px-2 pt-2 mr-5 mt-5",
             message,
             [],
+            '',
             []
         );
     }
 
+    // send data to frappe backend
     function send_final_bot_message(email){
 
         // Function to get the user's IP address using ipify
-function getUserIPAddress() {
-    return fetch('https://api.ipify.org?format=json')
-        .then(response => response.json())
-        .then(data => data.ip)
-        .catch(error => {
-            console.error('Error fetching IP address:', error);
-            return null; // Handle the error gracefully
-        });
-}
+        function getUserIPAddress() {
+            return fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => data.ip)
+                .catch(error => {
+                    console.error('Error fetching IP address:', error);
+                    return null; // Handle the error gracefully
+                });
+        }
 
-// Use the function to get the IP address and then make your API request
-getUserIPAddress().then(ipAddress => {
-    if (ipAddress) {
-        fetch("https://sanskar.frappe.cloud/api/resource/Astro Site Chat", {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                email: user_details[1].email,
-                name1: user_details[0].name,
-                technology: selected_technology[0],
-                module: selected_module,
-                question_answer: questions_answer,
-                token: token,
-                is_owner: 1,
-                ip: ipAddress // Use the retrieved IP address
-            })
-        }).then((res) => {
-            if (res.status === 200) {
-                var message = `Thank you for providing your information. Our sales team will reach you soon at your email address. For any other details, you can reach us at info@sanskartechnolab.com.`;
-                create_bot_message_div(
-                    "messages",
-                    "px-2 pt-2 mr-5 mt-5",
-                    message,
-                    [],
-                    []
-                );
-                //   window.location.href="/thank-you"
+        // Use the function to get the IP address and then make your API request
+        getUserIPAddress().then(ipAddress => {
+            let { browserName, device } = detectBrowser();
+            console.log(browserName, device)
+            if (ipAddress) {
+                fetch("https://sanskar.frappe.cloud/api/resource/Astro Site Chat", {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        email: user_details[1].email,
+                        name1: user_details[0].name,
+                        technology: selected_technology[0],
+                        module: selected_module,
+                        question_answer: questions_answer,
+                        token: token,
+                        is_owner: 1,
+                        ip: ipAddress,
+                        browser_name: browserName,
+                        device: device,
+                        need_customization: need_customization
+                        
+                    })
+                }).then((res) => {
+                    if (res.status === 200) {
+                        var message = `Thank you for providing your information. Our sales team will reach you soon at your email address. For any other details, you can reach us at info@sanskartechnolab.com.`;
+                        create_bot_message_div(
+                            "messages",
+                            "px-2 pt-2 mr-5 mt-5",
+                            message,
+                            [],
+                            '',
+                            []
+                        );
+                        //   window.location.href="/thank-you"
+                    } else {
+                        alert("Failed");
+                    }
+                }).catch((error) => {
+                    console.log(error);
+                });
             } else {
-                alert("Failed");
+                // Handle the case where IP retrieval failed
+                alert("Failed to retrieve IP address");
             }
-        }).catch((error) => {
-            console.log(error);
         });
-    } else {
-        // Handle the case where IP retrieval failed
-        alert("Failed to retrieve IP address");
-    }
-});
 
 
         // fetch("https://sanskar.frappe.cloud/api/resource/Astro Site Chat",{
@@ -1013,7 +1244,7 @@ getUserIPAddress().then(ipAddress => {
                 .then((response) => response.json())
                 .then((data) => {
                     const ipAddress = data.ip;
-                    console.log("Public IP Address:", ipAddress);
+                    // console.log("Public IP Address:", ipAddress);
                     resolve(ipAddress); // Resolve the Promise with the IP address
                 })
                 .catch((error) => {
@@ -1023,16 +1254,83 @@ getUserIPAddress().then(ipAddress => {
         });
     }
 
+    // get browser and device name
+    function detectBrowser() {
+      const userAgent = navigator.userAgent;
+      var browserName = 'Unknown';
 
+      // Check for Chrome
+      if (userAgent.indexOf("Chrome") !== -1) {
+        browserName = "Google Chrome";
+      }
+      // Check for Firefox
+      else if (userAgent.indexOf("Firefox") !== -1) {
+        browserName = "Mozilla Firefox";
+      }
+      // Check for Safari
+      else if (userAgent.indexOf("Safari") !== -1) {
+        browserName = "Apple Safari";
+      }
+      // Check for Edge
+      else if (userAgent.indexOf("Edg") !== -1) {
+        browserName = "Microsoft Edge";
+      }
+      // Check for Internet Explorer
+      else if (
+        userAgent.indexOf("MSIE") !== -1 ||
+        userAgent.indexOf("Trident") !== -1
+      ) {
+        browserName = "Internet Explorer";
+      }
+
+      // Log the detected browser to the console
+    //   console.log(`Detected browser: ${browserName}`);
+
+      // Detect the device type based on screen size
+      const screenWidth = window.innerWidth;
+      var device = 'Unknown'
+      if (screenWidth <= 576) {
+        device = 'Mobile'
+      } else if (screenWidth <= 992) {
+        device = 'Tablet'
+      } else if (screenWidth <= 1200) {
+        device = 'Laptop'
+      } else {
+        device = 'Desktop'
+      }
+
+      return { browserName, device }
+    }
 
     // Usage example Socket IO
     get_ip()
         .then((ipAddress) => {
-            console.log("Received IP Address:", ipAddress);
+            // console.log("Received IP Address:", ipAddress);
         })
         .catch((error) => {
             console.error("Error:", error);
         });
+        
+    // Function to disable checkboxes within a specific message div
+    function disablePreviousInputs() {
+        const messageDiv = document.getElementById("messages");
+        if (messageDiv) {
+            const checkboxes = messageDiv.querySelectorAll('input[type="checkbox"]');
+            const buttons = messageDiv.querySelectorAll('button');
+            if (checkboxes.length > 0) {
+            // Disable all checkboxes and buttons except the last one
+                for (let i = 0; i < checkboxes.length; i++) {
+                    checkboxes[i].disabled = true;
+                }
+            }
+            if ( buttons.length > 0){
+                for (let i = 0; i < buttons.length; i++) {
+                    buttons[i].disabled = true;
+                }
+            }
+        }
+    }
+
 
     chat_message.addEventListener("focus", remove_error_class);
 
@@ -1040,35 +1338,9 @@ getUserIPAddress().then(ipAddress => {
     chat_icon.addEventListener("click", show_popup);
     close_btn.addEventListener("click", close_popup);
 
-    const socket = io.connect("http://migoo.in:9000");
+    // const socket = io.connect("http://migoo.in:9000");
 
     // Replace with your server's URL
 
 </script>
 
-<!-- <script>
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                const latitude = position.coords.latitude;
-                const longitude = position.coords.longitude;
-
-                // Make a request to a reverse geocoding API to get the country
-                fetch(
-                    `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=YOUR_API_KEY`
-                )
-                    .then((response) => response.json())
-                    .then((data) => {
-                        const country = data.results[0].components.country;
-                        console.log("country", country);
-                    })
-                    .catch((error) => console.error(error));
-            });
-        } else {
-            console.log("Geolocation is not supported by this browser.");
-        }
-    }
-
-    // Call the getLocation function when the page loads
-    window.onload = getLocation;
-</script> -->
