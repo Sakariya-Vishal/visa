@@ -1642,6 +1642,7 @@ import close from "../../public/Images/popup_close_btn.svg";
     const mainContainer = document.createElement("div");
     mainContainer.classList.add(
       "flex",
+      "flex-wrap",
       "justify-between",
       "items-center",
       "border",
@@ -1660,6 +1661,7 @@ import close from "../../public/Images/popup_close_btn.svg";
 
     // Create the left content div
     const leftContent = document.createElement("div");
+    leftContent.classList.add("w-full", "lg:w-9/12")
 
     // Create and append the first sub-container in the left content
     const subContainer1 = document.createElement("div");
@@ -1758,7 +1760,9 @@ import close from "../../public/Images/popup_close_btn.svg";
       "lg:px-5",
       "py-2",
       "md:py-2",
-      "lg:py-3"
+      "lg:py-3",
+      "lg:mt-auto",
+      "mt-3"
     );
 
     // Create the "Apply Now" button
@@ -2260,6 +2264,7 @@ import close from "../../public/Images/popup_close_btn.svg";
         phoneNameValue === "" ||
         fileNameValue === ""
       ) {
+        enableUserInteractions()
         return;
       }
       // if (cityNameValue === '') {

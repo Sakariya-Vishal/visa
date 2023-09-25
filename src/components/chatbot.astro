@@ -233,7 +233,7 @@ import "../styles.css";
         if (checkboxes.length === 0) {
         } else {
             checkboxSpan.className =
-                "grid grid-cols-1 justify-items-start mt-3";
+                "grid grid-cols-1 md:gap-auto gap-1 justify-items-start mt-3";
             const selectedValues = document.getElementById("selectedValues");
 
             // const options = checkboxes;
@@ -355,7 +355,7 @@ import "../styles.css";
         outerDiv.appendChild(messageParagraph);
         outerDiv.appendChild(checkboxSpan);
         if (checkboxes.length !== 0) {
-            outerDiv.appendChild(showMoreButton);
+            outerDiv.appendChild(showMoreButton);   
             outerDiv.appendChild(document.createElement("br"))
         }
         outerDiv.appendChild(btn_div);
@@ -670,18 +670,18 @@ import "../styles.css";
         //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': e_manufacturing, 'button_class': 'border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5'}]
         var buttons = [
             {
-                button_id: "e_module_check_confirm",
-                button_label: "Confirm",
-                button_click_action: e_module_check_confirm,
-                button_class:
-                    "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
-            },
-            {
                 button_id: "erpnext_custom",
                 button_label: "Customazation",
                 button_click_action: e_module_custom,
                 button_class:
                     "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
+            },
+            {
+                button_id: "e_module_check_confirm",
+                button_label: "Confirm",
+                button_click_action: e_module_check_confirm,
+                button_class:
+                    "border bg-blue-500 text-white px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
             },
             // {
             //     button_id: "show_more",
@@ -715,16 +715,20 @@ import "../styles.css";
 //     "LMS (Learning Management System)"
 // ]
 
-    var checkboxes = ["Sales","Purchase","Inventory",  "Accounts",
-        "Human Resources (HR)",
-        "Projects",
-        "CRM",
+    var checkboxes = [
         "Manufacturing",
+        "Inventory",  
+        "Human Resources (HR)",
+        "CRM",
+        "Projects",
+        "Accounts",
+        "Sales",
+        "Purchase",
         "Website",
         "Support",
+        "LMS (Learning Management System)",
         "Asset Management",
-        "Healthcare",
-        "LMS (Learning Management System)"
+        "Healthcare"
     ]
         var message = "Which ERPNext Module You Want To Implement ?";
         // create_bot_message_div('messages', 'px-2 pt-2 mr-5 mt-5', message, '10:00 AM', buttons)
@@ -742,17 +746,21 @@ import "../styles.css";
         selected_module = [];
         // Loop through checkboxes by their IDs
         // const checkboxIds = ["e_acco", "e_manu", "e_hr", "e_lms"];
-        const checkboxIds = ["Sales","Purchase","Inventory",  "Accounts",
-            "Human Resources (HR)",
-            "Projects",
-            "CRM",
-            "Manufacturing",
-            "Website",
-            "Support",
-            "Asset Management",
-            "Healthcare",
-            "LMS (Learning Management System)"
-        ];
+        const checkboxIds = [
+        "Manufacturing",
+        "Inventory",  
+        "Human Resources (HR)",
+        "CRM",
+        "Projects",
+        "Accounts",
+        "Sales",
+        "Purchase",
+        "Website",
+        "Support",
+        "LMS (Learning Management System)",
+        "Asset Management",
+        "Healthcare"
+    ]
         checkboxIds.forEach((id) => {
             const checkbox = document.getElementById(id);
             if (checkbox){
@@ -792,17 +800,21 @@ import "../styles.css";
         selected_module = [];
         // Loop through checkboxes by their IDs
         // const checkboxIds = ["e_acco", "e_manu", "e_hr", "e_lms"];
-        const checkboxIds = ["Sales","Purchase","Inventory",  "Accounts",
-            "Human Resources (HR)",
-            "Projects",
-            "CRM",
-            "Manufacturing",
-            "Website",
-            "Support",
-            "Asset Management",
-            "Healthcare",
-            "LMS (Learning Management System)"
-        ];
+        const checkboxIds = [
+        "Manufacturing",
+        "Inventory",  
+        "Human Resources (HR)",
+        "CRM",
+        "Projects",
+        "Accounts",
+        "Sales",
+        "Purchase",
+        "Website",
+        "Support",
+        "LMS (Learning Management System)",
+        "Asset Management",
+        "Healthcare"
+    ]
         checkboxIds.forEach((id) => {
             const checkbox = document.getElementById(id);
             if (checkbox){
@@ -838,20 +850,19 @@ import "../styles.css";
 
         var buttons = [
             {
-                button_id: "s_modeule_check_confirm",
-                button_label: "Confirm",
-                button_click_action: s_module_check_confirm,
-                button_class:
-                    "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
-            },
-
-            {
                 button_id: "service_now_custom",
                 button_label: "Customization",
                 button_click_action: s_module_custom,
                 button_class:
                     "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
-            }
+            },
+            {
+                button_id: "s_modeule_check_confirm",
+                button_label: "Confirm",
+                button_click_action: s_module_check_confirm,
+                button_class:
+                    "border bg-blue-500 text-white px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
+            },
         ];
         // var checkboxes = [{"value": "Accounting", "id": "s_acco"}, {"value": "Manufacturing", "id": "s_manu"}, {"value": "HR & Payroll", "id": "s_hr"}, {"value": "LMS", "id": "s_lms"}]
         // var checkboxes = ["Accounting", "Manufacturing", "HR & Payroll", "LMS"];
@@ -859,7 +870,6 @@ import "../styles.css";
         var checkboxes = [
             "Incident Management",
             "Problem Management",
-            "Service Catalog",
             "Asset Management",
             "Service Portal",
             "CMDB (Configuration Management Database)",
@@ -905,12 +915,11 @@ import "../styles.css";
         // ];
         var checkboxIds = [ "Incident Management",
             "Problem Management",
-            "Service Catalog",
             "Asset Management",
+            "HR Service Delivery",
             "Service Portal",
             "CMDB (Configuration Management Database)",
             "Security Incident Response",
-            "HR Service Delivery",
             "Customer Service Management (CSM)",
             "IT Operations Management (ITOM)",
             "IT Business Management (ITBM)",
@@ -969,7 +978,6 @@ import "../styles.css";
         // ];
         var checkboxIds = [ "Incident Management",
             "Problem Management",
-            "Service Catalog",
             "Asset Management",
             "Service Portal",
             "CMDB (Configuration Management Database)",
