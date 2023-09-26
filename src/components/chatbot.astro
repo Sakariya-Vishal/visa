@@ -15,6 +15,7 @@ import "../styles.css";
     <Image loading="eager" src={chat} alt="chatbot" />
 </div>
 
+
 <!-- chat popup -->
 <div class="bg-white box hidden fixed bottom-2 right-2 left-2 md:bottom-2 md:right-2 md:left-auto z-30" id="chat_popup">
     <Image
@@ -25,7 +26,7 @@ import "../styles.css";
     />
 
     <div
-        class="lg:h-[30rem] md:h-[70vh] h-[70vh] lg:w-96 md:w-[26rem] w-full"
+        class="lg:h-[30rem] md:h-[70vh] h-[70vh] lg:w-80 md:w-[26rem] w-full"
         id="a"
     >
         <div
@@ -75,13 +76,14 @@ import "../styles.css";
 
     <form class="flex gap-2 items-center p-2" id="chat_form">
         <input
-            class="w-10/12 rounded-[10px] text-[#333333] border-none bg-[#F6F9FB]"
+            class="w-11/12 rounded-[10px] text-[#333333] border-none bg-[#F6F9FB]"
             type="text"
-            placeholder="Message"
+            placeholder="Please select from the options"
             name="chat_message"
             id="chat_message"
+            disabled
         />
-        <button class="w-2/12">
+        <button class="w-1/12" id="send_button" disabled>
             <Image loading="eager" src={chat_send_btn} alt="chatbot" />
         </button>
     </form>
@@ -102,9 +104,23 @@ import "../styles.css";
 #messages::-webkit-scrollbar-thumb {
     background-color: #3E96F4; 
 }
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
 </style>
 
 <script>
+
+
     var token = window.localStorage.getItem("chat_token");
     if (!token) {
         window.localStorage.setItem(
@@ -122,6 +138,7 @@ import "../styles.css";
     const chat_popup = document.getElementById("chat_popup");
     const close_btn = document.getElementById("close_btn");
     const chat_message = document.getElementById("chat_message");
+    const send_button = document.getElementById("send_button");
     var form = document.getElementById("chat_form");
 
     // var e_selected_module = []
@@ -139,6 +156,7 @@ import "../styles.css";
         message
     ) {
         scrollToBottom()
+
         const container = document.getElementById(parent_id);
 
         // Create the outermost div element with classes
@@ -183,17 +201,50 @@ import "../styles.css";
         outerDiv.appendChild(innerFlexContainer);
         container.appendChild(outerDiv);
         scrollToBottom()
+
+
+        chat_message.placeholder='Please select from the options';
+        chat_message.disabled = true;
+        send_button.disabled = true;
+
     }
 
+    // function delay(ms) {
+    //     return new Promise(resolve => setTimeout(resolve, ms));
+    //     }
+
+    //     async function firstFunction() {
+    //     console.log("First function started");
+    //     await delay(2000); // Wait for 2 seconds
+    //     console.log("First function completed");
+    //     }
+
+    //     async function secondFunction() {
+    //     console.log("Second function started");
+    //     // Perform some tasks after the delay
+    //     console.log("Second function completed");
+    //     }
+
+    //     async function runFunctions() {
+    //     await firstFunction(); // Wait for the first function to complete
+    //     await secondFunction(); // Start the second function only after the first one has completed
+    //     }
+
+    //     runFunctions();
+
+
+
     // Auto Create Message Design Of Bot.
-    function create_bot_message_div(
+    async function create_bot_message_div(
         parent_id,
         outerDivClasses,
         message,
         buttons = [],
         button_parent_class = 'grid justify-items-start',
         checkboxes = [],
+        timeout = 3000
     ) {
+
         scrollToBottom()
         disablePreviousInputs()
 
@@ -203,8 +254,23 @@ import "../styles.css";
         outerDiv.className = outerDivClasses;
 
         const messageParagraph = document.createElement("p");
+        // messageParagraph.id = "messageParagraph"
+        messageParagraph.className = "p-4"
+        messageParagraph.textContent = "..."
+        outerDiv.appendChild(messageParagraph)
+        parent.appendChild(outerDiv)
+        scrollToBottom()
+        
+        // setInterval(() => {
+            messageParagraph.style.animation = 'fadeInOut 1.5s infinite';
+            // }, 100);
+            
+        await new Promise(resolve => setTimeout(resolve, timeout));
+        
         messageParagraph.className =
             "text-[#31393C] bg-[#F6F9FB] text-xs lg:text-base md:text-sm p-4 py-2 rounded-r-[10px] rounded-b-[10px] inline-block";
+        messageParagraph.style.animation = '';
+       
         messageParagraph.textContent = message;
 
         const btn_div = document.createElement("span");
@@ -367,7 +433,7 @@ import "../styles.css";
         
     }
 
-    function auto_message(send_hello=false) {
+    async function start_auto_message(send_hello=false) {
         scrollToBottom()
         var buttons = [
             {
@@ -375,40 +441,44 @@ import "../styles.css";
                 button_label: "ERPNext",
                 button_click_action: erpnext,
                 button_class:
-                    "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             },
             {
                 button_id: "service_now",
-                button_label: "Service Now",
+                button_label: "ServiceNow",
                 button_click_action: service_now,
                 button_class:
-                    "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             },
             {
                 button_id: "customization",
                 // button_label: "Customization",
-                button_label: "Other",
+                button_label: "Something Else",
                 button_click_action: customization,
                 button_class:
-                    "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             },
         ];
         var message1 = "Hello, How Are You ?";
         var message = "What Are You Looking For ?";
        
         if (send_hello){
-        create_bot_message_div(
-            "messages",
-            "px-2 pt-2 mr-5 mt-5",
-            message1,
-        );
+            await create_bot_message_div(
+                "messages",
+                "px-2 pt-2 mr-5 mt-5",
+                message1,
+                [],
+                '',
+                [],
+                1000
+            );
         }
-        create_bot_message_div(
-            "messages",
-            "px-2 pt-2 mr-5",
-            message,
-            buttons,
-        );
+           await create_bot_message_div(
+                "messages",
+                "px-2 pt-2 mr-5",
+                message,
+                buttons,
+            );
     }
 
     function get_messages() {
@@ -520,7 +590,7 @@ import "../styles.css";
     }
 
 
-    function send_message(e) {
+    async function send_message(e) {
         e.preventDefault();
         const formData = new FormData(e.target);
         const data = Object.fromEntries(formData.entries());
@@ -540,7 +610,7 @@ import "../styles.css";
             if (
                 question ===
                 // "Please Give Some Details About Your Customization."
-                "Please Give Some Details About Your Requirement."
+                "Please provide brief about your requirements. "
             ) {
                 questions_answer.push({ question: question, answer: message });
                 chat_message.value = "";
@@ -550,7 +620,7 @@ import "../styles.css";
                     message
                 );
                 var message1 = `Please provide your contact information so we can reach out to you.`;
-                create_bot_message_div(
+                await create_bot_message_div(
                     "messages",
                     "px-2 pt-2 mr-5 mt-5 -mb-3",
                     message1,
@@ -562,7 +632,7 @@ import "../styles.css";
                
             }
             
-            else if (question === "Please provide information about your customization.") {
+            else if (question === "Please Provide brief about your customization.") {
                 questions_answer.push({question: question, answer: message})
                 chat_message.value = "";
                 create_user_message_div(
@@ -572,7 +642,7 @@ import "../styles.css";
                 );
 
                 var message1 = `Please provide your contact information so we can reach out to you.`;
-                create_bot_message_div(
+                await create_bot_message_div(
                     "messages",
                     "px-2 pt-2 mr-5 mt-5 -mb-3",
                     message1,
@@ -619,7 +689,7 @@ import "../styles.css";
             else {
                 chat_message.value = "";
                 var message1 = 'Sorry I Can`t Understand You. Please Enter / Select Currect Value.';
-                create_bot_message_div(
+               await create_bot_message_div(
                     "messages",
                     "px-2 pt-2 mr-5 mt-5",
                     message1,
@@ -627,7 +697,7 @@ import "../styles.css";
                     '',
                     []
                 );
-                auto_message()
+                start_auto_message()
             }
 
 
@@ -664,31 +734,37 @@ import "../styles.css";
     // Auto Message Button Actions ERPNext
 
     function erpnext() {
+        create_user_message_div(
+            "messages",
+            "px-2 pt-2 text-right ml-5 mt-5",
+            "ERPNext"
+        );
+
         selected_technology = [];
         selected_technology.push("ERPNext");
-        // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': e_account, 'button_class': 'border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5'},
-        //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': e_manufacturing, 'button_class': 'border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5'}]
+        // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': e_account, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'},
+        //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': e_manufacturing, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'}]
         var buttons = [
             {
                 button_id: "erpnext_custom",
                 button_label: "Customazation",
                 button_click_action: e_module_custom,
                 button_class:
-                    "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             },
             {
                 button_id: "e_module_check_confirm",
                 button_label: "Confirm",
                 button_click_action: e_module_check_confirm,
                 button_class:
-                    "border bg-blue-500 text-white px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
+                    "border bg-[#3E96F4] text-white px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#b2d5fb]",
             },
             // {
             //     button_id: "show_more",
             //     button_label: "Show More",
             //     button_click_action: e_module_custom,
             //     button_class:
-            //         "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
+            //         "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             // }
 
         ];
@@ -742,7 +818,7 @@ import "../styles.css";
         );
     }
 
-    function e_module_check_confirm() {
+    async function e_module_check_confirm() {
         selected_module = [];
         // Loop through checkboxes by their IDs
         // const checkboxIds = ["e_acco", "e_manu", "e_hr", "e_lms"];
@@ -771,19 +847,20 @@ import "../styles.css";
         });
 
         if (selected_module.length === 0) {
-            var message = "Please Select Module For ERPNext.";
-            create_bot_message_div(
-                "messages",
-                "px-2 pt-2 mr-5 mt-5",
-                message,
-                [],
-                '',
-                []
-            );
-            erpnext()
+            chat_message.placeholder='Please select at least one module';
+            // var message = "Please Select Module For ERPNext.";
+            // await create_bot_message_div(
+            //     "messages",
+            //     "px-2 pt-2 mr-5 mt-5",
+            //     message,
+            //     [],
+            //     '',
+            //     []
+            // );
+            // erpnext()
         } else {
             var message = `Please provide your contact information so we can reach out to you.`;
-            create_bot_message_div(
+           await create_bot_message_div(
                 "messages",
                 "px-2 pt-2 mr-5 mt-5 -mb-3",
                 message,
@@ -795,7 +872,12 @@ import "../styles.css";
         }
     }
 
-    function e_module_custom(){
+    async function e_module_custom(){
+        create_user_message_div(
+            "messages",
+            "px-2 pt-2 text-right ml-5 mt-5",
+            "Costomization"
+        );
         need_customization = 1
         selected_module = [];
         // Loop through checkboxes by their IDs
@@ -825,8 +907,8 @@ import "../styles.css";
         });
 
       
-            var message = `Please provide information about your customization.`;
-            create_bot_message_div(
+            var message = `Please Provide brief about your customization.`;
+            await create_bot_message_div(
                 "messages",
                 "px-2 pt-2 mr-5 mt-5 -mb-3",
                 message,
@@ -834,18 +916,27 @@ import "../styles.css";
                 '',
                 []
             );
+            // var chat_message = document.getElementById('chat_message')
+            chat_message.placeholder='message';
+            chat_message.disabled = false;
+            send_button.disabled = false;
 
     }
 
-    // Auto Message Button Actions Service Now
+    // Auto Message Button Actions ServiceNow
 
     function service_now() {
+        create_user_message_div(
+            "messages",
+            "px-2 pt-2 text-right ml-5 mt-5",
+            "ServiceNow"
+        );
         selected_technology = [];
-        selected_technology.push("Service Now");
-        // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': s_account, 'button_class': 'border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5'},
-        //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': s_manufacturing, 'button_class': 'border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5'}]
+        selected_technology.push("ServiceNow");
+        // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': s_account, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'},
+        //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': s_manufacturing, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'}]
 
-        // var message = "Which Service Now Module You Want To Implement ?"
+        // var message = "Which ServiceNow Module You Want To Implement ?"
         // create_bot_message_div('messages', 'px-2 pt-2 mr-5 mt-5', message, '10:00 AM', buttons)
 
         var buttons = [
@@ -854,40 +945,37 @@ import "../styles.css";
                 button_label: "Customization",
                 button_click_action: s_module_custom,
                 button_class:
-                    "border border-blue-500 text-blue-500 px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             },
             {
                 button_id: "s_modeule_check_confirm",
                 button_label: "Confirm",
                 button_click_action: s_module_check_confirm,
                 button_class:
-                    "border bg-blue-500 text-white px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5",
+                    "border bg-[#3E96F4] text-white px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#b2d5fb]",
             },
         ];
         // var checkboxes = [{"value": "Accounting", "id": "s_acco"}, {"value": "Manufacturing", "id": "s_manu"}, {"value": "HR & Payroll", "id": "s_hr"}, {"value": "LMS", "id": "s_lms"}]
         // var checkboxes = ["Accounting", "Manufacturing", "HR & Payroll", "LMS"];
 
         var checkboxes = [
-            "Incident Management",
-            "Problem Management",
-            "Asset Management",
-            "Service Portal",
-            "CMDB (Configuration Management Database)",
-            "Security Incident Response",
-            "HR Service Delivery",
-            "Customer Service Management (CSM)",
+            "IT Service Management (ITSM)",
             "IT Operations Management (ITOM)",
+            "IT Asset Management (ITAM)",
             "IT Business Management (ITBM)",
-            "GRC (Governance, Risk, and Compliance)",
-            "Performance Analytics",
-            "AI and Chatbots",
-            "Field Service Management",
-            "Financial Management",
-            "Vendor Risk Management",
-            "Project Portfolio Management (PPM)",
-            "Cloud Management",
-            "DevOps",
-        ]
+            "HR Service Delivery (HRSD)",
+            "Automated Test Framework (ATF)",
+            "Governance, Risk, and Compliance (GRC)",
+            "Performance Analytics (PA)",
+            "Security Operations (SecOps)",
+            "Customer Service Management (CSM)",
+            "Field Service Management (FSM)",
+            "Telecommunications Service Management (TSM)",
+            "Service Portal",
+            "Event Management",
+            "Orchestration",
+            "App Engine Studio"
+        ];
 
 
 
@@ -903,7 +991,7 @@ import "../styles.css";
         );
     }
 
-    function s_module_check_confirm() {
+    async function s_module_check_confirm() {
         // Loop through checkboxes by their IDs
         selected_module = [];
         // const checkboxIds = ["e_acco", "e_manu", "e_hr", "e_lms"];
@@ -913,25 +1001,24 @@ import "../styles.css";
         //     "HR & Payroll",
         //     "LMS",
         // ];
-        var checkboxIds = [ "Incident Management",
-            "Problem Management",
-            "Asset Management",
-            "HR Service Delivery",
-            "Service Portal",
-            "CMDB (Configuration Management Database)",
-            "Security Incident Response",
-            "Customer Service Management (CSM)",
+        var checkboxIds = [
+            "IT Service Management (ITSM)",
             "IT Operations Management (ITOM)",
+            "IT Asset Management (ITAM)",
             "IT Business Management (ITBM)",
-            "GRC (Governance, Risk, and Compliance)",
-            "Performance Analytics",
-            "AI and Chatbots",
-            "Field Service Management",
-            "Financial Management",
-            "Vendor Risk Management",
-            "Project Portfolio Management (PPM)",
-            "Cloud Management",
-            "DevOps",]
+            "HR Service Delivery (HRSD)",
+            "Automated Test Framework (ATF)",
+            "Governance, Risk, and Compliance (GRC)",
+            "Performance Analytics (PA)",
+            "Security Operations (SecOps)",
+            "Customer Service Management (CSM)",
+            "Field Service Management (FSM)",
+            "Telecommunications Service Management (TSM)",
+            "Service Portal",
+            "Event Management",
+            "Orchestration",
+            "App Engine Studio"
+        ];
         checkboxIds.forEach((id) => {
             const checkbox = document.getElementById(id);
             if (checkbox){
@@ -941,20 +1028,23 @@ import "../styles.css";
             }
         });
         if (selected_module.length === 0) {
-            var message = "Please Select Module For Service Now.";
-            create_bot_message_div(
-                "messages",
-                "px-2 pt-2 mr-5 mt-5",
-                message,
-                [],
-                '',
-                []
-            );
-            service_now()
+
+            chat_message.placeholder='Please select at least one module';
+
+            // var message = "Please Select Module For ServiceNow.";
+            // await create_bot_message_div(
+            //     "messages",
+            //     "px-2 pt-2 mr-5 mt-5",
+            //     message,
+            //     [],
+            //     '',
+            //     []
+            // );
+            // service_now()
         } else {
 
             var message = `Please provide your contact information so we can reach out to you.`;
-            create_bot_message_div(
+            await create_bot_message_div(
                 "messages",
                 "px-2 pt-2 mr-5 mt-5 -mb-3",
                 message,
@@ -966,7 +1056,12 @@ import "../styles.css";
         }
     }
 
-    function s_module_custom(){
+    async function s_module_custom(){
+        create_user_message_div(
+            "messages",
+            "px-2 pt-2 text-right ml-5 mt-5",
+            "Customization"
+        );
         need_customization = 1
         selected_module = [];
         // const checkboxIds = ["e_acco", "e_manu", "e_hr", "e_lms"];
@@ -976,25 +1071,24 @@ import "../styles.css";
         //     "HR & Payroll",
         //     "LMS",
         // ];
-        var checkboxIds = [ "Incident Management",
-            "Problem Management",
-            "Asset Management",
-            "Service Portal",
-            "CMDB (Configuration Management Database)",
-            "Security Incident Response",
-            "HR Service Delivery",
-            "Customer Service Management (CSM)",
-            "IT Operations Management (ITOM)",
-            "IT Business Management (ITBM)",
-            "GRC (Governance, Risk, and Compliance)",
-            "Performance Analytics",
-            "AI and Chatbots",
-            "Field Service Management",
-            "Financial Management",
-            "Vendor Risk Management",
-            "Project Portfolio Management (PPM)",
-            "Cloud Management",
-            "DevOps",]
+            var checkboxIds = [
+                "IT Service Management (ITSM)",
+                "IT Operations Management (ITOM)",
+                "IT Asset Management (ITAM)",
+                "IT Business Management (ITBM)",
+                "HR Service Delivery (HRSD)",
+                "Automated Test Framework (ATF)",
+                "Governance, Risk, and Compliance (GRC)",
+                "Performance Analytics (PA)",
+                "Security Operations (SecOps)",
+                "Customer Service Management (CSM)",
+                "Field Service Management (FSM)",
+                "Telecommunications Service Management (TSM)",
+                "Service Portal",
+                "Event Management",
+                "Orchestration",
+                "App Engine Studio"
+            ];
         checkboxIds.forEach((id) => {
             const checkbox = document.getElementById(id);
             if (checkbox){
@@ -1004,8 +1098,8 @@ import "../styles.css";
             }
         });
 
-        var message = `Please provide information about your customization.`;
-            create_bot_message_div(
+        var message = `Please Provide brief about your customization.`;
+            await create_bot_message_div(
                 "messages",
                 "px-2 pt-2 mr-5 mt-5 -mb-3",
                 message,
@@ -1013,18 +1107,27 @@ import "../styles.css";
                 '',
                 []
             );
+        // var chat_message = document.getElementById('chat_message')
+        chat_message.placeholder='message';
+        chat_message.disabled = false;
+        send_button.disabled = false;
         
     }
 
     // Auto Message Button Actions ERPNext Customization
 
-    function customization() {
+    async function customization() {
+        create_user_message_div(
+            "messages",
+            "px-2 pt-2 text-right ml-5 mt-5",
+            "Something Else"
+        );
         selected_technology = [];
         // selected_technology.push("Customization");
-        selected_technology.push("Other");
+        selected_technology.push("Something Else");
         // var message = 'Please Give Some Details About Your Customization.';
-        var message = 'Please Give Some Details About Your Requirement.';
-        create_bot_message_div(
+        var message = 'Please provide brief about your requirements. ';
+        await create_bot_message_div(
             "messages",
             "px-2 pt-2 mr-5 mt-5",
             message,
@@ -1032,32 +1135,44 @@ import "../styles.css";
             '',
             []
         );
+        // var chat_message = document.getElementById('chat_message')
+        chat_message.placeholder='message';
+        chat_message.disabled = false;
+        send_button.disabled = false;
     }
 
     //
 
-    function set_get_user_name_bot_message() {
+    async function set_get_user_name_bot_message() {
         var message = "What is Your Name ?";
-        create_bot_message_div(
+        await create_bot_message_div(
             "messages",
-            "px-2 pt-2 mr-5 mt-5",
+            "px-2 pt-2 mr-5 mt-5 hidden",
             message,
             [],
             '',
             []
         );
+        // var chat_message = document.getElementById('chat_message')
+        chat_message.placeholder='Enter Your Name';
+        chat_message.disabled = false;
+        send_button.disabled = false;
     }
 
-    function set_get_user_email_bot_message() {
+    async function set_get_user_email_bot_message() {
         var message = "What is Your Email Address ?";
-        create_bot_message_div(
+        await create_bot_message_div(
             "messages",
-            "px-2 pt-2 mr-5 mt-5",
+            "px-2 pt-2 mr-5 mt-5 hidden",
             message,
             [],
             '',
             []
         );
+        // var chat_message = document.getElementById('chat_message')
+        chat_message.placeholder='Enter Your Email';
+        chat_message.disabled = false;
+        send_button.disabled = false;
     }
 
     // send data to frappe backend
@@ -1102,14 +1217,26 @@ import "../styles.css";
                 }).then((res) => {
                     if (res.status === 200) {
                         var message = `Thank you for providing your information. Our sales team will reach you soon at your email address. For any other details, you can reach us at info@sanskartechnolab.com.`;
+                        var buttons = [{
+                            button_id: "start_over",
+                            button_label: "Start Over",
+                            button_click_action: start_over,
+                            button_class:
+                                "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 mt-5 hover:bg-[#3E96F4] hover:text-white",
+                        }]
                         create_bot_message_div(
                             "messages",
                             "px-2 pt-2 mr-5 mt-5",
                             message,
-                            [],
+                            buttons,
                             '',
                             []
                         );
+                        // var chat_message = document.getElementById('chat_message')
+                        chat_message.placeholder='Please select from the options';
+                        chat_message.disabled = true;
+                        send_button.disabled = true;
+                        
                         //   window.location.href="/thank-you"
                     } else {
                         alert("Failed");
@@ -1179,7 +1306,7 @@ import "../styles.css";
         chat_popup.classList.remove("hidden");
         chat_icon.classList.add("hidden");
 
-        auto_message(true);
+        start_auto_message(true);
         // get_messages()
         // const messages = document.getElementById("messages");
         // messages.scrollTop = messages.scrollHeight;
@@ -1241,7 +1368,6 @@ import "../styles.css";
 
     function scrollToBottom(){
         const messagesDiv = document.getElementById('messages');
-        console.log("message scroll", messagesDiv.scrollHeight)
         messagesDiv.scrollTop = 2000;
     }
 
@@ -1334,9 +1460,21 @@ import "../styles.css";
             if ( buttons.length > 0){
                 for (let i = 0; i < buttons.length; i++) {
                     buttons[i].disabled = true;
+                    buttons[i].classList.remove("hover:bg-[#3E96F4]", "hover:text-white", "hover:bg-[#b2d5fb]")
                 }
             }
         }
+    }
+
+    function start_over(){
+
+        const parent = document.getElementById("messages");
+        // parent.querySelectorAll('*').forEach(child => child.remove());
+        while (parent.firstChild) {
+            parent.removeChild(parent.firstChild);
+        }
+        
+        start_auto_message()
     }
 
 

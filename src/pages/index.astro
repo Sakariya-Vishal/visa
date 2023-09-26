@@ -108,7 +108,272 @@ import migoo_logo from "../../public/Images/migoo-logo.png";
 	,
 	canonical_href="https://sanskartechnolab.com/"
 >
-	
+
+
+<!-- Banner code with slider with next previous button -->
+<!-- <section
+class="hidden lg:flex section-bg h-[80vh] xl:h-[75vh] flex items-center banner-bg"
+>
+	<div class="mx-5 lg:mx-28 xl:mx-24 2xl:mx-72 swiper_banner_button relative !overflow-hidden">
+	<div class="flex justify-between flex flex-wrap mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
+        
+        <button
+          class="swiper-button-prev-banner absolute z-10 left-0 top-1/2 transform -translate-y-1/2 pb rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white"
+        >
+          <span class="sr-only">Previous Slide</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="lg:h-5 md:h-4 h-3 lg:w-5 md:w-4 w-3 rtl:rotate-180"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+          </svg>
+        </button>
+
+        <button
+          class="swiper-button-next-banner absolute z-10 right-0 top-1/2 transform -translate-y-1/2 nb rounded-full border border-[#3E96F4] p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white"
+        >
+          <span class="sr-only">Next Slide</span>
+          <svg
+            class="lg:h-5 md:h-4 h-3 lg:w-5 md:w-4 w-3 rtl:rotate-180"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 5l7 7-7 7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"></path>
+          </svg>
+        </button>
+      </div>
+<div class="swiper-wrapper ">
+  <div class="swiper-slide">
+	<div
+		  class="flex flex-wrap items-center mx-5 md:max-w-7xl md:mx-auto md:px-14 2xl:px-20"
+	  >
+		  <div class="w-full md:w-6/12">
+			  <h1
+				  class="text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] !leading-[2.25rem] md:!leading-[3.5rem] lg:leading-[4rem] text-[#31393C] font-extrabold"
+			  >
+			  The Leading ERPNext & ServiceNow Company!
+			  </h1>
+			  <p
+				  class="text-[#31393C] leading-7 font-normal text-sm md:text-base lg:text-lg mt-6"
+			  >
+			  Sanskar Technolabs can help you simplify your business
+			  operations by leveraging one-of-a-kind platforms!
+			  </p>
+			  <div
+				  class="mt-7 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
+			  >
+				  <a
+					  href="/contact-us"
+					  class="text-white text-base font-semibold font-inter"
+					  >Book A Free Demo Now!</a
+				  >
+				  <Image
+					  loading="eager"
+					  src={right}
+					  width={6}
+					  height={12}
+					  alt="right arrow "
+				  />
+			  </div>
+		  </div>
+
+		  <Image
+			  loading="eager"
+			  src={banner}
+			  alt="banner"
+			  class="w-full md:w-6/12"
+		  />
+	  </div></div><div class="swiper-slide">
+	<div
+		  class="flex flex-wrap items-center mx-5 md:max-w-7xl md:mx-auto md:px-14 2xl:px-20"
+	  >
+		  <div class="w-full md:w-6/12">
+			  <h1
+				  class="text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] !leading-[2.25rem] md:!leading-[3.5rem] lg:leading-[4rem] text-[#31393C] font-extrabold"
+			  >
+			  The Leading ERPNext & ServiceNow Company!
+			  </h1>
+			  <p
+				  class="text-[#31393C] leading-7 font-normal text-sm md:text-base lg:text-lg mt-6"
+			  >
+			  Sanskar Technolabs can help you simplify your business
+			  operations by leveraging one-of-a-kind platforms!
+			  </p>
+			  <div
+				  class="mt-7 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
+			  >
+				  <a
+					  href="/contact-us"
+					  class="text-white text-base font-semibold font-inter"
+					  >Book A Free Demo Now!</a
+				  >
+				  <Image
+					  loading="eager"
+					  src={right}
+					  width={6}
+					  height={12}
+					  alt="right arrow "
+				  />
+			  </div>
+		  </div>
+
+		  <Image
+			  loading="eager"
+			  src={banner}
+			  alt="banner"
+			  class="w-full md:w-6/12"
+		  />
+	  </div>
+	</div>
+
+</section> 
+
+<section
+class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
+>
+<div class="mx-5 md:mx-28 swiper_banner_button relative !overflow-hidden">
+	<div class="flex justify-between flex flex-wrap mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0">
+		<button
+		class="swiper-button-prev-banner absolute z-10 left-0 top-1/2 transform -translate-y-1/2 pb rounded-full border border-[#3E96F4] p-2 md:p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white"
+	  >
+		<span class="sr-only">Previous Slide</span>
+		<svg
+		  xmlns="http://www.w3.org/2000/svg"
+		  fill="none"
+		  viewBox="0 0 24 24"
+		  stroke-width="1.5"
+		  stroke="currentColor"
+		  class="h-3 md:h-4 lg:w-6 md:w-5 w-3 md:w-4 rtl:rotate-180"
+		>
+		  <path
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			d="M15.75 19.5L8.25 12l7.5-7.5"
+		  ></path>
+		</svg>
+	  </button>
+	  
+	  <button
+		class="swiper-button-next-banner absolute z-10 right-0 top-1/2 transform -translate-y-1/2 nb rounded-full border border-[#3E96F4] p-2 md:p-3 text-[#3E96F4] hover:bg-[#3E96F4] hover:text-white"
+	  >
+		<span class="sr-only">Next Slide</span>
+		<svg
+		  class="h-3 md:h-4 lg:w-6 md:w-5 w-3 md:w-4 rtl:rotate-180"
+		  fill="none"
+		  stroke="currentColor"
+		  viewBox="0 0 24 24"
+		  xmlns="http://www.w3.org/2000/svg"
+		>
+		  <path
+			d="M9 5l7 7-7 7"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			stroke-width="2"
+		  ></path>
+		</svg>
+	  </button>
+      </div>
+<div class="swiper-wrapper ">
+  <div class="swiper-slide">
+	<div
+		  class="flex flex-wrap items-center mx-10"
+	  >
+		  <div class="w-full lg:w-6/12">
+			  <div
+				  class="text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] !leading-[2.25rem] md:!leading-[3.5rem] lg:leading-[4rem] text-[#31393C] font-extrabold"
+			  >
+			  The Leading ERPNext & ServiceNow Company!
+	</div>
+			  <p
+				  class="text-[#31393C] leading-7 font-normal text-sm md:text-base lg:text-lg mt-3 md:mt-6"
+			  >
+			  Sanskar Technolabs can help you simplify your business
+			  operations by leveraging one-of-a-kind platforms!
+			  </p>
+			  <div
+				  class="mt-4 md:mt-7 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
+			  >
+				  <a
+					  href="/contact-us"
+					  class="text-white text-base font-semibold font-inter"
+					  >Book A Free Demo Now!</a
+				  >
+				  <Image
+					  loading="eager"
+					  src={right}
+					  width={6}
+					  height={12}
+					  alt="right arrow "
+				  />
+			  </div>
+		  </div>
+
+		  <Image
+			  loading="eager"
+			  src={banner}
+			  alt="banner"
+			  class="banner-image w-full"
+		  />
+	  </div></div><div class="swiper-slide">
+	<div
+		  class="flex flex-wrap items-center mx-10"
+	  >
+		  <div class="w-full lg:w-6/12">
+			  <div
+				  class="text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] !leading-[2.25rem] md:!leading-[3.5rem] lg:leading-[4rem] text-[#31393C] font-extrabold"
+			  >
+			  The Leading ERPNext & ServiceNow Company!
+	</div>
+			  <p
+				  class="text-[#31393C] leading-7 font-normal text-sm md:text-base lg:text-lg mt-3 md:mt-6"
+			  >
+			  Sanskar Technolabs can help you simplify your business
+			  operations by leveraging one-of-a-kind platforms!
+			  </p>
+			  <div
+				  class="mt-4 md:mt-7 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
+			  >
+				  <a
+					  href="/contact-us"
+					  class="text-white text-base font-semibold font-inter"
+					  >Book A Free Demo Now!</a
+				  >
+				  <Image
+					  loading="eager"
+					  src={right}
+					  width={6}
+					  height={12}
+					  alt="right arrow "
+				  />
+			  </div>
+		  </div>
+
+		  <Image
+			  loading="eager"
+			  src={banner}
+			  alt="banner"
+			  class="banner-image w-full"
+		  />
+	  </div>
+	</div>
+  </section>-->
+<!-- Banner code with slider with next previous button End Here -->
+
+
+
 <!-- Banner code with slider -->
 <section
 class="hidden lg:flex section-bg h-[80vh] xl:h-[75vh] flex items-center banner-bg"
@@ -123,13 +388,13 @@ class="hidden lg:flex section-bg h-[80vh] xl:h-[75vh] flex items-center banner-b
 			  <h1
 				  class="text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] !leading-[2.25rem] md:!leading-[3.5rem] lg:leading-[4rem] text-[#31393C] font-extrabold"
 			  >
-				  The Leading ERPNext & ServiceNow Company!
+			  The Leading ERPNext & ServiceNow Company!
 			  </h1>
 			  <p
 				  class="text-[#31393C] leading-7 font-normal text-sm md:text-base lg:text-lg mt-6"
 			  >
-				  Sanskar Technolab can help you simplify your business
-				  operations by leveraging one-of-a-kind platforms!
+			  Sanskar Technolabs can help you simplify your business
+			  operations by leveraging one-of-a-kind platforms!
 			  </p>
 			  <div
 				  class="mt-7 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
@@ -137,7 +402,7 @@ class="hidden lg:flex section-bg h-[80vh] xl:h-[75vh] flex items-center banner-b
 				  <a
 					  href="/contact-us"
 					  class="text-white text-base font-semibold font-inter"
-					  >Book a free demo now!</a
+					  >Book A Free Demo Now!</a
 				  >
 				  <Image
 					  loading="eager"
@@ -163,13 +428,13 @@ class="hidden lg:flex section-bg h-[80vh] xl:h-[75vh] flex items-center banner-b
 			  <h1
 				  class="text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] !leading-[2.25rem] md:!leading-[3.5rem] lg:leading-[4rem] text-[#31393C] font-extrabold"
 			  >
-				  The Leading ERPNext & ServiceNow Company!
+			  The Leading ERPNext & ServiceNow Company!
 			  </h1>
 			  <p
 				  class="text-[#31393C] leading-7 font-normal text-sm md:text-base lg:text-lg mt-6"
 			  >
-				  Sanskar Technolab can help you simplify your business
-				  operations by leveraging one-of-a-kind platforms!
+			  Sanskar Technolabs can help you simplify your business
+			  operations by leveraging one-of-a-kind platforms!
 			  </p>
 			  <div
 				  class="mt-7 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
@@ -177,7 +442,7 @@ class="hidden lg:flex section-bg h-[80vh] xl:h-[75vh] flex items-center banner-b
 				  <a
 					  href="/contact-us"
 					  class="text-white text-base font-semibold font-inter"
-					  >Book a free demo now!</a
+					  >Book A Free Demo Now!</a
 				  >
 				  <Image
 					  loading="eager"
@@ -213,13 +478,13 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 			  <div
 				  class="text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] !leading-[2.25rem] md:!leading-[3.5rem] lg:leading-[4rem] text-[#31393C] font-extrabold"
 			  >
-				  The Leading ERPNext & ServiceNow Company!
+			  The Leading ERPNext & ServiceNow Company!
 	</div>
 			  <p
 				  class="text-[#31393C] leading-7 font-normal text-sm md:text-base lg:text-lg mt-3 md:mt-6"
 			  >
-				  Sanskar Technolab can help you simplify your business
-				  operations by leveraging one-of-a-kind platforms!
+			  Sanskar Technolabs can help you simplify your business
+			  operations by leveraging one-of-a-kind platforms!
 			  </p>
 			  <div
 				  class="mt-4 md:mt-7 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
@@ -227,7 +492,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 				  <a
 					  href="/contact-us"
 					  class="text-white text-base font-semibold font-inter"
-					  >Book a free demo now!</a
+					  >Book A Free Demo Now!</a
 				  >
 				  <Image
 					  loading="eager"
@@ -253,13 +518,13 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 			  <div
 				  class="text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] !leading-[2.25rem] md:!leading-[3.5rem] lg:leading-[4rem] text-[#31393C] font-extrabold"
 			  >
-				  The Leading ERPNext & ServiceNow Company!
+			  The Leading ERPNext & ServiceNow Company!
 	</div>
 			  <p
 				  class="text-[#31393C] leading-7 font-normal text-sm md:text-base lg:text-lg mt-3 md:mt-6"
 			  >
-				  Sanskar Technolab can help you simplify your business
-				  operations by leveraging one-of-a-kind platforms!
+			  Sanskar Technolabs can help you simplify your business
+			  operations by leveraging one-of-a-kind platforms!
 			  </p>
 			  <div
 				  class="mt-4 md:mt-7 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 md:w-72 sm:w-auto"
@@ -267,7 +532,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 				  <a
 					  href="/contact-us"
 					  class="text-white text-base font-semibold font-inter"
-					  >Book a free demo now!</a
+					  >Book A Free Demo Now!</a
 				  >
 				  <Image
 					  loading="eager"
@@ -288,6 +553,9 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 	  </div>
 	</div>
   </section>
+  <!-- Banner code with slider End Here -->
+
+
 
 	<!-- Banner code without slider start -->
 		<!-- <section
@@ -305,7 +573,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					<p
 						class="text-[#31393C] leading-7 font-normal text-sm md:text-base lg:text-lg mt-6"
 					>
-						Sanskar Technolab can help you simplify your business
+						Sanskar Technolabs can help you simplify your business
 						operations by leveraging one-of-a-kind platforms!
 					</p>
 					<div
@@ -314,7 +582,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						<a
 							href="/contact-us"
 							class="text-white text-base font-semibold font-inter"
-							>Book a free demo now!</a
+							>Book A Free Demo Now!</a
 						>
 						<Image
 							loading="eager"
@@ -351,7 +619,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					<p
 						class="text-[#31393C] leading-7 font-normal text-sm md:text-base lg:text-lg mt-3 md:mt-6"
 					>
-						Sanskar Technolab can help you simplify your business
+						Sanskar Technolabs can help you simplify your business
 						operations by leveraging one-of-a-kind platforms!
 					</p>
 					<div
@@ -360,7 +628,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						<a
 							href="/contact-us"
 							class="text-white text-base font-semibold font-inter"
-							>Book a free demo now!</a
+							>Book A Free Demo Now!</a
 						>
 						<Image
 							loading="eager"
@@ -395,7 +663,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					<p
 						class="text[#31393C] text-sm md:text-lg leading-5 md:leading-6 mt-6"
 					>
-						Sanskar Technolab can help you simplify your <br /> business
+						Sanskar Technolabs can help you simplify your <br /> business
 						operations by leveraging one-of-a-kind platforms!
 					</p>
 					<div
@@ -404,7 +672,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						<a
 							 href="/contact-us"
 							class="text-white text-base font-semibold font-inter"
-							>Book a free demo now!</a
+							>Book A Free Demo Now!</a
 						>
 						<Image loading="eager"  
 							src={right}
@@ -432,14 +700,14 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					The Leading ERPNext & ServiceNow Company!
 				</h1>
 				<p class="text[#31393C] leading-7 text-lg mt-5">
-					Sanskar Technolab can help you simplify your business <br
+					Sanskar Technolabs can help you simplify your business <br
 					/> operations by leveraging one-of-a-kind platforms!
 				</p>
 				<div
 					class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-5 py-3 w-72"
 				>
 					<a href="#" class="text-white font-semibold"
-						>Book a free demo now!</a
+						>Book A Free Demo Now!</a
 					>
 					<img src="../../public/Images/right.svg" class="ml-0" />
 				</div>
@@ -459,7 +727,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 			<h2
 				class="text-2xl md:text-3xl lg:text-4xl text-[#3E96F4] font-bold"
 			>
-				Offering 360-Degree ERPNext & ServiceNow Services!
+			Offering 360-degree ERPNext & ServiceNow Solutions!
 			</h2>
 			<ul
 				class="text-sm md:text-base lg:text-lg text-[#31393C] font-semibold flex-none sm:flex flex-wrap justify-start md:justify-center lg:justify-center mt-5 mb-5"
@@ -476,10 +744,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 			</ul>
 
 			<p class="text-[#31393C] text-xs md:text-sm lg:text-base">
-				Optimize your business processes, satisfy your customers, and
-				ultimately boost your revenues by leveraging the <br /> best-in-class
-				platform such as ERPNEXT or serviceNow and trusted implementation
-				partner.
+				Optimize your business processes, satisfy your customers, and ultimately boost your revenues by leveraging the best-in-class platform, such as ERPNext or ServiceNow, and a trusted implementation partner.
 			</p>
 		</div>
 
@@ -529,7 +794,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 			<h2
 				class="text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] text-[#31393C] font-semibold shadow-none"
 			>
-				ERPNext - The Most Agile ERP on the Planet.
+			ERPNext - The Most Agile ERP on the Planet. 
 			</h2>
 			<p
 				class="text-sm md:text-base lg:text-lg mt-5 font-bold shadow-none"
@@ -568,7 +833,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 							src={Hr_payroll}
 							alt="HR_payroll"
 							class="mr-2"
-						/><p>HR & Payroll</p>
+						/><p>HR & payroll</p>
 					</div>
 					<div
 						class="bg-[#ffffff] flex shadow drop-shadow-lg rounded-[8px] border border-[#B5CBE3] font-semibold items-center text-sm md:text-base lg:text-lg p-3 module-shadow"
@@ -633,20 +898,15 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					class="sm:w-full md:w-full lg:w-4/12 text-xs md:text-sm lg:text-base text-[#31393C] mt-5 md:mt-5 lg:mt-0"
 				>
 					<p>
-						ERPNext is the feature-rich all-in-one enterprise
-						resource planning (ERP) solution that empowers
-						businesses to streamline and optimize their operations.
+						ERPNext is the feature-rich, all-in-one enterprise resource planning (ERP) solution that empowers businesses to streamline and optimize their operations.
 					</p>
 					<p
 						class="text-base md:text-lg lg:text-xl mt-5 mb-5 font-semibold"
 					>
-						Ready to leverage?
+					Ready to leverage?
 					</p>
 					<p>
-						Then, reach out to Sanskar Technolab. As an official
-						ERPNext services provider and top-notch ServiceNow
-						partner, we will understand your business requirements
-						and offer highly personalized solutions.
+						Then, reach out to Sanskar Technolabs. As an official ERPNext services provider and top-notch ServiceNow partner, we will understand your business requirements and offer highly personalized solutions.
 					</p>
 				</div>
 			</div>
@@ -659,8 +919,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 			<h2
 				class="text-[1.25rem] md:text-[1.50rem] lg:text-[1.75rem] text-[#31393C] font-semibold shadow-none"
 			>
-				Move to Cloud and tap into streamlined operations with
-				ServiceNow!
+			Move to Cloud and Tap Into Streamlined Operations With ServiceNow!
 			</h2>
 			<p
 				class="text-sm md:text-base lg:text-lg mt-5 font-bold shadow-none"
@@ -766,12 +1025,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					class="sm:w-full md:w-full lg:w-3/12 text-xs md:text-sm lg:text-base text-[#31393C] mt-5 md:mt-5 lg:mt-0"
 				>
 					<p>
-						ServiceNow is a popular cloud-based platform offering a
-						wide range of enterprise solutions to streamline and
-						automate business processes. It is a versatile platform
-						that can be customized to meet specific industry needs
-						while improving productivity, collaboration and customer
-						satisfaction.
+						ServiceNow is a popular cloud-based platform offering a wide range of enterprise solutions to streamline and automate business processes. It is a versatile platform that can be customized to meet specific industry needs while improving productivity, collaboration, and customer satisfaction.
 					</p>
 					<!-- <p
 							class="text-base md:text-lg lg:text-xl mt-5 mb-5 font-semibold"
@@ -779,10 +1033,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 							Ready to leverage?
 						</p> -->
 					<p class="mt-5">
-						If you are ready to move to the cloud for better
-						management and automation of your business activities,
-						reach out to Sanskar Technolab - your trusted
-						ServiceNow Implementation partner.
+						If you are ready to move to the Cloud for better management and automation of your business activities, reach out to Sanskar Technolabs - your trusted ServiceNow Implementation partner.
 					</p>
 				</div>
 			</div>
@@ -793,9 +1044,9 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 				id="servicenow_c"
 			>
 				<h2 class="text-[1.75rem] text-[#31393C] font-semibold">
-					Service Now - The Most Agile ERP on the Planet.
+					ServiceNow - The Most Agile ERP on the Planet.
 				</h2>
-				<p class="text-lg mt-5 font-bold">Service Now Modules</p>
+				<p class="text-lg mt-5 font-bold">ServiceNow Modules</p>
 				<div class="flex flex-wrap mt-5">
 					<div
 						class="sm:mr-0 md:mr-0 lg:mr-14 sm:w-full md:w-full lg:w-7/12 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 items-center"
@@ -872,7 +1123,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						class="sm:w-full md:w-full lg:w-4/12 text-[#31393C] mt-5 md:mt-5 lg:mt-0"
 					>
 						<p>
-							Service Now is the feature-rich all-in-one
+							ServiceNow is the feature-rich all-in-one
 							enterprise resource planning (ERP) solution that
 							empowers businesses to streamline and optimize their
 							operations.
@@ -882,7 +1133,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						</p>
 						<p>
 							Then, reach out to Sanskar Technolab. As an
-							official Service Now services provider and top-notch
+							official ServiceNow services provider and top-notch
 							ServiceNow partner, we will understand your business
 							requirements and offer highly personalized
 							solutions.
@@ -971,7 +1222,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 				<h2
 					class="text-2xl md:text-3xl lg:text-4xl text-[#3E96F4] font-bold"
 				>
-					Let our numbers do the talking!
+				Let Our Numbers Do The Talking! 
 				</h2>
 
 				<div
@@ -1055,7 +1306,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 									35%
 								</p>
 								<p class="text-[#31393C] font-semibold">
-									Client cost savings
+									client cost savings
 								</p>
 							</div>
 						</div>
@@ -1234,7 +1485,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 				<h2
 					class="text-2xl md:text-3xl lg:text-4xl text-[#3E96F4] font-bold"
 				>
-					Industries we have worked with so far!
+				Industries We Have Worked With So Far!
 				</h2>
 			</div>
 			<div
@@ -1408,13 +1659,10 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									We have worked with over 8+ manufacturing
-									companies for end-to-end ERPNEXT
-									implementation and they have <span
-										class="font-bold"
-										>saved up to 1000+ man hours,</span
-									> with optimized production processes, inventory
-									management, and supply chain operations.
+								We have worked with over 8+ manufacturing companies for end-to-end ERPNext implementation, and they have
+								<span class="font-bold"
+										>saved up to 1000+ man hours</span
+									> with optimized production processes, inventory management, and supply chain operations.
 								</p>
 								<ul
 									class="mt-2 md:mt-3 lg:mt-5 list-disc pl-5 text-xs md:text-sm lg:text-base custom-list"
@@ -1472,12 +1720,9 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									Our expertise in ERPNext and ServiceNow
-									implementation for over 5 textile companies
-									helped them <span class="font-bold"
+								Our expertise in ERPNext and ServiceNow implementation for over 5 textile companies helped them <span class="font-bold"
 										>save over 20% of costs</span
-									> by streamlining their operations and improving
-									overall business efficiency.
+									> by streamlining their operations and improving overall business efficiency.
 								</p>
 								<ul
 									class="mt-2 md:mt-3 lg:mt-5 list-disc pl-5 text-xs md:text-sm lg:text-base custom-list"
@@ -1536,14 +1781,10 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									Our team has deployed comprehensive
-									solutions for varied healthcare
-									organizations - leading to <span
+								Our team has deployed comprehensive solutions for varied healthcare organizations - leading to <span
 										class="font-bold"
-										>12% increase in overall business
-										efficiency,</span
-									> leading to better management of patient databases,
-									billing, and overall operational workflows.
+										>a 12% increase in overall business efficiency</span
+									> leading to better management of patient databases, billing, and overall operational workflows.
 								</p>
 								<ul
 									class="mt-2 md:mt-3 lg:mt-5 list-disc pl-5 text-xs md:text-sm lg:text-base custom-list"
@@ -1604,14 +1845,10 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									Retail stores have seen over <span
+								Retail stores have seen over <span
 										class="font-bold"
-										>24% increase in customer satisfaction</span
-									> after our ERPNEXT implementation services -
-									through comprehensive store management, inventory
-									tracking, customer relationship management, and
-									billing processes.
-								</p>
+										> 24% increase in customer satisfaction</span
+									> after our ERPNext implementation services - through comprehensive store management, inventory tracking, customer relationship management, and billing processes.</p>
 								<ul
 									class="mt-2 md:mt-3 lg:mt-5 list-disc pl-5 text-xs md:text-sm lg:text-base custom-list"
 								>
@@ -1668,12 +1905,10 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									We have implemented customized solutions for
-									construction companies, helping them to <span
+								We have implemented customized solutions for construction companies, helping them to <span
 										class="font-bold"
 										>save their crucial business resources</span
-									> with better management, tracking, billing and
-									other aspects of their projects.
+									> with better management, tracking, billing, and other financial aspects of their projects.
 								</p>
 								<ul
 									class="mt-2 md:mt-3 lg:mt-5 list-disc pl-5 text-xs md:text-sm lg:text-base custom-list"
@@ -1729,14 +1964,9 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									We have developed a full-fledged
-									crowdfunding platform connecting NGOs and
-									donors with best-in-class functionalities,
-									easy navigation and secure payments. Through
-									that platform and its easy navigation, <span
+								We have developed a full-fledged crowdfunding platform connecting NGOs and donors with best-in-class functionalities, easy navigation, and secure payments. Through that platform and its easy navigation, <span
 										class="font-bold"
-										>NGOs have raised over 60cr in just one
-										week.</span
+										>NGOs have raised over 60cr in just one week.</span
 									>
 								</p>
 								<!--<div
@@ -1784,13 +2014,10 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									Human Resources and consulting companies who
-									have collaborated with us have <span
+								Human Resources and consulting companies who have collaborated with us have <span
 										class="font-bold"
-										>saved 29% in costs and over 850+ man
-										hours</span
-									> through automation for recruitment processes,
-									onboarding, performance management, etc.
+										>saved 29% in costs and over 850+ man-hours</span
+									> through automation for recruitment processes, onboarding, performance management, etc.
 								</p>
 								<ul
 									class="mt-2 md:mt-3 lg:mt-5 list-disc pl-5 text-xs md:text-sm lg:text-base custom-list"
@@ -1848,12 +2075,9 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									We have catered to the unique requirements
-									of a few Ayurvedic companies, who have
-									experienced a <span class="font-bold"
+								We have catered to the unique requirements of a few Ayurvedic companies, who have experienced a <span class="font-bold"
 										>38% surge in total orders</span
-									> through our effective categorizations, database
-									management, inventory tracking and operations.
+									> through our effective categorizations, database management, inventory tracking, and operations.
 								</p>
 								<!--<div
 										class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 w-36"
@@ -1903,7 +2127,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 									>
 										We have worked with over 8+
 										manufacturing companies for end-to-end
-										ERPNEXT implementation and they have <span
+										ERPNext implementation and they have <span
 											class="font-bold"
 											>saved up to 1000+ man hours,</span
 										> with optimized production processes, inventory
@@ -1963,7 +2187,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 				<h2
 					class="text-2xl md:text-3xl lg:text-4xl text-[#31393C] font-semibold mb-5"
 				>
-					Industries we have worked with so far!
+				Industries We Have Worked With So Far!
 				</h2>
 				<div
 					class="flex justify-between items-center border-y py-2 gap-3 absolute z-10 w-full"
@@ -2040,13 +2264,10 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									We have worked with over 8+ manufacturing
-									companies for end-to-end ERPNEXT
-									implementation and they have <span
+								We have worked with over 8+ manufacturing companies for end-to-end ERPNext implementation, and they have <span
 										class="font-bold"
-										>saved up to 1000+ man hours,</span
-									> with optimized production processes, inventory
-									management, and supply chain operations.
+										>saved up to 1000+ man hours</span
+									> with optimized production processes, inventory management, and supply chain operations.
 								</p>
 								<ul
 									class="mt-2 md:mt-3 lg:mt-5 list-disc pl-5 text-xs md:text-sm lg:text-base"
@@ -2104,12 +2325,9 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									Our expertise in ERPNext and ServiceNow
-									implementation for over 5 textile companies
-									helped them <span class="font-bold"
+								Our expertise in ERPNext and ServiceNow implementation for over 5 textile companies helped them <span class="font-bold"
 										>save over 20% of costs</span
-									> by streamlining their operations and improving
-									overall business efficiency.
+									> by streamlining their operations and improving overall business efficiency.
 								</p>
 								<ul
 									class="mt-2 md:mt-3 lg:mt-5 list-disc pl-5 text-xs md:text-sm lg:text-base"
@@ -2170,14 +2388,10 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									Our team has deployed comprehensive
-									solutions for varied healthcare
-									organizations - leading to <span
+								Our team has deployed comprehensive solutions for varied healthcare organizations - leading to <span
 										class="font-bold"
-										>12% increase in overall business
-										efficiency,</span
-									> along with better management of patient databases,
-									billing, and overall operational workflows.
+										>a 12% increase in overall business efficiency</span
+									> leading to better management of patient databases, billing, and overall operational workflows.
 								</p>
 								<ul
 									class="mt-2 md:mt-3 lg:mt-5 list-disc pl-5 text-xs md:text-sm lg:text-base"
@@ -2239,13 +2453,10 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									Retail stores have seen over <span
+								Retail stores have seen over <span
 										class="font-bold"
-										>24% increase in customer satisfaction</span
-									> after our ERPNEXT implementation services -
-									through comprehensive store management, inventory
-									tracking, customer relationship management, and
-									billing processes.
+										>24% increase in customer satisfaction </span
+									> after our ERPNext implementation services - through comprehensive store management, inventory tracking, customer relationship management, and billing processes.
 								</p>
 								<ul
 									class="mt-2 md:mt-3 lg:mt-5 list-disc pl-5 text-xs md:text-sm lg:text-base"
@@ -2304,12 +2515,10 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									We have implemented customized solutions for
-									construction companies, helping them to <span
+								We have implemented customized solutions for construction companies, helping them to <span
 										class="font-bold"
 										>save their crucial business resources</span
-									> with better management, tracking, billing and
-									other aspects of their projects.
+									> with better management, tracking, billing, and other financial aspects of their projects.
 								</p>
 								<ul
 									class="mt-2 md:mt-3 lg:mt-5 list-disc pl-5 text-xs md:text-sm lg:text-base"
@@ -2366,14 +2575,9 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									We have developed a full-fledged
-									crowdfunding platform connecting NGOs and
-									donors with best-in-class functionalities,
-									easy navigation and secure payments. Through
-									that platform and its easy navigation, <span
+								We have developed a full-fledged crowdfunding platform connecting NGOs and donors with best-in-class functionalities, easy navigation, and secure payments. Through that platform and its easy navigation, <span
 										class="font-bold"
-										>NGOs have raised over 60cr in just one
-										week.</span
+										>NGOs have raised over 60cr in just one week.</span
 									>
 								</p>
 								<!--<div
@@ -2422,13 +2626,10 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									Human Resources and consulting companies who
-									have collaborated with us have <span
+								Human Resources and consulting companies who have collaborated with us have <span
 										class="font-bold"
-										>saved 29% in costs and over 850+ man
-										hours</span
-									> through automation for recruitment processes,
-									onboarding, performance management, etc.
+										>saved 29% in costs and over 850+ man-hours</span
+									> through automation for recruitment processes, onboarding, performance management, etc.
 								</p>
 								<ul
 									class="mt-2 md:mt-3 lg:mt-5 list-disc pl-5 text-xs md:text-sm lg:text-base"
@@ -2487,12 +2688,9 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 								<p
 									class="mt-2 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 								>
-									We have catered to the unique requirements
-									of a few Ayurvedic companies, who have
-									experienced a <span class="font-bold"
+								We have catered to the unique requirements of a few Ayurvedic companies, who have experienced a <span class="font-bold"
 										>38% surge in total orders</span
-									> through our effective categorizations, database
-									management, inventory tracking and operations.
+									> through our effective categorizations, database management, inventory tracking, and operations.
 								</p>
 								<!--<div
 										class="mt-5 flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 w-36"
@@ -2525,15 +2723,14 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 			<h2
 				class="text-2xl md:text-3xl lg:text-4xl text-[#3E96F4] font-bold"
 			>
-				Personalized Integration Hub - <br
+			Personalized Integration Hub - <br
 					class="hidden md:block lg:block"
-				/> Access all your tools at one place.
+				/> Access all your tools in one place.
 			</h2>
 			<p
 				class="text-[#31393C] font-semibold text-xs md:text-sm lg:text-base mt-3 md:mt-3 lg:mt-5"
 			>
-				Let Sanskar Technolab streamline your business operations with
-				on-the-go integrations.
+			Let Sanskar Technolab streamline your business operations with on-the-go integrations. 
 			</p>
 		</div>
 		<div>
@@ -2603,7 +2800,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 			<div
 				class="text-[#31393C] text-xs md:text-sm lg:text-base font-semibold"
 			>
-				Can’t see your required integration tool here?
+			Can’t See Your Required Integration Tool Here?						
 			</div>
 			<div
 				class="flex justify-between bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-3 w-52"
@@ -2632,13 +2829,12 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 				<h2
 					class="text-2xl md:text-3xl lg:text-4xl leading-[2rem] md:leading-[2.25rem] lg:leading-[2.75rem] text-[#3E96F4] font-bold"
 				>
-					Move beyond traditional softwares with these one-of-a-kind
-					tools!
+				Move Beyond Traditional Software with These One-of-a-Kind Tools! 
 				</h2>
 				<div
 					class="text-[#31393C] text-xs md:text-sm lg:text-base font-semibold mt-56 md:mt-36 lg:mt-36 astro-J7PV25F6"
 				>
-					Regardless of your industry, we have got you covered.
+				Regardless Of Your Industry, We Have Got You Covered.
 				</div>
 				<div
 					class="flex justify-between items-center bg-[#3E96F4] rounded-lg px-3 md:px-3 lg:px-5 py-2 md:py-2 lg:py-0 xl:w-72 sm:w-auto"
@@ -2646,7 +2842,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					<a
 						href="/contact-us"
 						class="text-white font-semibold font-inter"
-						>Schedule a call back now!</a
+						>Schedule A Call Back Now!</a
 					>
 					<Image
 						loading="eager"
@@ -2846,7 +3042,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 				<p
 					class="text-[#31393C] text-xs md:text-sm lg:text-base font-bold mt-2 md:mt-3 lg:mt-5"
 				>
-					As your Implementation Partner?
+				As Your Implementation Partner?  
 				</p>
 			</div>
 			<div
@@ -2867,9 +3063,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						Industry-rich expertise
 					</div>
 					<p class="text-xs md:text-sm lg:text-base">
-						With extensive experience across various industries, we
-						tailor our solutions to meet our client's unique
-						requirements and challenges.
+						With extensive experience across various industries, we tailor our solutions to meet our client's unique requirements and challenges.
 					</p>
 				</div>
 				<div class="grid justify-items-center">
@@ -2885,9 +3079,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						Cost savings
 					</div>
 					<p class="text-xs md:text-sm lg:text-base">
-						We offer ERPNext and ServiceNow implementation services
-						at cost-effective rates, ensuring affordability without
-						compromising quality.
+						We offer ERPNext and ServiceNow implementation services at cost-effective rates, ensuring affordability without compromising quality.
 					</p>
 				</div>
 				<div class="grid justify-items-center">
@@ -2903,9 +3095,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						Best and updated development practices
 					</div>
 					<p class="text-xs md:text-sm lg:text-base">
-						We follow the industry's best and latest implementation
-						methodologies to deliver robust, adaptable, and
-						future-proof solutions.
+						We follow the industry's best and latest implementation methodologies to deliver robust, adaptable, and future-proof solutions.
 					</p>
 				</div>
 				<div class="grid justify-items-center">
@@ -2921,10 +3111,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						Timely delivery
 					</div>
 					<p class="text-xs md:text-sm lg:text-base">
-						Our efficient project management practices and clear
-						communication ensure that your ERPNext and ServiceNow
-						implementations are completed within agreed-upon
-						timeframes.
+						Our efficient project management practices and clear communication ensure that your ERPNext and ServiceNow implementations are completed within agreed-upon timeframes.
 					</p>
 				</div>
 				<div class="grid justify-items-center">
@@ -2940,10 +3127,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						Dedicated project manager
 					</div>
 					<p class="text-xs md:text-sm lg:text-base">
-						With a dedicated project manager assigned to your
-						implementation, you receive personalized attention,
-						streamlined communication, efficient coordination, and
-						satisfactory results.
+						With a dedicated project manager assigned to your implementation, you receive personalized attention, streamlined communication, efficient coordination, and satisfactory results.
 					</p>
 				</div>
 				<div class="grid justify-items-center">
@@ -2959,9 +3143,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						Post-project support
 					</div>
 					<p class="text-xs md:text-sm lg:text-base">
-						Our dedicated support team provides comprehensive
-						assistance after project completion, addressing any
-						issues that may arise while ensuring smooth operations.
+						Our dedicated support team provides comprehensive assistance after project completion, addressing any issues that may arise while ensuring smooth operations.
 					</p>
 				</div>
 			</div>
@@ -2978,12 +3160,12 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 			<h2
 				class="text-2xl md:text-3xl lg:text-4xl text-[#3E96F4] font-bold"
 			>
-				Our Happy Customers.
+			Our Happy Customers.
 			</h2>
 			<p
 				class="text-[#31393C] font-semibold mt-3 md:mt-3 lg:mt-5 text-xs md:text-sm lg:text-base"
 			>
-				Customer Satisfaction drives us!
+			Customer Satisfaction drives us! 
 			</p>
 		</div>
 
@@ -3415,7 +3597,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 							class="font-semibold text-xs md:text-sm lg:text-base leading-[22px] text-left"
 							id="faq1"
 						>
-							Why should I pick ERPNext over other ERP products?
+						Why should I pick ERPNext over other ERP products?
 						</button>
 					</div>
 					<div class="rounded-l-lg p-3 mb-3" id="faq21">
@@ -3423,8 +3605,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 							class="font-semibold text-xs md:text-sm lg:text-base leading-[22px] text-left"
 							id="faq2"
 						>
-							How long does my implementation project usually
-							take?
+						How long does my implementation project usually take?
 						</button>
 					</div>
 					<div class="rounded-l-lg p-3 mb-3" id="faq31">
@@ -3432,7 +3613,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 							class="font-semibold text-xs md:text-sm lg:text-base leading-[22px] text-left"
 							id="faq3"
 						>
-							Do you provide a free demo before getting started?
+						Do you provide a free demo before getting started?
 						</button>
 					</div>
 					<div class="rounded-l-lg p-3 mb-3" id="faq41">
@@ -3440,7 +3621,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 							class="font-semibold text-xs md:text-sm lg:text-base leading-[22px] text-left"
 							id="faq4"
 						>
-							What is your implementation process?
+						What is your implementation process?
 						</button>
 					</div>
 				</div>
@@ -3452,19 +3633,17 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					<p
 						class="font-semibold font-semibold text-base md:text-lg lg:text-xl leading-9 font-semibold mb-0 md:mb-3 lg:mb-7"
 					>
-						Why should I pick ERPNext over other ERP products?
+					Why should I pick ERPNext over other ERP products?
 					</p>
 					<p
 						class="text-xs md:text-sm lg:text-base mb-0 md:mb-3 lg:mb-7"
 					>
-						ERPNext is an open-source low-code platform with various
-						modules to cater to diverse industries and their needs.
+					ERPNext is an open-source, low-code platform with various modules to cater to diverse industries and their needs.
 					</p>
 					<p
 						class="text-xs md:text-sm lg:text-base mb-0 md:mb-3 lg:mb-0 font-semibold"
 					>
-						Here are out-of-the-box benefits of the ERPNext platform
-						-
+					Here are the out-of-the-box benefits of the ERPNext platform -
 					</p>
 					<div
 						class="flex items-center gap-2 mb-0 md:mb-2 lg:mb-0 ml-2"
@@ -3530,19 +3709,14 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					<p
 						class="font-semibold font-semibold text-base md:text-lg lg:text-xl leading-9 font-semibold mb-7"
 					>
-						How long does my implementation project usually take?
+					How long does my implementation project usually take?
 					</p>
 					<p
 						class="text-xs md:text-sm lg:text-base mb-0 md:mb-3 lg:mb-7"
 					>
-						The duration of an implementation project can vary
-						depending on the complexity of your requirements and the
-						project's scope. On average, it takes <strong
+					The duration of an implementation project can vary depending on the complexity of your requirements and the project's scope. On average, it takes <strong
 							>around 1 month to 6 months.</strong
-						> We work closely with you to establish realistic timelines
-						and ensure timely implementation. To decide on the right
-						technology and get an accurate estimate, you can reach out
-						to us!
+						> We work closely with you to establish realistic timelines and ensure timely implementation. To decide on the right technology and get an accurate estimate, you can reach out to us!
 					</p>
 				</div>
 
@@ -3553,15 +3727,12 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					<p
 						class="font-semibold text-base md:text-lg lg:text-xl leading-9 font-semibold mb-7"
 					>
-						Do you provide a free demo before getting started?
+					Do you provide a free demo before getting started?
 					</p>
 					<p
 						class="text-xs md:text-sm lg:text-base mb-0 md:mb-3 lg:mb-7"
 					>
-						Yes, our team thoroughly understands your requirements
-						and provides you with the free demo to give you a
-						comprehensive idea of how we will get started and give
-						you a headshot of our process.
+					Yes, our team thoroughly understands your requirements and provides you with the free demo to give you a comprehensive idea of how we will get started and give you a headshot of our process.
 					</p>
 				</div>
 
@@ -3572,16 +3743,15 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					<p
 						class="font-semibold text-base md:text-lg lg:text-xl leading-9 font-semibold mb-7"
 					>
-						Why should I pick ERPNext over other ERP products?
+					What is your implementation process? 
 					</p>
 					<p
 						class="text-xs md:text-sm lg:text-base font-semibold mb-5"
 					>
-						Here's our step-by-step implementation process -
+					Here's our step-by-step implementation process - 
 					</p>
 					<p>
-						<strong>• Requirement Analysis:</strong>Understand your
-						personalized needs and goals.
+						<strong>• Requirement Analysis:</strong>Understand your personalized needs and goals.						
 					</p>
 					<p>
 						<strong>• Solution Design:</strong>Design a customized
@@ -3625,7 +3795,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					<div
 						class="font-semibold text-sm md:text-sm lg:text-base cursor-pointer mr-2"
 					>
-						Why should I pick ERPNext over other ERP products?
+					Why should I pick ERPNext over other ERP products?
 					</div>
 					<Image
 						loading="eager"
@@ -3651,15 +3821,12 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						<p
 							class="text-xs md:text-sm lg:text-base mb-3 md:mb-5 lg:mb-7"
 						>
-							ERPNext is an open-source low-code platform with
-							various modules to cater to diverse industries and
-							their needs.
+						ERPNext is an open-source, low-code platform with various modules to cater to diverse industries and their needs.
 						</p>
 						<p
 							class="text-xs md:text-sm lg:text-base mb-3 md:mb-0 lg:mb-0 font-semibold"
 						>
-							Here are out-of-the-box benefits of the ERPNext
-							platform -
+						Here are the out-of-the-box benefits of the ERPNext platform -
 						</p>
 						<div
 							class="flex items-center gap-2 mb-2 md:mb-0 lg:mb-0 ml-2"
@@ -3738,7 +3905,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					<div
 						class="font-semibold text-sm md:text-sm lg:text-base cursor-pointer mr-1 md:mr-0"
 					>
-						How long does my implementation project usually take?
+					How long does my implementation project usually take?
 					</div>
 					<Image
 						loading="eager"
@@ -3764,14 +3931,9 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						<p
 							class="text-xs md:text-sm lg:text-base mb-3 md:mb-5 lg:mb-7"
 						>
-							The duration of an implementation project can vary
-							depending on the complexity of your requirements and
-							the project's scope. On average, it takes around 1
-							month to 6 months. We work closely with you to
-							establish realistic timelines and ensure timely
-							implementation. To decide on the right technology
-							and get an accurate estimate, you can reach out to
-							us!
+						The duration of an implementation project can vary depending on the complexity of your requirements and the project's scope. On average, it takes <strong
+							>around 1 month to 6 months.</strong
+						> We work closely with you to establish realistic timelines and ensure timely implementation. To decide on the right technology and get an accurate estimate, you can reach out to us!
 						</p>
 					</div>
 				</div>
@@ -3784,7 +3946,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					<div
 						class="font-semibold text-sm md:text-sm lg:text-base cursor-pointer mr-1 md:mr-0"
 					>
-						Do you provide a free demo before getting started?
+					Do you provide a free demo before getting started? 
 					</div>
 					<Image
 						loading="eager"
@@ -3810,10 +3972,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						<p
 							class="text-xs md:text-sm lg:text-base mb-3 md:mb-5 lg:mb-7"
 						>
-							Yes, our team thoroughly understands your
-							requirements and provides you with the free demo to
-							give you a comprehensive idea of how we will get
-							started and give you a headshot of our process.
+						Yes, our team thoroughly understands your requirements and provides you with the free demo to give you a comprehensive idea of how we will get started and give you a headshot of our process.
 						</p>
 					</div>
 				</div>
@@ -3826,7 +3985,7 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 					<div
 						class="font-semibold text-sm md:text-sm lg:text-base cursor-pointer mr-1 md:mr-0"
 					>
-						What is your implementation process?
+					What is your implementation process?
 					</div>
 					<Image
 						loading="eager"
@@ -3850,11 +4009,10 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 						id="faq4_c"
 					>
 						<p class="font-semibold mb-5">
-							Here's our step-by-step implementation process -
+							Here's our step-by-step implementation process - 
 						</p>
 						<p>
-							<strong>• Requirement Analysis:</strong>Understand
-							your personalized needs and goals.
+							<strong>• Requirement Analysis:</strong>Understand your personalized needs and goals.
 						</p>
 						<p>
 							<strong>• Solution Design:</strong>Design a
@@ -5266,4 +5424,27 @@ class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg"
 		},
 	});
 	});	
+
+	/* // Banner code with slider with next previous button Javascript Start
+	document.addEventListener("DOMContentLoaded", function () {
+          const swiper_banner = new Swiper(".swiper_banner_button", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next-banner", // Specify the next button
+              prevEl: ".swiper-button-prev-banner", // Specify the previous button
+            },
+            breakpoints: {
+              centeredSlides: false,
+              slidesPerView: 1,
+            },
+          });
+        });
+	// Banner code with slider with next previous button Javascript End here
+	*/
 </script>
