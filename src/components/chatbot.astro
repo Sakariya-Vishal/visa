@@ -96,25 +96,25 @@ import "../styles.css";
         background: #fff;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     }
- 
-#messages::-webkit-scrollbar {
-    width: 2px;
-}
 
-#messages::-webkit-scrollbar-thumb {
-    background-color: #3E96F4; 
-}
+    #messages::-webkit-scrollbar {
+        width: 2px;
+    }
 
-@keyframes fadeInOut {
-    0%, 100% {
-        opacity: 0;
-        transform: translateY(0);
+    #messages::-webkit-scrollbar-thumb {
+        background-color: #3E96F4; 
     }
-    50% {
-        opacity: 1;
-        transform: translateY(-10px);
+
+    @keyframes fadeInOut {
+        0%, 100% {
+            opacity: 0;
+            transform: translateY(0);
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(-10px);
+        }
     }
-}
 
 </style>
 
@@ -604,8 +604,6 @@ import "../styles.css";
             var parent = document.getElementById("messages");
             const question =
                 parent.lastElementChild.firstElementChild.innerHTML;
-
-            console.log("questions ", question)
 
             if (
                 question ===
@@ -1151,8 +1149,10 @@ import "../styles.css";
             message,
             [],
             '',
-            []
+            [],
+            0
         );
+
         // var chat_message = document.getElementById('chat_message')
         chat_message.placeholder='Enter Your Name';
         chat_message.disabled = false;
@@ -1167,8 +1167,10 @@ import "../styles.css";
             message,
             [],
             '',
-            []
+            [],
+            0
         );
+
         // var chat_message = document.getElementById('chat_message')
         chat_message.placeholder='Enter Your Email';
         chat_message.disabled = false;
@@ -1192,7 +1194,6 @@ import "../styles.css";
         // Use the function to get the IP address and then make your API request
         getUserIPAddress().then(ipAddress => {
             let { browserName, device } = detectBrowser();
-            console.log(browserName, device)
             if (ipAddress) {
                 fetch("https://sanskar.frappe.cloud/api/resource/Astro Site Chat", {
                     method: 'POST',
@@ -1468,10 +1469,14 @@ import "../styles.css";
 
     function start_over(){
 
-        const parent = document.getElementById("messages");
-        // parent.querySelectorAll('*').forEach(child => child.remove());
-        while (parent.firstChild) {
-            parent.removeChild(parent.firstChild);
+        // const parent = document.getElementById("messages");
+        // // parent.querySelectorAll('*').forEach(child => child.remove());
+        // while (parent.firstChild) {
+        //     parent.removeChild(parent.firstChild);
+        // }
+
+        while (messagesDiv.firstChild){
+            messagesDiv.removeChild(messagesDiv.firstChild)
         }
         
         start_auto_message()
