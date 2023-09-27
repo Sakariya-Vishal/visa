@@ -458,6 +458,13 @@ import "../styles.css";
                 button_class:
                     "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             },
+            {
+                button_id: "customization",
+                button_label: "Something Else",
+                button_click_action: customization,
+                button_class:
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
+            },
         ];
         var message1 = "Hello, How Are You ?";
         var message = "What Are You Looking For ?";
@@ -1145,7 +1152,7 @@ import "../styles.css";
         var message = "What is Your Name ?";
         await create_bot_message_div(
             "messages",
-            "px-2 pt-2 mr-5 mt-5 hidden",
+            "px-2 pt-2 mr-5 mt-5",
             message,
             [],
             '',
@@ -1163,7 +1170,7 @@ import "../styles.css";
         var message = "What is Your Email Address ?";
         await create_bot_message_div(
             "messages",
-            "px-2 pt-2 mr-5 mt-5 hidden",
+            "px-2 pt-2 mr-5 mt-5",
             message,
             [],
             '',
