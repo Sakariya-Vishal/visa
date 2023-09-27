@@ -562,7 +562,7 @@ import close from "../../public/Images/popup_close_btn.svg";
         <h2
           class="text-[#3E96F4] text-left md:text-center font-semibold text-2xl md:text-4xl mb-0 md:mb-2 lg:mb-2"
         >
-          We work. We Learn. We Grow & Have Fun.
+          We Work. We Learn. We Grow & Have Fun.
         </h2>
 
         <div
@@ -1412,6 +1412,23 @@ import close from "../../public/Images/popup_close_btn.svg";
 <script>
   var scrollButton = document.getElementById("scrollButton");
   var section2 = document.getElementById("job");
+
+  // Get the current URL
+  const currentURL = window.location.href;
+
+  // Use regular expressions to extract the value of the "s" parameter
+  const regex = /[?&]s=([^&#]*)/;
+  const match = regex.exec(currentURL);
+
+  // Check if a match was found and extract the value
+  if (match && match[1]) {
+    const sValue = match[1];
+    // console.log(sValue); // This will log "1"
+    section2.scrollIntoView({ behavior: "smooth" });
+
+  } else {
+    // console.log("The 's' parameter was not found in the URL.");
+  }
 
   // Add an event listener to the button
   scrollButton.addEventListener("click", function () {

@@ -24,7 +24,7 @@ import "../styles.css";
         class="absolute right-4 top-6 h-3 w-3 cursor-pointer"
         id="close_btn"
     />
-
+    <div id="bg-color">
     <div
         class="lg:h-[30rem] md:h-[70vh] h-[70vh] lg:w-80 md:w-[26rem] w-full"
         id="a"
@@ -87,6 +87,8 @@ import "../styles.css";
             <Image loading="eager" src={chat_send_btn} alt="chatbot" />
         </button>
     </form>
+
+</div>
 </div>
 
 <style>
@@ -113,6 +115,20 @@ import "../styles.css";
         50% {
             opacity: 1;
             transform: translateY(-10px);
+        }
+    }
+
+    #bg-color{
+        background-color: white;
+        animation: colorAnimation 4s ease-in-out forwards;
+    }
+
+    @keyframes colorAnimation {
+        0% {
+            background-color: #3E96F4;
+        }
+        100% {
+            background-color: white;
         }
     }
 
@@ -240,9 +256,10 @@ import "../styles.css";
         outerDivClasses,
         message,
         buttons = [],
-        button_parent_class = 'grid justify-items-start',
+        button_parent_class = 'flex flex-wrap justify-center gap-2',
         checkboxes = [],
-        timeout = 3000
+        timeout = 3000,
+        typing = true
     ) {
 
         scrollToBottom()
@@ -256,22 +273,26 @@ import "../styles.css";
         const messageParagraph = document.createElement("p");
         // messageParagraph.id = "messageParagraph"
         messageParagraph.className = "p-4"
-        messageParagraph.textContent = "..."
+        if (typing){
+            messageParagraph.textContent = "..."
+        }
         outerDiv.appendChild(messageParagraph)
         parent.appendChild(outerDiv)
         scrollToBottom()
         
-        // setInterval(() => {
-            messageParagraph.style.animation = 'fadeInOut 1.5s infinite';
+        if(typing){
+            // setInterval(() => {
+                messageParagraph.style.animation = 'fadeInOut 1.5s infinite';
             // }, 100);
-            
+        }
+
         await new Promise(resolve => setTimeout(resolve, timeout));
         
         messageParagraph.className =
             "text-[#31393C] bg-[#F6F9FB] text-xs lg:text-base md:text-sm p-4 py-2 rounded-r-[10px] rounded-b-[10px] inline-block";
         messageParagraph.style.animation = '';
        
-        messageParagraph.textContent = message;
+        messageParagraph.innerHTML = message;
 
         const btn_div = document.createElement("span");
         btn_div.className = button_parent_class;
@@ -441,14 +462,14 @@ import "../styles.css";
                 button_label: "ERPNext",
                 button_click_action: erpnext,
                 button_class:
-                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
             },
             {
                 button_id: "service_now",
                 button_label: "ServiceNow",
                 button_click_action: service_now,
                 button_class:
-                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
             },
             {
                 button_id: "customization",
@@ -456,14 +477,14 @@ import "../styles.css";
                 button_label: "Something Else",
                 button_click_action: customization,
                 button_class:
-                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
             },
             {
-                button_id: "customization",
-                button_label: "Something Else",
-                button_click_action: customization,
+                button_id: "career",
+                button_label: "Career",
+                button_click_action: career,
                 button_class:
-                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
             },
         ];
         var message1 = "Hello, How Are You ?";
@@ -477,7 +498,8 @@ import "../styles.css";
                 [],
                 '',
                 [],
-                1000
+                4000,
+                false
             );
         }
            await create_bot_message_div(
@@ -1175,7 +1197,6 @@ import "../styles.css";
             [],
             '',
             [],
-            0
         );
 
         // var chat_message = document.getElementById('chat_message')
@@ -1224,7 +1245,7 @@ import "../styles.css";
                     })
                 }).then((res) => {
                     if (res.status === 200) {
-                        var message = `Thank you for providing your information. Our sales team will reach you soon at your email address. For any other details, you can reach us at info@sanskartechnolab.com.`;
+                        var message = `Thank you for providing your information. Our sales team will reach you soon at your email address. For any other details, you can reach us at <a href='mailto:info@sanskartechnolab.com' class='text-[#3E96F4]'>info@sanskartechnolab.com</a>`;
                         var buttons = [{
                             button_id: "start_over",
                             button_label: "Start Over",
@@ -1307,6 +1328,25 @@ import "../styles.css";
 
     }
 
+    async function career(){
+        create_user_message_div(
+            "messages",
+            "px-2 pt-2 text-right ml-5 mt-5",
+            "Career"
+        );
+
+        var message = "<a href='/career?s=1' class='text-[#3E96F4]'>Click here to show recent opening</a>";
+        await create_bot_message_div(
+            "messages",
+            "px-2 pt-2 mr-5 mt-5",
+            message,
+            [],
+            '',
+            []
+        );
+        
+
+    }
 
 
     // Utils Function 
