@@ -82,6 +82,7 @@ import "../styles.css";
             name="chat_message"
             id="chat_message"
             disabled
+            autocomplete="false"
         />
         <button class="w-1/12" id="send_button" disabled>
             <Image loading="eager" src={chat_send_btn} alt="chatbot" />
@@ -273,18 +274,16 @@ import "../styles.css";
         const messageParagraph = document.createElement("p");
         // messageParagraph.id = "messageParagraph"
         messageParagraph.className = "p-4"
-        if (typing){
-            messageParagraph.textContent = "..."
-        }
+        messageParagraph.textContent = "..."
         outerDiv.appendChild(messageParagraph)
         parent.appendChild(outerDiv)
         scrollToBottom()
         
-        if(typing){
+        // if(typing){
             // setInterval(() => {
                 messageParagraph.style.animation = 'fadeInOut 1.5s infinite';
             // }, 100);
-        }
+        // }
 
         await new Promise(resolve => setTimeout(resolve, timeout));
         
@@ -342,7 +341,7 @@ import "../styles.css";
             checkbox.id = option;
 
             const label = document.createElement("label");
-            label.htmlFor = option.value;
+            label.htmlFor = option;
             label.appendChild(document.createTextNode(option));
 
             checkboxDiv.appendChild(checkbox);
