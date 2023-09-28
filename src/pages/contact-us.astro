@@ -988,11 +988,16 @@ function blinkBorder(element) {
 //         emailInput.addEventListener('focus', stopBlinkingForNameInputs);
 //         messageInput.addEventListener('focus', stopBlinkingForNameInputs);
 
-
 function showRecaptchaError() {
-      const recaptchaErrorElement = document.getElementById("recaptcha-error");
-      recaptchaErrorElement.style.display = "block"; // Display the error message
-    }
+  const recaptchaErrorElement = document.getElementById("recaptcha-error");
+  recaptchaErrorElement.style.display = "block"; // Display the error message
+
+  // Hide the error message after a specific duration (e.g., 5 seconds)
+  setTimeout(function () {
+    recaptchaErrorElement.style.display = "none";
+  }, 3000);
+}
+
 
     function clearRecaptchaError() {
       const recaptchaErrorElement = document.getElementById("recaptcha-error");

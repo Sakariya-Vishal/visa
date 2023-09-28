@@ -2057,6 +2057,109 @@ import close from "../../public/Images/popup_close_btn.svg";
         `;
           document.head.appendChild(style);
 
+          // Create the input field for Age
+const ageInput = document.createElement("div");
+ageInput.className = "rounded-[3px] md:h-10 lg:h-auto";
+div.appendChild(ageInput);
+
+// Create the input field for Age (second input)
+const ageInput1 = document.createElement("div");
+ageInput1.className = "rounded-[3px] md:h-10 lg:h-auto";
+div.appendChild(ageInput1);
+
+// Define a CSS class to hide the age input divs for "md" screens
+const hideForMdClass = "hidden-md"; // You can name it as you like
+
+// Check if the screen is in "md" size and add the class to the age input divs
+if (window.innerWidth <= 1024) { // Adjust the breakpoint as needed
+  ageInput.classList.add(hideForMdClass);
+  ageInput1.classList.add(hideForMdClass);
+}
+
+// Define a CSS style for hiding elements with the specified class
+const hideForMdStyle = document.createElement("style");
+hideForMdStyle.textContent = `
+  @media (max-width: 1024px) { /* Adjust the breakpoint as needed */
+    .${hideForMdClass} {
+      display: none !important; /* Use !important to ensure it takes precedence */
+    }
+  }
+`;
+
+// Append the CSS style to the document head
+document.head.appendChild(hideForMdStyle);
+
+
+// Create a div element to hold the reCAPTCHA widget and error message
+const containerDiv = document.createElement("div");
+
+// Create the reCAPTCHA widget element
+const recaptchaElement = document.createElement("div");
+recaptchaElement.className = "g-recaptcha";
+recaptchaElement.setAttribute("data-sitekey", "6LcaYFkoAAAAALjdnrEgCky1D169PguZyJtPRC54"); // Replace with your reCAPTCHA site key
+// Define a function to adjust styles based on screen width
+function adjustRecaptchaStyles() {
+  if (window.innerWidth <= 280) {
+    recaptchaElement.style.transform = "scale(0.60)";
+    recaptchaElement.style.webkitTransform = "scale(0.60)";
+    recaptchaElement.style.transformOrigin = "0 0";
+    recaptchaElement.style.webkitTransformOrigin = "0 0";
+    recaptchaElement.style.marginBottom = "-1rem";
+  } else if (window.innerWidth >= 281 && window.innerWidth <= 360) {
+    recaptchaElement.style.transform = "scale(0.60)";
+    recaptchaElement.style.webkitTransform = "scale(0.60)";
+    recaptchaElement.style.transformOrigin = "0 0";
+    recaptchaElement.style.webkitTransformOrigin = "0 0";
+    recaptchaElement.style.marginBottom = "-1rem";
+  } else if (window.innerWidth >= 361 && window.innerWidth <= 375) {
+    recaptchaElement.style.transform = "scale(0.80)";
+    recaptchaElement.style.webkitTransform = "scale(0.80)";
+    recaptchaElement.style.transformOrigin = "0 0";
+    recaptchaElement.style.webkitTransformOrigin = "0 0";
+    recaptchaElement.style.marginBottom = "-1rem";
+  } else if (window.innerWidth >= 376 && window.innerWidth <= 1536) {
+    recaptchaElement.style.transform = "scale(0.60)";
+    recaptchaElement.style.webkitTransform = "scale(0.60)";
+    recaptchaElement.style.transformOrigin = "0 0";
+    recaptchaElement.style.webkitTransformOrigin = "0 0";
+    recaptchaElement.style.marginBottom = "-1rem";
+  }else {
+    recaptchaElement.style.transform = "scale(0.77)";
+    recaptchaElement.style.webkitTransform = "scale(0.77)";
+    recaptchaElement.style.transformOrigin = "0 0";
+    recaptchaElement.style.webkitTransformOrigin = "0 0";
+    recaptchaElement.style.marginBottom = "-1rem"; 
+  }
+}
+
+// Apply initial styles
+adjustRecaptchaStyles();
+
+// Create the error message element
+const errorMessage = document.createElement("p");
+errorMessage.id = "recaptcha-error";
+errorMessage.className = "input-file text-xs -mt-2 lg:-mt-4";
+errorMessage.textContent = "Please complete the reCAPTCHA verification.";
+
+// Apply CSS styles to the error message
+errorMessage.style.color = "red";
+errorMessage.style.fontSize = "14px"; // Adjust the font size to your preference
+errorMessage.style.display = "none";
+
+// Append the reCAPTCHA widget and error message to the container div
+containerDiv.appendChild(recaptchaElement);
+containerDiv.appendChild(errorMessage);
+
+// Initialize the reCAPTCHA widget
+grecaptcha.render(recaptchaElement, {
+    sitekey: "6LcaYFkoAAAAALjdnrEgCky1D169PguZyJtPRC54", // Replace with your reCAPTCHA site key
+    size: "normal", // You can change the size as needed
+});
+
+// Append the container div to your form (assuming "div" is your form element)
+div.appendChild(containerDiv);
+
+
           // Create the submit button for job application form
           const submitButton = document.createElement("button");
           submitButton.className =
@@ -2232,6 +2335,10 @@ import close from "../../public/Images/popup_close_btn.svg";
       e.preventDefault();
       disableUserInteractions()
 
+      const recaptchaResponse = grecaptcha.getResponse();
+      // If the reCAPTCHA is filled out, clear any previous error message
+    clearRecaptchaError();
+
       const fullNameInput = document.querySelector('input[name="name"]');
       const emailInput = document.querySelector('input[name="email"]');
       const phoneInput = document.querySelector('input[name="phone"]');
@@ -2273,6 +2380,11 @@ import close from "../../public/Images/popup_close_btn.svg";
       }
       if (fileNameValue === "") {
         blinkBorder(selectedFileInput);
+      }
+      if (!recaptchaResponse || recaptchaResponse.length === 1) {
+        showRecaptchaError();
+        enableUserInteractions();
+        return;
       }
       if (
         fullNameValue === "" ||
@@ -2381,7 +2493,21 @@ import close from "../../public/Images/popup_close_btn.svg";
     //new over =========================================== new over ===========================
     
   });
+  function showRecaptchaError() {
+  const recaptchaErrorElement = document.getElementById("recaptcha-error");
+  recaptchaErrorElement.style.display = "block"; // Display the error message
 
+  // Hide the error message after a specific duration (e.g., 5 seconds)
+  setTimeout(function () {
+    recaptchaErrorElement.style.display = "none";
+  }, 3000);
+}
+
+
+    function clearRecaptchaError() {
+      const recaptchaErrorElement = document.getElementById("recaptcha-error");
+      recaptchaErrorElement.style.display = "none"; // Hide the error message
+    }
 
   // Helper function to disable user interactions
 function disableUserInteractions() {
