@@ -483,8 +483,8 @@ import "../styles.css";
                     "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
             },
         ];
-        var message1 = "Hello, How Are You ?";
-        var message = "What Are You Looking For ?";
+        var message1 = "Hello, How are you ?";
+        var message = "What are you looking for ?";
        
         if (send_hello){
             await create_bot_message_div(
@@ -655,7 +655,7 @@ import "../styles.css";
                
             }
             
-            else if (question === "Please Provide brief about your customization.") {
+            else if (question === "Please provide brief about your customization.") {
                 questions_answer.push({question: question, answer: message})
                 chat_message.value = "";
                 create_user_message_div(
@@ -677,7 +677,7 @@ import "../styles.css";
                 
             }
 
-            else if (question === "What is Your Name ?") {
+            else if (question === "What is your name ?") {
                 user_details.push({"name": message})
                 chat_message.value = "";
                 create_user_message_div(
@@ -688,7 +688,7 @@ import "../styles.css";
                 set_get_user_email_bot_message();
             }
 
-            else if (question === "What is Your Email Address ?") {
+            else if (question === "What is your email address ?") {
                 
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if(!emailRegex.test(message)){
@@ -711,7 +711,7 @@ import "../styles.css";
             
             else {
                 chat_message.value = "";
-                var message1 = 'Sorry I Can`t Understand You. Please Enter / Select Currect Value.';
+                var message1 = 'Sorry i can`t understand you. please select above option.';
                await create_bot_message_div(
                     "messages",
                     "px-2 pt-2 mr-5 mt-5",
@@ -829,7 +829,7 @@ import "../styles.css";
         "Asset Management",
         "Healthcare"
     ]
-        var message = "Which ERPNext Module You Want To Implement ?";
+        var message = "Which ERPNext module you want to implement ?";
         // create_bot_message_div('messages', 'px-2 pt-2 mr-5 mt-5', message, '10:00 AM', buttons)
         create_bot_message_div(
             "messages",
@@ -930,7 +930,7 @@ import "../styles.css";
         });
 
       
-            var message = `Please Provide brief about your customization.`;
+            var message = `Please provide brief about your customization.`;
             await create_bot_message_div(
                 "messages",
                 "px-2 pt-2 mr-5 mt-5 -mb-3",
@@ -1002,7 +1002,7 @@ import "../styles.css";
 
 
 
-        var message = "Which Service Module You Want To Implement ?";
+        var message = "Which ServiceNow module you want to implement ?";
         // create_bot_message_div('messages', 'px-2 pt-2 mr-5 mt-5', message, '10:00 AM', buttons)
         create_bot_message_div(
             "messages",
@@ -1121,7 +1121,7 @@ import "../styles.css";
             }
         });
 
-        var message = `Please Provide brief about your customization.`;
+        var message = `Please provide brief about your customization.`;
             await create_bot_message_div(
                 "messages",
                 "px-2 pt-2 mr-5 mt-5 -mb-3",
@@ -1167,7 +1167,7 @@ import "../styles.css";
     //
 
     async function set_get_user_name_bot_message() {
-        var message = "What is Your Name ?";
+        var message = "What is your name ?";
         await create_bot_message_div(
             "messages",
             "px-2 pt-2 mr-5 mt-5",
@@ -1179,13 +1179,13 @@ import "../styles.css";
         );
 
         // var chat_message = document.getElementById('chat_message')
-        chat_message.placeholder='Enter Your Name';
+        chat_message.placeholder='Enter your name';
         chat_message.disabled = false;
         send_button.disabled = false;
     }
 
     async function set_get_user_email_bot_message() {
-        var message = "What is Your Email Address ?";
+        var message = "What is your email address ?";
         await create_bot_message_div(
             "messages",
             "px-2 pt-2 mr-5 mt-5",
@@ -1196,7 +1196,7 @@ import "../styles.css";
         );
 
         // var chat_message = document.getElementById('chat_message')
-        chat_message.placeholder='Enter Your Email';
+        chat_message.placeholder='Enter your email';
         chat_message.disabled = false;
         send_button.disabled = false;
     }
