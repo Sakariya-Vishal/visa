@@ -269,7 +269,15 @@ import contact_map from "../../public/Images/contact_map.svg";
                 </div>
         </div>
         <p class="text-xs -mt-3">Allow Formats (.jpg |.pdf |.png |.docx |.txt)</p>
-        <p class="g-recaptcha" data-sitekey="6LcaYFkoAAAAALjdnrEgCky1D169PguZyJtPRC54"></p>
+        <div>
+          <p
+            class="g-recaptcha"
+            data-sitekey="6LcaYFkoAAAAALjdnrEgCky1D169PguZyJtPRC54"
+          >
+          </p>
+          <p id="recaptcha-error" class="input-file input-file text-xs -mt-2 lg:-mt-4">
+            Please complete the reCAPTCHA verification.
+          </p></div>
               <button
                 class="w-24 bg-[#3E96F4] rounded text-white md:text-sm text-xs lg:text-base font-semibold p-2 px-5"
               >
@@ -362,7 +370,12 @@ import contact_map from "../../public/Images/contact_map.svg";
     </section>
 
   <style>
-    
+     #recaptcha-error {
+    color: red;
+    font-size: 14px; /* Adjust the font size to your preference */
+    display: none;
+}
+
 .g-recaptcha {
     transform:scale(0.77);
     -webkit-transform:scale(0.77);
@@ -760,6 +773,10 @@ function blinkBorder(element) {
     e.preventDefault();
     disableUserInteractions()
 
+    const recaptchaResponse = grecaptcha.getResponse();
+      // If the reCAPTCHA is filled out, clear any previous error message
+    clearRecaptchaError();
+
     const firstNameInput = document.querySelector('input[name="first_name"]');
       const lastNameInput = document.querySelector('input[name="last_name"]');
       const emailInput = document.querySelector('input[name="email"]');
@@ -789,6 +806,12 @@ function blinkBorder(element) {
 
       if (messageValue === "") {
         blinkBorder(messageInput);
+      }
+
+      if (!recaptchaResponse || recaptchaResponse.length === 1) {
+        showRecaptchaError();
+        enableUserInteractions();
+        return;
       }
 
       if (
@@ -965,6 +988,16 @@ function blinkBorder(element) {
 //         emailInput.addEventListener('focus', stopBlinkingForNameInputs);
 //         messageInput.addEventListener('focus', stopBlinkingForNameInputs);
 
+
+function showRecaptchaError() {
+      const recaptchaErrorElement = document.getElementById("recaptcha-error");
+      recaptchaErrorElement.style.display = "block"; // Display the error message
+    }
+
+    function clearRecaptchaError() {
+      const recaptchaErrorElement = document.getElementById("recaptcha-error");
+      recaptchaErrorElement.style.display = "none"; // Hide the error message
+    }
 
 // validate file foramte in fileupload
     function fileValidation() {

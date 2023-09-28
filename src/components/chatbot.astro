@@ -331,7 +331,6 @@ import "../styles.css";
             // var showMoreButton = document.getElementById("show_more")
             showMoreButton.addEventListener("click", () => {
             const hiddenCheckboxes = checkboxes.slice(visibleCheckboxes, visibleCheckboxes + 5);
-
             hiddenCheckboxes.forEach((option) => {
             const checkboxDiv = document.createElement("div");
             checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-xs lg:text-base md:text-sm";
@@ -339,11 +338,9 @@ import "../styles.css";
             checkbox.type = "checkbox";
             checkbox.value = option;
             checkbox.id = option;
-
             const label = document.createElement("label");
             label.htmlFor = option;
             label.appendChild(document.createTextNode(option));
-
             checkboxDiv.appendChild(checkbox);
             checkboxDiv.appendChild(label);
 
@@ -369,7 +366,7 @@ import "../styles.css";
             checkbox.id = option;
 
             const label = document.createElement("label");
-            label.htmlFor = option.value;
+            label.htmlFor = option;
             label.appendChild(document.createTextNode(option));
 
             checkboxDiv.appendChild(checkbox);
@@ -768,15 +765,15 @@ import "../styles.css";
 
         selected_technology = [];
         selected_technology.push("ERPNext");
-        // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': e_account, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'},
-        //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': e_manufacturing, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'}]
+        // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': e_account, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'},
+        //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': e_manufacturing, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'}]
         var buttons = [
             {
                 button_id: "erpnext_custom",
                 button_label: "Customazation",
                 button_click_action: e_module_custom,
                 button_class:
-                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             },
             {
                 button_id: "e_module_check_confirm",
@@ -790,7 +787,7 @@ import "../styles.css";
             //     button_label: "Show More",
             //     button_click_action: e_module_custom,
             //     button_class:
-            //         "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
+            //         "border border-[#3E96F4] text-[#3E96F4] px-3 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             // }
 
         ];
@@ -959,8 +956,8 @@ import "../styles.css";
         );
         selected_technology = [];
         selected_technology.push("ServiceNow");
-        // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': s_account, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'},
-        //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': s_manufacturing, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'}]
+        // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': s_account, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'},
+        //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': s_manufacturing, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'}]
 
         // var message = "Which ServiceNow Module You Want To Implement ?"
         // create_bot_message_div('messages', 'px-2 pt-2 mr-5 mt-5', message, '10:00 AM', buttons)
@@ -971,7 +968,7 @@ import "../styles.css";
                 button_label: "Customization",
                 button_click_action: s_module_custom,
                 button_class:
-                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             },
             {
                 button_id: "s_modeule_check_confirm",
@@ -1207,16 +1204,16 @@ import "../styles.css";
     // send data to frappe backend
     function send_final_bot_message(email){
 
-        // Function to get the user's IP address using ipify
-        function getUserIPAddress() {
-            return fetch('https://api.ipify.org?format=json')
-                .then(response => response.json())
-                .then(data => data.ip)
-                .catch(error => {
-                    console.error('Error fetching IP address:', error);
-                    return null; // Handle the error gracefully
-                });
-        }
+    // Function to get the user's IP address using ipify
+    function getUserIPAddress() {
+        return fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => data.ip)
+            .catch(error => {
+                console.error('Error fetching IP address:', error);
+                return null; // Handle the error gracefully
+            });
+    }
 
         // Use the function to get the IP address and then make your API request
         getUserIPAddress().then(ipAddress => {
@@ -1250,7 +1247,7 @@ import "../styles.css";
                             button_label: "Start Over",
                             button_click_action: start_over,
                             button_class:
-                                "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 ml-5 mt-5 hover:bg-[#3E96F4] hover:text-white",
+                                "border border-[#3E96F4] text-[#3E96F4] px-3 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 mt-5 hover:bg-[#3E96F4] hover:text-white",
                         }]
                         create_bot_message_div(
                             "messages",
@@ -1334,7 +1331,7 @@ import "../styles.css";
             "Career"
         );
 
-        var message = "<a href='/career?s=1' class='text-[#3E96F4]'>Click here to show recent opening</a>";
+        var message = "<a href='/career?s=1' class='text-[#3E96F4]'>Click here to see current opening</a>";
         await create_bot_message_div(
             "messages",
             "px-2 pt-2 mr-5 mt-5",
@@ -1360,8 +1357,71 @@ import "../styles.css";
     }
 
     function close_popup() {
+            while (messagesDiv.firstChild){
+                messagesDiv.removeChild(messagesDiv.firstChild)
+            }
             chat_popup.classList.add("hidden");
             chat_icon.classList.remove("hidden");
+            getUserIPAddress().then(ipAddress => {
+            let { browserName, device } = detectBrowser();
+            if (ipAddress) {
+                fetch("https://sanskar.frappe.cloud/api/resource/Astro Site Chat", {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        email: user_details[1].email,
+                        name1: user_details[0].name,
+                        technology: selected_technology[0],
+                        module: selected_module,
+                        question_answer: questions_answer,
+                        token: token,
+                        is_owner: 1,
+                        ip: ipAddress,
+                        browser_name: browserName,
+                        device: device,
+                        need_customization: need_customization
+                        
+                    })
+                }).then((res) => {
+                    if (res.status === 200) {
+                        var message = `Thank you for providing your information. Our sales team will reach you soon at your email address. For any other details, you can reach us at <a href='mailto:info@sanskartechnolab.com' class='text-[#3E96F4]'>info@sanskartechnolab.com</a>`;
+                        var buttons = [{
+                            button_id: "start_over",
+                            button_label: "Start Over",
+                            button_click_action: start_over,
+                            button_class:
+                                "border border-[#3E96F4] text-[#3E96F4] px-3 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 mt-5 hover:bg-[#3E96F4] hover:text-white",
+                        }]
+                        create_bot_message_div(
+                            "messages",
+                            "px-2 pt-2 mr-5 mt-5",
+                            message,
+                            buttons,
+                            '',
+                            []
+                        );
+                        // var chat_message = document.getElementById('chat_message')
+                        chat_message.placeholder='Please select from the options';
+                        chat_message.disabled = true;
+                        send_button.disabled = true;
+                        
+                        //   window.location.href="/thank-you"
+                    } else {
+                        alert("Failed");
+                    }
+                }).catch((error) => {
+                    console.log(error);
+                });
+            } else {
+                // Handle the case where IP retrieval failed
+                alert("Failed to retrieve IP address");
+            }
+        });
+
+
     }
 
     function remove_error_class() {
