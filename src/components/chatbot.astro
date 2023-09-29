@@ -467,6 +467,13 @@ import "../styles.css";
                 button_class:
                     "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
             },
+            // {
+            //     button_id: "third_party_integration",
+            //     button_label: "Third Party Integration",
+            //     button_click_action: third_party_integration,
+            //     button_class:
+            //         "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
+            // },
             {
                 button_id: "customization",
                 // button_label: "Customization",
@@ -483,8 +490,8 @@ import "../styles.css";
                     "border border-[#3E96F4] text-[#3E96F4] px-3 text-sm md:text-base lg:text-lg rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
             },
         ];
-        var message1 = "Hello, How are you ?";
-        var message = "What are you looking for ?";
+        var message1 = "Hey There! <br /> So good to see you here. <br />Welcome to Sanskar Technolab. <br /> I’m here to help you out with your queries!";
+        var message = "Now, how can I help you with? ";
        
         if (send_hello){
             await create_bot_message_div(
@@ -633,7 +640,7 @@ import "../styles.css";
             if (
                 question ===
                 // "Please Give Some Details About Your Customization."
-                "Please provide brief about your requirements. "
+                "Kindly let us know the details of your specific requirements, so we can assist you better!"
             ) {
                 questions_answer.push({ question: question, answer: message });
                 chat_message.value = "";
@@ -642,7 +649,7 @@ import "../styles.css";
                     "px-2 pt-2 text-right ml-5 mt-5",
                     message
                 );
-                var message1 = `Please provide your contact information so we can reach out to you.`;
+                var message1 = `Please provide your contact details so we can reach out to you.`;
                 await create_bot_message_div(
                     "messages",
                     "px-2 pt-2 mr-5 mt-5 -mb-3",
@@ -655,7 +662,7 @@ import "../styles.css";
                
             }
             
-            else if (question === "Please provide brief about your customization.") {
+            else if (question === "Please give us a short brief about your customizations needs.") {
                 questions_answer.push({question: question, answer: message})
                 chat_message.value = "";
                 create_user_message_div(
@@ -664,7 +671,7 @@ import "../styles.css";
                     message,
                 );
 
-                var message1 = `Please provide your contact information so we can reach out to you.`;
+                var message1 = `Please provide your contact details so we can reach out to you.`;
                 await create_bot_message_div(
                     "messages",
                     "px-2 pt-2 mr-5 mt-5 -mb-3",
@@ -829,7 +836,7 @@ import "../styles.css";
         "Asset Management",
         "Healthcare"
     ]
-        var message = "Which ERPNext module you want to implement ?";
+        var message = "For ERPNext, which module would you like to proceed with? ";
         // create_bot_message_div('messages', 'px-2 pt-2 mr-5 mt-5', message, '10:00 AM', buttons)
         create_bot_message_div(
             "messages",
@@ -882,7 +889,7 @@ import "../styles.css";
             // );
             // erpnext()
         } else {
-            var message = `Please provide your contact information so we can reach out to you.`;
+            var message = `Please provide your contact details so we can reach out to you.`;
            await create_bot_message_div(
                 "messages",
                 "px-2 pt-2 mr-5 mt-5 -mb-3",
@@ -930,7 +937,7 @@ import "../styles.css";
         });
 
       
-            var message = `Please provide brief about your customization.`;
+            var message = `Please give us a short brief about your customizations needs.`;
             await create_bot_message_div(
                 "messages",
                 "px-2 pt-2 mr-5 mt-5 -mb-3",
@@ -959,7 +966,7 @@ import "../styles.css";
         // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': s_account, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'},
         //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': s_manufacturing, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'}]
 
-        // var message = "Which ServiceNow Module You Want To Implement ?"
+        // var message = "For ServiceNow, which module would you like to proceed with? "
         // create_bot_message_div('messages', 'px-2 pt-2 mr-5 mt-5', message, '10:00 AM', buttons)
 
         var buttons = [
@@ -1002,7 +1009,7 @@ import "../styles.css";
 
 
 
-        var message = "Which ServiceNow module you want to implement ?";
+        var message = "For ServiceNow, which module would you like to proceed with? ";
         // create_bot_message_div('messages', 'px-2 pt-2 mr-5 mt-5', message, '10:00 AM', buttons)
         create_bot_message_div(
             "messages",
@@ -1066,7 +1073,7 @@ import "../styles.css";
             // service_now()
         } else {
 
-            var message = `Please provide your contact information so we can reach out to you.`;
+            var message = `Please provide your contact details so we can reach out to you.`;
             await create_bot_message_div(
                 "messages",
                 "px-2 pt-2 mr-5 mt-5 -mb-3",
@@ -1121,7 +1128,7 @@ import "../styles.css";
             }
         });
 
-        var message = `Please provide brief about your customization.`;
+        var message = `Please give us a short brief about your customizations needs.`;
             await create_bot_message_div(
                 "messages",
                 "px-2 pt-2 mr-5 mt-5 -mb-3",
@@ -1149,7 +1156,7 @@ import "../styles.css";
         // selected_technology.push("Customization");
         selected_technology.push("Something Else");
         // var message = 'Please Give Some Details About Your Customization.';
-        var message = 'Please provide brief about your requirements. ';
+        var message = 'Kindly let us know the details of your specific requirements, so we can assist you better!';
         await create_bot_message_div(
             "messages",
             "px-2 pt-2 mr-5 mt-5",
@@ -1241,7 +1248,8 @@ import "../styles.css";
                     })
                 }).then((res) => {
                     if (res.status === 200) {
-                        var message = `Thank you for providing your information. Our sales team will reach you soon at your email address. For any other details, you can reach us at <a href='mailto:info@sanskartechnolab.com' class='text-[#3E96F4]'>info@sanskartechnolab.com</a>`;
+                        // var message = `Thank you for providing your information. Our sales team will reach you soon at your email address. For any other details, you can reach us at <a href='mailto:info@sanskartechnolab.com' class='text-[#3E96F4]'>info@sanskartechnolab.com</a>`;
+                        var message = `Thank you! We have received your contact details. Our team will get back to you within 2 business days. For further details, you can reach out to us at  <a href='mailto:info@sanskartechnolab.com' class='text-[#3E96F4]'>info@sanskartechnolab.com</a>`;
                         var buttons = [{
                             button_id: "start_over",
                             button_label: "Start Over",
@@ -1343,6 +1351,26 @@ import "../styles.css";
         
 
     }
+
+
+    // async function third_party_integration(){
+    //     create_user_message_div(
+    //         "messages",
+    //         "px-2 pt-2 text-right ml-5 mt-5",
+    //         "Third Party Integration"
+    //     );
+
+    //     var message = "";
+    //     await create_bot_message_div(
+    //         "messages",
+    //         "px-2 pt-2 mr-5 mt-5",
+    //         message,
+    //         [],
+    //         '',
+    //         []
+    //     );
+        
+    // }
 
 
     // Utils Function 

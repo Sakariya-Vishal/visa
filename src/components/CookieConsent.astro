@@ -12,7 +12,7 @@ import "../styles.css";
   <Image
     src={close}
     alt="close"
-    class="absolute left-2 top-2 cursor-pointer"
+    class="absolute right-2 lg:left-2 top-2 cursor-pointer"
     id="close"
   />
   <div class="p-2 md:p-5 lg:p-8 mx-5 md:max-w-7xl md:mx-auto">
@@ -71,37 +71,37 @@ import "../styles.css";
     // Define your custom class with an inline media query
     var customCSS = `
     @media (max-width: 280px){
-.custom-class {
-margin-bottom: 8rem;
-}
-}
+      .custom-class {
+      margin-bottom: 8rem;
+      }
+      }
 
 
-@media (min-width: 281px) and (max-width: 434px){
-.custom-class {
-margin-bottom: 6rem;
-}
-}
+      @media (min-width: 281px) and (max-width: 434px){
+      .custom-class {
+      margin-bottom: 6rem;
+      }
+      }
 
 
-@media (min-width: 435px) and (max-width: 767px) {
-.custom-class {
-margin-bottom: 5rem;
-}
-}
+      @media (min-width: 435px) and (max-width: 767px) {
+      .custom-class {
+      margin-bottom: 5rem;
+      }
+      }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
-.custom-class {
-margin-bottom: 8rem;
-}
-}
+      @media (min-width: 768px) and (max-width: 1024px) {
+      .custom-class {
+      margin-bottom: 8rem;
+      }
+      }
 
-@media (min-width:1025px){
-.custom-class {
-margin-bottom: 1.25rem; 
-}
-}
+      @media (min-width:1025px){
+      .custom-class {
+      margin-bottom: 1.25rem; 
+      }
+      }
 
 
 
