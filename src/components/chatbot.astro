@@ -30,7 +30,7 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
         id="a"
     >
         <div
-            class="flex items-center gap-2 bg-[#F6F9FB] rounded-t-lg p-4 text-[#31393c] lg:text-lg md:text-base text-sm font-semibold"
+            class="flex items-center gap-2 bg-[#F6F9FB] rounded-t-lg p-4 text-[#31393c] lg:text-xl md:text-lg text-base font-semibold"
         >
             <Image loading="eager" src={sanskar_chat_logo} alt="sanskar logo" />
             <p>Sanskar ChatBot</p>
@@ -154,6 +154,22 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
 </style>
 
 <script>
+
+    // // Initially, hide the chat icon
+    // document.getElementById("chat_icon").style.display = "none";
+
+    // // Wait for 2 seconds
+    // setTimeout(function() {
+    // // Show the chat icon
+    //     document.getElementById("chat_icon").style.display = "block";
+
+    // // After 2 seconds, add the bounce class to start the animation
+    //     setTimeout(function() {
+    //         document.getElementById("chat_icon").classList.add("bounce");
+    //     }, 6000);
+
+    // }, 3000);
+
 
 
     var token = window.localStorage.getItem("chat_token");
@@ -333,7 +349,7 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
         const checkboxSpan = document.createElement("span");
         const showMoreButton = document.createElement("button");
         showMoreButton.textContent = "Show More";
-        showMoreButton.className = "text-[#3E96F4] text-xs lg:text-base md:text-sm ml-5";
+        showMoreButton.className = "text-[#3E96F4] text-sm lg:text-base md:text-base ml-5";
 
         if (checkboxes.length === 0) {
         } else {
@@ -477,21 +493,21 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
                 button_label: "ERPNext",
                 button_click_action: erpnext,
                 button_class:
-                    "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
             },
             {
                 button_id: "service_now",
                 button_label: "ServiceNow",
                 button_click_action: service_now,
                 button_class:
-                    "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
             },
             // {
             //     button_id: "third_party_integration",
             //     button_label: "Third Party Integration",
             //     button_click_action: third_party_integration,
             //     button_class:
-            //         "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
+            //         "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
             // },
             {
                 button_id: "customization",
@@ -499,14 +515,14 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
                 button_label: "Something Else",
                 button_click_action: customization,
                 button_class:
-                    "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
             },
             {
                 button_id: "career",
                 button_label: "Career",
                 button_click_action: career,
                 button_class:
-                    "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 hover:bg-[#3E96F4] hover:text-white",
             },
         ];
         var message1 = "Hey There! <br /> So good to see you here. <br />Welcome to Sanskar Technolab. <br /> I’m here to help you out with your queries!";
@@ -791,29 +807,29 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
 
         selected_technology = [];
         selected_technology.push("ERPNext");
-        // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': e_account, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'},
-        //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': e_manufacturing, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'}]
+        // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': e_account, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'},
+        //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': e_manufacturing, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'}]
         var buttons = [
             {
                 button_id: "erpnext_custom",
                 button_label: "Customization",
                 button_click_action: e_module_custom,
                 button_class:
-                    "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             },
             {
                 button_id: "e_module_check_confirm",
                 button_label: "Confirm",
                 button_click_action: e_module_check_confirm,
                 button_class:
-                    "border bg-[#3E96F4] text-white px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#b2d5fb]",
+                    "border bg-[#3E96F4] text-white px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#b2d5fb]",
             },
             // {
             //     button_id: "show_more",
             //     button_label: "Show More",
             //     button_click_action: e_module_custom,
             //     button_class:
-            //         "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
+            //         "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             // }
 
         ];
@@ -982,8 +998,8 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
         );
         selected_technology = [];
         selected_technology.push("ServiceNow");
-        // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': s_account, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'},
-        //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': s_manufacturing, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'}]
+        // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': s_account, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'},
+        //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': s_manufacturing, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'}]
 
         // var message = "For ServiceNow, which module would you like to proceed with? "
         // create_bot_message_div('messages', 'px-2 pt-2 mr-5 mt-5', message, '10:00 AM', buttons)
@@ -994,14 +1010,14 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
                 button_label: "Customization",
                 button_click_action: s_module_custom,
                 button_class:
-                    "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
+                    "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             },
             {
                 button_id: "s_modeule_check_confirm",
                 button_label: "Confirm",
                 button_click_action: s_module_check_confirm,
                 button_class:
-                    "border bg-[#3E96F4] text-white px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#b2d5fb]",
+                    "border bg-[#3E96F4] text-white px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#b2d5fb]",
             },
         ];
         // var checkboxes = [{"value": "Accounting", "id": "s_acco"}, {"value": "Manufacturing", "id": "s_manu"}, {"value": "HR & Payroll", "id": "s_hr"}, {"value": "LMS", "id": "s_lms"}]
