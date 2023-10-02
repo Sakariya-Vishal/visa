@@ -9,10 +9,10 @@ import "../styles.css";
 ---
 
 <div
-    class="fixed bottom-5 right-16 z-30 items-center cursor-pointer"
+class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
     id="chat_icon"
 >
-    <Image loading="eager" src={chat} alt="chatbot" />
+    <Image loading="eager" src={chat} alt="chatbot"/>
 </div>
 
 
@@ -132,6 +132,24 @@ import "../styles.css";
             background-color: white;
         }
     }
+    @keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+/* Apply the animation to the chat icon */
+#chat_icon {
+    animation: bounce 1s infinite; /* Adjust the duration and timing function as needed */
+}
 
 </style>
 
@@ -157,6 +175,7 @@ import "../styles.css";
     const chat_message = document.getElementById("chat_message");
     const send_button = document.getElementById("send_button");
     var form = document.getElementById("chat_form");
+    const body = document.body;
 
     // var e_selected_module = []
     // var s_selected_module = []
@@ -184,7 +203,7 @@ import "../styles.css";
         // Create the message paragraph element
         const messageParagraph = document.createElement("p");
         messageParagraph.className =
-            "text-white !text-left bg-[#3E96F4] text-xs lg:text-base md:text-sm p-4 py-2 rounded-l-[10px] rounded-b-[10px] inline-block";
+            "text-white !text-left bg-[#3E96F4] text-sm lg:text-base md:text-base p-4 py-2 rounded-l-[10px] rounded-b-[10px] inline-block";
         messageParagraph.textContent = message;
 
         // Create the inner flex container
@@ -194,7 +213,7 @@ import "../styles.css";
         // Create the timestamp paragraph element
         const timestampParagraph = document.createElement("p");
         timestampParagraph.className =
-            "text-[#9A9A9A] text-xs lg:text-sm md:text-xs";
+            "text-[#9A9A9A] text-sm lg:text-base md:text-base";
         // timestampParagraph.textContent = formatDateToAMPM(date);
         timestampParagraph.textContent = get_current_time();
 
@@ -288,7 +307,7 @@ import "../styles.css";
         await new Promise(resolve => setTimeout(resolve, timeout));
         
         messageParagraph.className =
-            "text-[#31393C] bg-[#F6F9FB] text-xs lg:text-base md:text-sm p-4 py-2 rounded-r-[10px] rounded-b-[10px] inline-block";
+            "text-[#31393C] bg-[#F6F9FB] text-sm lg:text-base md:text-base p-4 py-2 rounded-r-[10px] rounded-b-[10px] inline-block";
         messageParagraph.style.animation = '';
        
         messageParagraph.innerHTML = message;
@@ -333,7 +352,7 @@ import "../styles.css";
             const hiddenCheckboxes = checkboxes.slice(visibleCheckboxes, visibleCheckboxes + 5);
             hiddenCheckboxes.forEach((option) => {
             const checkboxDiv = document.createElement("div");
-            checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-xs lg:text-base md:text-sm";
+            checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-sm lg:text-base md:text-base";
             const checkbox = document.createElement("input");
             checkbox.type = "checkbox";
             checkbox.value = option;
@@ -359,7 +378,7 @@ import "../styles.css";
             for (let i = 0; i < visibleCheckboxes; i++) {
             const option = checkboxes[i];
             const checkboxDiv = document.createElement("div");
-            checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-xs lg:text-base md:text-sm";
+            checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-sm lg:text-base md:text-base";
             const checkbox = document.createElement("input");
             checkbox.type = "checkbox";
             checkbox.value = option;
@@ -662,7 +681,7 @@ import "../styles.css";
                
             }
             
-            else if (question === "In order to assist you better, kindly provide a short description of your customization needs.") {
+            else if (question === "In order to assist you better, kindly provide a brief description of your customization needs.") {
                 questions_answer.push({question: question, answer: message})
                 chat_message.value = "";
                 create_user_message_div(
@@ -937,7 +956,7 @@ import "../styles.css";
         });
 
       
-            var message = `In order to assist you better, kindly provide a short description of your customization needs.`;
+            var message = `In order to assist you better, kindly provide a brief description of your customization needs.`;
             await create_bot_message_div(
                 "messages",
                 "px-2 pt-2 mr-5 mt-5 -mb-3",
@@ -1128,7 +1147,7 @@ import "../styles.css";
             }
         });
 
-        var message = `In order to assist you better, kindly provide a short description of your customization needs.`;
+        var message = `In order to assist you better, kindly provide a brief description of your customization needs.`;
             await create_bot_message_div(
                 "messages",
                 "px-2 pt-2 mr-5 mt-5 -mb-3",
@@ -1376,6 +1395,7 @@ import "../styles.css";
     // Utils Function 
     function show_popup() {
         chat_popup.classList.remove("hidden");
+        body.style.overflow = 'hidden';
         chat_icon.classList.add("hidden");
 
         start_auto_message(true);
@@ -1389,6 +1409,7 @@ import "../styles.css";
                 messagesDiv.removeChild(messagesDiv.firstChild)
             }
             chat_popup.classList.add("hidden");
+            body.style.overflow = 'auto';
             chat_icon.classList.remove("hidden");
             getUserIPAddress().then(ipAddress => {
             let { browserName, device } = detectBrowser();
