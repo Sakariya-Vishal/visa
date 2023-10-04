@@ -1608,7 +1608,6 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
       return { browserName, device }
     }
 
-    // Usage example Socket IO
     get_ip()
         .then((ipAddress) => {
             // console.log("Received IP Address:", ipAddress);
@@ -1660,9 +1659,15 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
     chat_icon.addEventListener("click", show_popup);
     close_btn.addEventListener("click", close_popup);
 
-    // const socket = io.connect("http://migoo.in:9000");
 
-    // Replace with your server's URL
+    // const socket = io.connect("https://www.migoo.in:9000");
+    // socket.on('connection', (socket) => {
+    //     console.log('a user connected');
+    //     socket.on('disconnect', () => {
+    //         console.log('user disconnected');
+    //     });
+    // });
 
+  
 </script>
 

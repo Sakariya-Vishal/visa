@@ -490,7 +490,7 @@ import contact_map from "../../public/Images/contact_map.svg";
         }
     }
 
-    .banner-height{
+    /* .banner-height{
 	height: h-[calc(100vh-10vh)];
 	padding-top: 1rem;
 	padding-bottom: 1rem;
@@ -509,6 +509,17 @@ import contact_map from "../../public/Images/contact_map.svg";
 }
 
 @media (min-width: 1025px) {
+	.banner-height{
+	height: calc(100vh - 10vh);
+}
+} */
+
+.banner-height{
+	height: screen;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+@media (min-width: 1580px) {
 	.banner-height{
 	height: calc(100vh - 10vh);
 }
