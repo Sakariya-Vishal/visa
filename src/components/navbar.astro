@@ -407,10 +407,33 @@ import down_arrow from "../../public/Images/down-arrow.svg";
           </span>
         </li>
 
-        <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
+        <!-- <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
           <a href="/migoo-case-study" class="text-sm md:text-base">
             Case Study</a
           >
+        </li> -->
+
+        <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
+          <span class="group relative inline-block">
+            <span class="flex gap-2"><a href="#" class="text-sm md:text-base">Case Study</a><Image loading="eager"  src={down_arrow} alt="Down Arrow" /></span>
+            
+            <ul
+              class="sub-menu lg:absolute z-10 hidden submenu-bg lg:top-[3.75rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] group-hover:block overflow-x-hidden"
+            >
+              <li class="">
+                <a
+                  class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                  href="/migoo-case-study">Migoo Case Study</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                  href="/sap-to-erpnext-migration">SAP To ERPNext Migration</a
+                >
+              </li>
+            </ul>
+          </span>
         </li>
         <!-- <li
                     class="block  lg:inline-block lg:mt-0 mr-8 text-[#31393C]"

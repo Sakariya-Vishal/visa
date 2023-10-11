@@ -1,0 +1,13 @@
+<svg width="84" height="561" viewBox="0 0 84 561" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M42 32H84" stroke="#92C9FF"/>
+<path d="M42 256H84" stroke="#92C9FF"/>
+<path d="M42 0.5V561" stroke="#92C9FF"/>
+<circle cx="42" cy="256" r="5" fill="white" stroke="#92C9FF"/>
+<path d="M42 480H84" stroke="#92C9FF"/>
+<path d="M0 144H42" stroke="#92C9FF"/>
+<path d="M0 368H42" stroke="#92C9FF"/>
+<circle cx="42" cy="480" r="5" fill="white" stroke="#92C9FF"/>
+<circle cx="42" cy="144" r="5" fill="white" stroke="#92C9FF"/>
+<circle cx="42" cy="368" r="5" fill="white" stroke="#92C9FF"/>
+<circle cx="42" cy="32" r="5" fill="white" stroke="#92C9FF"/>
+</svg>
