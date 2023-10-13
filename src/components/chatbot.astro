@@ -179,25 +179,25 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
         }
 
     // chat text
-    setTimeout(function() {
-        var chat_text = document.getElementById("chat_text")
-        chat_text.classList.remove("hidden");
-        // var textToType = "Chat With Us!";
-        var textToType = "What Are You Looking For?";
-        var currentText = "";
-        var charIndex = 0;
+    // setTimeout(function() {
+    //     var chat_text = document.getElementById("chat_text")
+    //     chat_text.classList.remove("hidden");
+    //     // var textToType = "Chat With Us!";
+    //     var textToType = "What Are You Looking For?";
+    //     var currentText = "";
+    //     var charIndex = 0;
         
-        var typingInterval = setInterval(function() {
-            if (charIndex < textToType.length) {
-                currentText += textToType[charIndex];
-                chat_text.innerText = currentText;
-                charIndex++;
-            } else {
-                clearInterval(typingInterval);
-            }
-        }, 100);
+    //     var typingInterval = setInterval(function() {
+    //         if (charIndex < textToType.length) {
+    //             currentText += textToType[charIndex];
+    //             chat_text.innerText = currentText;
+    //             charIndex++;
+    //         } else {
+    //             clearInterval(typingInterval);
+    //         }
+    //     }, 100);
 
-    }, 100);
+    // }, 100);
 
 //     function typeAndRepeat() {
 //     var chat_text = document.getElementById("chat_text");
@@ -1583,6 +1583,12 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
                         }
                         if (button.id == 's_module_check_confirm'){
                             s_module_check_confirm()
+                        }
+                        if (button.id == 'e_module_custom'){
+                            e_module_custom()
+                        }
+                        if (button.id == 'e_module_check_confirm'){
+                            e_module_check_confirm()
                         }
 
                     });
