@@ -9,15 +9,15 @@ import "../styles.css";
 ---
 
 <div
-class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
+class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-pointer"
     id="chat_icon"
 >
-    <Image loading="eager" src={chat} alt="chatbot"/>
+    <div class="font-semibold text-base text-[#31393C] bg-gray-200 p-2 mr-6 mb-1 rounded-3xl hidden rounded-br-[0px]" id="chat_text"></div>
+    <Image loading="eager" src={chat} alt="chatbot" class="items-right"/>
 </div>
 
-
 <!-- chat popup -->
-<div class="bg-white box hidden fixed bottom-2 right-2 left-2 md:bottom-2 md:right-2 md:left-auto z-30" id="chat_popup">
+<div class="bg-white box fixed bottom-2 right-2 left-2 md:bottom-2 md:right-2 md:left-auto z-30" id="chat_popup">
     <Image
         src={close}
         alt="close"
@@ -132,24 +132,22 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
             background-color: white;
         }
     }
+
     @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-  60% {
-    transform: translateY(-10px);
-  }
-}
-
-
-
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-20px);
+        }
+        60% {
+            transform: translateY(-10px);
+        }
+    }
 /* Apply the animation to the chat icon */
-#chat_icon {
-    animation: bounce 1s infinite; /* Adjust the duration and timing function as needed */
-}
+    /* #chat_icon {
+        animation: bounce 1s infinite;
+    } */
 
 </style>
 
@@ -170,6 +168,62 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
 
     // }, 3000);
 
+
+    if(!window.localStorage.getItem("a")){
+            start_auto_message(true);
+        }
+        else{
+            var chat_html = window.localStorage.getItem("chat_html")
+            document.getElementById("messages").innerHTML = chat_html
+            scrollToBottom()
+        }
+
+    // chat text
+    setTimeout(function() {
+        var chat_text = document.getElementById("chat_text")
+        chat_text.classList.remove("hidden");
+        // var textToType = "Chat With Us!";
+        var textToType = "What Are You Looking For?";
+        var currentText = "";
+        var charIndex = 0;
+        
+        var typingInterval = setInterval(function() {
+            if (charIndex < textToType.length) {
+                currentText += textToType[charIndex];
+                chat_text.innerText = currentText;
+                charIndex++;
+            } else {
+                clearInterval(typingInterval);
+            }
+        }, 100);
+
+    }, 100);
+
+//     function typeAndRepeat() {
+//     var chat_text = document.getElementById("chat_text");
+//     chat_text.classList.remove("hidden");
+    
+//     var textToType = "Chat With Us!";
+//     var currentText = "";
+//     var charIndex = 0;
+    
+//     var typingInterval = setInterval(function() {
+//         if (charIndex < textToType.length) {
+//             currentText += textToType[charIndex];
+//             chat_text.innerText = currentText;
+//             charIndex++;
+//         } else {
+//             clearInterval(typingInterval);
+//             setTimeout(function() {
+//                 chat_text.innerText = ""; // Remove the text
+//                 setTimeout(typeAndRepeat, 1000); // Repeat the typing after a delay
+//             }, 2000); // Delay before removing the text (adjust as needed)
+//         }
+//     }, 100); // Adjust the typing speed (in milliseconds) as needed
+// }
+
+// Start the loop after 6 seconds (6000 milliseconds)
+// setTimeout(typeAndRepeat, 6000);
 
 
     var token = window.localStorage.getItem("chat_token");
@@ -221,6 +275,12 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
         messageParagraph.className =
             "text-white !text-left bg-[#3E96F4] text-sm lg:text-base md:text-base p-4 py-2 rounded-l-[10px] rounded-b-[10px] inline-block";
         messageParagraph.textContent = message;
+        if(message == "What is your name ?"){
+            messageParagraph.id = "wiyn"
+        }
+        if(message == "What is your email address ?"){
+            messageParagraph.id = "wiyea"
+        }
 
         // Create the inner flex container
         const innerFlexContainer = document.createElement("div");
@@ -258,7 +318,8 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
         chat_message.placeholder='Please select from the options';
         chat_message.disabled = true;
         send_button.disabled = true;
-
+        var chat_html = document.getElementById("messages").innerHTML
+        window.localStorage.setItem("chat_html", chat_html)
     }
 
     // function delay(ms) {
@@ -449,6 +510,7 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
             //     selectedValues.textContent = selectedValueArray.join(', ');
             // }
             scrollToBottom()
+
         }
 
         const innerSpan = document.createElement("span");
@@ -481,11 +543,14 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
 
         parent.appendChild(outerDiv);
         scrollToBottom()
-
+        
+        var chat_html = document.getElementById("messages").innerHTML
+        window.localStorage.setItem("chat_html", chat_html)
         
     }
 
     async function start_auto_message(send_hello=false) {
+        window.localStorage.setItem("a", "1")
         scrollToBottom()
         var buttons = [
             {
@@ -811,7 +876,7 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
         //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': e_manufacturing, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'}]
         var buttons = [
             {
-                button_id: "erpnext_custom",
+                button_id: "e_module_custom",
                 button_label: "Customization",
                 button_click_action: e_module_custom,
                 button_class:
@@ -1006,14 +1071,14 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
 
         var buttons = [
             {
-                button_id: "service_now_custom",
+                button_id: "s_module_custom",
                 button_label: "Customization",
                 button_click_action: s_module_custom,
                 button_class:
                     "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             },
             {
-                button_id: "s_modeule_check_confirm",
+                button_id: "s_module_check_confirm",
                 button_label: "Confirm",
                 button_click_action: s_module_check_confirm,
                 button_class:
@@ -1057,6 +1122,7 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
     }
 
     async function s_module_check_confirm() {
+        console.log("adfads")
         // Loop through checkboxes by their IDs
         selected_module = [];
         // const checkboxIds = ["e_acco", "e_manu", "e_hr", "e_lms"];
@@ -1409,18 +1475,129 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
 
 
     // Utils Function 
+    
+
+
+
+    if(!window.localStorage.getItem("a")){
+            start_auto_message(true);
+        }
+        else{
+            var chat_html = window.localStorage.getItem("chat_html")
+           
+            document.getElementById("messages").innerHTML = chat_html
+            scrollToBottom()
+
+
+            setTimeout(function() {
+                // Get a list of all button elements by their IDs
+                const a = document.getElementById("messages")
+                const buttons = a.querySelectorAll('button');
+
+                const question = a.lastElementChild.firstElementChild.innerHTML;
+                if(question === "What is your name ?"){
+                    chat_message.placeholder='Enter your name';
+                    chat_message.disabled = false;
+                    send_button.disabled = false;
+                }
+                if(question === "What is your email address ?"){
+                    chat_message.placeholder='Enter your email';
+                    chat_message.disabled = false;
+                    send_button.disabled = false;
+                }
+    
+                buttons.forEach(button => {
+                    button.addEventListener("click", function() {
+                        // Your event handler logic here
+                        console.log(button.id)
+                        if (button.id == 'erpnext'){
+                            erpnext()
+                        }
+                        if (button.id == 'service_now'){
+                            service_now()
+                        }
+                        if (button.id == 'customization'){
+                            customization()
+                        }
+                        if (button.id == 'career'){
+                            career()
+                        }
+                        if (button.id == 's_module_custom'){
+                            s_module_custom()
+                        }
+                        if (button.id == 's_module_check_confirm'){
+                            s_module_check_confirm()
+                        }
+                        if (button.id == 'start_over'){
+                            start_over()
+                        }
+
+                    });
+                });
+ 
+            }, 3000);   
+        }
+
+
     function show_popup() {
         chat_popup.classList.remove("hidden");
         if (window.innerWidth < 1024) { 
         body.style.overflow = "hidden"; 
-    }
+        }
         chat_icon.classList.add("hidden");
 
-        start_auto_message(true);
+        if(!window.localStorage.getItem("a")){
+            start_auto_message(true);
+        }
+        else{
+            var chat_html = window.localStorage.getItem("chat_html")
+            document.getElementById("messages").innerHTML = chat_html
+            scrollToBottom()
+
+
+            setTimeout(function() {
+                // Get a list of all button elements by their IDs
+                const a = document.getElementById("messages")
+                console.log("msg", a)
+                const buttons = a.querySelectorAll('button');
+    
+                console.log("buttons", buttons)
+                buttons.forEach(button => {
+                    button.addEventListener("click", function() {
+                        // Your event handler logic here
+                        console.log(button.id)
+                        if (button.id == 'erpnext'){
+                            erpnext()
+                        }
+                        if (button.id == 'service_now'){
+                            service_now()
+                        }
+                        if (button.id == 'customization'){
+                            customization()
+                        }
+                        if (button.id == 'career'){
+                            career()
+                        }
+                        if (button.id == 's_module_custom'){
+                            s_module_custom()
+                        }
+                        if (button.id == 's_module_check_confirm'){
+                            s_module_check_confirm()
+                        }
+
+                    });
+                });
+ 
+            }, 3000);
+
+
+        }
+
+        }
+
         // get_messages()
         // const messages = document.getElementById("messages");
         // messages.scrollTop = messages.scrollHeight;
-    }
 
     function close_popup() {
             while (messagesDiv.firstChild){
