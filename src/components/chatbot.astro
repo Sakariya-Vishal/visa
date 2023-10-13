@@ -1411,7 +1411,9 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
     // Utils Function 
     function show_popup() {
         chat_popup.classList.remove("hidden");
-        body.style.overflow = 'hidden';
+        if (window.innerWidth < 1024) { 
+        body.style.overflow = "hidden"; 
+    }
         chat_icon.classList.add("hidden");
 
         start_auto_message(true);
