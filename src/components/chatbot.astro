@@ -14,6 +14,7 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
     id="chat_icon"
 >
     <div class="font-semibold text-base text-[#31393C] bg-gray-200 p-2 mr-6 mb-1 rounded-3xl hidden rounded-br-[0px]" id="chat_text"></div>
+    <!-- <div class="font-semibold text-base text-[#31393C] rounded-[10px] bg-green-500">Chat</div> -->
     <Image loading="eager" src={chat} alt="chatbot" class="items-right"/>
 </div>
 
@@ -127,7 +128,7 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
         }
     }
 
-    #bg-color{
+    .bg-color{
         background-color: white;
         animation: colorAnimation 3s ease-in-out forwards;
     }
@@ -560,6 +561,7 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
                 outerDiv.appendChild(showMoreButton);   
                 outerDiv.appendChild(document.createElement("br"))
             }
+            scrollToBottom()
         }
         outerDiv.appendChild(btn_div);
         // outerDiv.appendChild(innerSpan);
@@ -636,15 +638,17 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
         checkboxSpan.appendChild(checkboxDiv);
         
         }
-        // checkboxSpan.addEventListener('change', function (event) {
-        //     updateSelectedValues(event.target.id);
-        // });
+        checkboxSpan.addEventListener('change', function (event) {
+            updateSelectedValues(event.target.id);
+        });
     
-        // function updateSelectedValues(id) {
-        //     console.log("asdfasdf", id)
-        //     window.localStorage.setItem("local_selected_module", id)
-        // }
-        scrollToBottom()
+        function updateSelectedValues(id) {
+            console.log("asdfasdf", id)
+            var sm = JSON.parse(window.localStorage.getItem("local_selected_module")) || [];
+            sm.push(id);
+            window.localStorage.setItem("local_selected_module", JSON.stringify(sm));
+        }
+        // scrollToBottom()
         return [checkboxSpan, showMoreButton];
 
     }
@@ -695,6 +699,7 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
         var message = "How can I help you with? ";
        
         if (send_hello){
+            document.getElementById("bg-color").classList.add("bg-color")
             await create_bot_message_div(
                 "messages",
                 "px-2 pt-2 mr-5 mt-5",
@@ -1714,6 +1719,9 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
             start_auto_message(true);
         }
         else{
+            if (window.innerWidth < 1024) { 
+                body.style.overflow = "hidden";
+            }
             var chat_html = window.localStorage.getItem("chat_html")
            
             document.getElementById("messages").innerHTML = chat_html
@@ -1725,16 +1733,26 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
                 const a = document.getElementById("messages")
                 const buttons = a.querySelectorAll('button');
 
-                let checkBoxesToCheck = window.localStorage.getItem("selected_module")
-                if (checkBoxesToCheck){
-                    const checkboxes = a.querySelectorAll('input[type="checkbox"]');
-    
-                        checkboxes.forEach(checkbox => {
-                            if (checkBoxesToCheck.includes(checkbox.id)) {
+
+                let checkBoxesToCheck = window.localStorage.getItem("selected_module");
+
+                if (checkBoxesToCheck) {
+                    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+                    checkboxes.forEach(checkbox => {
+                        if (checkBoxesToCheck.includes(checkbox.id)) {
                             checkbox.checked = true;
-                            }
+                        }
+
+                        checkbox.addEventListener('change', function (event) {
+                            console.log("asdfasdf", event.target.id);
+                            var sm = JSON.parse(window.localStorage.getItem("local_selected_module")) || [];
+                            sm.push(event.target.id); // Use event.target.id to get the checkbox id
+                            window.localStorage.setItem("local_selected_module", JSON.stringify(sm));
                         });
-                    }
+                    });
+                }
+
 
                 const question = a.lastElementChild.firstElementChild.innerHTML;
                 if(question === "What is your name ?"){
@@ -1910,11 +1928,10 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
                 
     }
 
-
     function show_popup() {
         chat_popup.classList.remove("hidden");
         if (window.innerWidth < 1024) { 
-        body.style.overflow = "hidden"; 
+            body.style.overflow = "hidden";
         }
         chat_icon.classList.add("hidden");
 
