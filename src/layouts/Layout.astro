@@ -44,8 +44,15 @@ const { title, keyword='', description='', canonical_href=''} = Astro.props;
 		{keyword && <meta name="keyword" content={keyword} />}
 		{description && <meta name="description" content={description} /> }
 
+		<meta property="og:title" content={title}>
+		<meta property="og:description" content={description}>
+		<meta property="og:image" content="https://sanskartechnolab.com/files/favicon-32x32.png">
+		<meta property="og:url" content={canonical_href}>
+		<meta property="og:type" content="website">
+
 		{canonical_href && <link rel="canonical" href={canonical_href} />}
 
+		
 		<title>{title}</title>
 		
 		<link
