@@ -2375,9 +2375,16 @@ div.appendChild(containerDiv);
       if (emailNameValue === "") {
         blinkBorder(emailInput);
       }
-      if (phoneNameValue === "") {
-        blinkBorder(phoneInput);
-      }
+      
+      const indianPhoneNumberPattern = /^[6-9]\d{9}$/;
+
+if (phoneNameValue === "") {
+  blinkBorder(phoneInput);
+} else if (!indianPhoneNumberPattern.test(phoneNameValue)) {
+  blinkBorder(phoneInput);
+        enableUserInteractions();
+        return;
+}
       if (fileNameValue === "") {
         blinkBorder(selectedFileInput);
       }
