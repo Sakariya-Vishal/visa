@@ -2262,13 +2262,11 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
         start_auto_message()
     }
 
-
     chat_message.addEventListener("focus", remove_error_class);
 
     form.addEventListener("submit", send_message);
     chat_icon.addEventListener("click", show_popup);
     close_btn.addEventListener("click", close_popup);
-
 
     // const socket = io.connect("https://www.migoo.in:9000");
     // socket.on('connection', (socket) => {
@@ -2295,5 +2293,3 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
     }
     document.getElementById("reset_chatbot").addEventListener("click", reset_chatbot)
 </script>
-
-
