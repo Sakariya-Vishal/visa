@@ -5,34 +5,25 @@ import chat_send_btn from "../../public/Images/chat_send.svg";
 import chat from "../../public/Images/chat.svg";
 import double_right from "../../public/Images/double_right.svg";
 import sanskar_chat_logo from "../../public/Images/sanskar_chat_logo.svg";
-import reset_chat_icon from "../../public/Images/reset_chat_icon.svg";
 import "../styles.css";
 ---
 
 <div
-class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-pointer"
+class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
     id="chat_icon"
 >
-    <div class="font-semibold text-base text-[#31393C] bg-gray-200 p-2 mr-6 mb-1 rounded-3xl hidden rounded-br-[0px]" id="chat_text"></div>
-    <!-- <div class="font-semibold text-base text-[#31393C] rounded-[10px] bg-green-500">Chat</div> -->
-    <Image loading="eager" src={chat} alt="chatbot" class="items-right"/>
+    <Image loading="eager" src={chat} alt="chatbot"/>
 </div>
 
+
 <!-- chat popup -->
-<div class="bg-white box fixed bottom-2 right-2 left-2 md:bottom-2 md:right-2 md:left-auto z-30" id="chat_popup">
+<div class="bg-white box hidden fixed bottom-2 right-2 left-2 md:bottom-2 md:right-2 md:left-auto z-30" id="chat_popup">
     <Image
         src={close}
         alt="close"
-        class="absolute right-4 top-[26px] h-3 w-3 cursor-pointer"
+        class="absolute right-4 top-6 h-3 w-3 cursor-pointer"
         id="close_btn"
     />
-    <Image
-        src={reset_chat_icon}
-        alt="reset chatbot"
-        class="absolute right-8 top-6 h-4 w-4 cursor-pointer"
-        id="reset_chatbot"
-    />
-
     <div id="bg-color">
     <div
         class="lg:h-[30rem] md:h-[70vh] h-[70vh] lg:w-80 md:w-[26rem] w-full"
@@ -128,7 +119,7 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
         }
     }
 
-    .bg-color{
+    #bg-color{
         background-color: white;
         animation: colorAnimation 3s ease-in-out forwards;
     }
@@ -141,22 +132,24 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
             background-color: white;
         }
     }
-
     @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            transform: translateY(0);
-        }
-        40% {
-            transform: translateY(-20px);
-        }
-        60% {
-            transform: translateY(-10px);
-        }
-    }
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
 /* Apply the animation to the chat icon */
-    #chat_icon {
-        animation: bounce 1s infinite;
-    }
+#chat_icon {
+    animation: bounce 1s infinite; /* Adjust the duration and timing function as needed */
+}
 
 </style>
 
@@ -164,9 +157,6 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
 
     // // Initially, hide the chat icon
     // document.getElementById("chat_icon").style.display = "none";
-
-// import { InvalidFrontmatterInjectionError } from "astro/dist/core/errors/errors-data";
-// import { fade } from "astro:transitions";
 
     // // Wait for 2 seconds
     // setTimeout(function() {
@@ -180,62 +170,6 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
 
     // }, 3000);
 
-
-    if(!window.localStorage.getItem("a")){
-            start_auto_message(true);
-        }
-        else{
-            var chat_html = window.localStorage.getItem("chat_html")
-            document.getElementById("messages").innerHTML = chat_html
-            scrollToBottom()
-        }
-
-    // chat text
-    // setTimeout(function() {
-    //     var chat_text = document.getElementById("chat_text")
-    //     chat_text.classList.remove("hidden");
-    //     // var textToType = "Chat With Us!";
-    //     var textToType = "What Are You Looking For?";
-    //     var currentText = "";
-    //     var charIndex = 0;
-        
-    //     var typingInterval = setInterval(function() {
-    //         if (charIndex < textToType.length) {
-    //             currentText += textToType[charIndex];
-    //             chat_text.innerText = currentText;
-    //             charIndex++;
-    //         } else {
-    //             clearInterval(typingInterval);
-    //         }
-    //     }, 100);
-
-    // }, 100);
-
-//     function typeAndRepeat() {
-//     var chat_text = document.getElementById("chat_text");
-//     chat_text.classList.remove("hidden");
-    
-//     var textToType = "Chat With Us!";
-//     var currentText = "";
-//     var charIndex = 0;
-    
-//     var typingInterval = setInterval(function() {
-//         if (charIndex < textToType.length) {
-//             currentText += textToType[charIndex];
-//             chat_text.innerText = currentText;
-//             charIndex++;
-//         } else {
-//             clearInterval(typingInterval);
-//             setTimeout(function() {
-//                 chat_text.innerText = ""; // Remove the text
-//                 setTimeout(typeAndRepeat, 1000); // Repeat the typing after a delay
-//             }, 2000); // Delay before removing the text (adjust as needed)
-//         }
-//     }, 100); // Adjust the typing speed (in milliseconds) as needed
-// }
-
-// Start the loop after 6 seconds (6000 milliseconds)
-// setTimeout(typeAndRepeat, 6000);
 
 
     var token = window.localStorage.getItem("chat_token");
@@ -287,18 +221,6 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
         messageParagraph.className =
             "text-white !text-left bg-[#3E96F4] text-sm lg:text-base md:text-base p-4 py-2 rounded-l-[10px] rounded-b-[10px] inline-block";
         messageParagraph.textContent = message;
-        // if(message == "What is your name ?"){
-        //     messageParagraph.id = "wiyn"
-        // }
-        // if(message == "What is your email address ?"){
-        //     messageParagraph.id = "wiyea"
-        // }
-        // if(message == "Kindly let us know the details of your specific requirements, so we can assist you better!"){
-        //     messageParagraph.id = "something_else"
-        // }
-        // if(message == "In order to assist you better, kindly provide a brief description of your customization needs."){
-        //     messageParagraph.id = "customization"
-        // }
 
         // Create the inner flex container
         const innerFlexContainer = document.createElement("div");
@@ -336,8 +258,7 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
         chat_message.placeholder='Please select from the options';
         chat_message.disabled = true;
         send_button.disabled = true;
-        var chat_html = document.getElementById("messages").innerHTML
-        window.localStorage.setItem("chat_html", chat_html)
+
     }
 
     // function delay(ms) {
@@ -374,7 +295,7 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
         button_parent_class = 'flex flex-wrap justify-center gap-2',
         checkboxes = [],
         timeout = 3000,
-        show_checkboxes=5
+        typing = true
     ) {
 
         scrollToBottom()
@@ -425,111 +346,110 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
             });
         }
 
-        // const checkboxSpan = document.createElement("span");
-        // const showMoreButton = document.createElement("button");
-        // showMoreButton.textContent = "Show More";
-        // showMoreButton.className = "text-[#3E96F4] text-sm lg:text-base md:text-base ml-5";
+        const checkboxSpan = document.createElement("span");
+        const showMoreButton = document.createElement("button");
+        showMoreButton.textContent = "Show More";
+        showMoreButton.className = "text-[#3E96F4] text-sm lg:text-base md:text-base ml-5";
 
-        // if (checkboxes.length === 0) {
-        // } else {
-        //     checkboxSpan.className =
-        //         "grid grid-cols-1 md:gap-auto gap-1 justify-items-start mt-3";
-        //     const selectedValues = document.getElementById("selectedValues");
+        if (checkboxes.length === 0) {
+        } else {
+            checkboxSpan.className =
+                "grid grid-cols-1 md:gap-auto gap-1 justify-items-start mt-3";
+            const selectedValues = document.getElementById("selectedValues");
 
-        //     // const options = checkboxes;
+            // const options = checkboxes;
 
-        //     // ####################### new code start ###########################
+            // ####################### new code start ###########################
             
             
-        //     let visibleCheckboxes = 5;
-        //     // var showMoreButton = document.getElementById("show_more")
-        //     showMoreButton.addEventListener("click", () => {
-        //     const hiddenCheckboxes = checkboxes.slice(visibleCheckboxes, visibleCheckboxes + 5);
-        //     hiddenCheckboxes.forEach((option) => {
-        //     const checkboxDiv = document.createElement("div");
-        //     checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-sm lg:text-base md:text-base";
-        //     const checkbox = document.createElement("input");
-        //     checkbox.type = "checkbox";
-        //     checkbox.value = option;
-        //     checkbox.id = option;
-        //     const label = document.createElement("label");
-        //     label.htmlFor = option;
-        //     label.appendChild(document.createTextNode(option));
-        //     checkboxDiv.appendChild(checkbox);
-        //     checkboxDiv.appendChild(label);
+            let visibleCheckboxes = 5;
+            // var showMoreButton = document.getElementById("show_more")
+            showMoreButton.addEventListener("click", () => {
+            const hiddenCheckboxes = checkboxes.slice(visibleCheckboxes, visibleCheckboxes + 5);
+            hiddenCheckboxes.forEach((option) => {
+            const checkboxDiv = document.createElement("div");
+            checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-sm lg:text-base md:text-base";
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.value = option;
+            checkbox.id = option;
+            const label = document.createElement("label");
+            label.htmlFor = option;
+            label.appendChild(document.createTextNode(option));
+            checkboxDiv.appendChild(checkbox);
+            checkboxDiv.appendChild(label);
 
-        //     checkboxSpan.appendChild(checkboxDiv);
-        //     scrollToBottom()
-        //     });
+            checkboxSpan.appendChild(checkboxDiv);
+            scrollToBottom()
+            });
 
-        //     visibleCheckboxes += hiddenCheckboxes.length;
+            visibleCheckboxes += hiddenCheckboxes.length;
 
-        //     if (visibleCheckboxes >= checkboxes.length) {
-        //     showMoreButton.style.display = "none"; // Hide the button when all checkboxes are visible
-        //     }
-        //     });
+            if (visibleCheckboxes >= checkboxes.length) {
+            showMoreButton.style.display = "none"; // Hide the button when all checkboxes are visible
+            }
+            });
 
-        //     // Initially, show the first 5 checkboxes
-        //     for (let i = 0; i < visibleCheckboxes; i++) {
-        //     const option = checkboxes[i];
-        //     const checkboxDiv = document.createElement("div");
-        //     checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-sm lg:text-base md:text-base";
-        //     const checkbox = document.createElement("input");
-        //     checkbox.type = "checkbox";
-        //     checkbox.value = option;
-        //     checkbox.id = option;
+            // Initially, show the first 5 checkboxes
+            for (let i = 0; i < visibleCheckboxes; i++) {
+            const option = checkboxes[i];
+            const checkboxDiv = document.createElement("div");
+            checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-sm lg:text-base md:text-base";
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.value = option;
+            checkbox.id = option;
 
-        //     const label = document.createElement("label");
-        //     label.htmlFor = option;
-        //     label.appendChild(document.createTextNode(option));
+            const label = document.createElement("label");
+            label.htmlFor = option;
+            label.appendChild(document.createTextNode(option));
 
-        //     checkboxDiv.appendChild(checkbox);
-        //     checkboxDiv.appendChild(label);
+            checkboxDiv.appendChild(checkbox);
+            checkboxDiv.appendChild(label);
 
-        //     checkboxSpan.appendChild(checkboxDiv);
+            checkboxSpan.appendChild(checkboxDiv);
             
-        //     }
-        //     // ####################### new code end ###########################
+            }
+            // ####################### new code end ###########################
 
-        //     // checkboxes.forEach((option) => {
-        //     //     const checkboxDiv = document.createElement("div");
-        //     //     checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-xs lg:text-base md:text-sm";
-        //     //     const checkbox = document.createElement("input");
-        //     //     checkbox.type = "checkbox";
-        //     //     checkbox.value = option;
-        //     //     checkbox.id = option;
+            // checkboxes.forEach((option) => {
+            //     const checkboxDiv = document.createElement("div");
+            //     checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-xs lg:text-base md:text-sm";
+            //     const checkbox = document.createElement("input");
+            //     checkbox.type = "checkbox";
+            //     checkbox.value = option;
+            //     checkbox.id = option;
 
-        //     //     const label = document.createElement("label");
-        //     //     label.htmlFor = option.value;
-        //     //     label.appendChild(document.createTextNode(option));
+            //     const label = document.createElement("label");
+            //     label.htmlFor = option.value;
+            //     label.appendChild(document.createTextNode(option));
 
-        //     //     checkboxDiv.appendChild(checkbox);
-        //     //     checkboxDiv.appendChild(label);
+            //     checkboxDiv.appendChild(checkbox);
+            //     checkboxDiv.appendChild(label);
 
-        //     //     checkboxSpan.appendChild(checkboxDiv);
+            //     checkboxSpan.appendChild(checkboxDiv);
 
-        //     //     // Add event listener to track checkbox changes
-        //     //     // checkbox.addEventListener('change', updateSelectedValues);
-        //     //     // checkbox.addEventListener('change', function (event) {
-        //     //     //     updateSelectedValues(event.target.id);
-        //     //     // });
-        //     // });
-        //     // scrollToBottom()
+            //     // Add event listener to track checkbox changes
+            //     // checkbox.addEventListener('change', updateSelectedValues);
+            //     // checkbox.addEventListener('change', function (event) {
+            //     //     updateSelectedValues(event.target.id);
+            //     // });
+            // });
+            // scrollToBottom()
 
-        //     function updateSelectedValues(id) {
-        //         selected_module = [];
-        //         selected_module.push({"module_name": id});
-        //     }
+            function updateSelectedValues(id) {
+                selected_module = [];
+                selected_module.push({"module_name": id});
+            }
 
-        //     // // Function to update selected values
-        //     // function updateSelectedValues() {
-        //     //     const selectedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-        //     //     const selectedValueArray = Array.from(selectedCheckboxes).map(checkbox => checkbox.value);
-        //     //     selectedValues.textContent = selectedValueArray.join(', ');
-        //     // }
-        //     scrollToBottom()
-
-        // }
+            // // Function to update selected values
+            // function updateSelectedValues() {
+            //     const selectedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            //     const selectedValueArray = Array.from(selectedCheckboxes).map(checkbox => checkbox.value);
+            //     selectedValues.textContent = selectedValueArray.join(', ');
+            // }
+            scrollToBottom()
+        }
 
         const innerSpan = document.createElement("span");
         innerSpan.className = "relative";
@@ -551,111 +471,21 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
 
         innerSpan.appendChild(timestampParagraph);
         outerDiv.appendChild(messageParagraph);
-
-        if (checkboxes.length === 0) {
-        } else {
-            const [checkboxSpan, showMoreButton] = create_checkboxes(checkboxes, show_checkboxes)
-    
-            outerDiv.appendChild(checkboxSpan);
-            if (checkboxes.length !== 0) {
-                outerDiv.appendChild(showMoreButton);   
-                outerDiv.appendChild(document.createElement("br"))
-            }
-            scrollToBottom()
+        outerDiv.appendChild(checkboxSpan);
+        if (checkboxes.length !== 0) {
+            outerDiv.appendChild(showMoreButton);   
+            outerDiv.appendChild(document.createElement("br"))
         }
         outerDiv.appendChild(btn_div);
         // outerDiv.appendChild(innerSpan);
 
         parent.appendChild(outerDiv);
         scrollToBottom()
-        
-        var chat_html = document.getElementById("messages").innerHTML
-        window.localStorage.setItem("chat_html", chat_html)
+
         
     }
-
-
-    function create_checkboxes(checkboxes, show_checkboxes){
-        const checkboxSpan = document.createElement("span");
-        const showMoreButton = document.createElement("button");
-        showMoreButton.textContent = "Show More";
-        showMoreButton.id="show_more"
-        showMoreButton.className = "text-[#3E96F4] text-sm lg:text-base md:text-base ml-5";
-        checkboxSpan.className =
-            "grid grid-cols-1 md:gap-auto gap-1 justify-items-start mt-3";
-        const selectedValues = document.getElementById("selectedValues");
-
-        // const options = checkboxes;
-
-        // ####################### new code start ###########################
-        
-        
-        let visibleCheckboxes = show_checkboxes;
-        // var showMoreButton = document.getElementById("show_more")
-        showMoreButton.addEventListener("click", () => {
-            const hiddenCheckboxes = checkboxes.slice(visibleCheckboxes, visibleCheckboxes + 5);
-            hiddenCheckboxes.forEach((option) => {
-            const checkboxDiv = document.createElement("div");
-            checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-sm lg:text-base md:text-base";
-            const checkbox = document.createElement("input");
-            checkbox.type = "checkbox";
-            checkbox.value = option;
-            checkbox.id = option;
-            const label = document.createElement("label");
-            label.htmlFor = option;
-            label.appendChild(document.createTextNode(option));
-            checkboxDiv.appendChild(checkbox);
-            checkboxDiv.appendChild(label);
-
-            checkboxSpan.appendChild(checkboxDiv);
-            scrollToBottom()
-        });
-
-        visibleCheckboxes += hiddenCheckboxes.length;
-
-        if (visibleCheckboxes >= checkboxes.length) {
-        showMoreButton.style.display = "none"; // Hide the button when all checkboxes are visible
-        }
-        });
-
-        // Initially, show the first 5 checkboxes
-        for (let i = 0; i < visibleCheckboxes; i++) {
-        const option = checkboxes[i];
-        const checkboxDiv = document.createElement("div");
-        checkboxDiv.className = "flex gap-2 items-center ml-5 text-[#31393C] text-sm lg:text-base md:text-base";
-        const checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
-        checkbox.value = option;
-        checkbox.id = option;
-
-        const label = document.createElement("label");
-        label.htmlFor = option;
-        label.appendChild(document.createTextNode(option));
-
-        checkboxDiv.appendChild(checkbox);
-        checkboxDiv.appendChild(label);
-
-        checkboxSpan.appendChild(checkboxDiv);
-        
-        }
-        checkboxSpan.addEventListener('change', function (event) {
-            updateSelectedValues(event.target.id);
-        });
-    
-        function updateSelectedValues(id) {
-            console.log("asdfasdf", id)
-            var sm = JSON.parse(window.localStorage.getItem("local_selected_module")) || [];
-            sm.push(id);
-            window.localStorage.setItem("local_selected_module", JSON.stringify(sm));
-        }
-        // scrollToBottom()
-        return [checkboxSpan, showMoreButton];
-
-    }
-
 
     async function start_auto_message(send_hello=false) {
-        window.localStorage.setItem("a", "1")
         scrollToBottom()
         var buttons = [
             {
@@ -699,7 +529,6 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
         var message = "How can I help you with? ";
        
         if (send_hello){
-            document.getElementById("bg-color").classList.add("bg-color")
             await create_bot_message_div(
                 "messages",
                 "px-2 pt-2 mr-5 mt-5",
@@ -865,7 +694,7 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
                     []
                 );
                 set_get_user_name_bot_message();
-                send_final_bot_message('q-a')
+               
             }
             
             else if (question === "In order to assist you better, kindly provide a brief description of your customization needs.") {
@@ -887,7 +716,6 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
                     []
                 );
                 set_get_user_name_bot_message();
-                send_final_bot_message('q-a')
                 
             }
 
@@ -900,7 +728,6 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
                     message,
                 );
                 set_get_user_email_bot_message();
-                send_final_bot_message('name')
             }
 
             else if (question === "What is your email address ?") {
@@ -920,7 +747,7 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
                         message
                     );
 
-                    send_final_bot_message('email')
+                    send_final_bot_message(message)
                 }
             } 
             
@@ -971,20 +798,20 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
 
     // Auto Message Button Actions ERPNext
 
-    async function erpnext() {
-        selected_technology = [];
-        selected_technology.push("ERPNext");
-        await send_final_bot_message('technology')
+    function erpnext() {
         create_user_message_div(
             "messages",
             "px-2 pt-2 text-right ml-5 mt-5",
             "ERPNext"
         );
+
+        selected_technology = [];
+        selected_technology.push("ERPNext");
         // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': e_account, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'},
         //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': e_manufacturing, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'}]
         var buttons = [
             {
-                button_id: "e_module_custom",
+                button_id: "erpnext_custom",
                 button_label: "Customization",
                 button_click_action: e_module_custom,
                 button_class:
@@ -1053,7 +880,7 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
             buttons,
             '',
             checkboxes
-            );
+        );
     }
 
     async function e_module_check_confirm() {
@@ -1080,8 +907,6 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
             if (checkbox){
                 if (checkbox.checked) {
                     selected_module.push({"module_name": checkbox.value});
-                    const mylist = JSON.stringify(selected_module);
-                        window.localStorage.setItem("selected_module", mylist)
                 }
             }
         });
@@ -1099,7 +924,6 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
             // );
             // erpnext()
         } else {
-            await send_final_bot_message('module')
             var message = `Please provide your contact details so we can reach out to you.`;
            await create_bot_message_div(
                 "messages",
@@ -1114,6 +938,11 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
     }
 
     async function e_module_custom(){
+        create_user_message_div(
+            "messages",
+            "px-2 pt-2 text-right ml-5 mt-5",
+            "Customization"
+        );
         need_customization = 1
         selected_module = [];
         // Loop through checkboxes by their IDs
@@ -1138,18 +967,10 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
             if (checkbox){
                 if (checkbox.checked) {
                     selected_module.push({"module_name": checkbox.value});
-                    const mylist = JSON.stringify(selected_module);
-                    window.localStorage.setItem("selected_module", mylist)
                 }
             }
         });
 
-        await send_final_bot_message('module_customization')
-        create_user_message_div(
-            "messages",
-            "px-2 pt-2 text-right ml-5 mt-5",
-            "Customization"
-        );
       
             var message = `In order to assist you better, kindly provide a brief description of your customization needs.`;
             await create_bot_message_div(
@@ -1169,15 +990,14 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
 
     // Auto Message Button Actions ServiceNow
 
-    async function service_now() {
-        selected_technology = [];
-        selected_technology.push("ServiceNow");
-        await send_final_bot_message('technology')
+    function service_now() {
         create_user_message_div(
             "messages",
             "px-2 pt-2 text-right ml-5 mt-5",
             "ServiceNow"
         );
+        selected_technology = [];
+        selected_technology.push("ServiceNow");
         // var buttons = [{'button_id': 'accont', 'button_label': 'Account', 'button_click_action': s_account, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'},
         //                {'button_id': 'manufacturing', 'button_label': 'Manufacturing', 'button_click_action': s_manufacturing, 'button_class': 'border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white'}]
 
@@ -1186,14 +1006,14 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
 
         var buttons = [
             {
-                button_id: "s_module_custom",
+                button_id: "service_now_custom",
                 button_label: "Customization",
                 button_click_action: s_module_custom,
                 button_class:
                     "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
             },
             {
-                button_id: "s_module_check_confirm",
+                button_id: "s_modeule_check_confirm",
                 button_label: "Confirm",
                 button_click_action: s_module_check_confirm,
                 button_class:
@@ -1269,8 +1089,6 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
             if (checkbox){
                 if (checkbox.checked) {
                     selected_module.push({"module_name": checkbox.value});
-                    const mylist = JSON.stringify(selected_module);
-                    window.localStorage.setItem("selected_module", mylist)
                 }
             }
         });
@@ -1289,7 +1107,7 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
             // );
             // service_now()
         } else {
-            await send_final_bot_message('module')
+
             var message = `Please provide your contact details so we can reach out to you.`;
             await create_bot_message_div(
                 "messages",
@@ -1300,19 +1118,23 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
                 []
             );
             set_get_user_name_bot_message();
-            
         }
     }
 
     async function s_module_custom(){
+        create_user_message_div(
+            "messages",
+            "px-2 pt-2 text-right ml-5 mt-5",
+            "Customization"
+        );
         need_customization = 1
         selected_module = [];
         // const checkboxIds = ["e_acco", "e_manu", "e_hr", "e_lms"];
         // const checkboxIds = [
-            //     "Accounting",
-            //     "Manufacturing",
-            //     "HR & Payroll",
-            //     "LMS",
+        //     "Accounting",
+        //     "Manufacturing",
+        //     "HR & Payroll",
+        //     "LMS",
         // ];
             var checkboxIds = [
                 "IT Service Management (ITSM)",
@@ -1332,54 +1154,42 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
                 "Orchestration",
                 "App Engine Studio"
             ];
-            checkboxIds.forEach((id) => {
-                const checkbox = document.getElementById(id);
-                if (checkbox){
-                    if (checkbox.checked) {
-                        selected_module.push({"module_name": checkbox.value});
-                        const mylist = JSON.stringify(selected_module);
-                        window.localStorage.setItem("selected_module", mylist)
-                    }
+        checkboxIds.forEach((id) => {
+            const checkbox = document.getElementById(id);
+            if (checkbox){
+                if (checkbox.checked) {
+                    selected_module.push({"module_name": checkbox.value});
                 }
+            }
         });
-        
-        await send_final_bot_message('module_customization')
-        create_user_message_div(
-            "messages",
-            "px-2 pt-2 text-right ml-5 mt-5",
-            "Customization"
-        );
-
 
         var message = `In order to assist you better, kindly provide a brief description of your customization needs.`;
-        await create_bot_message_div(
-            "messages",
-            "px-2 pt-2 mr-5 mt-5 -mb-3",
-            message,
-            [],
-            '',
-            []
+            await create_bot_message_div(
+                "messages",
+                "px-2 pt-2 mr-5 mt-5 -mb-3",
+                message,
+                [],
+                '',
+                []
             );
-            // var chat_message = document.getElementById('chat_message')
-            chat_message.placeholder='message';
-            chat_message.disabled = false;
-            send_button.disabled = false;
-            
-        }
+        // var chat_message = document.getElementById('chat_message')
+        chat_message.placeholder='message';
+        chat_message.disabled = false;
+        send_button.disabled = false;
         
+    }
+
     // Auto Message Button Actions ERPNext Customization
 
     async function customization() {
-        await send_final_bot_message('technology')
-        selected_technology = [];
-        // selected_technology.push("Customization");
-        selected_technology.push("Something Else");
-
         create_user_message_div(
             "messages",
             "px-2 pt-2 text-right ml-5 mt-5",
             "Something Else"
         );
+        selected_technology = [];
+        // selected_technology.push("Customization");
+        selected_technology.push("Something Else");
         // var message = 'Please Give Some Details About Your Customization.';
         var message = 'Kindly let us know the details of your specific requirements, so we can assist you better!';
         await create_bot_message_div(
@@ -1434,7 +1244,7 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
     }
 
     // send data to frappe backend
-    function send_final_bot_message(type){
+    function send_final_bot_message(email){
 
     // Function to get the user's IP address using ipify
     function getUserIPAddress() {
@@ -1451,169 +1261,57 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
         getUserIPAddress().then(ipAddress => {
             let { browserName, device } = detectBrowser();
             if (ipAddress) {
-
-                var token = window.localStorage.getItem("chat_token");
-
-                if(type=="technology"){
-                    fetch("https://sanskar.frappe.cloud/api/resource/Astro Site Chat", {
-                        method: 'POST',
-                        headers: {
-                            'Accept': 'application/json',
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({
-                            // email: user_details[1].email,
-                            
-                            // name1: user_details[0].name,
-                            technology: selected_technology[0],
-                            // module: selected_module,
-                            // question_answer: questions_answer,
-                            // need_customization: need_customization,
-                            
-                            token: token,
-                            is_owner: 1,
-                            ip: ipAddress,
-                            browser_name: browserName,
-                            device: device,
-                            
-                        })
-                    }).then((res) => {
-                        if (res.status === 200) {
-                            // // var message = `Thank you for providing your information. Our sales team will reach you soon at your email address. For any other details, you can reach us at <a href='mailto:info@sanskartechnolab.com' class='text-[#3E96F4]'>info@sanskartechnolab.com</a>`;
-                            // var message = `Thank you! We have received your contact details. Our team will get back to you. For further details, you can reach out to us at  <a href='mailto:info@sanskartechnolab.com' class='text-[#3E96F4]'>info@sanskartechnolab.com</a>`;
-                            // var buttons = [{
-                            //     button_id: "start_over",
-                            //     button_label: "Start Over",
-                            //     button_click_action: start_over,
-                            //     button_class:
-                            //         "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 mt-5 hover:bg-[#3E96F4] hover:text-white",
-                            // }]
-                            // create_bot_message_div(
-                            //     "messages",
-                            //     "px-2 pt-2 mr-5 mt-5",
-                            //     message,
-                            //     buttons,
-                            //     '',
-                            //     []
-                            // );
-                            // // var chat_message = document.getElementById('chat_message')
-                            // chat_message.placeholder='Please select from the options';
-                            // chat_message.disabled = true;
-                            // send_button.disabled = true;
-                            
-                            // //   window.location.href="/thank-you"
-
-                            // console.log("okay")
-
-                        } else {
-                            alert("Failed");
-                        }
-                    }).catch((error) => {
-                        console.log(error);
-                    });
-                }
-
-                else{
-                    fetch(`https://sanskar.frappe.cloud/api/resource/Astro Site Chat?filters=[["token", "=", "${token}"],["ip", "=", "${ipAddress}"]]&fields=["name"]`,{
-                            method: "GET",
-                            headers: {
-                                Accept: "application/json",
-                                "Content-Type": "application/json",
-                            },
-                        }
-                    )
-                    .then((response) => response.json())
-                    .then((data) => {
-                        if(data.data[0].name){
-                                let body_data = ''
-                                if (type==="module"){
-                                    body_data = JSON.stringify(
-                                        {
-                                            module: selected_module,
-                                        }
-                                    )
-                                }
-                                if (type==="module_customization"){
-                                    body_data = JSON.stringify(
-                                        {
-                                            module: selected_module,
-                                            need_customization: need_customization,
-                                        }
-                                    )
-                                }
-                                if (type==="q-a"){
-                                    body_data = JSON.stringify(
-                                    {
-                                        question_answer: questions_answer,
-                                    }
-                                    )
-                                }
-                                if (type==="module_customization"){
-                                    body_data = JSON.stringify(
-                                        {
-                                            module: selected_module,
-                                            need_customization: need_customization,
-                                        }
-                                    )
-                                }
-                                if (type==="name"){
-                                    body_data = JSON.stringify(
-                                        {
-                                            name1: user_details[0].name,
-                                        }
-                                    )
-                                }
-                                if (type==="email"){
-                                    body_data = JSON.stringify(
-                                        {
-                                            email: user_details[1].email,
-                                        }
-                                    )
-                                }
-
-                                fetch(`https://sanskar.frappe.cloud/api/resource/Astro Site Chat/${data.data[0].name}`,{
-                                    method: 'PUT',
-                                    headers: {
-                                        'Accept': 'application/json',
-                                        'Content-Type': 'application/json',
-                                    },
-                                    body: body_data
-                                }).then((res) => {
-                                    if (res.status === 200 && type == "email") {
-                                        // var message = `Thank you for providing your information. Our sales team will reach you soon at your email address. For any other details, you can reach us at <a href='mailto:info@sanskartechnolab.com' class='text-[#3E96F4]'>info@sanskartechnolab.com</a>`;
-                                        var message = `Thank you! We have received your contact details. Our team will get back to you. For further details, you can reach out to us at  <a href='mailto:info@sanskartechnolab.com' class='text-[#3E96F4]'>info@sanskartechnolab.com</a>`;
-                                        var buttons = [{
-                                            button_id: "start_over",
-                                            button_label: "Start Over",
-                                            button_click_action: start_over,
-                                            button_class:
-                                                "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 mt-5 hover:bg-[#3E96F4] hover:text-white",
-                                        }]
-                                        create_bot_message_div(
-                                            "messages",
-                                            "px-2 pt-2 mr-5 mt-5",
-                                            message,
-                                            buttons,
-                                            '',
-                                            []
-                                        );
-                                        // var chat_message = document.getElementById('chat_message')
-                                        chat_message.placeholder='Please select from the options';
-                                        chat_message.disabled = true;
-                                        send_button.disabled = true;
-                                        
-                                        //   window.location.href="/thank-you"
-                                    }
-                                    
-                                }).catch((error) => {
-                                    console.log(error);
-                                });
-                            }
+                fetch("https://sanskar.frappe.cloud/api/resource/Astro Site Chat", {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        email: user_details[1].email,
+                        name1: user_details[0].name,
+                        technology: selected_technology[0],
+                        module: selected_module,
+                        question_answer: questions_answer,
+                        token: token,
+                        is_owner: 1,
+                        ip: ipAddress,
+                        browser_name: browserName,
+                        device: device,
+                        need_customization: need_customization
+                        
                     })
-                }
-
-
-
+                }).then((res) => {
+                    if (res.status === 200) {
+                        // var message = `Thank you for providing your information. Our sales team will reach you soon at your email address. For any other details, you can reach us at <a href='mailto:info@sanskartechnolab.com' class='text-[#3E96F4]'>info@sanskartechnolab.com</a>`;
+                        var message = `Thank you! We have received your contact details. Our team will get back to you. For further details, you can reach out to us at  <a href='mailto:info@sanskartechnolab.com' class='text-[#3E96F4]'>info@sanskartechnolab.com</a>`;
+                        var buttons = [{
+                            button_id: "start_over",
+                            button_label: "Start Over",
+                            button_click_action: start_over,
+                            button_class:
+                                "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-xs md:text-sm lg:text-base rounded-lg mt-1 ml-5 mt-5 hover:bg-[#3E96F4] hover:text-white",
+                        }]
+                        create_bot_message_div(
+                            "messages",
+                            "px-2 pt-2 mr-5 mt-5",
+                            message,
+                            buttons,
+                            '',
+                            []
+                        );
+                        // var chat_message = document.getElementById('chat_message')
+                        chat_message.placeholder='Please select from the options';
+                        chat_message.disabled = true;
+                        send_button.disabled = true;
+                        
+                        //   window.location.href="/thank-you"
+                    } else {
+                        alert("Failed");
+                    }
+                }).catch((error) => {
+                    console.log(error);
+                });
             } else {
                 // Handle the case where IP retrieval failed
                 alert("Failed to retrieve IP address");
@@ -1711,226 +1409,6 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
 
 
     // Utils Function 
-    
-
-
-
-    if(!window.localStorage.getItem("a")){
-        if (window.innerWidth < 1024) { 
-            body.style.overflow = "hidden";
-        }
-            start_auto_message(true);
-        }
-        else{
-            if (window.innerWidth < 1024) { 
-                body.style.overflow = "hidden";
-            }
-            var chat_html = window.localStorage.getItem("chat_html")
-           
-            document.getElementById("messages").innerHTML = chat_html
-            scrollToBottom()
-
-
-            setTimeout(function() {
-                // Get a list of all button elements by their IDs
-                const a = document.getElementById("messages")
-                const buttons = a.querySelectorAll('button');
-
-
-                let checkBoxesToCheck = window.localStorage.getItem("selected_module");
-
-                if (checkBoxesToCheck) {
-                    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-
-                    checkboxes.forEach(checkbox => {
-                        if (checkBoxesToCheck.includes(checkbox.id)) {
-                            checkbox.checked = true;
-                        }
-
-                        checkbox.addEventListener('change', function (event) {
-                            console.log("asdfasdf", event.target.id);
-                            var sm = JSON.parse(window.localStorage.getItem("local_selected_module")) || [];
-                            sm.push(event.target.id); // Use event.target.id to get the checkbox id
-                            window.localStorage.setItem("local_selected_module", JSON.stringify(sm));
-                        });
-                    });
-                }
-
-
-                const question = a.lastElementChild.firstElementChild.innerHTML;
-                if(question === "What is your name ?"){
-                    chat_message.placeholder='Enter your name';
-                    chat_message.disabled = false;
-                    send_button.disabled = false;
-                }
-                if(question === "What is your email address ?"){
-                    chat_message.placeholder='Enter your email';
-                    chat_message.disabled = false;
-                    send_button.disabled = false;
-                }
-                if(question === "Kindly let us know the details of your specific requirements, so we can assist you better!"){
-                    chat_message.placeholder='Type message';
-                    chat_message.disabled = false;
-                    send_button.disabled = false;
-                }
-                if(question === "In order to assist you better, kindly provide a brief description of your customization needs."){
-                    chat_message.placeholder='Type message';
-                    chat_message.disabled = false;
-                    send_button.disabled = false;
-                }
-    
-                buttons.forEach(button => {
-                    button.addEventListener("click", function() {
-                        // Your event handler logic here
-                        console.log(button.id)
-                        if (button.id == 'erpnext'){
-                            erpnext()
-                        }
-                        if (button.id == 'service_now'){
-                            service_now()
-                        }
-                        if (button.id == 'customization'){
-                            customization()
-                        }
-                        if (button.id == 'career'){
-                            career()
-                        }
-                        if (button.id == 'e_module_custom'){
-                            e_module_custom()
-                        }
-                        if (button.id == 'e_module_check_confirm'){
-                            e_module_check_confirm()
-                        }
-                        if (button.id == 's_module_custom'){
-                            s_module_custom()
-                        }
-                        if (button.id == 's_module_check_confirm'){
-                            s_module_check_confirm()
-                        }
-                        if (button.id == 'start_over'){
-                            start_over()
-                        }
-                        if (button.id == 'show_more'){
-                            show_more()
-                        }
-
-                    });
-                });
- 
-            }, 3000);   
-        }
-
-
-    function show_more(){
-        var parent = document.getElementById("messages");
-        var technology_q = parent.lastElementChild.firstElementChild.innerHTML;
-                
-        if (technology_q == "For ERPNext, which module would you like to proceed with? "){
-            console.log("in if")
-            var checkboxes = [
-                                "Manufacturing",
-                                "Inventory",  
-                                "Human Resources (HR)",
-                                "CRM",
-                                "Projects",
-                                "Accounts",
-                                "Sales",
-                                "Purchase",
-                                "Website",
-                                "Support",
-                                "LMS (Learning Management System)",
-                                "Asset Management",
-                                "Healthcare"
-                            ]
-            var buttons = [
-                {
-                    button_id: "e_module_custom",
-                    button_label: "Customization",
-                    button_click_action: e_module_custom,
-                    button_class:
-                        "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
-                },
-                {
-                    button_id: "e_module_check_confirm",
-                    button_label: "Confirm",
-                    button_click_action: e_module_check_confirm,
-                    button_class:
-                        "border bg-[#3E96F4] text-white px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#b2d5fb]",
-                },
-
-            ];
-                var message = "For ERPNext, which module would you like to proceed with? ";
-                if (parent.lastElementChild) {
-                    parent.removeChild(parent.lastElementChild);
-                }
-                create_bot_message_div(
-                "messages",
-                "px-2 pt-2 mr-5 mt-5",
-                message,
-                buttons,
-                '',
-                checkboxes,
-                0,
-                10
-            );
-
-        }
-
-        if (technology_q === "For ServiceNow, which module would you like to proceed with? "){
-            var buttons = [
-                {
-                    button_id: "s_module_custom",
-                    button_label: "Customization",
-                    button_click_action: s_module_custom,
-                    button_class:
-                        "border border-[#3E96F4] text-[#3E96F4] px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#3E96F4] hover:text-white",
-                },
-                {
-                    button_id: "s_module_check_confirm",
-                    button_label: "Confirm",
-                    button_click_action: s_module_check_confirm,
-                    button_class:
-                        "border bg-[#3E96F4] text-white px-3 p-1 text-sm md:text-sm lg:text-base rounded-lg mt-1 ml-5 hover:bg-[#b2d5fb]",
-                },
-            ];
-
-            var checkboxes = [
-                "IT Service Management (ITSM)",
-                "IT Operations Management (ITOM)",
-                "IT Asset Management (ITAM)",
-                "IT Business Management (ITBM)",
-                "HR Service Delivery (HRSD)",
-                "Automated Test Framework (ATF)",
-                "Governance, Risk, and Compliance (GRC)",
-                "Performance Analytics (PA)",
-                "Security Operations (SecOps)",
-                "Customer Service Management (CSM)",
-                "Field Service Management (FSM)",
-                "Telecommunications Service Management (TSM)",
-                "Service Portal",
-                "Event Management",
-                "Orchestration",
-                "App Engine Studio"
-            ];
-
-                var message = "For ServiceNow, which module would you like to proceed with? ";
-                if (parent.lastElementChild) {
-                    parent.removeChild(parent.lastElementChild);
-                }
-                create_bot_message_div(
-                "messages",
-                "px-2 pt-2 mr-5 mt-5",
-                message,
-                buttons,
-                '',
-                checkboxes,
-                0,
-                10
-            );
-        }
-                
-    }
-
     function show_popup() {
         chat_popup.classList.remove("hidden");
         if (window.innerWidth < 1024) { 
@@ -1938,96 +1416,11 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
         }
         chat_icon.classList.add("hidden");
 
-        if(!window.localStorage.getItem("a")){
-            start_auto_message(true);
-        }
-        else{
-            var chat_html = window.localStorage.getItem("chat_html")
-            document.getElementById("messages").innerHTML = chat_html
-            scrollToBottom()
-
-
-            setTimeout(function() {
-                // Get a list of all button elements by their IDs
-                const a = document.getElementById("messages")
-                const buttons = a.querySelectorAll('button');
-                let checkBoxesToCheck = window.localStorage.getItem("selected_module")
-                console.log("asdf", checkBoxesToCheck)
-                const checkboxes = a.querySelectorAll('input[type="checkbox"]');
-  
-                checkboxes.forEach(checkbox => {
-                    if (checkBoxesToCheck.includes(checkbox.id)) {
-                    checkbox.checked = true;
-                    }
-                });
-    
-                const question = a.lastElementChild.firstElementChild.innerHTML;
-                if(question === "What is your name ?"){
-                    chat_message.placeholder='Enter your name';
-                    chat_message.disabled = false;
-                    send_button.disabled = false;
-                }
-                if(question === "What is your email address ?"){
-                    chat_message.placeholder='Enter your email';
-                    chat_message.disabled = false;
-                    send_button.disabled = false;
-                }
-                if(question === "Kindly let us know the details of your specific requirements, so we can assist you better!"){
-                    chat_message.placeholder='Type message';
-                    chat_message.disabled = false;
-                    send_button.disabled = false;
-                }
-                if(question === "In order to assist you better, kindly provide a brief description of your customization needs."){
-                    chat_message.placeholder='Type message';
-                    chat_message.disabled = false;
-                    send_button.disabled = false;
-                }
-
-                buttons.forEach(button => {
-                    button.addEventListener("click", function() {
-                        // Your event handler logic here
-                        console.log("btn id", button.id)
-                        if (button.id == 'erpnext'){
-                            erpnext()
-                        }
-                        if (button.id == 'service_now'){
-                            service_now()
-                        }
-                        if (button.id == 'customization'){
-                            customization()
-                        }
-                        if (button.id == 'career'){
-                            career()
-                        }
-                        if (button.id == 'e_module_custom'){
-                            e_module_custom()
-                        }
-                        if (button.id == 'e_module_check_confirm'){
-                            e_module_check_confirm()
-                        }
-                        if (button.id == 's_module_custom'){
-                            s_module_custom()
-                        }
-                        if (button.id == 's_module_check_confirm'){
-                            s_module_check_confirm()
-                        }
-                        if (button.id == 'show_more'){
-                            show_more()
-                        }
-
-                    });
-                });
- 
-            }, 3000);
-
-
-        }
-
-    }
-
+        start_auto_message(true);
         // get_messages()
         // const messages = document.getElementById("messages");
         // messages.scrollTop = messages.scrollHeight;
+    }
 
     function close_popup() {
             while (messagesDiv.firstChild){
@@ -2091,9 +1484,7 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
                 });
             } else {
                 // Handle the case where IP retrieval failed
-                // alert("Failed to retrieve IP address");
-                console.log("Failed to retrieve IP address");
-
+                alert("Failed to retrieve IP address");
             }
         });
 
@@ -2259,14 +1650,17 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
         while (messagesDiv.firstChild){
             messagesDiv.removeChild(messagesDiv.firstChild)
         }
+        
         start_auto_message()
     }
+
 
     chat_message.addEventListener("focus", remove_error_class);
 
     form.addEventListener("submit", send_message);
     chat_icon.addEventListener("click", show_popup);
     close_btn.addEventListener("click", close_popup);
+
 
     // const socket = io.connect("https://www.migoo.in:9000");
     // socket.on('connection', (socket) => {
@@ -2276,20 +1670,8 @@ class="fixed grid justify-items-end right-5 bottom-5 z-30 items-center cursor-po
     //     });
     // });
 
-    function reset_chatbot(){
-        while (messagesDiv.firstChild){
-                messagesDiv.removeChild(messagesDiv.firstChild)
-        }
-        window.localStorage.removeItem("a")
-        window.localStorage.removeItem("chat_token")
-        window.localStorage.removeItem("chat_html")
-        window.localStorage.removeItem("selected_module")
-        selected_module = [];
-        selected_technology = [];
-        questions_answer = [];
-        user_details = [];
-        need_customization = 0
-        start_auto_message(true)
-    }
-    document.getElementById("reset_chatbot").addEventListener("click", reset_chatbot)
+  
 </script>
+
+
+
