@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build --base=/assets/astro_sanskar/astro_sanskar/assets",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -14,8 +14,8 @@
     "@astrojs/netlify": "^2.3.0",
     "@astrojs/tailwind": "^4.0.0",
     "@tailwindcss/typography": "^0.5.9",
-    "astro": "^2.7.2",
-    "tailwindcss": "^3.3.2"
+    "astro": "2.7.2",
+    "tailwindcss": "3.3.2"
   },
   "devDependencies": {
     "dotenv": "^16.1.1"
